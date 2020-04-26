@@ -8,11 +8,11 @@ Docker 是一个应用程序开发、部署、运行的平台，使用 go 语言
 
 ### Docker Engine
 先来看一下 Docker Engine 的结构，它是一个Client-Server应用程序，包含了三个主要部分：dockerd守护进程、REST API接口层、cli接口层(管理容器、镜像、网络、存储等等)。
-![](./2018-06-20-docker_overview/39469-20180620111050822-168274068.png)
+![](2018-06-20-docker_overview/39469-20180620111050822-168274068.png)
 
 ### Docker 架构
 Docker采用的是CS架构，docker client 通过Unix套接字或者网络接口访问 docker daemon，从而完成容器、镜像等内容的管理。
-![](./2018-06-20-docker_overview/39469-20180620111102824-1462399429.png)
+![](2018-06-20-docker_overview/39469-20180620111102824-1462399429.png)
 
 #### Docker Daemon
 Docker的守护进程监听对于API的请求，并且管理Docker对象，包括容器、镜像、网络、存储等。不同守护进程之间可以互相通信，从而构成集群服务。

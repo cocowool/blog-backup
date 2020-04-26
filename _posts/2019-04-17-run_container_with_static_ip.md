@@ -53,7 +53,7 @@ docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9202:9202 -p 9302:9302 -v ~
 ```
 使用```docker inspect container-id```可以看到当前容器分配的IP就是命令中指定的地址，无论容器重启多少次IP都不会发生变化了。
 
-
+如果是使用PHP进行开发的朋友，还可以参考我这篇文章[使用Docker快速搭建PHP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)来利用Docker快速搭建PHP开发环境，并且固定Mysql的IP，这样每次重启环境的时候，就不用修改配置文件中数据库的地址了。
 
 
 

@@ -30,7 +30,7 @@ $ docker pull mysql
 ```sh
 $ mkdir lnmp
 $ cd lnmp
-$ mkdir -p nginx/www nginx/logs nginx/conf
+$ mkdir -p nginx/www nginx/logs nginx/conf.d
 ```
 
 在`nginx/conf`目录下准备`nginx`的配置文件php.conf。
@@ -74,10 +74,11 @@ services:
             - "80:80"
         volumes: 
             - ~/Projects/sh-valley/docker-conf/lnmp/nginx/www:/usr/share/nginx/html
-            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/conf:/etc/nginx/conf.d
+            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/conf.d:/etc/nginx/conf.d
             - ~/Projects/sh-valley/docker-conf/lnmp/nginx/logs:/var/log/nginx
         networks:
-            - lnmp-network
+            lnmp-network:
+                ipv4_address: 172.23.0.5
     php:
         image: php:5.6-fpm-alpine3.8
         volumes:
@@ -85,19 +86,25 @@ services:
         networks:
             - lnmp-network
     mysql:
-        image: mysql
+        image: mysql:5.6
         ports:
             - "3306:3306"
         environment:
             - MYSQL_ROOT_PASSWORD=123456
         networks:
-            - lnmp-network
+            lnmp-network:
+                ipv4_address: 172.23.0.3
 networks: 
     lnmp-network:
-
+        ipam:
+            config:
+            - subnet: 172.23.0.0/16
+              gateway: 172.23.0.1
 ```
 
 至此，我们完成了所有的准备工作，马上可以启动查看效果。
+
+在这个编排文件中，我对Mysql使用了固定的IP地址，这样在后续重启环境的过程中，我就不用修改PHP的数据库配置文件了。关于固定容器IP地址的更详细的方法，可以参考[如何让容器具有固定IP](http://edulinks.cn/2019/04/17/2019-04-17-run_container_with_static_ip/)
 
 ## 运行效果
 
@@ -132,6 +139,8 @@ $ docker-php-ext-install mysql
 * `docker-php-ext-configure`经常与`docker-php-ext-install`搭配，在需要自定义扩展的配置时使用
 
 ## 启用 PATH_INFO
+
+有些PHP的框架，在进行路由处理时会用到`PATH_INFO`参数，这需要通过下面的配置来实现。
 
 ```
 location ~ \.php(.*)$ {

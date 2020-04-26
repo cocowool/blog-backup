@@ -1,8 +1,9 @@
 ---
 title: Puppet 3 典型架构
-date: 2020-04-23 9:12:17
+date: 2020-04-23 09:12:17
 tags:
 ---
+
 
 [TOC]
 
@@ -23,11 +24,11 @@ puppet是一款著名的自动化运维管理工具，本文写成时Open Source
 
 Marionette Collective 简称 MCollective，是Puppet的一个插件，提供了一个服务调度或并行任务执行的框架，为用户提供在被管机上执行管理任务的能力。从Puppet 5.5.4 版本开始 MCollective 不再推荐使用，如果使用Puppet Enterprise，可以使用 Puppet orchestrator 替换。如果使用开源版本的Puppet，则可以使用Bolt和PuppetDB替换。
 
-第一个版本 0.2.0 于2009年12月2日发布。最后一个版本于2018年4月17日发布。
+MCollective的第一个版本 0.2.0 于2009年12月2日发布。最后一个版本于2018年4月17日发布。
 
 ## 3. puppet架构
 
-
+![image-20200425153804847](puppet-introduce/image-20200425153804847.png)
 
 ## 4. 写在最后
 
@@ -41,7 +42,7 @@ Marionette Collective 简称 MCollective，是Puppet的一个插件，提供了�
 
 对于大型企业来说，如何组合使用好这两个工具，应该还要依靠各个企业根据自身的情况选择定制化的解决方案。希望本文对于Puppet各个版本特性的介绍，能够为大家的决策提供一些依据。
 
-## 参考资料
+## 5. 参考资料
 
 1. [puppet.com](https://puppet.com/)
 2. [Introducing Puppet 6 Platform](https://puppet.com/blog/introducing-puppet-6/)
