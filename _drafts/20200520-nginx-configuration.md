@@ -33,7 +33,7 @@ Nginx最简单的用法就是作为静态网站的服务端，通过HTTP或HTTPS
 
 ## 配置文件介绍
 
-Nginx 最主要的配置文件为 nginx.conf ，在启动时可以通过命令`nginx -c`指定要采用的配置文件，默认使用的配置文件时nginx安装路径下的`/config/nginx.conf`。Nginx的配置文件一般包括四个部分：
+Nginx 最主要的配置文件为 nginx.conf ，在启动时可以通过命令`nginx -c`指定要采用的配置文件，默认使用的配置文件时nginx安装路径下的`/config/nginx.conf`。Nginx配置文件以`指令 参数;`的形式Nginx的配置文件一般包括四个部分：
 
 * main 全局设置，这里的设置会影响后续所有的配置
 * server 主要用于虚拟主机配置，包括主机域名、IP和端口等
@@ -71,3 +71,5 @@ Nginx 最主要的配置文件为 nginx.conf ，在启动时可以通过命令`n
 ## 参考资料
 
 1. [[Nginx 服务器安装及配置文件详解](https://www.cnblogs.com/bluestorm/p/4574688.html)](https://www.cnblogs.com/bluestorm/p/4574688.html)
+2. [nginx docs](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/)
+
