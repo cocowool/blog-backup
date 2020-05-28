@@ -1,5 +1,5 @@
 ---
-title: Nginx 配置事项总结
+title: Nginx 介绍及配置文件入门
 tags:
 ---
 
@@ -33,40 +33,48 @@ Nginx最简单的用法就是作为静态网站的服务端，通过HTTP或HTTPS
 
 ## 配置文件介绍
 
-Nginx 最主要的配置文件为 nginx.conf ，在启动时可以通过命令`nginx -c`指定要采用的配置文件，默认使用的配置文件时nginx安装路径下的`/config/nginx.conf`。Nginx配置文件以`指令 参数;`的形式Nginx的配置文件一般包括四个部分：
+Nginx 最主要的配置文件为 nginx.conf ，在启动时可以通过命令`nginx -c`指定要采用的配置文件，默认使用的配置文件时nginx安装路径下的`/config/nginx.conf`。Nginx配置文件以`指令 参数;`的形式，初次之外还有一些多行参数组合起来的代码块，包括了 `events、http、mail、stream`。为了方便管理各种不同的配置，Nginx还支持通过 `include`语法来引用多个不同的配置文件，如下所示：
 
-* main 全局设置，这里的设置会影响后续所有的配置
-* server 主要用于虚拟主机配置，包括主机域名、IP和端口等
-* upstream 上游服务器设置，主要包括反向代理、负载均衡相关配置
-* location 匹配URL路径的设置
+```sh
+include conf.d/http;
+include conf.d/stream;
+include conf.d/exchange-enhanced;
+```
 
-![image-20200521132343516](20200520-nginx-configuration/image-20200521132343516.png)
+典型的Nginx配置文件如下：
 
-## 常用配置项说明
+```nginx
+user nobody; # 'main' 部分的参数行
 
-### main 全局配置
+events {
+    # 连接处理的相关配置
+}
 
-全局配置是一些与具体业务功能无关的参数，通常与性能或功能有关。
+http {
+    # HTTP相关的配置，影响所有的虚拟主机配置
 
-* worker_processes 2 ： 指定worker角色工作的进程个数
-* worker_connections 2048 ：设置每个worker进程能并发处理的最大连接数
-* Use epoll：nginx提供了集中事件模型，包括epoll、select等，在linux系统中一般采用epoll模型能够提供非常好的性能
+    server {
+        # HTTP虚拟主机 Server 1的配置
+        location /one {
+            # 针对URI '/one' 的具体配置
+        }
+        location /two {
+            # 针对URI '/two' 的具体配置
+        }
+    } 
+    
+    server {
+        # HTTP虚拟主机 Server 2的配置
+    }
+}
 
-### http服务相关的配置
-
-### server虚拟主机相关配置
-
-* listen ：虚拟机主的监听端口，默认为80，端口号小于1024时需要以root用户启动。
-* server_name ： 服务器名称，例如 [www.edulinks.cn](https://www.edulinks.cn)
-
-### upstream配置
-
-### location配置
-
-在http服务中，可以针对某些特定的URL指定一系列配置项
-
-* root：定义根目录的位置
-* index：定义默认访问的文件名 
+stream {
+    # 针对 TCP/UDP 流量的配置，影响所有的虚拟主机
+    server {
+        # 虚拟主机 Server 1 的配置
+    }
+}
+```
 
 ## 参考资料
 
