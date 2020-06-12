@@ -13,7 +13,7 @@ Kubernetes是当今最流行的开源容器管理平台，它就是大名鼎鼎�
 > Kubernetes is primarily targeted at applications composed of multiple containers. It therefore groups containers using pods and labels into tightly coupled and loosely coupled formations for easy management and discovery.
 
 Kubernets所有的操作都可以通过Kubernetes API来进行，通过API来操作Kubernetes中的对象，包括Pod、Service、Volume、Namespace等等。Kubernetes的整体结构如下图所示：
-![](./2018-07-10-k8s_base_concept/39469-20180710145045503-2069732975.png)
+![](./20180710-k8s-base-concept/39469-20180710145045503-2069732975.png)
 
 #### Master
 也叫做 Cluster Control Plane。
@@ -41,7 +41,7 @@ Pod使用有两种方式：一个容器一个Pod、一个Pod中运行多个容�
 > Restarting a container in a Pod should not be confused with restarting the Pod. The Pod itself does not run, but is an environment the containers run in and persists until it is deleted.
 
 Pod的生命周期有几个状态
-![](./2018-07-10-k8s_base_concept/39469-20180710145529399-1771721835.png)
+![](./20180710-k8s-base-concept/39469-20180710145529399-1771721835.png)
 
 #### 2. Pods and Controller
 Controller 在集群范围内提供Pod的创建、管理、扩容、复制、自愈等功能。

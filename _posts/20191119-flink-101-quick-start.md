@@ -106,11 +106,11 @@ dc54c9cf6304        flink               "/docker-entrypoint.…"   3 days ago   
 $ nc -l 9008
 ```
 打开Flink界面，选择Submit New Job，上传编译好的jar包。
-![](2019-11-19-flink_101_quick_start/3736984-a44484de4fd748e7.png)
+![](20191119-flink-101-quick-start/3736984-a44484de4fd748e7.png)
 提交后可以看到运行的app已经收到了数据
-![](2019-11-19-flink_101_quick_start/3736984-001eb7e2e6512454.png)
+![](20191119-flink-101-quick-start/3736984-001eb7e2e6512454.png)
 使用docker logs -f命令，然后在nc窗口中输入一些单词，你就能够在docker窗口下看到统计结果输出了。
-![](2019-11-19-flink_101_quick_start/3736984-b1e4364db44ce1bb.png)
+![](20191119-flink-101-quick-start/3736984-b1e4364db44ce1bb.png)
 
 ## 参考资料
 

@@ -30,7 +30,7 @@ tags:
 
 参考[riboseyim](https://riboseyim.com)大神的经验，梳理了一下自己的编辑发布流程。
 
-![image-20200426173105535](build-my-writing-devops/image-20200426173105535.png)
+![image-20200426173105535](20200604-build-my-writing-devops/image-20200426173105535.png)
 
 ### 2. 写作的过程
 
