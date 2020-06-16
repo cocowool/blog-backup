@@ -17,6 +17,10 @@ date: 2020-06-15 13:18:22
 
 ![new-clean-mac](20200614-mac-reinstall/new-clean-mac.png)
 
+> 后来又查阅了一下苹果官方的文档，文档描述中说对于macOS High Sierra，应该是支持扩展模式的分区格式的，但我始终无法安装成功，不知道是否与哪里有关系。个人猜测可能是Recovery分区中的操作系统版本比较低导致的。
+>
+> ![Snip20200615_1](20200614-mac-reinstall/Snip20200615_1.png)
+
 ## 参考资料
 
 1. [如何抹掉 Mac 磁盘](https://support.apple.com/zh-cn/HT208496)
