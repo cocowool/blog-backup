@@ -8,15 +8,20 @@ tags:
 ## 系统配置
 
 * 快捷键的调整：互换了Spotlight和输入法切换的快捷键
-* 手势的调整：单指双按手势、三指拖拽的支持
+
+* 手势的调整：单指双按手势、三指拖拽的支持。其中三指拖拽的配置据我所知从EI Caption开始就转移到了辅助功能里面，如下图
+
+  ![image-20200619190646271](20200616-new-mac-configuration/image-20200619190646271.png)
+
 * 安装 Command Line Tools
+
 * 设置桌面图片定时随机切换
+
 * 安装`Command Line Tools`，一般打开Termianl，然后在命令行中输入一些诸如`git`之类的命令，就会弹出安装的提示框，或者也可以安装Xcode后在菜单中选择安装
 
 ## 浏览器配置
 
 * 打开开发菜单，在`偏好设置`的`高级`标签中，最下方那个复选框钩上就可以了
-* 
 
 ## Termianl 配置
 
@@ -28,6 +33,8 @@ tags:
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
 * Docker
+* The Unarchiver，在App Store中解压缩的软件非常多，不知道是不是因为这类工具开发容易的原因，但是最好用、最好看的我觉得非The Unarchiver莫属了，关键还免费
+* Google Chrome，虽然Safari已经足够好用了，但某些时候还是要看齐下Chrome
 
 ## 参考资料
 
