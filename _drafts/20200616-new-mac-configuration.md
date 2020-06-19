@@ -13,9 +13,7 @@ tags:
 
   ![image-20200619190646271](20200616-new-mac-configuration/image-20200619190646271.png)
 
-* 安装 Command Line Tools
-
-* 设置桌面图片定时随机切换
+* 设置桌面图片定时随机切换，曾经从Bing上下载了很多美丽的图片，因此习惯了背景图片定时的切换一下
 
 * 安装`Command Line Tools`，一般打开Termianl，然后在命令行中输入一些诸如`git`之类的命令，就会弹出安装的提示框，或者也可以安装Xcode后在菜单中选择安装
 
@@ -36,6 +34,4 @@ tags:
 * The Unarchiver，在App Store中解压缩的软件非常多，不知道是不是因为这类工具开发容易的原因，但是最好用、最好看的我觉得非The Unarchiver莫属了，关键还免费
 * Google Chrome，虽然Safari已经足够好用了，但某些时候还是要看齐下Chrome
 
-## 参考资料
-
-1. []()
+> 啰啰嗦嗦写了这么多，不知道你有没有自己喜欢的Mac设置和软件，欢迎通过我的公众号分享给我，非常感谢。
