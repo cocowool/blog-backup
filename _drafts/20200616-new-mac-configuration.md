@@ -23,7 +23,71 @@ tags:
 
 ## Termianl 配置
 
+\## Profile文件及加载顺序
 
+对于Linux和Unix系统来说，用户配置文件一般有以下几个：
+
+\* /etc/profile 全局profile文件，对所有用户生效
+
+\* ~/.bash_profile 或 ~/.profile。.bash_profile 是Linux下的，.profile是Unix中有的。
+
+\* ~/.bashrc 。这个文件保存用户的一些个性化配置。
+
+Bash登陆的时候，首先加载全局的 profile，接着判断用户目录下的 .bash_profile，最后可以在 .bash_profile 中调用 .bashrc。
+
+\## 配置
+
+\```sh
+
+\#设置历史命令记录数
+
+export HISTSIZE=1000
+
+\#记录历史文件大小
+
+export HISTFILESIZE=450
+
+\#指定不同终端执行的命令都存储在同一个文件中
+
+export HISTFILE=~/.bash_sessions/all_my_history
+
+\```
+
+将这些配置写在```~/.bashrc```中，然后在终端的偏好设置中加入启动命令。
+
+\```sh
+
+source ~/.bashrc
+
+\```
+
+\### 设置颜色
+
+编辑`~/.bash_profile`，G表示输出颜色、h表示大小用易读的格式现实、F表示在文件夹后加`/`等。
+
+\```sh
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+
+export CLICOLOR=1
+
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+alias ls='ls -lGFh'
+
+\```
+
+参考资料：
+
+\1. [mac 中 history 命令使用与配置](https://blog.csdn.net/testcs_dn/article/details/79970635)
+
+\2. [Simple Tricks to Improve the Terminal Appearance in Mac OS X](http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/)
+
+\3. [~/.profile ~/.bashrc和~./bash_profile的理解以及zsh的使用](https://www.jianshu.com/p/b39fd35e2360)
+
+\4. [MY MAC OSX BASH PROFILE](https://natelandau.com/my-mac-osx-bash_profile/)
+
+\5. [Shortcuts to move faster in Bash command line](http://teohm.com/blog/shortcuts-to-move-faster-in-bash-command-line/)
 
 ## 必备软件
 
