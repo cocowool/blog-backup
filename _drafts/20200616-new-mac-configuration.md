@@ -53,26 +53,24 @@ alias ls='ls -lGFh'
 
 ## 必备软件
 
+* `brew.sh`类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件
 * 微信 WeChat，国民级的软件，不装不行呀
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
 * Docker
 * The Unarchiver，在App Store中解压缩的软件非常多，不知道是不是因为这类工具开发容易的原因，但是最好用、最好看的我觉得非The Unarchiver莫属了，关键还免费
 * Google Chrome，虽然Safari已经足够好用了，但某些时候还是要看齐下Chrome
+* Visaulstudio Code，最近几年比较流行的轻量级IDE，超过了Sublime
 
 > 啰啰嗦嗦写了这么多，不知道你有没有自己喜欢的Mac设置和软件，欢迎通过我的公众号分享给我，非常感谢。
 
 ## 参考资料
 
 1. [mac 中 history 命令使用与配置](https://blog.csdn.net/testcs_dn/article/details/79970635)
-
 2. [Simple Tricks to Improve the Terminal Appearance in Mac OS X](http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/)
-
 3. [~/.profile ~/.bashrc和~./bash_profile的理解以及zsh的使用](https://www.jianshu.com/p/b39fd35e2360)
-
 4. [MY MAC OSX BASH PROFILE](https://natelandau.com/my-mac-osx-bash_profile/)
-
 5. [Shortcuts to move faster in Bash command line](http://teohm.com/blog/shortcuts-to-move-faster-in-bash-command-line/)
 6. [10 个 Terminal 主题，让你的 macOS 终端更好看](https://sspai.com/post/53008)
+7. [brew.sh](https://brew.sh/index_zh-cn)
 
-## 
