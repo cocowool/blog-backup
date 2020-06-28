@@ -36,44 +36,44 @@ HouseItem.prototype.display = function(container){
 
 我们可以继续将这个例子完善为
 ```javascript
-varHouseItem=function(hid,hname,address){
-this.setHid(hid);
-this.setHname(hname);
-this.setAddress(address);
+var HouseItem = function(hid,hname,address){
+	this.setHid(hid);
+	this.setHname(hname);
+	this.setAddress(address);
 }
 
-HouseItem.prototype={
-getHid:function(){
-returnthis.hid;
-},
-setHid:function(hid){
-if(!this.isValid(hid))
-thrownewError('Hid is not defined!');
-this.hid=hid;
-},
-getHname:function(){
-returnthis.hname;
-},
-setHname:function(hname){
-this.hname=hname||"暂无";
-},
-getAddress:function(){
-returnthis.address;
-},
-setAddress:function(address){
-this.address=address||"暂无";
-},
-isValid:function(hid){
-if(hid!=null&&hid!=undefined&&hid!="") {
-returntrue;
-}
-else{
-returnfalse;
-}
-},
-showHouse:function(){
-document.getElementById("container").innerHTML+="楼盘名称："+this.hname+"<br />";
-}
+HouseItem.prototype = {
+	getHid : function(){
+	returnthis.hid;
+	},
+	setHid : function(hid){
+		if(!this.isValid(hid))
+			thrownewError('Hid is not defined!');
+			this.hid=hid;
+	},
+	getHname : function(){
+		returnthis.hname;
+	},
+	setHname : function(hname){
+		this.hname=hname||"暂无";
+	},
+	getAddress : function(){
+		returnthis.address;
+	},
+	setAddress : function(address){
+		this.address=address||"暂无";
+	},
+	isValid : function(hid){
+		if(hid!=null&&hid!=undefined&&hid!="") {
+			return true;
+		}
+		else{
+			return false;
+		}
+	},
+	showHouse : function(){
+		document.getElementById("container").innerHTML+="楼盘名称："+this.hname+"<br />";
+	}
 }
 ```
 怎么样，现在是不是看起来完善很多了，但这还不是最好的方法，不过这种方法很容易理解，也比较容易上手。
