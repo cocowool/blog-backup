@@ -111,9 +111,11 @@ $ sudo route -v delete ip
 $ sudo route -v flush
 ```
 
-## networksetup命令
+## 持久化路由的设置
 
-### 列出所有的网络连接方式
+持久化路由设置需要介绍一个新的命令`networksetup`，该命令相当于系统偏好设置中的网络设置工具的命令行版本，但是自爱系统偏好设置中没有提供路由维护的功能，因此这个命令行工具提供了比系统便好设置更强大的功能，主要有以下几个方面。
+
+### 查看所有的网络连接方式
 
 ```sh
 $ networksetup -listallnetworkservices
@@ -128,11 +130,36 @@ iPhone USB
 Parallels Shared #0
 ```
 
+### 查看某个网络连接的路由信息
 
+```sh
+$ networksetup -getadditionalroutes Wi-Fi
+There are no additional IPv4 routes on Wi-Fi.
+```
+
+### 添加路由信息
+
+```sh
+$ networksetup -setadditionalroutes Wi-Fi 11.33.0.0 255.255.255.0 11.136.167.254
+$ networksetup -getadditionalroutes Wi-Fi
+11.33.0.0 255.255.255.0 11.136.167.254
+```
+
+### 删除路由信息
+
+```sh
+$ networksetup -setadditionalroutes Wi-Fi 
+$ networksetup -getadditionalroutes Wi-Fi
+There are no additional IPv4 routes on Wi-Fi.
+
+```
+
+清空路由表就是不需要添加任何路由信息就可以。
 
 ## 参考资料
 
 1. [MacOS上路由表的操作](https://www.baidu.com/link?url=E9XstvqW5Vbeju068bPVl_1O1YUpOLqwPEGn3ISXzyfkoLC4z38FYkr02YJ7717n7RPsOhIQyInCRU1Wgk0uAq&wd=&eqid=eae92997001fc824000000035ec23824)
 2. [MacOS route flags](https://www.xuebuyuan.com/2213546.html)
 3. [Mac OSX常用网络命令](https://www.cnblogs.com/linusflow/p/7390566.html)
+4. [https://www.cnblogs.com/hanyifeng/p/8195538.html](https://www.cnblogs.com/hanyifeng/p/8195538.html)
 
