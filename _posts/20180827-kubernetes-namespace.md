@@ -1,7 +1,7 @@
 ---
 title: Kubernetes命名空间
 date: 2018-08-27 18:51
-tag: 
+tag: Kubernetes
 ---
 
 > 本文环境为Kubernetes V1.11，操作系统版本为 CentOs 7.3，Kubernetes集群安装可以参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)

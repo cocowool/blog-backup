@@ -1,7 +1,7 @@
 ---
 title: Kubernetes基础：Pod的详细介绍
 date: 2018-08-08 10:48
-tag: 
+tag: Kubernetes
 ---
 
 > 本文的演练环境为基于Virtualbox搭建的Kubernetes集群，具体搭建步骤可以参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)

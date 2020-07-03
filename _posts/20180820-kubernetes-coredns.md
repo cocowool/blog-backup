@@ -1,7 +1,7 @@
 ---
 title: CoreDNS介绍
 date: 2018-08-20 19:07
-tag: 
+tag: Kubernetes
 ---
 
 > 本文介绍 CoreDNS 相关配置以及验证方法，实验环境为 Kubernetes 1.11，搭建方法参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)

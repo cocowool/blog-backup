@@ -1,7 +1,7 @@
 ---
 title: 谈一下Docker与Kubernetes集群的日志和日志管理
 date: 2018-08-30 10:49
-tag: 
+tag: Kubernetes
 ---
 
 > 本文的测试环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)
