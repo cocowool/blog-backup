@@ -1,7 +1,10 @@
 ---
 title: Minikube体验
 date: 2018-06-19 11:31
-tag: Kubernetes
+categories:
+- 运维
+tags:
+- Kubernetes
 ---
 
 > 本文的环境如下：
