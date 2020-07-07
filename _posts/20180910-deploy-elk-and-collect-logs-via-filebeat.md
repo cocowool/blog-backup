@@ -6,8 +6,8 @@ tag:
 
 > 本文的试验环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)
 
-
 ## 1. 环境准备
+
 Elasticsearch运行时要求```vm.max_map_count```内核参数必须大于262144，因此开始之前需要确保这个参数正常调整过。
 ```bash
 $ sysctl -w vm.max_map_count=262144
@@ -64,7 +64,7 @@ replicaset.apps/es-single-5b8b696ff8   1         1         1         26s
 replicaset.apps/kb-single-69d6d9c744   1         1         1         26s
 ```
 可以看看效果如下：
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180910182121558-1067453160.png)
+![](./20180910-deploy-elk-and-collect-logs-via-filebeat/39469-20180910182121558-1067453160.png)
 
 ## 3. 集群部署ELK
 
@@ -79,7 +79,7 @@ service/es-cluster-nodeport created
 service/es-cluster created
 ```
 效果如下
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180910182150309-194695122.png)
+![](./20180910-deploy-elk-and-collect-logs-via-filebeat/39469-20180910182150309-194695122.png)
 
 ### 3.2 区分集群中节点角色
 如果需要区分节点的角色，就需要建立两个StatefulSet部署，一个是Master集群，一个是Data集群。Data集群的存储我这里为了简单使用了```emptyDir```，可以使用```localStorage```或者```hostPath```，关于存储的介绍，可以参考[Kubernetes存储系统介绍](https://www.cnblogs.com/cocowool/p/kubernetes_storage.html)。这样就可以避免Data节点在本机重启时发生数据丢失而重建索引，但是如果发生迁移的话，如果想保留数据，只能采用共享存储的方案了。具体的编排文件在这里[elk-cluster-with-role](https://github.com/cocowool/k8s-go/blob/master/elk/elk-cluster-with-role.yaml)
@@ -117,17 +117,18 @@ statefulset.apps/es-cluster        3         2         14s
 statefulset.apps/es-cluster-data   2         2         13s
 ```
 效果如下
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180910182220529-48582025.png)
+![](./20180910-deploy-elk-and-collect-logs-via-filebeat/39469-20180910182220529-48582025.png)
 
 ## 4. 使用Filebeat监控收集容器日志
 使用Logstash，可以监测具有一定命名规律的日志文件，但是对于容器日志，很多文件名都是没有规律的，这种情况比较适合使用Filebeat来对日志目录进行监测，发现有更新的日志后上送到Logstash处理或者直接送入到ES中。
 每个Node节点上的容器应用日志，默认都会在```/var/log/containers```目录下创建软链接，这里我遇到了两个小问题，第一个就是当时挂载```hostPath```的时候没有挂载软链接的目的文件夹，导致在容器中能看到软链接，但是找不到对应的文件；第二个问题是宿主机上这些日志权限都是root，而Pod默认用filebeat用户启动的应用，因此要单独设置下。
 效果如下
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180910182334500-531866919.png)
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180910182345566-25819522.png)
+![](./20180910-deploy-elk-and-collect-logs-via-filebeat/39469-20180910182334500-531866919.png)
+![](./20180910-deploy-elk-and-collect-logs-via-filebeat/39469-20180910182345566-25819522.png)
 具体的编排文件可以参考我的Github主页，提供了[Deployment](https://github.com/cocowool/k8s-go/blob/master/elk/filebeat-dp.yml)方式的编排和[DaemonSet](https://github.com/cocowool/k8s-go/blob/master/elk/filebeat-ds.yml)方式的编排。
 对于具体日志的格式，因为时间问题没有做进一步的解析，这里如果有朋友做过，可以分享出来。
 主要的编排文件内容摘抄如下。
+
 ```yaml
 kind: List
 apiVersion: v1
@@ -206,7 +207,7 @@ items:
             configMap:
               name: filebeat-config
 ```
-![](./2018-09-10-deploy_elk_and_collect_logs_via_filebeat/39469-20180710163655709-89635310.png)
+
 
 ## 参考资料：
 
