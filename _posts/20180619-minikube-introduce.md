@@ -1,8 +1,7 @@
 ---
 title: Minikube体验
 date: 2018-06-19 11:31
-categories:
-- 运维
+categories: 运维
 tags:
 - Kubernetes
 ---
@@ -110,7 +109,7 @@ var handleRequest = function(request, response) {
 var www = http.createServer(handleRequest);
 www.listen(8080);
 ```
-可以在终端中执行```node server.js```并通过http://localhost:8080查看效果
+可以在终端中执行```node server.js```并通过 [http://localhost:8080](http://localhost:8080) 查看效果
 
 #### 生成镜像
 编写 Dockerfile 文件

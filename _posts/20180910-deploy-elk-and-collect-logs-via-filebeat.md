@@ -1,6 +1,7 @@
 ---
 title: Kubernetes部署ELK并使用Filebeat收集容器日志
 date: 2018-09-10 18:25
+tag:
 ---
 
 > 本文的试验环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)
