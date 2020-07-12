@@ -2,6 +2,7 @@
 title: Kubernetes Ingress 学习
 date: 2020-06-12 18:38:43
 tag: 
+categories: 运维
 ---
 
 Kubernetes 中暴露服务的方式有三种

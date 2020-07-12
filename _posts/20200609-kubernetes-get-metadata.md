@@ -2,6 +2,7 @@
 title: Metadata获取的三种方式
 date: 2020-06-09 19:21:06
 tag: 
+categories: 运维
 ---
 
 > 本文的试验环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)

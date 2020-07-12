@@ -2,7 +2,7 @@
 title: Homebrew 介绍与上手指南
 date: 2020-06-23 19:23:20
 tags:
-categories: 开发经验
+categories: 开发
 ---
 
 >  Homebrew是一款macOS平台下的软件包管理工具，能够利用很简单的指令，帮助我们实现对开源软件的安装、更新、卸载等常用操作，省去了我们独立下载、编译、安装、配置各种开源软件的繁琐步骤。可以类比于Linux下的`yum`或者Ubuntu的`apt-get`。

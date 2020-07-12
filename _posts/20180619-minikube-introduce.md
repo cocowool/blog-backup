@@ -1,7 +1,7 @@
 ---
 title: Minikube体验
 date: 2018-06-19 11:31
-categories: 运维
+categories: 运维管理
 tags:
 - Kubernetes
 ---

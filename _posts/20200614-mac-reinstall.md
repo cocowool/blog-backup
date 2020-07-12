@@ -2,6 +2,7 @@
 title: 将安装器信息下载到目标宗卷失败
 tags: Mac
 date: 2020-06-15 13:18:22
+categories: 办公
 ---
 
 

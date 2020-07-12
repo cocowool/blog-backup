@@ -2,6 +2,7 @@
 title: Kubernetes中资源配额管理
 date: 2020-06-04 14:41:31
 tag: 
+categories: 运维
 ---
 
 ### 设置资源请求数量
