@@ -19,4 +19,6 @@ tags:
 
 ## 参考资料
 
-1.[Java基础语法入门01](https://www.cnblogs.com/cainiaosansiwu/p/10745962.html)
+1. [Java基础语法入门01](https://www.cnblogs.com/cainiaosansiwu/p/10745962.html)
+2. [Java字符串String类操作方法详细整理](https://www.cnblogs.com/huxiuqian/p/10167415.html)
+
