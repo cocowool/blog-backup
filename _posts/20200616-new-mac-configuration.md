@@ -1,6 +1,7 @@
 ---
 title: Macbook Pro入手必备的配置
 date: 2020-06-19 19:53:14
+updated: 2020-07-17 16:39:11
 tags:
 categories: 办公
 ---
@@ -56,14 +57,16 @@ alias ls='ls -lGFh'
 
 ## 必备软件
 
-* `Homebrew`类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件
+* `Homebrew` 类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件
 * 微信 WeChat，国民级的软件，不装不行呀
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
 * Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
 * The Unarchiver，在App Store中解压缩的软件非常多，不知道是不是因为这类工具开发容易的原因，但是最好用、最好看的我觉得非The Unarchiver莫属了，关键还免费
 * Google Chrome，虽然Safari已经足够好用了，但某些时候还是要看齐下Chrome
-* Visaulstudio Code，最近几年比较流行的轻量级IDE，超过了Sublime
+* Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
+* Thunder 迅雷，有时候下载一些软件还是有个工具比较好
+* Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
 
 > 啰啰嗦嗦写了这么多，不知道你有没有自己喜欢的Mac设置和软件，欢迎通过我的公众号分享给我，非常感谢。
 
