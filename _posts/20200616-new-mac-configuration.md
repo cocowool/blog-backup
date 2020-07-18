@@ -57,7 +57,7 @@ alias ls='ls -lGFh'
 
 ## 必备软件
 
-* `Homebrew` 类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件
+* `Homebrew` 类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件，具体的安装步骤可以参考 [Homebrew介绍与上手指南](https://www.edulinks.cn/2020/06/23/20200623-homebrew-introduction/)
 * 微信 WeChat，国民级的软件，不装不行呀
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
@@ -67,6 +67,28 @@ alias ls='ls -lGFh'
 * Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
 * Thunder 迅雷，有时候下载一些软件还是有个工具比较好
 * Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
+
+## 关于主机名
+
+macOS 开机完成初始化之后，如果你在登陆界面输入了中文的姓名，则你在终端上看到的主机名大概会是中文名的拼音全拼。例如我的电脑这样。
+
+![image-20200718221702804](20200616-new-mac-configuration/image-20200718221702804.png)
+
+相信强迫症患者看到这种命名方式一定会抓狂，如果碰巧你遇到这种情况，有两种方法可以帮助你修改主机名。
+
+如果你不是工程师或更愿意用图形界面来完成修改，可以在 `系统偏好设置->共享` 中修改`电脑名称`和 `本地主机名`。
+
+![image-20200718222612743](20200616-new-mac-configuration/image-20200718222612743.png)
+
+如果你喜欢那种用命令行操作一切的感觉，可以使用 `scutil` 命令来修改主机名。
+
+```shell
+$ sudo scutil --set LocalHostName xxx 
+$ hostname
+$ xxx.local
+```
+
+
 
 > 啰啰嗦嗦写了这么多，不知道你有没有自己喜欢的Mac设置和软件，欢迎通过我的公众号分享给我，非常感谢。
 
@@ -79,4 +101,5 @@ alias ls='ls -lGFh'
 5. [Shortcuts to move faster in Bash command line](http://teohm.com/blog/shortcuts-to-move-faster-in-bash-command-line/)
 6. [10 个 Terminal 主题，让你的 macOS 终端更好看](https://sspai.com/post/53008)
 7. [brew.sh](https://brew.sh/index_zh-cn)
+8. [搞懂 macOS 上的主机名/hostname/ComputerName](https://shockerli.net/post/macos-hostname-scutil/)
 
