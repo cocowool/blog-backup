@@ -67,6 +67,7 @@ alias ls='ls -lGFh'
 * Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
 * Thunder 迅雷，有时候下载一些软件还是有个工具比较好
 * Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
+* Filezilla，著名的FTP开源软件，注意一点从App Store下载的是Pro版本需要付费。对于日常使用免费版就足够，只是需要手工到 [Filezilla 官方网站](https://www.filezilla.cn/download/client) 下载。
 
 ## 关于主机名
 
