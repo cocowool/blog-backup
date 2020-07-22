@@ -182,8 +182,16 @@ volumes:
 使用`docker volume ls`命令可以查看本地挂载的文件。
 使用`docker volume inspect volume-name`命令可以查看具体的真实地址。
 
+## 应用实例
+
+利用docker-compose，可以快速帮助我们将不同的镜像编排组合成自己需要的服务，感兴趣的可以继续阅读我的其他文章。
+
+* [使用Docker快速搭建PHP开发环境](https://www.edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
+* [Docker-compose 建立ELK集群](https://www.edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
+* [Flink101-快速示例](https://www.edulinks.cn/2019/11/19/20191119-flink-101-quick-start/)
+
 ## 参考资料
+
 1. [Docker快速入门——Docker-Compose](https://www.cnblogs.com/phpk/p/11205467.html)
 2. [docker-compose-volumes的说明](https://www.cnblogs.com/lori/archive/2018/10/24/9843190.html)
 3. [docker-compose命令及yaml文件](https://www.cnblogs.com/g2thend/p/11746679.html)
-4. 

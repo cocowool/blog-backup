@@ -69,6 +69,7 @@ alias ls='ls -lGFh'
 * Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
 * Filezilla，著名的FTP开源软件，注意一点从App Store下载的是Pro版本需要付费。对于日常使用免费版就足够，只是需要手工到 [Filezilla 官方网站](https://www.filezilla.cn/download/client) 下载。
 * XMind，思维导图工具，能够帮助我们快速的制作出非常漂亮的思维导图，更能帮助我们梳理思路，提高工作的效率。
+* Omnigraffle，在Mac下非常好用的流程图绘制软件，可以视为Visio的替代品，在我的《[为自己构建写作的敏捷发布流程](https://www.edulinks.cn/2020/06/04/20200604-build-my-writing-devops/)》也是制作素材的常用工具。
 
 ## 关于主机名
 
