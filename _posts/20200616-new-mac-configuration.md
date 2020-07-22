@@ -58,7 +58,7 @@ alias ls='ls -lGFh'
 ## 必备软件
 
 * `Homebrew` 类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件，具体的安装步骤可以参考 [Homebrew介绍与上手指南](https://www.edulinks.cn/2020/06/23/20200623-homebrew-introduction/)
-* 微信 WeChat，国民级的软件，不装不行呀
+* 微信 WeChat，国民级的软件，现在工作很多也要依靠微信不装不行，建议刚开始工作的同学，有条件还是为工作专门申请一个微信。
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
 * Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
@@ -68,6 +68,7 @@ alias ls='ls -lGFh'
 * Thunder 迅雷，有时候下载一些软件还是有个工具比较好
 * Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
 * Filezilla，著名的FTP开源软件，注意一点从App Store下载的是Pro版本需要付费。对于日常使用免费版就足够，只是需要手工到 [Filezilla 官方网站](https://www.filezilla.cn/download/client) 下载。
+* XMind，思维导图工具，能够帮助我们快速的制作出非常漂亮的思维导图，更能帮助我们梳理思路，提高工作的效率。
 
 ## 关于主机名
 
