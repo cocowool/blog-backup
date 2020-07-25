@@ -1,5 +1,5 @@
 ---
-title: 30分钟Sehll入门
+title: Shell 入门详解
 date: 2020-07-22 19:42:57
 tags: shell
 ---
