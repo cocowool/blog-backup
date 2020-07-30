@@ -99,4 +99,5 @@ Fish 是 Friendly interactive shell 的简称，默认提供了很多shell需要
 2. [zsh取代bash 成为macOS Catalina的默认shell](https://www.cnbeta.com/articles/tech/853837.htm)
 3. [Fish shell 入门教程](http://www.ruanyifeng.com/blog/2017/05/fish_shell.html)
 4. [百度百科 shell](https://baike.baidu.com/item/shell/99702?fr=aladdin)
+5. [Awesome Zsh](https://github.com/hmml/awesome-zsh)
 
