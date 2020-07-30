@@ -4,7 +4,9 @@ date: 2020-07-18 10:01:57
 tags: Zsh
 ---
 
-### zsh 成为默认 shell
+[TOC]
+
+## zsh 成为默认 shell
 
 淘汰掉我的旧MBP换新后，欢天喜地打开Terminal，感觉有点不对，提示符什么时候变成了 `%`。
 
@@ -40,7 +42,45 @@ zsh具有以下主要功能：
 - 可加载的模块，提供其他各种支持：完整的TCP与Unix域套接字控制，FTP客户端与扩充过的数学函数。
 - 完全可定制化。
 
-由此
+### zsh-自动完成
+
+```sh
+% autoload -U compinit && compinit
+% cp -<TAB>
+-H  -- follow symlinks on the command line in recursive mode
+-L  -- follow all symlinks in recursive mode
+-P  -- do not follow symlinks in recursive mode (default)
+-R  -- copy directories recursively
+-X  -- don't copy extended attributes or resource forks
+-a  -- archive mode, same as -RpP
+-f  -- force overwriting existing file
+-i  -- confirm before overwriting existing file
+-n  -- don't overwrite existing file
+-p  -- preserve timestamps, mode, owner, flags, ACLs, and extended attributes
+-v  -- show file names as they are copied
+% kill <TAB>
+ 2630 ttys000    0:00.09 -zsh                                                                                                                                  
+ 2663 ttys000    0:00.00 -zsh   
+```
+
+由上面的例子可以看到，在打开自动完成功能后，使用Tab键可以自动提示`cp`命令的可选参数，也能够自动提示出`kill`命令可以杀掉的用户进程的pid。
+
+### zsh-自动切换文件夹
+
+```sh
+shiqiang@QKing ~ % ls
+Desktop		Documents	Downloads	Library		Movies		Music		Parallels	Pictures	Projects	Public
+shiqiang@QKing ~ % setopt auto_cd  
+shiqiang@QKing ~ % Projects      
+shiqiang@QKing Projects % pwd
+/Users/shiqiang/Projects
+shiqiang@QKing Projects % unsetopt auto_cd
+
+```
+
+打开这个选项后，就可以省略cd命令来实现自动切换文件夹。
+
+
 
 ## Fish Shell
 
