@@ -129,6 +129,8 @@ shell 提供了丰富的逻辑运算符来满足我们常见的文件、数字�
 * `-nt` : 判断file1是否比file2新
 * `-ot` : 判断file1是否比file2旧
 
+关于文件测试的具体代码示例，可以参考我的[Github](https://github.com/cocowool/sh-valley/blob/master/shell/file_compare.sh)。
+
 ### 整数比较
 
 * `-eq` : 是否相等
@@ -146,3 +148,8 @@ shell 提供了丰富的逻辑运算符来满足我们常见的文件、数字�
 * `>:` : 大于
 * `-z` : 字符串长度为0
 * `-n` : 字符串长度不为0
+
+## 参考资料
+
+1. []()
+2. 
