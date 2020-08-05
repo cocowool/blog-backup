@@ -1,8 +1,9 @@
 ---
 title: Catalina 默认使用zsh了，你可习惯
-date: 2020-07-18 10:01:57
 tags: Zsh
+date: 2020-07-18 10:01:57
 ---
+
 
 [TOC]
 
