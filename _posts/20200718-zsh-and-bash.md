@@ -25,7 +25,7 @@ shell 有很多种，这里介绍几个常见的shell。
 
 **第一个 Unix Shel**l 是1979年底在V7 Unix（AT&T第7版）中引入的，以它的资助者 Stephen Bourne 命名。Bourne shell 是一个交互式命令解释器和命令变成语言。
 
-**Bourne Again Shell** （bash）是GNU计划的一部分，用来替代 Bourne shell。现在大多数Linux发行版都适用bash作为默认的shell。
+**Bourne Again Shell** （bash）是GNU计划的一部分，用来替代 Bourne shell。现在大多数Linux发行版都使用bash作为默认的shell。
 
 ## zsh
 
