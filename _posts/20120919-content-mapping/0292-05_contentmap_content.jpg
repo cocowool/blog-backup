@@ -1,0 +1,1133 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="fb:pages" content="18891916885" />
+	
+
+	
+<!-- This site is optimized with the Yoast SEO Premium plugin v12.8.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Six Revisions by WebFX | A Web Design &amp; Development Blog</title>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.webfx.com/blog/web-design/" />
+<link rel="next" href="https://www.webfx.com/blog/web-design/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Six Revisions by WebFX | A Web Design &amp; Development Blog" />
+<meta property="og:url" content="https://www.webfx.com/blog/web-design/" />
+<meta property="og:site_name" content="WebFX Blog" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Six Revisions by WebFX | A Web Design &amp; Development Blog" />
+<meta name="twitter:site" content="@webfx" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.webfx.com/blog/#website","url":"https://www.webfx.com/blog/","name":"WebFX Blog","description":"Web design, search engine optimization, leadership and small business advice blog.","potentialAction":{"@type":"SearchAction","target":"https://www.webfx.com/blog/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://www.webfx.com/blog/web-design/#webpage","url":"https://www.webfx.com/blog/web-design/","inLanguage":"en-US","name":"Six Revisions by WebFX | A Web Design &amp; Development Blog","isPartOf":{"@id":"https://www.webfx.com/blog/#website"}}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//a.opmnstr.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="WebFX Blog &raquo; Web Design Category Feed" href="https://www.webfx.com/blog/web-design/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.10.4 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.10.4';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-124525-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-124525-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.webfx.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+			<style type="text/css">
+				</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.webfx.com/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-components-css'  href='https://www.webfx.com/blog/wp-includes/css/dist/components/style.min.css?ver=5.4' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='wp-editor-font-css'  href='https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css'  href='https://www.webfx.com/blog/wp-includes/css/dist/block-editor/style.min.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-nux-css'  href='https://www.webfx.com/blog/wp-includes/css/dist/nux/style.min.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css'  href='https://www.webfx.com/blog/wp-includes/css/dist/editor/style.min.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='drop_shadow_block-style-css-css'  href='https://www.webfx.com/blog/wp-content/plugins/drop-shadow-boxes/block/blocks.style.build.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='youtube-subscribe-bar-style-css'  href='https://www.webfx.com/blog/wp-content/plugins/subscribe-bar-youtube/assets/css/custom.css?ver=1.0.0' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='roboto-css'  href='//fonts.googleapis.com/css?family=Roboto%3A400%2C100%2C100italic%2C700%2C700italic%2C400italic%2C900&#038;ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fx-template-css'  href='//www.webfx.com/css/blog2.css?38&#038;ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-grid-css'  href='//www.webfx.com/css/grid12.css?37&#038;ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-css'  href='//www.webfx.com/css/fonts.css?ver=5.4' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='fx-ie-css'  href='//www.webfx.com/css/ie.css?ver=5.4' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wp-paginate-css'  href='https://www.webfx.com/blog/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.0.6' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"pdf,doc,ppt,xls,zip,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.webfx.com\/blog","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.webfx.com/blog/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.4'></script>
+<script type='text/javascript' src='https://www.webfx.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.webfx.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.opmnstr.com/app/js/api.min.js'></script>
+<link rel='https://api.w.org/' href='https://www.webfx.com/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.webfx.com/blog/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 5.4" />
+<!-- There is no amphtml version available for this URL. --><link rel="icon" href="https://www.webfx.com/blog/wp-content/uploads/2018/08/favicon-webfx.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.webfx.com/blog/wp-content/uploads/2018/08/favicon-webfx.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.webfx.com/blog/wp-content/uploads/2018/08/favicon-webfx.jpg" />
+<meta name="msapplication-TileImage" content="https://www.webfx.com/blog/wp-content/uploads/2018/08/favicon-webfx.jpg" />
+
+</head>
+<body class="archive category category-web-design category-3">
+
+<div id="mobile-navigation" class="hide--desktop show--tablet mobile-navigation-overlay">
+    <div class="mobile-navigation-overlay__close-row">
+        <button id="mobile-navigation-close" class="mobile-navigation-close btn dark-blue">Close</button>
+    </div>
+    <div class="mobile-navigation-overlay__menu-row">
+        <ul id='nav-list'>
+<li class=" menu-has-children">
+		<a href="https://www.webfx.com/seo-agency.html">SEO & Lead Generation</a><ul>
+<li class=""><a href="https://www.webfx.com/seo-services.html">SEO Services</a></li>
+<li class=""><a href="https://www.webfx.com/Local-SEO-Services.html">Local SEO Services</a></li>
+<li class=""><a href="https://www.webfx.com/local-seo-pricing.html">Local SEO Pricing</a></li>
+<li class=""><a href="https://www.webfx.com/SEO-Audits.html">SEO Audits</a></li>
+<li class=""><a href="https://www.webfx.com/conversion-rate-optimization-services.html">Conversion Rate Optimization</a></li>
+<li class=""><a href="https://www.webfx.com/custom-reporting.html">Custom SEO Reporting</a></li>
+<li class=""><a href="https://www.webfx.com/ppc-management-services.html">PPC Management</a></li>
+<li class=""><a href="https://www.webfx.com/page-speed-optimization-services.html">Page Speed Optimization</a></li>
+<li class=""><a href="https://www.webfx.com//digital-recruitment-marketing-services.html">Employment & Recruiting Marketing</a></li>
+<li class=""><a href="https://www.webfx.com/programmatic-advertising-services.html">Programmatic Advertising Services</a></li>
+<li class=""><a href="https://www.webfx.com/enterprise-seo-services.html">Enterprise SEO Services</a></li>
+<li class=""><a href="https://www.webfx.com/digital-marketing-services.html">Digital Marketing Services</a></li>
+<li class=""><a href="https://www.webfx.com/Competitor-Geofencing-Advertising.html">Competitor Geofencing Advertising</a></li>
+<li class=""><a href="https://www.webfx.com/amazon/">Amazon Optimization Management</a></li>
+</ul>
+</li>
+<li class=" menu-has-children">
+		<a href="https://www.webfx.com/internet-marketing-agency.html">Content & Analytics</a><ul>
+<li class=""><a href="https://www.webfx.com/Website-Copywriter-Service.html">Website SEO Copywriting</a></li>
+<li class=""><a href="https://www.webfx.com/content-marketing-services.html">Content Marketing Services</a></li>
+<li class=""><a href="https://www.webfx.com/personalized-website-content.html">Personalized Web Content</a></li>
+<li class=""><a href="https://www.webfx.com/custom-infographics.html">Infographics & Motion Graphics</a></li>
+<li class=""><a href="https://www.webfx.com/video-production-services.html">Web Video Production Services</a></li>
+<li class=""><a href="https://www.webfx.com/Social-Media-Services.html">Social Media Management Services</a></li>
+<li class=""><a href="https://www.webfx.com/review-management.html">Online Review Management Services</a></li>
+<li class=""><a href="https://www.webfx.com/Social-Media-Pricing.html">Social Media Design</a></li>
+<li class=""><a href="https://www.webfx.com/Email-Marketing-Management-Services.html">Email Marketing Management Services</a></li>
+<li class=""><a href="https://www.webfx.com/email-marketing-design-pricing.html">Email Marketing Design</a></li>
+<li class=""><a href="https://www.webfx.com/lead-nurture-email-marketing.html">Lead Nurture Pricing</a></li>
+<li class=""><a href="https://www.webfx.com/voice-search-content-optimization-service.html">Voice Search Optimization</a></li>
+</ul>
+</li>
+<li class=" menu-has-children">
+		<a href="https://www.webfx.com/Web-Design-Company.html">Creative & UX</a><ul>
+<li class=""><a href="https://www.webfx.com/websitedesign.htm">Web Design Services</a></li>
+<li class=""><a href="https://www.webfx.com/websiteredesign.htm">Website Redesign Services</a></li>
+<li class=""><a href="https://www.webfx.com/website-user-experience-analysis.htm">User Experience Testing</a></li>
+<li class=""><a href="/ada-compliance-services.html">ADA Compliance Services</a></li>
+<li class=""><a href="https://www.webfx.com/rainmakerfx.html">30-Day Web Design</a></li>
+<li class=""><a href="https://www.webfx.com/ecommerce-company.html">Ecommerce Development</a></li>
+<li class=""><a href="https://www.webfx.com/shoppingfeed-coupon-management.html">Shopping Feed Management</a></li>
+<li class=""><a href="https://www.webfx.com/website-maintenance-services.html">Website Maintenance</a></li>
+<li class=""><a href="https://www.webfx.com/How-much-should-web-site-cost.html">Website Cost Calculator</a></li>
+</ul>
+</li>
+<li class=" menu-has-children">
+		<a href="https://www.webfx.com/inside-webfx.html">Who We Are</a><ul>
+<li class=""><a href="https://www.webfx.com/careers/">Careers (We Are Hiring!)</a></li>
+<li class=""><a href="https://www.webfx.com/profile.htm">About Us</a></li>
+<li class=""><a href="https://www.webfx.com/company-values.html">Company Values</a></li>
+<li class=""><a href="https://www.webfx.com/fxbuilds.html">FXBuilds</a></li>
+<li class=""><a href="https://www.webfx.com/WebFX-News.html">Company News</a></li>
+<li class=""><a href="https://www.webfx.com/our-culture.html">Our Culture</a></li>
+<li class=""><a href="https://www.webfx.com/webpagefx-history.html">Our History</a></li>
+<li class=""><a href="https://www.webfx.com/knowledge-base.html">Knowledge Base</a></li>
+<li class=""><a href="https://www.webfx.com/client-reviews.html">WebFX Reviews</a></li>
+<li class=""><a href="/blog/">Blog</a></li>
+<li class=""><a href="https://www.webfx.com/marketingcloudfx.html">MarketingCloudFX</a></li>
+<li class=""><a href="https://www.webfx.com/tools/">Marketing Tools</a></li>
+<li class=""><a href="https://www.webfx.com/tools/keywordsfx/">KeywordsFX</a></li>
+<li class=""><a href="https://www.webfx.com/SEO-Pricing.html">SEO Pricing</a></li>
+<li class=""><a href="https://www.webfx.com/How-much-should-web-site-cost.html">How Much Should A Website Cost?</a></li>
+<li class=""><a href="https://www.webfx.com/ppc-pricing.html">How Much Does PPC Cost?</a></li>
+<li class=""><a href="https://www.webfx.com/social-media/how-much-does-facebook-advertising-cost.html">How Much Does Facebook Advertising Cost?</a></li>
+<li class=""><a href="https://www.webfx.com/email-marketing-pricing.html">Email Marketing Pricing</a></li>
+<li class=""><a href="/blog/business-advice/the-cost-of-advertising-nationally-broken-down-by-medium/">Cost Of Advertising</a></li>
+<li class=""><a href="https://www.webfx.com/internet-marketing/what-is-digital-marketing.html">Digital Marketing Guide</a></li>
+</ul>
+</li>
+<li class="">
+		<a href="https://www.webfx.com/contact.htm">Contact</a></li>
+</ul>
+    </div>
+</div>
+
+
+<div class="header-wrapper">
+        <header id="header" class="site-header">
+            <section class="container header-top clearfix">
+                <div class="row">
+                    <div class="col-xxs-6 col-xs-8 col-sm-7 col-md-5 col-lg-6 hard-right">
+                        <div class="logo-container">
+                            <a href="https://www.webfx.com/" class="logo"></a>
+                            <a href="https://www.webfx.com/" class="logo-text"><span class="pictogram icon-house"></span> Return Home</a>
+                        </div>
+                        <div class="slogan hidden-xxs">
+                           Digital Marketing</br>
+                           That Drives Results®
+                        </div>
+                    </div>
+                    <div class="col-xxs-6 col-xs-4 col-sm-5 col-md-7 col-lg-6 hard-left">
+						<div class="site-header-quote-form hard-top">
+							<a href="https://www.webfx.com/real-results.html">
+								<div class="revenue-number hidden-xxs hidden-xs hidden-sm"><span class="font-weight-thin">$</span>2,416,945,839</div>		
+								<div class="revenue-text hidden-xxs hidden-xs hidden-sm">REVENUE DRIVEN<span><br></span> FOR OUR CLIENTS</div>
+							</a>
+							<a class="btn green hidden-md hidden-lg" href="https://www.webfx.com/Free-Quote.php">Get a Free Quote</a>
+						</div>
+                    </div>
+                </div>
+            </section>
+<div class="nav-wrapper js-generic-fixed-sidebar-top-marker">
+                <nav class="container site-navigation" role="navigation">
+                    <a href="/" class="hidden-logo"></a>
+                    <p class="phone-number"><a href="tel:18886015359"><span class="icon-mobile"></span> 888-601-5359</a></p>
+                    <ul id="nav-list">
+						<li class="menu-has-children"><a href="/seo-agency.html">SEO & Revenue Generation</a></li>
+							<div class="meganav-block white-section-wrapper flex-row flex-space-around">
+								<div class="flex-child flex-column">
+									<div class="text-left">
+										<p class="text--green flush twentypx">SEARCH PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Drive More Leads</p>
+										<hr>
+										<a  href="/seo-services.html">SEO Services</a>
+										<a  href="/ecommerce-seo-services.html">Ecommerce SEO</a>
+										<a  href="/Local-SEO-Services.html">Local SEO Services</a>
+										<a  href="/ppc-management-services.html">PPC Management</a>
+										<a href="/ecommerce-ppc-services.html">Ecommerce PPC Services</a>
+										<a href="/google-local-services-ads-management.html">Google Local Services Ads Management</a>
+										<a  href="/SEO-Audits.html">SEO Audits</a>
+									</div>
+								</div>
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">	
+									<div class="text-left">
+										<p class="text--green flush twentypx">BRAND PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Increase Your Reach</p>
+										<hr>
+										<a  href="/digital-recruitment-marketing-services.html">Employment & Recruiting Marketing</a>
+										<a  href="/programmatic-advertising-services.html">Programmatic Advertising Services</a>
+										<a  href="/enterprise-seo-services.html">Enterprise SEO Services</a>
+										<a href="/Competitor-Geofencing-Advertising.html">Competitor Geofencing Advertising</a>
+										<a href="/addressable-geofencing-advertising-services.html">Addressable Geofencing Services</a>
+									</div>
+								</div>
+		
+								<div class="push-sides vertical-divider"></div>
+								
+								<div class="flex-child flex-column">	
+									<div class="text-left">
+										<p class="text--green flush twentypx">MARKETPLACE PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Accelerate Your Revenue</p>
+										<hr>
+										<a href="/amazon/amazon-seo-product-optimization.html">Amazon SEO & Product Optimization</a>
+										<a href="/amazon/amazon-advertising.html">Amazon Advertising Management</a>
+										<a href="/amazon/amazon-stores-marketplace-launch.html">Amazon Stores & Marketplace Launch</a>
+										<a href="/amazon/technology.html">Amazon Technology Platform</a>
+										<a href="/facebook-marketplace-for-business.html">Facebook Marketplace for Business</a>
+										<a href="/shopify-store-optimization-services.html">Shopify Optimization Services</a>
+										<a href="/target-marketplace-management.html">Target Plus™ Marketplace Management</a>
+										<a href="/walmart-marketplace-management.html">Walmart Marketplace Advertising</a>
+
+									</div>
+								</div>
+								<div class="push-sides vertical-divider"></div>
+										
+										<div class="flex-child flex-column">
+										<div class="text-left">
+										<p class="text--green flush twentypx">FAQs</p>
+										<p class="text--gray small-copy meganav-subline">Explore Expert Articles</p>
+										<hr>
+										<a href="/blog/seo/what-is-an-seo-company/">What is an SEO company?</a>
+										<a href="/best-seo-company.html">How to find the best SEO company for your business</a>
+										<a href="/SEO-Packages.html">What's included in SEO packages?</a>
+										<a href="/internet-marketing/what-is-digital-marketing.html">What is digital marketing?</a>
+										<a href="/blog/seo/what-is-seo-management/">What is SEO management?</a>
+										<a href="/internet-marketing/how-does-ppc-bidding-work.html">How does PPC bidding work?</a>
+										<a href="/how-to-sell-online.html">How and Where to Sell Online in 2020</a>
+									</div>
+									</div>
+								
+			</div>
+						<li class="menu-has-children"><a href="/internet-marketing-agency.html">Content & Analytics</a></li>
+							<div class="meganav-block white-section-wrapper flex-row flex-space-around">
+								<div class="flex-child flex-column">
+								<div class="text-left">
+									<p class="text--green flush twentypx">CONTENT PRICING</p>
+									<p class="text--gray small-copy meganav-subline">Engage Your Readers</p>
+									<hr>
+									<a  href="/Website-Copywriter-Service.html">Website SEO Copywriting</a>
+									<a  href="/content-marketing-services.html">Content Marketing Services</a>
+									<a  href="/personalized-website-content.html">Personalized Web Content</a>
+									<a  href="/custom-infographics.html">Infographics & Motion Graphics</a>
+									<a  href="/video-production-services.html">Web Video Production Services</a>
+									<a href="/voice-search-content-optimization-service.html">Voice Search Content Optimization</a>
+								</div>
+								</div>
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">
+								<div class="text-left">
+										<p class="text--green flush twentypx">SOCIAL PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Connect With Your Customers</p>
+										<hr>
+										<a  href="/Social-Media-Services.html">Social Media Management Services</a>
+										<a  href="/review-management.html">Online Review Management Services</a>
+										<a  href="/social-media-design.html">Social Media Design</a>
+										<a href="/social-media-advertising-services.html">Social Media Advertising Services</a>
+										<a  href="/enterprise-social-media-advertising-services.html">Enterprise Social Media Advertising Services</a>
+										<a  href="/ecommerce-social-media-advertising-services.html">Ecommerce Social Media Advertising Services</a>
+										<a  href="/direct-to-consumer-social-media-advertising-services.html">Direct to Consumer (D2C) Social Media Advertising Services</a>
+								</div>
+								
+								</div>
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">
+								<div class="text-left">
+									<p class="text--green flush twentypx">ANALYTICS PRICING</p>
+									<p class="text--gray small-copy meganav-subline">Improve Site Experience</p>
+									<hr>
+									<a href="/marketingcloudfx.html">MarketingCloudFX</a>
+									<a href="/crmroi.html">CRMROI</a>
+									<a  href="/conversion-rate-optimization-services.html">Conversion Rate Optimization</a>
+									<a  href="/Online-Website-Call-Tracking.php">Website Call Tracking</a>
+									<a  href="/seo-checker/">Free SEO Report</a>
+									<a  href="/custom-reporting.html">Custom SEO Reporting</a>
+									<a href="/salesforce-marketing-consultants.html">Salesforce Consulting</a>
+									<a  href="/page-speed-optimization-services.html">Page Speed Optimization</a>
+								</div>
+								</div>
+								<div class="push-sides vertical-divider"></div>
+										
+										<div class="flex-child flex-column">
+										<div class="text-left">
+										<p class="text--green flush twentypx">FAQs</p>
+										<p class="text--gray small-copy meganav-subline">Explore Expert Articles</p>
+										<hr>
+										<a href="/internet-marketing/social-media-marketing-advantages-and-disadvantages.html">Advantages & Disdavantages of Social Media</a>
+										<a href="/social-media/how-much-does-it-cost-to-advertise-on-twitter.html">Twitter Advertising Cost</a>
+										<a href="/social-media/how-much-does-it-cost-to-advertise-on-instagram.html">Instagram Advertising Cost</a>
+										<a href="/social-media/how-much-does-it-cost-to-advertise-on-facebook.html">Facebook Advertising Cost</a>
+										<a href="/content-marketing/content-marketing-small-business.html">Content Marketing for Small Businesses</a>
+										<a href="/internet-marketing/best-online-advertising-strategies.html">Best Online Advertising Strategies</a>
+										<a href="/blog/social-media/33-creative-social-media-campaign-ideas/">Creative Social Media Campaign Ideas</a>
+									</div>
+									</div>
+
+							</div>
+						<li class="menu-has-children"><a href="/Web-Design-Company.html">Creative & UX</a></li>
+							<div class="meganav-block white-section-wrapper flex-row flex-space-around">
+								<div class="flex-child flex-column">
+									<div class="text-left">
+										<p class="text--green flush twentypx">DESIGN PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Dazzle Your Visitors</p>
+										<hr>
+										<a  href="/websitedesign.htm">UX Website Design</a>
+										<a  href="/websiteredesign.htm">UX Website Redesign</a>
+										<a  href="/website-user-experience-analysis.htm">User Experience Testing</a>
+										<a  href="/best-ppc-landing-page-services.html">Landing Page Design</a>
+										<a  href="/ada-compliance-services.html">ADA Compliance Services</a>
+										<a  href="/rainmakerfx.html">Rapid Web Design</a>										
+									</div>
+								
+								</div>
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">
+								<div class="text-left">
+										<p class="text--green flush twentypx">EMAIL PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Build Your List</p>
+										<hr>
+										<a  href="/Email-Marketing-Management-Services.html">Email Marketing Management Services</a>
+										<a  href="/email-marketing-design-pricing.html">Email Marketing Design</a>
+										<a  href="/lead-nurture-email-marketing.html">Lead Nurture Pricing</a>
+										<a href="/account-based-marketing-services.html">Account Based Marketing Services</a>
+								</div>
+								
+								</div>
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">
+									<div class="text-left">
+										<p class="text--green flush twentypx">DEVELOPMENT PRICING</p>
+										<p class="text--gray small-copy meganav-subline">Control Your Process</p>
+										<hr>
+										<a  href="/ecommerce-company.html">Ecommerce Development</a>
+										<a  href="/shoppingfeed-coupon-management.html">Shopping Feed Management</a>
+										<a  href="/website-maintenance-services.html">Website Maintenance</a>
+										<a  href="/cms.htm">Content Management Systems</a>
+										<a  href="/customer-data-platform-services.html">Customer Data Platform</a>
+									</div>
+								
+								</div>
+
+								<div class="push-sides vertical-divider"></div>
+								<div class="flex-child flex-column">
+										<div class="text-left">
+										<p class="text--green flush twentypx">FAQs</p>
+										<p class="text--gray small-copy meganav-subline">Website Help Guides</p>
+										<hr>
+										<a href="/blog/marketing/my-website-doesnt-drive-leads/">My Website Doesn't Drive Leads</a>
+										<a href="/blog/marketing/why-is-my-website-traffic-going-down/">My Website Traffic Is Going Down</a>
+										<a href="/blog/conversion-rate-optimization/my-website-doesnt-convert/">My Website Doesn't Convert</a>
+										<a href="/blog/web-design/why-isnt-my-website-making-money/">My Website Isn't Making Money</a>
+										<a href="/blog/seo/5-reasons-your-site-isnt-showing-up-on-google-and-how-to-fix-it/">My Website Isn't Showing Up on Google</a>
+										<a href="/blog/internet/my-website-is-not-secure/">My Website Is Not Secure</a>
+										
+									</div>
+									</div>
+
+							</div>
+						<li class="menu-has-children"><a href="/our-culture.html">Who We Are</a></li>
+<div class="meganav-block white-section-wrapper flex-row flex-space-around">
+								
+    								<div class="text-left flex-child">
+									<p class="text--dark-blue flush twentypx">WHO WE ARE</p>
+									<hr>
+									<a href="/careers/">Careers (We Are Hiring!)</a>
+									<a href="/profile.htm">About Us</a>
+									<a href="/company-values.html">Company Values</a>
+									<a href="/fxbuilds.html">FXBuilds</a>
+									<a href="/our-culture.html">Our Culture</a>
+									<a href="/webpagefx-history.html">WebFX History</a>
+									<a href="/moffitt-mansion-restoration.html">Our Space</a>
+									<a href="/knowledge-base.html">Knowledge Base</a>
+									<a  href="/awards.html">Awards</a>
+								</div>
+    <div class="push-sides vertical-divider"></div>
+    <div class="text-left flex-child">
+									<p class="text--dark-blue flush twentypx">LEARN MORE</p>
+									<hr>
+									<a  href="/portfolio/">Portfolio & Case Studies</a>
+									<a  href="/client-reviews.html">WebFX Reviews From Clients</a>
+									<a  href="/blog/">Blog</a>
+									<a  href="/locations/">Locations</a>
+									<a  href="/marketing-guides/">Marketing Guides</a>
+									<a  href="/marketing-calculator.html">Marketing Calculator</a>
+									<a  href="/tools/">Marketing Tools</a>
+									
+								</div>
+								
+								<div class="push-sides vertical-divider"></div>
+								<div class="text-left flex-child">
+							
+									<p class="text--dark-blue flush twentypx">PRICING GUIDES</p>
+									<hr>
+									<a href="/How-much-should-web-site-cost.html">How much should a website cost?</a>
+									<a href="/ppc-pricing.html">How much does PPC cost?</a>
+									<a  href="/email-marketing-pricing.html">Email Marketing Pricing</a>
+									<a  href="/Social-Media-Pricing.html">Social Media Pricing</a>
+									<a  href="/SEO-Pricing.html">SEO Pricing</a>
+									<a  href="/local-seo-pricing.html">Local SEO Pricing</a>
+									<a  href="/blog/business-advice/the-cost-of-advertising-nationally-broken-down-by-medium/">The Cost of Advertising Nationally</a>
+								</div>
+  
+								<div class="push-sides vertical-divider"></div>
+								<div class="image-container center flex-child flex-column flex-center-content" style="background-image: url(/img/sidebar-team-long.png); background-repeat: no-repeat; background-position: center; background-size:cover;">
+									<a class="blue-overlay hard-top flush-top" href="https://www.webfx.com/careers/">
+										<div class="push-half-sides">
+											<span class="uppercase text--white flush font-weight-bold" style="font-size:32px; line-height: 1em;">Careers ★ We Are Hiring</span> 
+											<p class="hard flush">View Openings</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						<li><a href="/contact.htm">Contact</a></li>
+					</ul>
+
+					<div class="display--tablet uppercase small-copy sans-serif--bold mobile-site-menu__trigger">
+                        <span class="icon-list2 mobile-site-menu__trigger-icon"></span>
+                        <span class="mobile-site-menu__trigger-text">Menu</span>
+                    </div>
+                </nav>
+            </div>		</header>
+    </div> <section style="height:100%;"class="blue-section-wrapper masthead home">
+	<img class="img-responsive" style="width:100%;" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/images/sixrevisionsheader.png" />
+</section>
+		<article class="content-section main-section cf" itemscope="itemscope" itemtype="http://schema.org/Blog">
+			<meta content="WebFX Blog " itemprop="name">
+
+			<main class="main-content feed-display" itemprop="blogPosts">
+								<div class="web-design-copy">
+					<h1 style="margin-left:0px; margin-right:0px; text-align:center;">SixRevisions by WebFX <br> A Web Design & Web Development Blog</h1>
+						<p>Looking for the best way to stay ahead of trends in the web design and web development industry? You’ve come to the right place. With our web design and web development blog, it’s easy to remain up-to-date on the market, plus learn new tips and tricks for web design and web development.</p>
+						<p>Browse our latest posts now or <a href="https://www.webfx.com/revenue-weekly-newsletter-signup.html">subscribe to our exclusive newsletter</a> and get updates right in your inbox!</p>
+					<h2>Web Design</h2>
+						<p>No matter your experience level, our web design blog posts offer something for everyone.</p>
+						<p>Whether you’re looking for a new go-to site for design inspiration or searching for innovative design tricks, our web design blog provides a range of content for every web designer’s need. Plus, we cover topics that intersect web design, like user experience (UX), digital marketing, and more.</p>
+						<p>Even better, we feature an <a href="https://www.webfx.com/awards.html">award-winning team</a> of professional web designers.</p>
+						<p>With their extensive experience (they’ve created more than 1000 websites), we’re able to develop and share content that answers the common and not-so-common questions asked by web designers worldwide.</p>
+						<p>Plus, we can find some stellar web design examples to share and inspire your portfolio.</p>
+						<p>If you’re looking to start a career in web design, our blog offers a range of helpful resources. Whether you’re researching the training and education behind a career in web design or reviewing the requirements of an employer, our web design blog post can help.</p>
+						<p>Not to mention, <a href="https://www.webfx.com/careers/interactive/">we’re hiring</a>!</p>
+					<h2>Web Development</h2>
+						<p>Posts from our web development blog help web developers of all backgrounds and experience levels.</p>
+						<p>From learning a new programming language to determining the best content management system (CMS) for a client, our web development blog provides everything you need to grow as a professional web developer.</p>
+						<p>We also feature an experienced team of web developers to provide the best content possible.</p>
+						<p>With their expertise, as well as unique backgrounds, we’re able to develop and provide relevant, up-to-the-minute content that explores industry trends, innovative strategies, and common developer challenges.</p>
+						<p>Our web development blog posts also include helpful career resources. Whether you’re searching for a training resource or a <a href="https://www.webfx.com/profile.htm">one-of-a-kind company to join</a>, you can find what you’re looking for on our blog.</p>
+						<p>Even better, you can <a href="https://www.webfx.com/careers/interactive/">browse our career openings and internships</a> for web developers.</p>
+					<h2>Get the Latest Web Design and Web Development Updates</h2>
+						<p>Want to stay up-to-date on the newest advancements in web design and web development? <a href="https://www.webfx.com/revenue-weekly-newsletter-signup.html">Join our email newsletter </a>and get the latest news from the industry, plus actionable advice that you won’t find on our blog!</p>
+				</div>
+							
+				
+					
+						<article class="post-52982 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-52982" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="52982" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2020/03/opportunities-optimizations.png) top center no-repeat;" href="https://www.webfx.com/blog/web-design/how-fast-should-my-website-be/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">How Fast Should My Website Be? [+7 Tips for Speeding Up Your Site]</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Did you know that for every second faster your website loads, you <a href="https://www.webfx.com/blog/internet/website-page-load-time-conversions/">increase conversions by 7%</a>?</p>
+<p>A fast loading website leads to longer dwell sessions, improved engagement, and increased conversions. When people can access information fast, they’re more likely to stay on your page.</p>
+<p>So now you’re probably wondering, “How fast should my website be?” Well, we’ve got all the answers!</p>
+<p>On this page, we’ll answer questions like:</p>
+<ul>
+<li>How fast should my website be?</li>
+<li>What is page load time?</li>
+<li>How do you measure page speed?</li>
+<li>Why does a fast loading website matter?</li>
+<li>How do I improve my site load time?</li>
+</ul>
+<p>Keep reading to learn more and if you need help improving your site’s load time, <a href="https://www.webfx.com/contact.htm">contact us online</a> or call us today at <strong>888-601-5359</strong> to speak with a strategist about our <a href="https://www.webfx.com/page-speed-optimization-services.html">page speed services</a>.</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/how-fast-should-my-website-be/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 11 minutes to read</span>
+							</footer>
+
+						</article>
+
+					
+						<article class="post-52775 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-52775" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="52775" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2020/03/discord-examples-of-websites-that-convert.png) top center no-repeat;" href="https://www.webfx.com/blog/web-design/examples-of-websites-that-convert/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">5 Magnificent Examples of Websites That Convert Visitors into Customers</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Need some inspiration to build a high converting website?</p>
+<p>Websites that convert persuade visitors to become customers. These websites drive more revenue, so if you want to increase your site’s revenue, use these examples of websites that convert as inspiration!</p>
+<p>We’ll go over what makes for the best converting websites and five examples of websites that convert. For more tips on website conversion, sign up for our newsletter, <a href="https://www.webfx.com/revenue-weekly-newsletter-signup.html">Revenue Weekly</a>!</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/examples-of-websites-that-convert/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 7 minutes to read</span>
+							</footer>
+
+						</article>
+
+					
+						<article class="post-5405 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-5405" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="5405" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2013/11/Untitled.png) top center no-repeat;" href="https://www.webfx.com/blog/web-design/psychology-of-color-infographic/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">Psychology of Color [Infographic]</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Perhaps no choice is as vital to marketing as color. Whether you are selecting the color for a product or for your email marketing campaign, color has a tremendous impact on all of us. Subconsciously, we associate different colors with different things.</p>
+<p>This infographic examines the psychology of color and looks at some common associations of different colors. It shows the overall importance of color to consumers and characteristics of many individual colors, and it also helps show the connection between graphic design and psychology. The numbers are pretty fascinating!</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/psychology-of-color-infographic/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 3 minutes to read</span>
+							</footer>
+
+						</article>
+
+					
+						<article class="post-52698 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-52698" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="52698" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2020/03/photo-1544237526-cae15a57ed1e.jpg) top center no-repeat;" href="https://www.webfx.com/blog/web-design/website-redesign-process/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">Website Redesign Process: Your Website Redesign Strategy in 5 Steps</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Your website is your virtual business card and it often provides the first impression of your business to future customers — making it one of the most important aspects of your company.</p>
+<p>But if your website still has cobwebs from the 2000s, it’s time to put together a website redesign process.</p>
+<p>A website redesign process can help bring your site to life and engage potential customers. Not only that, but it can even help to convert them if you do everything right.</p>
+<p>But how do you put together a <a href="https://www.webfx.com/blog/web-design/website-redesign-project-plan/">website redesign strategy</a> and what does a typical website redesign process look like?</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/website-redesign-process/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 10 minutes to read</span>
+							</footer>
+
+						</article>
+
+					
+						<article class="post-52174 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-52174" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="52174" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2020/02/informational-search-queries.png) top center no-repeat;" href="https://www.webfx.com/blog/web-design/need-a-website/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">Need a Website? 6 Reasons to Have a Website for Your Business</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Did you know that over <a href="http://www.bizreport.com/2016/02/46-of-us-small-businesses-do-not-have-a-website.html">70% of people will research a company</a> on the web before deciding to buy or visit, yet 46% of small businesses in the U.S. don’t have a website? If you don’t have a site, people can’t research your company and determine if you’re a good fit for their needs.</p>
+<p>If you find yourself asking, &#8220;Do I need a website for my business?&#8221; we&#8217;ve got the answers you need.</p>
+<p>On this page, we&#8217;ll provide you with six reasons you need a <a href="https://www.webfx.com/blog/web-design/company-website-design-templates/">website for your business</a> and three tips for building your website. Keep reading or <a href="https://www.webfx.com/contact.htm">contact us</a> at <strong>888-601-5359</strong> to speak with a strategist about our <a href="https://www.webfx.com/websitedesign.htm">web design services</a>, including our <a href="https://www.webfx.com/rainmakerfx.html">30-day website design plans</a>!</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/need-a-website/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 10 minutes to read</span>
+							</footer>
+
+						</article>
+
+					
+						<article class="post-52167 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design" id="post-52167" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+							<meta content="52167" itemprop="postId">
+
+																																																			
+
+							<header class='post-header web-design'>
+
+								
+									<a class="post-banner post-banner--design" style="background: url(https://www.webfx.com/blog/wp-content/uploads/2020/02/food-chopper-video.gif) top center no-repeat;" href="https://www.webfx.com/blog/web-design/website-statistics-2020/">
+										<div class="post-banner-category">
+											<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+											<span class="banner__category">Web Design</span>
+										</div>
+										<h1 class="banner__headline" itemprop="name">Website Statistics for 2020: 10 Critical Stats to Know for Web Design</h1>
+									</a>
+
+								
+							</header>
+
+							<section class="entry cf" itemprop="description articleBody">
+								<p>Are you looking to start 2020 with a fresh web design for your business?</p>
+<p>If so, you must know what you need to do in 2020 to have a website that drives success for your business. With website statistics for 2020, you can see what to do and what to avoid, which will help you build the best website for your audience.</p>
+							</section>
+
+							<footer class="post-footer">
+								<a href="https://www.webfx.com/blog/web-design/website-statistics-2020/" title="View Full Story" class="btn outline">View Full Story</a>
+								<span class="read-time">~ 11 minutes to read</span>
+							</footer>
+
+						</article>
+
+																	 <div class="paginated-navigation"><ol class="wp-paginate wpp-modern-grey font-inherit"><li><span class='page current'>1</span></li><li><a href='https://www.webfx.com/blog/web-design/page/2' title='2' class='page'>2</a></li><li><a href='https://www.webfx.com/blog/web-design/page/3' title='3' class='page'>3</a></li><li><span class='gap'>...</span></li><li><a href="https://www.webfx.com/blog/web-design/page/2" class="next">Next Page &raquo;</a></li></ol></div>
+							<section class="sidebar-section categories">
+								<ul>
+									<li class="marketing ">
+										<a href="https://www.webfx.com/blog/marketing/" title="View all posts filed under Marketing">Marketing</a>
+									</li>
+									<li class="search ">
+										<a href="https://www.webfx.com/blog/seo/" title="View all posts filed under Search">Search</a>
+									</li>
+									<li class="social-media ">
+										<a href="https://www.webfx.com/blog/social-media/" title="View all posts filed under Social Media">Social Media</a>
+									</li>
+									<li class="web-design active">
+										<a href="https://www.webfx.com/blog/web-design/" title="View all posts filed under Web Design">Web Design</a>
+									</li>
+									<li class="internet ">
+										<a href="https://www.webfx.com/blog/internet/" title="View all posts filed under Internet">Internet</a>
+									</li>
+									<li class="webfx ">
+										<a href="https://www.webfx.com/blog/company/" title="View all posts filed under WebFX News">WebFX News</a>
+									</li>
+								</ul>
+							</section>
+					
+			</main>
+
+			
+		</article>
+
+		
+	<div class="bottom-form-blue-section-wrapper js-generic-fixed-sidebar-bottom-marker">
+
+    <section class="content-section bottom-quote-form new-bottom-quote-form">
+        <section id="footer-form" class="col-sm-7">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<form id="bottom-quote-form" action="/form_processor.php?form=bottom-quote" method="POST" novalidate="novalidate">
+                <h2 class="big font-weight-thin">We've driven over <strong>1.1 million leads</strong> for clients. Discover how we can help your business grow</h2>
+                <div class="form-row">
+                    <label class="sans-serif" for="name">Full Name</label> 
+                    <input type="text" name="_Name" id="fullname" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                </div>
+                <div class="form-row">
+                    <label class="sans-serif" for="company">Company</label>
+                    <input type="text" name="_Company" id="company">
+                </div>
+                <div class="form-row">
+                    <label class="sans-serif" for="email">Email</label>
+                    <input type="text" name="_Email" id="email">
+                </div>
+                <div class="form-row">
+                    <label class="sans-serif" for="phone">Phone</label>
+                    <input type="text" name="_Phone" id="phone">
+                </div>
+                <div class="form-row wide">
+                    <label class="sans-serif budget" for="budget">What is your projected monthly budget for this project? </label>
+                    <select name="budget" id="budget">
+                        <option value="Please Select…">Please Select…</option>
+                        <option value="Unknown">Unknown</option>
+                        <option value="300-750/mo">$300 – $750/mo.</option>
+                        <option value="750-1500/mo">$750 – $1,500/mo.</option>
+                        <option value="1500-3500/mo">$1,500 – $3,500/mo.</option>
+                        <option value="3500-10000/mo">$3,500 – $10,000/mo.</option>
+                        <option value="10000+/mo">$10,000+/mo.</option>
+                    </select>
+                </div>
+                <div class="clearfix" style="display:block;"></div>
+                <div class="form-row wide">
+                    <label class="sans-serif" for="yourideas">Your Ideas (optional)</label>
+                    <textarea name="Comments" id="yourideas"></textarea>
+                </div>
+				<div class="form-row wide">
+					<div class="g-recaptcha" data-sitekey="6LdAqrEUAAAAADx9kC6EjyfDHbvuaEx2j2kA4Pn0"></div>
+				</div>
+                <div class="form-row">
+                    <noscript> 
+                        <label for="captcha">Is fire hot or cold?</label> <input name="captcha" id="captcha" type="text"/> 
+                    </noscript>
+                </div>
+                <div class="form-row">
+                    <input type="submit" class="btn-get-quote btn yellow" id="submit" value="Hear From An Expert">
+                </div> 
+			</form>                 
+        </section>
+
+        <section id="footer-contact" class="col-sm-5">
+            <span class="tel sans-serif--bold"><span class="bigger icon-mobile text--green"></span><a href="tel:18886015359">888-601-5359</a></span>
+            
+            <div class="facts-box">
+                <span class="icon"><i class="big icon-history"></i></span>
+                <span class="title"><strong>1.6M</strong> Hours of Expertise</span>
+            </div>
+
+            <div class="facts-box">
+                <span class="icon"><i class="big icon-users"></i></span>
+                <span class="title"><strong>180+</strong> Digital Marketing Masters On Staff</span>
+            </div>
+
+            <div class="facts-box">
+                <span class="icon"><i class="big icon-rocket"></i></span>
+                <span class="title"><strong>1,128</strong> Websites Launched</span>
+            </div>
+        </section>
+
+        <div id="footer-locations" class="col-sm-5">
+            <h4>Our Locations</h4>
+            <ul>
+                <li><a href="https://www.webfx.com/locations/harrisburg-pa/">Harrisburg<i class="big icon-earth"></i><img src="/img/location-pa.jpg" alt="PA"></a></li>
+                <li><a href="https://www.webfx.com/locations/new-york-city/">New York<i class="big icon-earth"></i><img src="/img/location-ny.jpg" alt="NY"></a></li>
+                <li><a href="https://www.webfx.com/locations/tampa-fl/">Tampa<i class="big icon-earth"></i><img src="/img/location-fl.jpg" alt="FL"></a></li>
+                <li><a href="https://www.webfx.com/locations/baltimore-md/">Baltimore<i class="big icon-earth"></i><img src="/img/location-md.jpg" alt="MD"></a></li>
+                <li><a href="https://www.webfx.com/locations/washington-dc/">Washington<i class="big icon-earth"></i><img src="/img/location-dc.jpg" alt="DC"></a></li>
+                <li><a href="https://www.webfx.com/locations/dallas-tx/">Dallas<i class="big icon-earth"></i><img src="/img/location-tx.jpg" alt="TX"></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="footer-testimonials" class="hide--tablet">
+        <div class="bg">
+            <div class="container">
+                <div class="col-sm-7">
+                    <ul class="testimonials-list">
+                        <li>
+                            <i class="big icon-quote"></i>
+                            <blockquote>WebFX did everything they said they would do and did it on time! The whole process was very easy!</blockquote>
+                            <span class="name font-weight-bold">Brennen Bawden</span>
+                            <span class="company">Stapley Action Garage Door</span>
+                        </li>
+                    </ul>
+					<a class="small-copy text--white" href="https://www.webfx.com/client-testimonials.html">View 400+ Client Testimonials <span class="icon-arrow-right5"></span></a>
+                </div>
+                <div class="col-sm-5 fb">
+                    <a href="https://www.facebook.com/webfxinc" target="_blank"><img src="/img/img-footer-fb.jpg" alt="bg fb"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-awards" class="hide--tablet">
+        <div class="col-sm-12">
+            <img class="img-responsive" src="/img/footer-awards-logos.png" alt="awards logos">
+        </div>
+    </section>
+
+</div>
+	
+            <div class="black-section-wrapper">
+			<footer class="container">
+			<nav class="row footer-nav">
+	<div class="col-md-3 col-sm-6 clearfix">
+		<h3>Services</h3>
+		<ul>
+			<li><a href="/digital-marketing-services.html">Digital Marketing Services</a></li>
+			<li><a href="/seo-services.html">SEO Services</a></li>
+			<li><a href="/ppc-management-services.html">PPC Services</a></li>
+			<li><a href="/websitedesign.htm">Web Design Services</a></li>
+			<li><a href="/Social-Media-Services.html">Social Media Services</a></li>
+			<li><a href="/digital-advertising-services.html">Digital Advertising Services</a></li>
+			<li><a href="/content-marketing-services.html">Content Marketing Services</a></li>
+		</ul>
+	</div>
+
+	<div class="col-md-3 col-sm-6 clearfix">
+		<h3>Knowledge Base</h3>
+		<ul>
+			<li><a href="/internet-marketing/">Internet Marketing</a></li>
+			<li><a href="/content-marketing/">Content Marketing</a></li>
+			<li><a href="/social-media/">Social Media</a></li>
+			<li><a href="/web-design/">Web Design</a></li>
+			<li><a href="/internet-marketing/seo/">SEO</a></li>
+			<li><a href="/internet-marketing/ppc/">PPC</a></li>
+			<li><a href="/amazon/">Amazon</a></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div class="col-md-3 col-sm-6 clearfix">
+		<h3>Company</h3>
+		<ul>
+			<li><a href="/seo-agency.html">SEO Agency</a></li>
+			<li><a href="/ppc-agency.html">PPC Agency</a></li>
+			<li><a href="/content-marketing-agency.html">Content Marketing Agency</a></li>
+			<li><a href="/digital-marketing-agency.html">Digital Marketing Agency</a></li>
+			<li><a href="/internet-marketing-agency.html">Internet Marketing Agency</a></li>
+			<li><a href="/locations/">Locations</a></li>
+			<li><a href="/industries/">Industries We Serve</a></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div class="col-md-3 col-sm-6 clearfix">
+		<h3>Resources</h3>
+		<ul>
+			<li><a href="/profile.htm">About Us</a></li>
+			<li><a href="/contact.htm">Contact Us</a></li>
+			<li><a href="/seo-checker/">SEO Checker</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/marketing-guides/">Marketing Guides</a></li>
+			<li><a href="/careers/">Careers</a></li>
+		</ul>
+		</div>
+		</nav>
+		<div class="col-md-12 clearfix">
+	<p class="footer-subnav">
+
+WebFX&reg; 1995-2020 
+                        <span class="divider">|</span>
+                        
+                            1705 N. Front St.
+                            Harrisburg,
+                            PA
+                            17102
+                        <span class="divider">|</span>
+                        Call Toll Free: <a href="tel:18884493239">888.449.3239</a>
+                        <span class="divider">|</span>
+                        <a href="/privacytermsofuse.htm">Privacy &amp; Terms of Use</a>
+                        <span class="divider">|</span>
+                        <a href="/sitemap.htm">Sitemap</a>
+                    </span>
+	</p>
+	</div>
+		</footer>
+
+	</div>    
+    <!--<form action="/form_processor.php?form=blognewslettermasthead" method="post" class="sign-up-form sticky-bottom-form" id="sticky-bottom-form" onSubmit="_gaq.push(['_trackEvent', 'blog', 'newsletter-signup', 'slider-signup']);" >
+	<h3>Get Exclusive Marketing Tips Sent Straight to Your Inbox</h3>
+	<input id="fieldEmail" name="_Email" value="Enter Your Work Email" type="email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required />
+    <input type="hidden" id="fieldcjkkdj" name="_Url" value="">
+    <input type="hidden" id="fieldqlhyuk" name="_Location" value="slide-in">	
+	<button type="submit" class="btn yellow" >Sign Up Today</button>
+    <ul>
+        <li>Actionable advice (not found on the blog) sent every week</li>        
+    	<li>Professional, data-driven facts on the latest in the industry</li>
+		<li>Tips on how you can generate more revenue</li>
+    </ul>
+    <button type="button" class="close" id="signup-close" onClick="_gaq.push(['_trackEvent', 'blog', 'newsletter-signup', 'slider-close']);">X</button>
+</form>-->
+
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: rev weekly - updated design --><script type="text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-campaign="ebqzixv5wswqrl73w0bc" data-user="4555" data-env="production"></script><!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: marketing guide - updated design --><script type="text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-campaign="cuz7rqabv2kpfxrwkn56" data-user="4555" data-env="production"></script><!-- / OptinMonster -->		<script type="text/javascript">var ebqzixv5wswqrl73w0bc_shortcode = true;var cuz7rqabv2kpfxrwkn56_shortcode = true;</script>
+		<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/intersection-observer-polyfill@0.1.0/dist/IntersectionObserver.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/lozad@1.3.0/dist/lozad.min.js'></script>
+<script type='text/javascript'>
+		lozad(".lazy-load", { 
+			rootMargin: "300px 0px", 
+			loaded: function (el) {
+				el.classList.add("is-loaded");
+			}
+		}).observe();
+	
+</script>
+<script type='text/javascript' src='//www.webfx.com/js/global.min.js'></script>
+<script type='text/javascript' src='//www.webfx.com/js/blog-mobile-nav.js?3'></script>
+<script type='text/javascript' src='https://www.webfx.com/blog/wp-includes/js/wp-embed.min.js?ver=5.4'></script>
+<script type='text/javascript' src='https://www.webfx.com/blog/wp-content/plugins/optinmonster/assets/js/helper.js?ver=1.9.6'></script>
+		<script type="text/javascript">var omapi_localized = { ajax: 'https://www.webfx.com/blog/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '6a2c0eed0c', slugs: {"ebqzixv5wswqrl73w0bc":{"slug":"ebqzixv5wswqrl73w0bc","mailpoet":false},"cuz7rqabv2kpfxrwkn56":{"slug":"cuz7rqabv2kpfxrwkn56","mailpoet":false}} };</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":3,"object_key":"category","object_type":"term","term_ids":[]};</script>
+		<script  src="/js/jquery.validate.min.js"></script>
+
+<script>
+jQuery(function($) {
+		var number = "0xFF9481";
+		$("form").append('<input type="hidden" name="imahuman" class="imahuman" value="0" />')
+		.focus( function() {
+			this.imahuman.value = parseInt(number, 16);
+		})
+		.click( function() {
+			this.imahuman.value = parseInt(number, 16);
+		});
+	});
+		</script>
+    <script>
+	window.FxOptions = {
+        id: 5
+        ,setupInput: true
+        ,formMapping: {
+            'marketing-guide-form'  : 'Marketing Guides'
+            ,'pm-application'       : 'Employment'
+            ,'sales-application'    : 'Employment'
+            ,'freelance-application': 'Employment'
+            ,'bottom-quote-form'    : 'Contact'
+            ,'quote-request'        : 'Quote Request'
+        }
+    };
+	
+    (function() {
+        var sc = document.createElement('script');
+        sc.type = 'text/javascript';
+        sc.async = true;
+        sc.src = '//www.leadmanagerfx.com/public/js/lmfx.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(sc, s);
+    })();
+	
+    (function() {
+        var sc = document.createElement('script');
+        sc.type = 'text/javascript';
+        sc.async = true;
+        sc.src = '//www.leadmanagerfx.com/public/js/ctfx.min.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(sc, s);
+    })();
+	
+	jQuery(function($) {
+		// validate signup form on keyup and submit
+		$("#bottom-quote-form").validate({
+			rules: {
+				_Name: "required",
+				_Company: "required",
+				_Email: {
+					required: true,
+					email: true
+				},
+				_Phone: "required",
+				budget: "required"
+			},
+			messages: {
+				_Name: "Please enter your full name",
+				_Company: "Please enter your company name",
+				_Email: "Please enter a valid email address",
+				_Phone: "Please enter your phone number",
+				budget: "Please choose a budget range"
+			}
+		});
+		
+		$("#bottom-quote-form").submit(function(event) {
+
+   var recaptcha = $("#g-recaptcha-response").val();
+   if (recaptcha === "") {
+      event.preventDefault();
+      alert("Please check the recaptcha");
+   }
+});
+    });
+	
+	
+    </script>
+	
+	
+
+<script>
+    jQuery(function($){
+      // bind change event to select
+      $('#blog-cat-dropdown').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
+
+</body>
+</html>
+
