@@ -1,5 +1,5 @@
 ---
-title: php_network_getaddresses: getaddrinfo failed
+title: php_network_getaddresses 函数 getaddrinfo failed
 date: 2009-03-12 17:57:01
 tag: 
 ---
