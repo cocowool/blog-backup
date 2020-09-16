@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch 慢日志
+title: Elasticsearch 日志配置详解
 tags: Elasticsearch
 category: 运维
 ---
@@ -8,7 +8,7 @@ category: 运维
 
 > 本文所有代码与配置在 Elasticsearch 7.1.1 中运行和验证。
 
-## Elasticsearch 的日志
+## Elasticsearch 的日志配置
 
 Elasticsearch 的通过修改 `ES_HOME/config/log4j2.properties` 文件来配置相关的日志记录，日志文件默认存放在 `ES_HOME/logs` 目录下。
 
@@ -20,6 +20,8 @@ Elasticsearch 提供了三个属性
 * `${sys:file.separator}` 将被解析为路径分隔符
 
 我编写了一套 [`docker-compose`](https://github.com/cocowool/sh-valley/tree/master/docker-conf/elasticstack/es-kibana) 的编排文件，支持一键式的创建一个单独的 `Elasticsearch` 实例和一个单独的 `Kibana` 实例。 默认情况下 `docker` 创建的 `Elasticsearch` 实例会将日志文件输出到 Console 中便于分析，通过修改 `log4j2.properties` 文件，能够将日志输出到指定的目录。
+
+在 `log4j2.properties` 配置文件中，`appender` 就是一个管道，定义了内容的去向（终端、文件或者其他），`Logger` 就是一个路由器，指明哪些包、类中的信息流向哪个管道。
 
 ```properties
 status = error
@@ -55,7 +57,7 @@ appender.rolling.strategy.action.condition.nested_condition.exceeds = 2GB
 
 日志文件会生成在镜像的 `/usr/share/elasticsearch/logs` 目录下，我们还可以修改 `docker-compose.yml` 文件，将日志文件夹映射到本地目录，这样我们查看日志文件的时候，就不需要登陆到容器中。
 
-## 无法加载插件的错误
+### 无法加载插件的错误
 
 如果启动的时候发现下面的报错，无法加载各种插件，请检查配置文件相关的行尾是否有空格，我遇到这种错误就是因为配置文件的内容从网上拷贝的时候，行尾带了空格。
 
@@ -71,13 +73,32 @@ elasticsearch_1  | 2020-09-08 11:28:45,473 main ERROR Unable to locate plugin fo
 
 > Log4j’s configuration parsing gets confused by any extraneous whitespace; if you copy and paste any Log4j settings on this page, or enter any Log4j configuration in general, be sure to trim any leading and trailing whitespace.
 
-## 日志级别与配置
+## 调整日志级别
 
-`Elasticsearch` 默认的日志级别为 `INFO` ，除此之外还提供了 `TRACE` 、`DEBUG`、`WARN`、`ERROR` 等几个日志级别，并且支持对不同的模块设置日志级别。
+`Elasticsearch` 默认的日志级别为 `INFO` ，除此之外还提供了 `TRACE` 、`DEBUG`、`INFO`、`WARN` 等几个日志级别，并且支持对不同的模块设置日志级别。
+
+`Elasticsearch` 提供了多种方式来调整日志的级别：
+
+* 修改配置文件，这种方式需要重启服务
+* 通过API进行日志级别的动态修改
+
+`Elasticsearch` 还允许针对单个模块设置日志级别，设置的方法参考上面，可以设置的模块简要列在下面。
+
+* `org.elasticsearch.discovery.zen` 如果只关心这个包下面更细节的日志，也可以设置 `org.elasticsearch.discovery.zen.fd` 
+* `org.elasticsearch.evn`
+* `org.elasticsearch.indices.recovery`
+* `org.elasticsearch.cluster.action.shard`
+* `org.elasticsearch.snapshots`
+* `org.elasticsearch.http`
+* `org.elasticsearch.marvel.agent.exporter`
+
+## 不同类型日志单独输出
 
 
 
-## 慢查询日志
+
+
+## 慢查询日志配置
 
 Elasticsearch提供了慢日志来捕获并记录那些超过指定时间阈值的查询和索引请求。默认慢日志不开启，开启需要定义具体动作（query、fetch或index），期望的事件记录等级（WARN、DEBUG等），以及时间阈值。
 
@@ -133,6 +154,7 @@ PUT /_cluster/settings
 8. [Elasticsearch document : Logging configuration](https://www.elastic.co/guide/en/elasticsearch/reference/master/logging.html)
 9. [elasticsearch – 错误无法找到插件类型[用于RollingFile和TimeBasedTriggeringPolicy]](http://www.voidcn.com/article/p-kcgkkojf-byt.html)
 10. [Elasticsearch Logging Secrets](https://www.elastic.co/cn/blog/elasticsearch-logging-secrets)
+11. [浅谈Log4j2日志框架及使用](https://www.imooc.com/article/78966)
 
 
 
