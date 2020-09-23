@@ -2,7 +2,9 @@
 title: Elasticsearch 日志配置详解
 tags: Elasticsearch
 category: 运维
+date: 2020-09-22 21:17:56
 ---
+
 
 [TOC]
 
@@ -56,7 +58,7 @@ appender.transport.filePattern = ${sys:es.logs.base_path}${sys:file.separator}${
 
 下面可以看到日志文件已经按照配置的规则生成了，如果日志文件的大小不断增长怎么办呢，会不会把文件系统撑爆，要不要设置日志文件清理策略，别着急下个小节告诉我们如何配置日志的滚动策略。
 
-![image-20200922110747672](20200902-elasticsearch-slow-query/image-20200922110747672.png)
+![image-20200922110747672](20200922-elasticsearch-log-config/image-20200922110747672.png)
 
 ### 如何配置日志的滚动策略
 
@@ -87,7 +89,7 @@ appender.transport.policies.size.size = 10KB
 
 可以看到实际的效果
 
-![image-20200922195329456](20200902-elasticsearch-slow-query/image-20200922195329456.png)
+![image-20200922195329456](20200922-elasticsearch-log-config/image-20200922195329456.png)
 
 > 文件大小并不是严格的10KB，我理解是因为这个值设置的比较小，当多一行日志会导致大小超过阈值时，提前做了文件滚动。
 
@@ -125,7 +127,7 @@ appender.transport.strategy.action.condition.exceeds = 10
 
 效果如下图，可以看到当文件夹中的文件数量超过10个时，旧的文件自动被删除了。
 
-![image-20200922205657621](20200902-elasticsearch-slow-query/image-20200922205657621.png)
+![image-20200922205657621](20200922-elasticsearch-log-config/image-20200922205657621.png)
 
 日常运维过程中，我们更常用的是根据文件夹文件大小或者按照固定日期周期确定文件的保留策略，对应的配置项为 `IfAccumulatedFileSize` 和 `IfLastModified` ，更详细的说明可以参考 [log4j2的官方文档](https://logging.apache.org/log4j/log4j-2.5/manual/appenders.html#DeleteIfFileName) 。
 
@@ -215,7 +217,11 @@ appender.discovery.strategy.action.condition.nested_condition.exceeds = 2GB
 
 `Elasticsearch` 提供了多种方式来调整日志的级别：
 
-* 修改配置文件，这种方式需要重启服务。通过 `rootLogger.level` 可以设定全局的日志级别，通过 `logger.transport.level` 设置单个模块的日志界别。
+* 通过命令行启动参数配置，语法是：`-E <name of logging hierarchy>=<level>` (例如： `-E logger.org.elasticsearch.transport=trace`)，比较适用于在单个节点上临时调试问题的场景。
+
+* 通过修改 `elasticsearch.yml` 配置文件，语法为：`elasticsearch.yml`: `<name of logging hierarchy>: <level>`（例如：logger.org.elasticsearch.transport: trace），适用场景是没有通过命令行启动，但是又想临时调试一个问题。
+
+* 修改 `log4j2.properties` 配置文件，这种方式需要重启服务。通过 `rootLogger.level` 可以设定全局的日志级别，通过 `logger.transport.level` 设置单个模块的日志界别。适合需要更加细化的进行日志配置的场景。
 
 * 通过API进行日志级别的动态修改。通过下面的命令可以动态调整全局的日志级别。
 
@@ -241,51 +247,6 @@ elasticsearch_1  | 2020-09-08 11:28:45,473 main ERROR Unable to locate plugin fo
 
 > Log4j’s configuration parsing gets confused by any extraneous whitespace; if you copy and paste any Log4j settings on this page, or enter any Log4j configuration in general, be sure to trim any leading and trailing whitespace.
 
-
-## Elasticsearch 慢查询日志配置方法
-
-Elasticsearch提供了慢日志来捕获并记录那些超过指定时间阈值的查询和索引请求。默认慢日志不开启，开启需要定义具体动作（query、fetch或index），期望的事件记录等级（WARN、DEBUG等），以及时间阈值。
-
-```json
-PUT /my_index/_settings
-{
-  "index.search.slowlog.threshold.query.warn" : "10s", 
-  "index.search.slowlog.threshold.fetch.debug": "500ms", 
-  "index.indexing.slowlog.threshold.index.info": "5s" 
-}
-```
-
-也可以在 `elasticsearch.yml` 文件里定义这些阈值，没有阈值设置的索引会自动继承在静态配置文件里配置的参数。
-
-设置阈值后，可以通过API动态切换日志级别。
-
-```json
-PUT /_cluster/settings
-{
-  “transient" : {
-  	"logger.index.search.slowlog" : "DEBUG",
-    "logger.index.indexing.slowlog" : "WARN"
-  }
-}
-```
-
-| 日志内容 | 描述                                                         |
-| -------- | ------------------------------------------------------------ |
-|          | 检索时间                                                     |
-|          | 日志级别                                                     |
-|          | 属于哪个阶段的慢日志                                         |
-|          | 节点名称                                                     |
-|          | 索引名称                                                     |
-|          | query执行的分片序号                                          |
-|          | 在上述分片所需的处理时间。**注意：在查看慢速日志时，我们希望避免从不同的分片中添加所有时间，因为每个分片可能并行执行** |
-|          | 耗费时间（毫秒）                                             |
-|          | 命中数                                                       |
-|          | search类型（query_then_fetch)                                |
-|          | 索引的总分片大小                                             |
-| source[] | 执行检索的具体请求内容                                       |
-
-> 默认情况下，ES会记录_source 中前1000个字符到慢日志中。可以用index.search.slowlog.source进行修改。设置为false或0完全跳过日志记录源，设置为true会记录整个源（无论有多大）。
-
 ## 写在最后
 
 我编写了一套 [`docker-compose`](https://github.com/cocowool/sh-valley/tree/master/docker-conf/elasticstack/es-kibana) 的编排文件，支持一键式的创建一个单独的 `Elasticsearch` 实例和一个单独的 `Kibana` 实例，通过 docker 可以方便的按照文档中的示例进行反复的实验，关于 docker 及 docker-compose 的介绍，大家可以参考我之前的两篇文章：[Docker入门介绍](https://edulinks.cn/2018/06/20/20180620-docker-overview/) 和 [Docker Composer使用介绍](https://edulinks.cn/2020/04/15/20200415-docker-compose/)。
@@ -304,6 +265,5 @@ PUT /_cluster/settings
 10. [Elasticsearch Logging Secrets](https://www.elastic.co/cn/blog/elasticsearch-logging-secrets)
 11. [浅谈Log4j2日志框架及使用](https://www.imooc.com/article/78966)
 12. [log4j2 appender](https://logging.apache.org/log4j/log4j-2.5/manual/appenders.html#DeleteIfFileName)
-
-
+13. [Elasitcsearch 7.0 之日志配置](http://www.chaiguanxin.com/articles/2019/05/30/1559202725366.html)
 
