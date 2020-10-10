@@ -42,5 +42,6 @@ AWR是Oracle 10g版本推出的特性，全称叫做 `Automatic Workload Reposit
 
 1. [oracle11G AWR使用及分析](https://www.cnblogs.com/david-zhang-index/archive/2012/08/21/2649252.html)
 2. [等待事件：db file scattered read(离散读）](https://blog.csdn.net/haojiubujian920416/article/details/81506982)
-3. []()
+3. [【深度长文】循序渐进解读Oracle AWR性能分析报告](https://mp.weixin.qq.com/s/48pYtwLO1YpFnUtpMojbfQ)
+4. 
 
