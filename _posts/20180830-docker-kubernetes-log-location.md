@@ -88,7 +88,7 @@ Kubernetes集群中包含众多组件，在用kubeadm方式安装的集群上，
 
 * 通过Docker配置```log-opt```参数，与上一节的方式相同。
 * 通过其他的脚本，例如[kube-up.sh](https://github.com/kubernetes/kubernetes/blob/master/cluster/gce/gci/configure-helper.sh)来分割日志文件。
-![](./20180830-docker-kubernetes-log-location/logging-node-level.png)
+![](20180830-docker-kubernetes-log-location/logging-node-level.png)
 > 如果使用外部工具对日志进行了分割，再通过```docker logs```目录查看日志时，仅返回最新的文件中的内容。
 
 
@@ -104,25 +104,25 @@ Kubernetes本身没有提供集群级别的日志管理功能，如想实现集�
 * 
 
 #### 2.3.1 日志采集代理方案
-![](./20180830-docker-kubernetes-log-location/logging-with-node-agent.png)
+![](20180830-docker-kubernetes-log-location/logging-with-node-agent.png)
 这种方案在每台Node上运行一个专用的日志采集代理，可以是容器化的应用（需要能够在容器内访问节点上的日志文件），可以采用```DaemonSet```来确保代理在每个Node中都运行。
 
 #### 2.3.2 Sidecar方案
 Sidecar的本意是挎斗摩托车，这种车型在摩托车旁边加了一个边斗来提高运载量，是二战时期日军广泛使用的一种运输工具。
-![](./20180830-docker-kubernetes-log-location/36ced2e10a12598fc7daab9820de4396.jpg)
+![](20180830-docker-kubernetes-log-location/36ced2e10a12598fc7daab9820de4396.jpg)
 类似于挎斗摩托车，Sidecar方案是在应用Pod中增加一个或多个负责处理日志的容器，根据增加容器的作用，可以分为日志分离和容器内代理。
 
 ##### 2.3.2.1 日志分离
-![](./20180830-docker-kubernetes-log-location/logging-with-streaming-sidecar.png)
+![](20180830-docker-kubernetes-log-location/logging-with-streaming-sidecar.png)
 > 尽管CPU和内存资源的消耗非常少，但是读取日志文件并且重写到标准输出会加倍磁盘的负载，这一点需要特别注意。
 
 
 ##### 2.3.2.2 容器内代理
-![](./20180830-docker-kubernetes-log-location/logging-with-sidecar-agent.png)
+![](20180830-docker-kubernetes-log-location/logging-with-sidecar-agent.png)
 采用这种方案，通过容器内代理直接将应用的日志上传到统一的日志管理平台，会增加Pod的资源消耗，同时无法通过```kubectl logs```命令来查看日志。
 
 #### 2.3.3 流式处理方案
-![](./20180830-docker-kubernetes-log-location/logging-from-application.png)
+![](20180830-docker-kubernetes-log-location/logging-from-application.png)
 
 
 ## 参考资料
