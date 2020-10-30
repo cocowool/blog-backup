@@ -24,64 +24,46 @@ sed '{[/]<adr1>[,<adr2>][/]d' <fileName>
 
 `sed` 从文件或者标准输入中获取内容，然后按照命令列表对内容进行修改，最后再将结果发送给标准输出。
 
-## 删除固定行
+## 删除文件的内容
 
 ```sh
-$ sed '3d' fileName.txt
+$ sed '3d' fileName.txt   #删除第3行，并将修改打到标准输出
+$ sed -i '3d' fileName.txt #删除第3行，并在文件内生效，后面的命令不再加这个参数
+
+# 删除最后一行
+$ sed '$d' fileName.txt
+
+# 删除7-9行
+$ sed '7,9d' fileName.txt
+
+# 删除所有空行
+$ sed '/^$/d' fileName.txt 
+$ sed '/./!d' fileName.txt
+
+# 删除匹配到字符串的行
+$ sed '/awk/d' fileName.txt 
+
+# 删除两个匹配之间所有的行
+$ sed '/patternA/,/patternB/d' fileName.txt
+
+# 删除匹配的行到第 n(5) 行之间的内容，同理也可以反过来，删除某一行到匹配行之间的内容
+$ sed '/pattern/,5d' fileName.txt
+
+# 删除符合多个条件的行
+$ sed '/patternA/d;/patternB/d' fileName.txt
 ```
 
-
-
-- **/.../**=delimiters
-- **n** = line number
-- **string** = string found in in line
-- **regex** = regular expression corresponding to the searched pattern
-- **addr** = address of a line (number or pattern )
-- **d** = delete
-
-如何使用sed替换内容，可以有以下的方法：
-
-Remove the 3rd line: 
-
-sed '3d' fileName.txt
-
-Removal of the line containing the string "awk": 
-
-sed '/awk/d' filename.txt
-
-Remove the last line: 
-
-sed '$d' filename.txt
-
-Remove all empty lines: 
-
-sed '/^$/d' filename.txt 
-
-sed '/./!d' filename.txt
-
-Remove line "matched" by a regular expression (by eliminating one containing digital characters (at least 1 digit) located at the end of the line). 
-
-sed '/[0-9/][0-9]*$/d' filename.txt
-
-Removing the interval between lines 7 and 9. 
-
-sed '7,9d' filename.txt
-
-Same operation but replacing the address by "parameters". 
-
-sed '/-Start/,/-End/d' filename.txt
-
-如果希望替换能够永久生效，需要使用 －i 参数
-
-The above examples are only change at the display of the file (stdout1= screen). 
-
-For permanent changes to the old versions (<4) use a temporary file for GNU sed use the **"-i[suffix]"**: 
-
-sed -i".bak" '3d' filename.txt
+![image-20201030194502145](20201024-use-sed-replace-text/image-20201030194502145.png)
 
 
 
-我在 [SED入门](http://edulinks.cn/2013/09/01/20130901-sed-introduce/) 这篇文章里，简要的介绍了`SED`工具的历史
+![image-20201030194207582](20201024-use-sed-replace-text/image-20201030194207582.png)
+
+
+
+## 替换文件的内容
+
+
 
 
 
@@ -89,4 +71,5 @@ sed -i".bak" '3d' filename.txt
 
 1. [sed delte file lines](http://en.kioskea.net/faq/1451-sed-delete-one-or-more-lines-from-a-file)
 2. [SED入门](https://www.cnblogs.com/cocowool/p/3294306.html)
+3. [sed 删除文本中的内容](https://www.cnblogs.com/crazymagic/p/11147988.html)
 
