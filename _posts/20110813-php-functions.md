@@ -1,21 +1,22 @@
 ---
 title: method_exists VS is_callable
 date: 2011-08-13 21:53:01
-tag: 
+tag: PHP
+category: 开发
 ---
 
-介绍method_exists和is_callable的区别，提醒大家在实际项目中不要犯错
+> 介绍method_exists和is_callable的区别，提醒大家在实际项目中不要犯错。
+
 今天看到一篇介绍，关于 method_exist 的，我觉得自己也有必要记录一下。
 
 
 在很多应用中，我们经常能够看到下面的这种用法。用来检查一个对象的一个方法是否存在：
 
-
-if(method_exists($object,'SomeMethod')) {
-$object->SomeMethod($this,TRUE);
+```php
+if ( method_exists ( $object, 'SomeMethod' )) {
+	$object->SomeMethod($this,TRUE);
 }
-
-
+```
 
 
 这段代码的目的非常容易理解，有一个对象为 $object，我们想知道他是否有一个方法为 SomeMethod 。如果有，就调用这个方法。
@@ -35,52 +36,47 @@ $object->SomeMethod($this,TRUE);
 
 is_callable 接收一个回调参数，可以指定一个函数名称或者一个包含方法名和对象的数组，如果在当前作用域中可以执行，就返回TRUE，如果不能就FALSE。
 
-
-if(is_callable(array($object,'SomeMethod'))) {
-$object->SomeMethod($this,TRUE);
+```php
+if( is_callable( array($object,'SomeMethod'))) {
+	$object->SomeMethod($this,TRUE);
 }
-
-
+```
 
 
 下面是一个例子，用来说明 method_exists 和 is_callable 的区别：
 
-
-
-
+```php
 classFoo {
-publicfunctionPublicMethod(){}
-privatefunctionPrivateMethod(){}
-publicstaticfunctionPublicStaticMethod(){}
-privatestaticfunctionPrivateStaticMethod(){}
+	publicfunctionPublicMethod(){}
+	privatefunctionPrivateMethod(){}
+	publicstaticfunctionPublicStaticMethod(){}
+	privatestaticfunctionPrivateStaticMethod(){}
 }
 
 $foo=newFoo();
 
 $callbacks=array(
-array($foo,'PublicMethod'),
-array($foo,'PrivateMethod'),
-array($foo,'PublicStaticMethod'),
-array($foo,'PrivateStaticMethod'),
-array('Foo','PublicMethod'),
-array('Foo','PrivateMethod'),
-array('Foo','PublicStaticMethod'),
-array('Foo','PrivateStaticMethod'),
+	array($foo,'PublicMethod'),
+	array($foo,'PrivateMethod'),
+	array($foo,'PublicStaticMethod'),
+	array($foo,'PrivateStaticMethod'),
+	array('Foo','PublicMethod'),
+	array('Foo','PrivateMethod'),
+	array('Foo','PublicStaticMethod'),
+	array('Foo','PrivateStaticMethod'),
 );
 
 foreach($callbacksas$callback){
-var_dump($callback);
-var_dump(method_exists($callback[0],$callback[1]));
-var_dump(is_callable($callback));
-echostr_repeat('-',40);
-echo'<br />';
+	var_dump($callback);
+	var_dump(method_exists($callback[0],$callback[1]));
+	var_dump(is_callable($callback));
+	echo str_repeat('-',40);
+	echo'<br />';
 }
-
-
+```
 
 
 执行这个例子，我们就能购清晰的看到两个函数间的差别。
-
 
 **补充**
 
@@ -93,12 +89,12 @@ is_callable 还有其他的用法，例如不检查所提供的类或方法，�
 
 如下例：
 
-
+```php
 classMethodTest {
-publicfunction__call($name,$arguments){
-echo'Calling object method'.$name.''.implode(',',$arguments);
-echo'<br />';
-}
+	publicfunction__call($name,$arguments){
+		echo'Calling object method'.$name.''.implode(',',$arguments);
+		echo'<br />';
+	}
 }
 
 $obj=newMethodTest();
@@ -107,11 +103,9 @@ $obj->runtest('in object context');
 var_dump(method_exists($obj,'runtest'));
 var_dump(is_callable(array($obj,'runtest')));
 echo'<br />';
+```
 
-
-
-
-参考资料：
+## 参考资料
 1、[is_callable](http://php.net/manual/en/function.is-callable.php)
 2、[method_exists](http://www.php.net/manual/en/function.method-exists.php)
 
