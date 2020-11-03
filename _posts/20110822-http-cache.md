@@ -2,6 +2,7 @@
 title: 利用HTTP Cache来优化网站
 date: 2011-08-22 21:15:01
 tag: 
+category: 开发
 ---
 
 对于网站来说，速度是第一位的。用户总是讨厌等待，面对加载的Video和页面，是非常糟糕的用户体验。所以如何利用Cache来优化网站，值得深入研究。
@@ -123,10 +124,6 @@ Cache-control: no-cache 意味着文件的内容不应当被缓存。这在搜�
 
 
 注意：有些标签只是在支持HTTP/1.1的浏览器上可用，如果想要了解更多，那么推荐RFC2616以及[Cache docs](http://www.mnot.net/cache_docs/)。
-
-
-
-
 
 
 参考资料：
