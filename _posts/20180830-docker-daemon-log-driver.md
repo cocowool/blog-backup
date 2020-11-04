@@ -4,7 +4,7 @@ date: 2018-08-30 09:05
 tag: 
 ---
 
-> 本文的运行环境为Centos 7.3，Docker与Kubernetes的安装方式见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)
+> 本文的运行环境为Centos 7.3，Docker与Kubernetes的安装方式见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
 
 最近在整理Docker和Kubernetes中的日志与相关配置，在尝试通过```/etc/docker/daemon.json```配置Docker的```log-driver```参数，遇到了Docker无法启动的错误。
 配置信息如下

@@ -5,6 +5,8 @@ tag:
 categories: 运维
 ---
 
+>  本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
+
 Kubernetes 中暴露服务的方式有三种
 
 * Loadbalancer 这种方式往往需要云供应商支持，或者本地F5等设备支持

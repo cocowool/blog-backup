@@ -4,8 +4,10 @@ date: 2018-09-26 16:35
 tag: Kubernetes
 ---
 
+> 本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
 
 ## 0. 概述
+
 Kubernetes提供了很多Controller资源来管理、调度Pod，包括Replication Controller、ReplicaSet、Deployments、StatefulSet、DaemonSet等等。本文介绍这些控制器的功能和用法。控制器是Kubernetes中的一种资源，用来方便管理Pod。可以把控制器想象成进程管理器，负责维护进程的状态。进程掉了负责拉起，需要更多进程了负责增加进程，可以监控进程根据进程消耗资源的情况动态扩缩容。只是在Kubernetes中，控制器管理的是Pods。Controller通过API Server提供的接口实时监控整个集群的每个资源对象的当前状态，当发生各种故障导致系统状态发生变化时，会尝试将系统状态修复到“期望状态”。
 
 ## 1. ReplicationController
