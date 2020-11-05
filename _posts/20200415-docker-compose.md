@@ -4,7 +4,9 @@ date: 2020-04-15 19:23:30
 tags:
 ---
 
-Docker-Compose项目是Docker官方的开源项目，负责实现对Docker容器集群的快速编排。Compose允许用户通过一个单独的docker-compose.yml模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。
+Docker-Compose 项目是 [Docker](https://www.docker.com) 官方的开源项目，负责实现对 Docker 容器集群的快速编排。Compose允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。
+
+> 本文主要介绍了 Docker-compose 的使用方法，如果读者对于 docker 不是很熟悉，可以看看我这里的系列介绍文章 [Docker系列文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)
 
 <!-- more -->
 
