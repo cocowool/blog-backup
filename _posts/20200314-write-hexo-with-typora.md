@@ -110,7 +110,7 @@ TypeError: Cannot read property '1' of null
 * 修改`post_asset_folder: true`
 * 生成一篇新的博客 `hexo new blog-name`
 * 通过typora向博客中插入一张图片，此时可以到`source/_posts`目录下看图片是否拷贝到了对应的目录
-* `nom install hexo-image-link --save`安装插件
+* `npm install hexo-image-link --save`安装插件
 * `hexo server -debug` 预览图片是否能正常显示
 
 
