@@ -2,6 +2,7 @@
 title: Linux bash 命令行快捷键
 category: 运维
 date: 2020-11-02 19:09:59
+keywords: linux, bash, 快捷键, 命令行
 tags:
 ---
 
