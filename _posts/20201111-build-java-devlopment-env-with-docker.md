@@ -1,6 +1,8 @@
 ---
 title: 利用 Docker 构建一个简单的 java 开发编译环境
 category: 开发
+keywords: docker, java, 开发编译环境
+description: 利用Docker快速构建不同版本的java开发环境，支持在容器外生成编译结果文件。
 date: 2020-11-12 11:13:52
 tags:
 ---
