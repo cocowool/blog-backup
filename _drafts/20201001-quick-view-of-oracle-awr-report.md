@@ -11,11 +11,11 @@ tags:
 
 ## AWR报告简介
 
-AWR是Oracle 10g版本推出的特性，全称叫做 `Automatic Workload Repository 全自动负载信息库` 。AWR通过对比两次快照收集到的统计信息，来生成报表数据，帮助DBA或开发人员了解
+AWR是Oracle 10g版本推出的特性，全称叫做 `Automatic Workload Repository 全自动负载信息库` 。AWR通过对比两次快照收集到的统计信息，来生成报表数据，帮助DBA或开发人员了解 Oracle 数据库的运行情况。
 
 ## AWR报告结构
 
-
+![oracle-awr](20201001-quick-view-of-oracle-awr-report/oracle-awr.png)
 
 ## 如何查看数据库的基本信息
 
@@ -31,8 +31,6 @@ AWR是Oracle 10g版本推出的特性，全称叫做 `Automatic Workload Reposit
 * 数据库负载情况
 * 慢SQL的情况
 * Top 5 Timed Foregroud Events
-
-依次说明
 
 ## 总结
 
