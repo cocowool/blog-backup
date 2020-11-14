@@ -4,6 +4,8 @@ date: 2018-06-19 11:31
 categories: 运维管理
 tags:
 - Kubernetes
+keywords: kubernetes, k8s, minikube
+description: 本文介绍了如何通过Minikube来快速体验Kubernetes集群的相关功能。
 ---
 
 > 本文的环境如下：

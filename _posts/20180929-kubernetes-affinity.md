@@ -2,6 +2,8 @@
 title: Kubernetes中的亲和性与反亲和性
 date: 2018-09-29 13:30
 tag: Kubernetes
+keywords: kubernetes, k8s, 亲和性, 反亲和性
+description: 通过为Node规划标签，然后使用```nodeSelector```标签来指定Pod运行在哪些节点上。nodeSelector的调度方式略显简单，通过亲和和反亲和配置，能够为调度提供更灵活的策略。
 ---
 
 > 本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。

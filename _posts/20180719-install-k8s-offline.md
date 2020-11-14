@@ -2,6 +2,8 @@
 title: 离线环境下使用二进制方式安装配置Kubernetes集群
 date: 2018-07-19 11:15
 tag: Kubernetes
+keywords: kubernetes, k8s, kubernetes集群安装, 离线安装
+description: 本文提供了一种可以实际运行的 kubernetes 离线安装方案。
 ---
 
 > 本文环境 Redhat Linux 7.3，操作系统采用的最小安装方式。
