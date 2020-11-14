@@ -2,6 +2,8 @@
 title: Kubernetes基础：Pod的详细介绍
 date: 2018-08-08 10:48
 tag: Kubernetes
+keywords: kubernetes, pod
+description: Pod是Kubernetes中能够创建和部署的最小单元，是Kubernetes集群中的一个应用实例，总是部署在同一个节点Node上。
 ---
 
 > 本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
