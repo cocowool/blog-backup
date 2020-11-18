@@ -1,9 +1,13 @@
 ---
-title: Oracle 11g AWR 报告
+title: 快速熟悉 Oracle AWR 报告解读
+keywords: 'oracle, awr, oracle awr报告, oracle 性能分析'
+description: >-
+  本文面向没有太多 Oracle 基础知识，但是需要通过 AWR 报告来分析数据库性能或排查问题人员，通过对 AWR
+  报告的简介，了解其包含的主要信息，然后对一些能够帮助我们分析定位问题的章节做一点稍微详细的介绍。
+date: 2020-11-18 18:58:47
 tags:
-keywords: oracle, awr, oracle awr报告, oracle 性能分析
-description: 本文面向没有太多 Oracle 基础知识，但是需要通过 AWR 报告来分析数据库性能或排查问题人员，通过对 AWR 报告的简介，了解其包含的主要信息，然后对一些能够帮助我们分析定位问题的章节做一点稍微详细的介绍。
 ---
+
 
 [TOC]
 
