@@ -48,7 +48,7 @@ Load Profile 主要用来显示当前系统的一些指示性能的总体参数�
 * Logical Read：逻辑读耗CPU，主频和CPU核数都很重要，逻辑读高则DB CPU往往高，也往往可以看到 `latch: cache buffer chains` 等待。
 * Physical Read：物理读消耗IO读，体现在IOPS和吞吐量等不同纬度上。但减少物理读可能意味着消耗更多CPU。
 * Parses：解析次数，包括软解析 + 硬解析，软解析优化得不好几乎等于每秒SQL执行次数， 即执行解析比1:1。理想状态是解析一次到处运行。
-* Hard Parses：硬解析次数，最好少于没秒20次。
+* Hard Parses：硬解析次数，最好少于每秒20次。
 
 > 注意 Load Profile 中的指标提供了 Per second 和 Per transaction 两个维度。Per second 主要是把快照抓到的值除以两个快照之间的秒数。这是我们用来判断性能的主要维度。Per transaction 是基于事务的维度，主要是把快照抓到的值除以两个快照之间的事务数。
 
