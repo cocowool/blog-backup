@@ -12,7 +12,7 @@ excerpt: 最近有个同事找过来，希望我对在很早之前写的一个PH
 
 [TOC]
 
-> 本文基于 `5.6-fpm-alpine3.8` 以及 `ngingx` 搭建Mac 下的PHP开发环境。
+> 本文基于 `5.6-fpm-alpine3.8` 以及 `nginx` 搭建Mac 下的PHP开发环境。
 
 ## 前期准备
 
@@ -21,7 +21,7 @@ excerpt: 最近有个同事找过来，希望我对在很早之前写的一个PH
 ```sh
 $ docker pull php:5.6-fpm-alpine3.8
 $ docker pull nginx
-$ docker pull mysql
+$ docker pull mysql:5.6
 ```
 
 > 用户需要到[hub.docker.com](https://hub.docker.com)，搜索PHP并通过tags找到自己希望安装的版本，我的项目因为开发时间比较久了，不能够支持最新的PHP，所以安装的是5.6版本。
