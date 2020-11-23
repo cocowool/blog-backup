@@ -1,7 +1,9 @@
 ---
 title: Nginx Rewrite 使用总结
 date: 2020-11-23 15:30:37
-tags: nginx
+tags: nginx, rewrite
+keywords: nginx, rewrite, url, 地址重写
+description: 利用 URL Rewrite 屏蔽服务器运行态的信息，使URL对用户和搜索引擎更加友好。本文介绍了如何使用 Nginx Rewrite 功能来实现相关的场景。
 ---
 
 
