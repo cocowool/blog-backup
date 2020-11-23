@@ -74,13 +74,15 @@ rewrite ^/(.*) http://www.baidu.com/ permanent;
 | redirect     | 返回302临时重定向，浏览器地址栏会显示跳转后的URL地址         |
 | permanent    | 返回301永久重定向，浏览器地址栏会显示跳转后的URL地址         |
 
+
+
 在flag标记中，`last` 和 `break` 实现功能类似，使用 `alias` 指令时必须用 `last` 标记，使用 `proxy_pass` 指令时要使用 `break` 标记。`last` 标记在本条 rewrite 规则执行完毕后，会对其所在的 `server{…}` 标签重新发起请求，而 `break` 标记则会在本条规则匹配完成后，终止匹配，不再匹配后面的规则。
 
 ### 实战案例
 
 本文提供了一个基于 docker 的演示案例，将上文的场景一一演示出来。通过访问 [我的Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/lnmp) 可以获得全部的 docker 编排文件及代码。
 
-> 不太熟悉 Docker 的同学可以参考 [使用 Docker 快速搭建LNMP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)，让你在安装了 Docker 的情况下，使用一条命令就快速搭建LNMP开发环境。
+> 不太熟悉 Docker 的同学可以参考 [使用 Docker 快速搭建LNMP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)，让你在安装了 Docker 的情况下，使用一条命令就快速搭建LNMP开发环境。还要了解更多 Docker 的内容，可以查看 [Docker 系列文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/#Docker-系列文章)
 
 ![image-20201123151805246](20201123-nginx-rewrite/image-20201123151805246.png)
 
