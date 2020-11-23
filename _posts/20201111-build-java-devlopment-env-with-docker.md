@@ -99,9 +99,13 @@ total 32
 ```shell
 $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp java_env_8 java Helloworld      
 Hello world.
-
-
 ```
+
+> `docker -v` 命令表示将本地目录挂在稻容器内。
+>
+> `docker -w` 命令表示指定工作命令，容器启动时的执行命令会在该目录下执行。
+>
+> `docker --rm` 表示当容器结束后自动删除，这样就不会在系统中残存冗余的容器。
 
 ## 写在最后
 
