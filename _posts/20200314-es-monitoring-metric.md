@@ -145,7 +145,7 @@ ES是一个严重依赖内存的应用，因此需要密切关注每个节点的
 
 ![Screen Shot 2019 03 26 at 11.18.14 1](20200314-es-monitoring-metric/Screen-Shot-2019-03-26-at-11.18.14-1.png)
 
-![Screen Shot 2019 03 26 at 11.20.38 1](/Users/shiqiang/Documents/blog/Screen-Shot-2019-03-26-at-11.20.38-1.png)
+![Screen Shot 2019 03 26 at 11.20.38 1](20200314-es-monitoring-metric/Screen-Shot-2019-03-26-at-11.20.38-1.png)
 
 最后，磁盘的读写情况也能反映系统的健康情况。如果磁盘读写非常频繁，那么说明系统的性能不太理想。因为磁盘读写是一项非常耗时昂贵的操作，性能优异的系统会尽量减少磁盘的读写。
 
