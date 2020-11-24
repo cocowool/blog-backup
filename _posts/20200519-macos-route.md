@@ -1,7 +1,9 @@
 ---
 title: Mac OS路由设置常用命令
 date: 2020-05-19 13:12:17
-updated: 2020-06-28 19:10:52
+updated: 2020-11-24 10:45:52
+keywords: macOS, route, 路由
+description: macOS 通过 netstat 命令查看路由表，通过 route 命令修改路由，通过 networksetup 调整网络设置。
 tags: Mac
 ---
 
