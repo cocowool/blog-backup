@@ -2,8 +2,10 @@
 title: 使用Docker快速搭建PHP开发环境
 date: 2020-04-17 21:39:50
 updated: 2020-04-30 21:39:50
-categories: 
+categories: 开发
 tags:
+keywords: docker, php, lnmp, 开发环境
+description: 基于Docker我们能够快速搭建PHP的开发环境，包括了PHP、Mysql、Linux等。较之传统的本地安装或者XAMPP等绿色解决方案，Docker提供的方案实现起来都更加优雅，便于在不同的电脑间进行迁移。
 excerpt: 最近有个同事找过来，希望我对在很早之前写的一个PHP网站上增加一些功能，当时开发使用`xampp`构建的本地开发环境，但是现在我的笔记本电脑已经更新，没有当时的开发环境。本着尽量不往电脑上装无用软件的原则，想到能不能用Docker来构建本地开发环境，因此本文介绍了如何基于Docker来快速构建本地`PHP`开发环境，供有需要的同学参考使用。
 ---
 
