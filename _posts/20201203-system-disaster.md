@@ -1,7 +1,12 @@
 ---
 title: RTO/RPO驱动的系统可靠性架构设计
+date: 2020-12-03 19:57:54
 tags:
+category: 开发
+keywords: RTO，RPO，高可用，架构设计，灾备
+description: 可靠性、可用性、可维护性（Reliability, Availability, Maintainability - RAM）是软件开发过程中的三个重要方面。传统上系统可靠性的度量指标有两个：平均无故障时间（MTTF, Mean time to failure）是系统无故障运行的平均时间 和 平均恢复时间（MTTR, Mean time to restoration）指系统从发生故障到恢复正常之间的平均时间。与之类似但更为主流的两个指标则是：RTO, Recovery time objective 和 RPO, Recovery point objective。从下面一张图可以直观的了解到两个指标的含义。
 ---
+
 
 [TOC]
 
