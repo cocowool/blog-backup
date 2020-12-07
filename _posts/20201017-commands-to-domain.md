@@ -3,6 +3,8 @@ title: 与域名相关的几个命令
 category: 运维
 date: 2020-10-24 20:47:50
 tags:
+keywords: host, nslookup, dig, whois, 域名命令
+description: 本文介绍与域名相关的几个命令，通过这几个命令，我们能够快速了解域名对应的IP地址、A记录、MX记录等各种与域名相关的信息，相信熟练使用这几个命令之后，在域名问题排查方面将会更加得心应手。
 ---
 
 

@@ -3,6 +3,8 @@ title: 使用 sed 进行文本修改的各种姿势
 category: 运维
 date: 2020-10-30 22:40:47
 tags:
+keywords: sed, Linux, sed语法
+description: sed是linux常用的命令行工具，提供了强大的查找替换能力，能够满足各类Linux下的文本查找修改需求。
 ---
 
 

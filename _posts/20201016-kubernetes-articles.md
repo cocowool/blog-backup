@@ -3,6 +3,7 @@ title: Kubernetes 学习系列文章
 category: 运维
 date: 2020-10-16 20:47:01
 tags:
+keywords: kubernetes, docker
 ---
 
 
