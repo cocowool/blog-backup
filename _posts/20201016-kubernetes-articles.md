@@ -4,6 +4,7 @@ category: 运维
 date: 2020-10-16 20:47:01
 tags:
 keywords: kubernetes, docker
+description: Kubernetes入门系列文章，从基础概念到高级操作全都涉及，另外还有关于docker使用的介绍文章。
 ---
 
 

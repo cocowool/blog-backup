@@ -1,7 +1,9 @@
 ---
 title: Docker Composer 使用介绍
 date: 2020-04-15 19:23:30
-tags:
+tags: 
+keywords: docker, docker-compose, docker-compose.yml
+description: Docker-Compose 项目是 [Docker](https://www.docker.com) 官方的开源项目，负责实现对 Docker 容器集群的快速编排。Compose允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。
 ---
 
 Docker-Compose 项目是 [Docker](https://www.docker.com) 官方的开源项目，负责实现对 Docker 容器集群的快速编排。Compose允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。

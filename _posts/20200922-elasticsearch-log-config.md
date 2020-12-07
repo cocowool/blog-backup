@@ -3,6 +3,8 @@ title: Elasticsearch 日志配置详解
 tags: Elasticsearch
 category: 运维
 date: 2020-09-22 21:17:56
+keywords: elasticsearch, elasticsearch 日志, elasticsearch 日志配置, 日志配置
+description: 本文介绍 elasticsearch 日志输出方式、日志配置方法、如何将日志输出到不同的文件、慢查询的配置方法
 ---
 
 
