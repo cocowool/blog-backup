@@ -18,16 +18,22 @@ tag:
 我的理解就是，用专业的态度去做专业的事。人非圣贤孰能无过，但是我们的态度必须专业，并且需要养成专业的习惯，下面这些都将有助于我们今后的发展。
 > 
 * Be punctual at meetings and teleconferences.
+
 * Always speak in a professional manner.
+
 * Deliver pre-sales paperwork on time.
+
 * Present all documents and images on professionally branded templates.
+
 * Use correct grammar and punctuation in emails.
-[![](./20091217-keep-moving/image_thumb.png)](http://images.cnblogs.com/cnblogs_com/cocowool/WindowsLiveWriter/7344925ecc4a_13332/image_2.png)
-2、收集资料。
-我们经常使用一些材料来佐证我们的观点，但是当具体到材料的内容时，我们经常是“大概”、“差不多”那么的指代一下，这必然会让我们说法的根基变得不那么牢固，所以，收集资料吧。将你认为今后会有用的资料按照规范的分类方法组织起来。也许开始组织的不是那么的好，但是慢慢的，你会发现自己变得对这些资料如数家珍了。
-[![](./20091217-keep-moving/image_thumb_1.png)](http://images.cnblogs.com/cnblogs_com/cocowool/WindowsLiveWriter/7344925ecc4a_13332/image_4.png)3、不要惧怕失败。
-Saying that good entrepreneurs view every defeat as an opportunity。
-虽然是陈词滥调，但确实是箴言。这个时候需要做的就是**turn defeat into a win/win**
+
+  2、收集资料。
+  我们经常使用一些材料来佐证我们的观点，但是当具体到材料的内容时，我们经常是“大概”、“差不多”那么的指代一下，这必然会让我们说法的根基变得不那么牢固，所以，收集资料吧。将你认为今后会有用的资料按照规范的分类方法组织起来。也许开始组织的不是那么的好，但是慢慢的，你会发现自己变得对这些资料如数家珍了。
+  [![](./20091217-keep-moving/image_thumb_1.png)](http://images.cnblogs.com/cnblogs_com/cocowool/WindowsLiveWriter/7344925ecc4a_13332/image_4.png)
+
+  3、不要惧怕失败。
+  Saying that good entrepreneurs view every defeat as an opportunity。
+  虽然是陈词滥调，但确实是箴言。这个时候需要做的就是**turn defeat into a win/win**
 
 参考资料
 1、[How to Explain To Clients That They are Wrong](http://www.smashingmagazine.com/2009/12/10/how-to-explain-to-clients-that-they-are-wrong/)
