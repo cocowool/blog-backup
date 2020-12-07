@@ -2,10 +2,15 @@
 title: 在Centos 5.2下编译安装LAMP
 date: 2009-12-28 16:27:01
 tag: 
+keywords: LAMP，Centos，编译安装，Linux
+description: 本文介绍编译安装LAMP环境的方法，包括Apache、Mysql、PHP，基于虚拟主机在本地演示，同样适用于生产环境。
 ---
 
-首先使用Virtualbox安装一台CentOS 5.2的虚拟机，网络连接采用 Host-only Adapter，这样主客机之间可以互相访问，但是客机不能够上广域网。
-0、系统初步配置
+> 本文写于2009年，可能因技术发展，导致相应操作流程在新版本的环境中无法正常执行，欢迎大家通过公众号与我联系分析，不断完善本文。
+
+首先使用 Virtualbox 安装一台 CentOS 5.2 的虚拟机，网络连接采用 Host-only Adapter，这样主客机之间可以互相访问，但是客机不能够上广域网。
+
+## 系统初步配置
 源文件位置    /root/software
 编译安装位置    /usr/local/{software_name}
 数据存放        /data1/
@@ -19,6 +24,7 @@ SELINUX=enforcing
 配置 iptables
 安装必要的软件
 如果能够连上网络，可以通过 yum 来安装这些必要的工具；如果不能连上网络，则需要使用本地的安装源或者安装文件。
+
 下面列出一些必须的工具：
 [gcc](http://gcc.gnu.org/mirrors.html)
 wget
@@ -28,6 +34,7 @@ patch
 autoconf
 automake
 bzip2-devel
+
 通过本地的源来进行安装，首先在 Virtualbox 的 Devices -> Mount CD/DVD-Rom -> CD/DVD-Rom image，加载安装的镜像文件。
 计划安装的软件及其版本：
 [apache 1.3.41](http://apache.freelamp.com/httpd/apache_1.3.41.tar.gz)
@@ -48,7 +55,8 @@ bzip2-devel
 [zend optimizer 3.3.9](http://downloads.zend.com/optimizer/3.3.9/ZendOptimizer-3.3.9-linux-glibc23-i386.tar.gz)
 [imap](ftp://ftp.cac.washington.edu/mail/imap.tar.Z)
 [bind 9.4.2](http://ftp.isc.org/isc/bind9/9.4.2/bind-9.4.2.tar.gz)
-1、安装其他软件
+
+## 安装其他软件
 安装 OpenSSL：
 ./config --prefix=/usr/local/openssl/
 make
@@ -73,7 +81,9 @@ cd ..
 安装 cronolog
 ./configure --prefix=/usr/local/cronolog
 make && make install
-2、安装mysql
+
+## 安装mysql
+
 本文采用的是二进制安装的方式进行的，基本的顺序和 mysql 官方的顺序差不多，只不过有些地方做一些说明。
 shell> groupadd mysql
 shell> useradd -g mysql mysql
@@ -105,7 +115,9 @@ STOPPING server from pid file /var/run/mysqld/mysqld.pid
 basedir    /usr/local/mysql
 最后需要配置一下mysql随系统启动服务，拷贝 /usr/local/mysql/support-files/mysql.server -> /etc/rc.d/init.d/mysql 中，然后添加 chkconfig --add mysql
 这样就可以通过 service mysql start 来启动 mysql 服务了
-3、安装Apache
+
+## 安装Apache
+
 这篇里 apache 选择经典的 1.3.41 版本。
 apache 的安装方法不止一种，无论哪一种，首先我们必须确认当前系统中没有 httpd 服务正在运行：ps -aux | grep httpd，如果我们发现结果中有的话，应该将他杀掉。
 然后到 apache 的安装目录下，这里是 /root/software/source_lamp/apache_1.3.41，整个目录内的结构和文件介绍如下：
@@ -119,7 +131,9 @@ src/ ――源代码。这个目录（和它的子目录）包含了C语言源�
 ./configure --prefix=/usr/local/lampsrv/apache/ --datadir=/data1/www/data/htdocs/ --logfiledir=/data1/www/applogs/ --enable-shared=max --enable-module=most
 make
 make install
-4、安装PHP
+
+## 安装PHP
+
 解压下载的安装包，然后执行配置。
 ./configure --prefix=/usr/local/lampsrv/php --with-apxs=/usr/local/lampsrv/apache/bin/apxs  --with-config-file-path=/usr/local/lampsrv/etc/php/ --enable-track-vars --with-xml --with-mysql
 make && make install
@@ -129,27 +143,30 @@ AddType application/x-httpd-php-source .phps
 然后重启 apache 服务:/usr/local/lampsrv/apache/bin/apachectl restart
 启动的时候，有可能会遇到这样的错误：Cannot load /usr/local/apache2/modules/libphp4.so into server: /usr/local/apache2/modules/libphp4.so : cannot restore segment prot after reloc: Permission Denied
 这种情况一般是由于 selinux 的安全设置引起的，可以考虑关闭掉 selinux，在 /etc/selinux/config 中进行设置。
-5、安装总结
+
+## 安装总结
+
 至此，我们已经配置了基本的 Linux + Apache + Mysql + PHP 的运行环境，但是仍有很多的配置文件散落在各处，比如 mysql 的配置文件和数据文件。如何将这些配置文件和数据文件归拢在一个统一的位置，比如 /data1/www/etc ，还是一个需要不断总结积累的问题，另外还有一个就是如何形成一个快速安装配置的模式，是通过编写脚本还是通过搭建 yum 源来实现多台机器的快速配置是一个很需要经验的问题，在这两个方面，今后要不断的总结。
-参考资料：
-1、[CentOS 5.2 编译安装](http://www.linuxsky.org/doc/network/200811/345.html)
-2、[Apache httpd project](http://httpd.apache.org/)
-3、[Cronolog](http://cronolog.org/)
-4、[GD Library](http://www.libgd.org/Main_Page)
-5、[GNU libiconv](http://www.gnu.org/software/libiconv/#downloading)
-6、[OPEN SSL](http://www.openssl.org/)
-7、[OPEN SSH](http://www.openssh.com/)
-8、[PCRE](http://www.pcre.org/)
-9、[nginx](http://nginx.net/)
-10、[mysql](http://www.mysql.com)
-11、[php](http://www.php.net/)
-12、[Memcached](http://www.danga.com/memcached/)
-13、[XCache](http://xcache.lighttpd.net/)
-14、[IMAP](http://www.imap.org/)
-15、[Mysql Install](http://dev.mysql.com/doc/refman/5.0/en/installing.html)
-16、[Linux自启动详细设置](http://blogger.org.cn/blog/more.asp?name=zhanglincon&id=32410)
-17、[Apache 1.3.x 安装配置笔记](http://www.chedong.com/tech/apache_install.html)
-18、[Apache 安装指南](http://www.chinaunix.net/jh/13/49365.html)
+
+## 参考资料：
+
+1. CentOS 5.2 编译安装](http://www.linuxsky.org/doc/network/200811/345.html)
+2. [Apache httpd project](http://httpd.apache.org/)
+3. [Cronolog](http://cronolog.org/)
+4. [GD Library](http://www.libgd.org/Main_Page)
+5. [OPEN SSL](http://www.openssl.org/)
+6. [OPEN SSH](http://www.openssh.com/)
+7. [PCRE](http://www.pcre.org/)
+8. [nginx](http://nginx.net/)
+9. [mysql](http://www.mysql.com)
+10. [php](http://www.php.net/)
+11. [Memcached](http://www.danga.com/memcached/)
+12. [XCache](http://xcache.lighttpd.net/)
+13. [IMAP](http://www.imap.org/)
+14. [Mysql Install](http://dev.mysql.com/doc/refman/5.0/en/installing.html)
+15. [Linux自启动详细设置](http://blogger.org.cn/blog/more.asp?name=zhanglincon&id=32410)
+16. [Apache 1.3.x 安装配置笔记](http://www.chedong.com/tech/apache_install.html)
+17. [Apache 安装指南](http://www.chinaunix.net/jh/13/49365.html)
 
 
 

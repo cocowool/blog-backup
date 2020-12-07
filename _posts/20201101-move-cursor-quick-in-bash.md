@@ -3,6 +3,7 @@ title: Linux bash 命令行快捷键
 category: 运维
 date: 2020-11-02 19:09:59
 keywords: linux, bash, 快捷键, 命令行
+description: 熟悉了命令行中查找、移动、删除光标的相关操作，将大大提高我们在终端下的运维工作效率。
 tags:
 ---
 
