@@ -1,7 +1,10 @@
 ---
 title: Wireshark使用入门
 date: 2019-06-23 16:43:27
+updated: 2020-12-08 18:24:11
 tag: 
+keywords: wireshark, linux, 网络抓包, 抓包分析
+description: Wireshark是一款开源的可视化网络抓包分析工具，本文对Wireshark的使用进行了介绍，并且以HTTP三次握手的过程来具体分析如何使用Wireshark。
 ---
 
 Wireshark是一款开源的可视化网络抓包分析工具，本文对Wireshark的使用进行了介绍，并且以HTTP三次握手的过程来具体分析如何使用Wireshark。
