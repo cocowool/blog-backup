@@ -1,9 +1,9 @@
 ---
 title: 磁盘满导致Google宕机？可能不是那么简单
-keywords: '运维, 高可用, 宕机, google, 服务, 服务不可用'
+keywords: 运维, 高可用, 宕机, google, 服务, 服务不可用
 date: 2020-12-15 18:39:17
-tags:
-description:14日Google发生大规模服务中断事件，官方回复因内部存储配额问题导致此次事件发生。
+tags: Google
+description: 14日Google发生大规模服务中断事件，官方回复因内部存储配额问题导致此次事件发生。
 ---
 
 
