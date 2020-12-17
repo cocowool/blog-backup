@@ -4,6 +4,8 @@ tags: Mac
 date: 2020-06-15 13:18:22
 updated: 2020-07-14 08:10:45
 categories: 办公
+keywords: macOS, macOS重装, macOS安装器, 目标卷宗
+description: MacbookPro重装的时候遇到了“将安装器信息下载到目标卷宗失败”的错误，作者通过多方面的调研找到了解决办法。
 ---
 
 
