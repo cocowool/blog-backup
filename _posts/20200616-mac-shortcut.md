@@ -3,6 +3,8 @@ title: 我的 macOS 常用快捷键
 date: 2020-06-19 13:16:09
 tags: Mac
 categories: 办公
+keywords: macOS, macOS快捷键, macOS截屏, macOS多指操作, macOS预览
+description: MacbookPro一直是作为我主要的生产力工具来使用，本文介绍了截屏操作、多指触摸操作、预览等快捷键，帮助大家提高办公效率。
 ---
 
 > 最近的这些年，MBP一直是作为我主要的生产力工具来使用，对于苹果的操作系统，我也是非常的习惯，下面就是一些我经常使用的，用来提高生产力的快捷键，记录下来。

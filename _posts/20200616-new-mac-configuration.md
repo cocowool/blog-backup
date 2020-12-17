@@ -4,6 +4,8 @@ date: 2020-06-19 19:53:14
 updated: 2020-07-17 16:39:11
 tags:
 categories: 办公
+keywords: macOs, macOS办公, macOS配置, macOS效率
+description: 最早开始使用Mac电脑是从2011年开始，从Leopard一直到现在的Catalina，macOS系统经历了非常重大的变化，整理了一份自己系统配置的清单，一方面便于自己回顾查看，另一方面也送给有需要的朋友。
 ---
 
 
