@@ -2,6 +2,8 @@
 title: Shell 入门详解（一）
 tags: shell
 date: 2020-07-22 19:42:57
+keywords: shell, shell变量, shell命令行, shell逻辑运算, shell算数运算
+description: shell是一种特殊的程序，是 `用户与Linux系统内核间的接口`，它解释运行由命令行或文件输入的命令，从而实现用户与内核间的交互。本文介绍了常用的shell命令与语法。
 
 ---
 

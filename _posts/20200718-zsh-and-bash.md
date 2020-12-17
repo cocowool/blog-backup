@@ -2,6 +2,8 @@
 title: Catalina 默认使用zsh了，你可习惯
 tags: Zsh
 date: 2020-07-18 10:01:57
+keywords: macOs, macOS Catalina, zsh, 默认shell
+description: 2019年WWDC期间，苹果推出了macOS Catalina，并且将zsh设置为操作系统默认shell。
 ---
 
 
