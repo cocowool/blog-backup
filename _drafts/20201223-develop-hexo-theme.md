@@ -1,18 +1,23 @@
 ---
-title: 开发自己的 hexo 主题
+title: Hexo 主题开发准备工作
 tags: 开发
 keywords:
 description: 
 ---
 
+[TOC]
+
+本文并不准备向大家介绍如何开发自己的 Hexo 主题，相关的文章百度一下能出来很多。本文整理了自己对于 Hexo 主题开发所需要的一些准备工作，后续考虑随着自己主题开发的进展，再补充1-2篇深入介绍的文章，目前我开发的两个主题为 [RoseFocus](https://github.com/cocowool/RoseFocus) 和 [Wave](https://github.com/cocowool/wave) 功能不是很完善，还需要继续努力补充。 
+
 ## 准备开发环境
+
 * 确认安装了 `node`
 
 * 确认安装了 hexo `hexo -version`
 
 * 新建一个空目录 ，进入目录执行初始化 `hexo init` 。如果初始化速度比较慢，可以尝试改成国内的源 `npm config set registry https://registry.npm.taobao.org`。成功后可以看到如下的文件：
 
-  ![image-20201213160832077](develop-hexo-theme/image-20201213160832077.png)
+  ![image-20201213160832077](20201223-develop-hexo-theme/image-20201213160832077.png)
 
 * 在本地浏览编辑博客 `hexo server` 或者 `hexo s` ，命令执行成功后可以看到通过 http://localhost:4000 端口访问的提示。 
 
@@ -39,11 +44,14 @@ $ tree -L 1
 ├── LICENSE
 ├── README.md
 ├── _config.yml
-├── languages
-├── layout
+├── languages						//主题的语言包，可以支持多语言切换
+├── layout							//模板文件夹，存放主题所用到的模板文件
 ├── package.json
-├── scripts
-└── source
+├── scripts							//可选的文件夹，用于存放一些第三方的脚本库
+└── source							//静态资源文件，包括样式表、Javascript、图片等
+    ├── css
+    ├── fancybox
+    └── js
 ```
 
 Hexo支持多种模板语法和CSS语法，
@@ -94,21 +102,15 @@ $ tree -L 2
 
 > _partial 文件夹下的文件是一些公共的部分，可以用在各个页面上，通过 `<%- partial('_partial/header') -%>` 方法调用。
 
-## EJS介绍
+## 开发的主要工作
 
+介绍完Hexo主题目录的结构和各模板文件的作用后，我们大概就能明白开发一个主题主要的工作所在，我理解包括下面这几个主要部分：
 
+* 了解一些 Hexo 变量和函数，变量如所有文章、文章标题、文章发布日期、配置文件等，函数包括引入外部文件 `url_for`、引入局部文件 `partial` 、CSS和JS的引入函数等等。
+* 页面结构（模板）的设计开发。开发一个页面，首先是确定页面的布局和页面的元素，这些都在模板文件夹中进行编辑开发。Hexo 支持两种模板引擎，分别是 EJS（[EJS官方文档](https://ejs.bootcss.com)）和 Stylus。
+* 页面样式的设计开发。页面所用的样式表文件可以放在 source 文件夹内。我们可以用原生的CSS语法来编写样式表，如果习惯 SCSS 等方式来编写，需要安装相应 render 插件。
 
-## 使用SASS编译CSS
-
-
-
-## 参考的主题
-
-1. [Alfasio](https://hexo-theme-griddy.aflasio.art/post/mira/)
-2. [ProcreateFolio](https://folio.procreate.art/showcase)
-3. [Jerry Qu](https://imququ.com)，参考了列表部分的样式
-4. x
-5. x
+> 如果使用 Typora 进行博客撰写的朋友遇到图片插入与发布相关的问题，建议阅读我的 [Hexo博客写作与图片处理的经验](http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/) 这篇文章，帮你搞定图片本地浏览与服务器端浏览都能够正常显示。
 
 
 ## 参考资料
