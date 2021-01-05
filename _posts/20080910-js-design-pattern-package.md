@@ -2,6 +2,8 @@
 title: Javascript设计模式学习（二）封装续
 date: 2008-09-10 10:32:01
 tag: 
+keywords: Javascript, 设计模式, 接口, 封装
+description: 设计模式是面向对象软件设计开发过程中用来解决特定问题的简介而优雅的解决方案，本文是Javascript设计模式的第一篇的续篇，介绍如何通过设计模式实现封装和信息隐藏。
 ---
 
 

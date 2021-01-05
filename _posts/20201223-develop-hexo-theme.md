@@ -1,9 +1,11 @@
 ---
 title: Hexo 主题开发准备工作
 tags: 开发
-keywords:
-description: 
+date: 2020-12-23 11:52:28
+keywords: Hexo, Hexo主题
+description: 本文介绍Hexo主题开发所需的准备工作。
 ---
+
 
 [TOC]
 
