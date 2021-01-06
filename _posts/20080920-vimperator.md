@@ -2,10 +2,11 @@
 title: Vimperator：玩酷你的Firefox
 date: 2008-09-20 23:29
 tag: 
+keywords: firefox, firefox扩展, vimperator
+description: vimperator是一款firefox扩展，能够将firefox改造为vim浏览风格。
 ---
 
-
-**First there was a Navigator, then there was an Explorer. Later it was time for a Konqueror. Now it's time for an Imperator, the VIMperator :)**
+> **First there was a Navigator, then there was an Explorer. Later it was time for a Konqueror. Now it's time for an Imperator, the VIMperator :)**
 
 如果你是Firefox的用户，如果你不熟悉Vim，那么当你第一次面对下面的Firefox时，你的感觉会和我一样。
 ![](./20080920-vimperator/092008_1528_Vimperator1.png)
@@ -14,11 +15,12 @@ tag:
 
 到了官方站点，看到了提示：
 ![](./20080920-vimperator/092008_1528_Vimperator2.png)
-不过任凭Ctrl –q，还是Ctrl –z都没有能够让我回到熟悉的FF界面，难道是火星
+不过任凭 `Ctrl–q`，还是`Ctrl–z`都没有能够让我回到熟悉的FF界面，难道是火星
 
 接着往下看，终于找到：
 ![](./20080920-vimperator/092008_1528_Vimperator3.png)
 通过设置，终于找回了亲切的菜单栏和地址栏。
+
 感谢主页的这些关键说明
 [http://vimperator.mozdev.org/index.html](http://vimperator.mozdev.org/index.html)
 
@@ -48,9 +50,9 @@ tag:
 
 
 1. 恢复地址栏、菜单栏、书签栏
-Set:guioptions+=mTb
+`Set:guioptions+=mTb`
 或者
-Set:go+=mTb
+`Set:go+=mTb`
 都可以达到打开以上项目的功能，m就是菜单、T就是地址栏、b就是书签栏，这三个参数可以单独使用；
 
 2. Vimperator有两种状态，普通状态和命令行状态，我们可以通过：进入命令行状态，通过Esc返回到普通状态。
@@ -63,16 +65,16 @@ or how I learned to stop worrying and love the 80+ buttons I already have.
 
 5. 滚动窗口。
 像Fterm一样：
-j/k    以行为单位滚动窗口；
-h/l    左右滚动窗口；
+j / k    以行为单位滚动窗口；
+h / l    左右滚动窗口；
 <space>/<C-b>    翻页；
 <C-d>/<C-u>    翻1/2页；
 
 6. 历史和标签。
-<C-o>/<C-i>    在当前的标签内实现前进和后退；
-gt/<C-n>    移动至下一个标签；
-gT/<C-p>    移动至前一个标签；
-g0/g$        移动至第一个标签；
+<C-o> / <C-i>    在当前的标签内实现前进和后退；
+gt / <C-n>    移动至下一个标签；
+gT / <C-p>    移动至前一个标签；
+g0 / g$        移动至第一个标签；
 d        关闭当前活动标签；
 
 利用：tabopen实现在新标签中打开网页，也可以使用快捷键t；
