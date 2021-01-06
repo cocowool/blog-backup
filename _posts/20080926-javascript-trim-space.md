@@ -2,6 +2,8 @@
 title: JavaScript 去除空格函数
 date: 2008-09-26 14:08:01
 tag: 
+keywords: javascript, 去除空格
+description: 本文介绍了几个去除字符串的javascript函数。
 ---
 
 利用正则去除字符串前后空格的方法：
