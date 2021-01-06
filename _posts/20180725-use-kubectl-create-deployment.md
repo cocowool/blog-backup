@@ -2,6 +2,8 @@
 title: 使用kubectl创建部署
 date: 2018-07-25 14:38
 tag: Kubernetes
+keywords: kubernetes, kubectl, docker
+description: 本文介绍如何在命令行下使用 kubectl 命令创建并管理部署。
 ---
 
 > 本文使用自己利用VirtubalBox搭建的集群环境，暂时只有一个Master、一个Node。如果想了解集群的搭建，可以参考我的文章[离线环境安装Kubernetes集群](https://www.cnblogs.com/cocowool/p/install_k8s_offline.html)以及[使用kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)。

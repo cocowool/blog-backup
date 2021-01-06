@@ -3,6 +3,8 @@ title: Docker 入门介绍
 date: 2018-06-20 11:12:13
 updated: 2020-05-02 16:22:39
 tag: 
+keywords: docker, docker介绍, docker镜像, docker daemon, docker client, docker 仓库
+description: Docker 是一个应用程序开发、部署、运行的平台，使用 go 语言开发。相较于传统的主机虚拟化，Docker 提供了轻量级的应用隔离方案，并且为我们提供了应用程序快速扩容、缩容的能力。
 ---
 
 Docker 是一个应用程序开发、部署、运行的平台，使用 go 语言开发。相较于传统的主机虚拟化，Docker 提供了轻量级的应用隔离方案，并且为我们提供了应用程序快速扩容、缩容的能力。

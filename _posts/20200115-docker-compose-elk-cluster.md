@@ -2,6 +2,8 @@
 title: Docker-compose 建立ELK集群
 date: 2020-01-15 20:05:21
 tag: 
+keywords: docker, docker-compose, docker建立ELK集群, elasticsearch
+description: 本文介绍了如何通过Docker快速构建Elasticsearch+Kibana，方便在本地试用调试ES和Kibana的相关功能。
 ---
 
 本文介绍了如何通过Docker快速构建Elasticsearch+Kibana，方便在本地试用调试ES和Kibana的相关功能。

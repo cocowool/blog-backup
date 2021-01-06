@@ -2,6 +2,8 @@
 title: 在Redhat 7.3中采用离线方式安装Docker
 date: 2018-07-11 18:32
 tag: 
+keywords: docker, docker安装, docker离线安装
+description: 本文介绍在离线环境中安装docker的方案。
 ---
 
 > 本文环境 Redhat Linux 7.3。Docker 18.

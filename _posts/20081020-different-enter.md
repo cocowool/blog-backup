@@ -2,6 +2,8 @@
 title: 不同浏览器对于换行的处理
 date: 2008-10-20 13:21:01
 tag: 
+keywords: 浏览器, 换行
+description: 本文介绍了在不同的浏览器中，如何解决各种语言下字符换行问题的方案。
 ---
 
 在一个容器中，如果设定了宽度，一般来说自动换行都是比较正常的，但是如果遇到了连续的英文字符，这个问题就会让人头疼。这不，我们部门的用户在测试的时候输入连续的字符，就出现了容器被撑大而样式变形的情况发生，怎么解决这个问题呢？
@@ -67,8 +69,7 @@ tag:
 
 **3. (IE浏览器)在td,th中嵌套div,p等采用上面提到的div,p的换行方法**
 
-**4.(Firefox浏览器)使用 table-layout:fixed;强制table的宽度,内层td,th采用word-break : break-all;或者word-wrap : break-word ;换行，使用overflow:hidden;隐藏超出内容，这里overflow:auto;无法起作用
-**
+**4.(Firefox浏览器)使用 table-layout:fixed;强制table的宽度,内层td,th采用word-break : break-all;或者word-wrap : break-word ;换行，使用overflow:hidden;隐藏超出内容，这里overflow:auto;无法起作用**
 
 <table style="table-layout:fixed" width="200">
 <tr>

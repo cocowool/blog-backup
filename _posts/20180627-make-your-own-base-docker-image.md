@@ -2,6 +2,8 @@
 title: 创建自己的Docker基础镜像
 date: 2018-06-27 19:23
 tag: 
+keywords: docker, 基础镜像
+description: Docker 提供了两种方法来创建基础镜像，一种是通过引入 tar 包的形式，另外一种是通过一个空白的镜像来一步一步构建。
 ---
 
 > 本文讲解如何在本地构建一个基础的Docker Python环境镜像，并扩展这个基础镜像构建Python运行环境，之后再构建自己的Python应用。
@@ -11,6 +13,7 @@ tag:
 Docker 提供了[两种方法](https://docs.docker.com/develop/develop-images/baseimages/#create-a-full-image-using-tar)来创建基础镜像，一种是通过引入**tar**包的形式，另外一种是通过一个空白的镜像来一步一步构建，本文使用的是第二种方法，既```FROM scratch```
 ```scratch```是Docker保留镜像，镜像仓库中的任何镜像都不能使用这个名字，使用```FROM scratch```表明我们要构建镜像中的第一个文件层。
 如果我们有一个**Linux下可执行的二进制文件**，可以构建一个简单的镜像，仅执行这个二进制。下面是Dockerfile。
+
 ```yaml
 FROM scratch
 ADD hello /
