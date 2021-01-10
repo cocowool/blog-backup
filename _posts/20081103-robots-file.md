@@ -3,11 +3,14 @@ title: Robots.txt和Robots META
 date: 2008-11-03 09:40:09
 updated: 2020-06-10 08:30:18
 tag: 
+keywords: robots, robots.txt
+description: robots.txt是一套指示搜索引擎（蜘蛛）如何抓取你的网页内容的一张地图，他告诉蜘蛛哪些需要抓取，哪些不要抓取（当然，这只是针对那些遵守这个协定的搜索引擎）。
 ---
 
 **Robots Text File Robots.txt**
 
 robots.txt是一套指示搜索引擎（蜘蛛）如何抓取你的网页内容的一张地图，他告诉蜘蛛哪些需要抓取，哪些不要抓取（当然，这只是针对那些遵守这个协定的搜索引擎）。robots.txt文件必须存放在网站的根目录下。
+
 robots.txt中包括两部分主要内容：
 
 ```

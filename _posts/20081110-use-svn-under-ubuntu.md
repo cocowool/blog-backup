@@ -3,6 +3,8 @@ title: Ubuntu下使用SVN
 date: 2008-11-10 20:15:14
 updated: 2020-06-10 08:09:00
 tag: 
+keywords: svn, linux, ubuntu
+description: 日常开发过程中一些常用svn命令的介绍。
 ---
 
 > 本文写于2008年，其中Eclipse相关的部分可能已经过时了，但是svn的命令仍旧有效。随着Git流行，SVN使用的人越来越少，但仍有其适用的场景和空间。

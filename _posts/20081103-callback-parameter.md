@@ -2,6 +2,8 @@
 title: 如何向回调函数中传入其他参数
 date: 2008-11-03 23:44:01
 tag: 
+keywords: javascript, 回调函数, 回调函数传参
+description: 本文总结介绍了向回调函数中传入参数的方法。
 ---
 
 如何向回调函数中传参数
@@ -23,31 +25,32 @@ tag:
 如何向回调函数中传参数
 
 总结一下：向回调函数中传入参数的终极办法其实就是利用Closure，这个看来是唯一可行而且比较优雅的方法，下面将Closure的写法列在下面：
-var callback = {
-success:function(data){
-var item = document.createElement("li");
-item.id = data.id;
-item.innerHTML = "The id is : " + data.id;
-item.innerHTML += " The value is : " + data.value;
+```javascript
+ var callback = {
+        success:function(data){
+            var item = document.createElement("li");
+            item.id = data.id;
+            item.innerHTML = "The id is : " + data.id;
+            item.innerHTML += " The value is : " + data.value;
+            
+            var parent = document.getElementById("result");
+            parent.appendChild(item);
+        },
+        failure:function(){
+            alert('failure:');
+        }
+    }
 
-var parent = document.getElementById("result");
-parent.appendChild(item);
-},
-failure:function(){
-alert('failure:');
-}
-}
+    xhr = new QueuedHandler();
+    for(var i=0;i<20;i++){
+        xhr.request('get','ajaxproxy.php?id='+i,function(data){        //第二种办法：利用Closure
+            data = eval('(' + data + ')');
+            data.id = i;
+            callback.success(data);
+        });
 
-xhr = new QueuedHandler();
-for(var i=0;i<20;i++){
-xhr.request('get','ajaxproxy.php?id='+i,function(data){        //第二种办法：利用Closure
-data = eval('(' + data + ')');
-data.id = i;
-callback.success(data);
-});
-
-}
-
+    }
+```
 
 
 
