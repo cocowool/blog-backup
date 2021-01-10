@@ -122,3 +122,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 * [使用 Docker 快速搭建PHP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
 * [Docker Compose 建立ELK集群](http://edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
 
+最后说点杂事，2021年刚开始没几天，年前立下的雄心壮志马上被各种无计划的事打乱了，感觉总是被打断，感觉总是时间不够用，原来以为是自己能力不够用，最近在云+社区上读了一个时间管理系列文章，才发现原来是自己坚持不够，给了自己点信心，2021刚开始还要继续加油才是，附上这个系列文章的链接，感兴趣的朋友可以读一读。
+
+![IMG_2772](20210106-dockerfile/IMG_2772.JPG)
