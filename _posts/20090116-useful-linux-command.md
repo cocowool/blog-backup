@@ -3,6 +3,8 @@ title: 一些常用的Linux命令
 date: 2009-01-16 09:39
 updated: 2020-06-10 08:11:11
 tag: 
+keywords: linux, linux命令, linux常用命令, mount, fdisk, tar, unzip, rar, chown
+description: 本文介绍了mount, fdisk, tar, unzip, rar, chown几个常用的Linux命令。
 ---
 
 ### mount

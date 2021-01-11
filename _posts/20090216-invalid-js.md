@@ -2,6 +2,8 @@
 title: IE下JS文件失效问题总结
 date: 2009-02-16 13:16:01
 tag: 
+keywords: ie, javascript
+description: 
 ---
 
 今天遇到了一个很诡异的问题，Firefox下好好的页面，在IE下却接二连三的报错，这到底是什么地方产生的错误。
