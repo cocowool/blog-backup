@@ -2,10 +2,14 @@
 title: Linux下不同文件编码的转换
 date: 2009-04-25 17:45:01
 tag: 
+keywords: linux, 编码, 编码转换
+description: 编码问题一直是困恼程序员的重要问题，本文详细整理了编码的基础知识，帮助大家不再收到编码问题的困扰。
 ---
 
 为了纠正自己对于编码的理解错误，加深对于各种不同编码的认识，搜集、学习了一些关于编码的相关资料。
+
 现在对于编码有了一个比较清楚的认识，能够处理一般情况下的乱码问题了。
+
 一、什么是编码。
 
 字符编码(Character Encoding)可以说就是让某一字符序列匹配一个指定集合中的某一东西，常见的例子包括长短电键组合起来表示的摩斯电码(Morse Code)、Baudot code、Unicode和用二进制来表示的ASCII(American Standard Code for Information Interchange)码、这样便能够将文本在计算机中存储和通过通信网络发送出去。
@@ -33,8 +37,11 @@ Big endian和Little endian。
 三、文件编码格式。
 
 从文件编码的方式来看，文件可分为ASCII文件和二进制文件。
+
 ASCII文件也称为文本文件，这种文件在磁盘中存放时每个字符对应一个字节，用于存放对应的ASCII码。
+
 二进制文件是按二进制的编码方式来存放文件的。
+
 二进制文件虽然也可在屏幕上显示，但其内容无法读懂。C系统在处理这些文件时，并不区分类型，都看成是字符流，按字节进行处理。输入输出字符流的开始和结束只由程序控制而不受物理符号(如回车符)的控制。 因此也把这种文件称作“流式文件”。
 
 四、字符编码的转换。
@@ -75,15 +82,15 @@ iconv -f encoding -t encoding inputfile
 更详细的说明可以man iconv
 
 
-[参考文献]
-1、MSDN    http://msdn.microsoft.com/zh-cn/library/x14b16ab(VS.80).aspx
-2、文件编码格式    http://blog.chinaunix.net/u2/82877/showart_1892207.html
-3、Linux下查看文件编码、文件编码转换和文件名编码    http://www.luoxf.net/wordpress/archives/227
-4、字符、字节和编码        http://www.regexlab.com/zh/encoding.htm
-5、CSDN相关文章    http://blog.csdn.net/fancyaphy/archive/2006/03/09/619972.aspx
-6、WIKI字符编码    http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81
-7、Character Encoding    http://en.wikipedia.org/wiki/Character_encoding
-8、MIME    http://en.wikipedia.org/wiki/MIME
+## 参考文献
+1. [MSDN](http://msdn.microsoft.com/zh-cn/library/x14b16ab(VS.80).aspx)
+2. [文件编码格式](http://blog.chinaunix.net/u2/82877/showart_1892207.html)
+3. [Linux下查看文件编码、文件编码转换和文件名编码](http://www.luoxf.net/wordpress/archives/227)
+4. [字符、字节和编码](http://www.regexlab.com/zh/encoding.htm)
+5. [CSDN相关文章](http://blog.csdn.net/fancyaphy/archive/2006/03/09/619972.aspx)
+6. [WIKI字符编码](http://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81)
+7. [Character Encoding ](http://en.wikipedia.org/wiki/Character_encoding)
+8. [MIME](http://en.wikipedia.org/wiki/MIME)
 
 
 
