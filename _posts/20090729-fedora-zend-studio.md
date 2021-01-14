@@ -2,6 +2,8 @@
 title: Fedora下Zend Studio 6.1.2 的配置
 date: 2009-07-29 22:05:01
 tag: 
+keywords: zend studio, zend, fedora, linux
+description: Zend Studio是我们PHPer的一个非常的得力的工具，有了他往往能够让我们的工作事倍功半，今天就来记录一下日常使用中非常有用的配置，来帮助更多的PHPer提高工作的效率。
 ---
 
 Zend Studio是我们PHPer的一个非常的得力的工具，有了他往往能够让我们的工作事倍功半，今天就来记录一下日常使用中非常有用的配置，来帮助更多的PHPer提高工作的效率。
