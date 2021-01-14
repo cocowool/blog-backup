@@ -2,13 +2,13 @@
 title: Firebug Command Line 的使用技巧
 date: 2009-05-23 11:15:01
 tag: 
+keywords: firebug, command line 
+description: Command lin 是Firebug中总有用的一个特性。Firebug中的命令行更像“Immediate Window”，你能够在任何时候检测代码中的值，firebug命令行的一个好处就是可以在”设计时“就查看代码。另外还有一个优点就是你可以在命令行写js语句并且让他们立刻执行。
 ---
 
-Commandlinie是Firebug中总有用的一个特性。如果你有Microsoft Visual Studio的使用经验，你就会知道“Immediate Window”
-和“Watch Window”的作用，我倒是想起了AutoCAD中的Commandline，通过快速的输入命令来完成操作。
+Command lin 是Firebug中总有用的一个特性。如果你有Microsoft Visual Studio的使用经验，你就会知道“Immediate Window”和“Watch Window”的作用，我倒是想起了AutoCAD中的Commandline，通过快速的输入命令来完成操作。
 
-Firebug中的命令行更像“Immediate Window”，你能够在任何时候检测代码中的值，firebug命令行的一个好处就是可以在”设计时“
-就查看代码。另外还有一个优点就是你可以在命令行写js语句并且让他们立刻执行。
+Firebug中的命令行更像“Immediate Window”，你能够在任何时候检测代码中的值，firebug命令行的一个好处就是可以在”设计时“就查看代码。另外还有一个优点就是你可以在命令行写js语句并且让他们立刻执行。
 
 firebug commandline的详细的api可以在官方的地址中看到：http://getfirebug.com/commandline.html
 
@@ -16,10 +16,10 @@ firebug commandline的详细的api可以在官方的地址中看到：http://get
 
 命令行的类型。firebug中有两种类型的命令行：1、单行模式；2、多行模式；
 
-1、单行模式。单行模式是firebug的默认命令行模式，它允许我们一次输入一行代码。单行模式的优点是支持自动完成。
-这个很强大的，就像在终端中一样，你还可以使用上下键来调入最近使用过的命令。
-2、多行模式。多行模式是单行模式的加强版，它允许我们一次输入多行代码并且马上执行。
-这两种模式都有各自的优势，大家可以根据自己的情况选择适合的模式。
+* 1、单行模式。单行模式是firebug的默认命令行模式，它允许我们一次输入一行代码。单行模式的优点是支持自动完成。
+  这个很强大的，就像在终端中一样，你还可以使用上下键来调入最近使用过的命令。
+* 2、多行模式。多行模式是单行模式的加强版，它允许我们一次输入多行代码并且马上执行。
+  这两种模式都有各自的优势，大家可以根据自己的情况选择适合的模式。
 
 Commandline API使用示例。
 
@@ -27,20 +27,20 @@ Commandline API使用示例。
 
 API列表：
 
-1、$(id)；
-2、$$(selector);
-3、$x(path);
-4、dir(object);
-5、dirxml(node);
-6、cd(window);
-7、clear();
-8、inspect(object [,tagname]);
-9、key(object);
-10、values(object);
-11、debug(fn) & undebug(fn);
-12、monitor(fn) & unmonitor(fn);
-13、monitorEvents(object [, tagname]) & unmonitorEvents(object [, tagName]);
-14、profile(title) & profileEnd();
+* 1、$(id)；
+* 2、$$(selector);
+* 3、$x(path);
+* 4、dir(object);
+* 5、dirxml(node);
+* 6、cd(window);
+* 7、clear();
+* 8、inspect(object [,tagname]);
+* 9、key(object);
+* 10、values(object);
+* 11、debug(fn) & undebug(fn);
+* 12、monitor(fn) & unmonitor(fn);
+* 13、monitorEvents(object [, tagname]) & unmonitorEvents(object [, tagName]);
+* 14、profile(title) & profileEnd();
 
 1、$(id)。
 使用过Prototype的同学看到这个一定很亲切。
@@ -85,13 +85,17 @@ inspect($('txt1'),'html');
 
 9、keys(boject)。
 返回指定名称的对象的所有属性的名称数组。指定的名称可以是Javascript对象，也可以是HTML的DOM元素。
+
+```javascript
 function Car(){
-this.Model = "Old Model";
-this.getManufactor = new function(){
-return "Toyota";
-}
+  this.Model = "Old Model";
+  this.getManufactor = new function(){
+	  return "Toyota";
+  }
 }
 var o = new car()
+```
+
 我们可以用keys(o)获得car对象的所有属性。
 
 还可以获得HTML元素的所有属性名称，比如 keys($('txt5'));
@@ -128,8 +132,9 @@ types表示的我们要追踪的事件类型，最常用的就是'mouse'和'key'
 最后，希望每一位使用firebug来开发的同学，能够提高自己的开发效率。
 
 [参考资料]
-1、firebug commandline        http://michaelsync.net/2007/09/15/firebug-tutorial-commandline-api
-2、prototype                    http://www.prototypejs.org/
+
+1. [firebug commandline](http://michaelsync.net/2007/09/15/firebug-tutorial-commandline-api)
+2. [prototype](http://www.prototypejs.org/)
 
 
 
