@@ -2,6 +2,8 @@
 title: Pandas 快速入门（二）
 date: 2018-02-05 15:39
 tag: 
+keywords: pandas, pandas python, pandas入门, pandas数据分析, python
+description: Pandas是Python提供的数据分析重要工具，本文介绍数据清理和转换、分组统计及画图等功能，助你快速入门 pandas 数据分析。
 ---
 
 本文的例子需要一些特殊设置，具体可以参考[Pandas快速入门（一）](http://www.cnblogs.com/cocowool/p/8316595.html)
