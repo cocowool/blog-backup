@@ -2,25 +2,29 @@
 title: Fedora 11 的安装以及 LAMP环境的搭建(一)
 date: 2009-09-20 19:58
 tag: 
+keywords: Fedora, LAMP, Linux, PHP
+description: 使用Fedora作为开发桌面，配置LAMP环境的过程记录。
 ---
 
 最近，重新安装了一次系统，为了以后不再做无谓的重复查询的工作，特将本次安装及配置的过程记录下来，做为自己以后的一个参考，亦可以为想要安装 Fedora 桌面的同学的一个参考，有任何不对或者可以节省安装时间的方法，都可以在这里讨论。
-最近，重新安装了一次系统，为了以后不再做无谓的重复查询的工作，特将本次安装及配置的过程记录下来，做为自己以后的一个参考，亦可以为想要安装 Fedora 桌面的同学的一个参考，有任何不对或者可以节省安装时间的方法，都可以在这里讨论。
 
-一、安装系统
-这个很简单，我使用的是Fedora Live cd KDE 的版本，其实是喜欢和习惯gnome的，只是手边上没有现成的。
-系统安装完成后，稍微体验了一下KDE的dolphine和Konquer，还是不是很习惯，需要上gnome
+## 一、安装系统
+
+这个很简单，我使用的是Fedora Live cd KDE 的版本，其实是喜欢和习惯gnome的，只是手边上没有现成的。系统安装完成后，稍微体验了一下KDE的dolphine和Konquer，还是不是很习惯，需要上gnome
 
 yum groupinstall 'GNOME Desktop Environment'
 
 安装完成后，Logout 然后重新登录进来就能看到熟悉的 gnome 界面了，只不过，这样安装的 gnome 很多默认的软件还是和直接的 gnome 不太一样，比如Office 套件就保留了 Koffice，游戏也有很多是K下的，这个影响不大，暂且不表。
 
-二、配置权限和网络连接及其他
+## 二、配置权限和网络连接及其他
 
 (1)、配置权限
 需要为经常使用的用户配置权限，需要修改 /etc/sudoers ，添加：
-cipher  ALL=(ALL)       ALL
+
+```sh
+cipher  				ALL=(ALL)       ALL
 cipher          ALL=(ALL)       NOPASSWD: ALL
+```
 
 这样，用户 cipher 就获得了 sudo 权限而且不需要输入每次都输入密码。
 
@@ -30,21 +34,21 @@ cipher          ALL=(ALL)       NOPASSWD: ALL
 * 一个被命名为“自由”，主要是开源软件（开源软件的含义通过 Fedora授权指引定义），但因为美国专利保护法案又不能包含在 Fedora 中。
 * 另一个被命名为“非自由”，主要是非自由软件，就是其它所有那些不能非自由软件，包括公开源代码的软件，但是有“非商业使用”之类的限制。
 
-sudo rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
-sudo rpm -ivh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+```sh
+$ sudo rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+$ sudo rpm -ivh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+```
 
 安装presto插件：sudo yum install yum-presto
 安装镜像自动选择插件：sudo yum install yum-fastestmirror
 
-
-
-三、安装常用软件
+## 三、安装常用软件
 
 (0)、输入法 -- SCIM
 
 Fedora 11 下默认了 ibus 作为输入法，但是我在将系统语言切换为英文后，又经过 yum remove ibus， yum install ibus 反反复复的几次，始终无法终端中切换出中文来，所以最后又投入了我所熟悉的 scim 的怀抱。
 
-yum install scim*
+`yum install scim*`
 
 (1)、Firefox
 
@@ -76,8 +80,8 @@ Linux版的QQ自发布到现在一直都没有更新过，不知道是不是现�
 完成后对包进行解压缩：tar -xvzf thunderbird-2.0.0.23.tar.gz
 解压完成后：cd thunderbird
 执行：./thunderbird 的时候提示：./thunderbird-bin: error while loading shared libraries: libstdc++.so.5: cannot open shared object file: No such file or directory
-看来是一些基础的库不存在，按照提示：    sudo yum install libstdc++.so.5
-完成后，通过：./thunderbird 就可以打开邮件客户端，进行用户名和POP、SMTP服务器配置后就可以使用进行邮件的发送。
+
+看来是一些基础的库不存在，按照提示：    sudo yum install libstdc++.so.5 完成后，通过：./thunderbird 就可以打开邮件客户端，进行用户名和POP、SMTP服务器配置后就可以使用进行邮件的发送。
 
 我们可以为其建立桌面的快捷方式
 命令行方式为：    ln -s   ~/Download/software/misc/thunderbird/thunderbird ./thunderbird
@@ -105,7 +109,7 @@ sudo yum install qt4 qt4-devel libcurl libcurl-devel kernel-devel automake gcc-c
 
 到目前位置，这个系统就基本上能满足我们日常的办公和沟通需要了。
 
-四、影音娱乐以及系统美化
+## 四、影音娱乐以及系统美化
 
 (1)、视频播放器 Mplayer
 
@@ -116,12 +120,10 @@ sudo yum install libdvdcss
 安装其他视频文件格式支持：sudo yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg libmatroska xvidcore
 安装播放器：sudo yum install mplayer smplayer
 
-===========================================================================
 ~~进行了编译安装mplayer的尝试，不过最后编译完成后，皮肤没有安装好，最后还是采用了简单粗暴的 yum 方法~~
 ~~首先查看官方的安装说明：http://www.mplayerhq.hu/DOCS/HTML/en/softreq.html~~
 ~~大部分的软件包都可以通过 yum 来进行安装，有些需要单独安装，包括：~~
 ~~lame    http://lame.sourceforge.net/download.php,    然后按照 INSTALL 中的提示进行编译安装就可以了。~~
-===========================================================================
 
 (2)、音频播放器 Rhythmbox
 

@@ -2,6 +2,8 @@
 title: Fedora 11 的安装以及 LAMP环境的搭建(二)
 date: 2009-09-22 09:46:01
 tag: 
+keywords: Fedora, LAMP, Linux, PHP
+description: 使用Fedora作为开发桌面，配置LAMP环境的过程记录。
 ---
 
 
@@ -17,7 +19,7 @@ sudo yum install unrar
 Linux下的优秀的ftp客户端。
 sudo yum install fillzilla
 
-**五、LAMP开发环境配置**
+## **五、LAMP开发环境配置**
 
 (1)、ZendStudio 6.1.2
 
@@ -42,25 +44,28 @@ Apache 的安装通过yum很简单，执行命令：sudo yum install apache 就�
 Apache 默认配置文件在 /httpd/conf/httpd.conf，可以在这个文件中做一些基本的配置定义。
 配置虚拟主机，apache 在配置文件中设定了启动包含 /etc/httpd/conf.d/ 中的配置文件，所以如果建立虚拟机，我们只需要在 /etc/httpd/conf.d/vhost.conf 中进行编辑即可，而不需要编辑默认配置文件。
 典型的虚拟主机配置如下：
+
+```httpd
 #www.work.rk.cn
 NameVirtualHost *:80
 <VirtualHost *:80>
-ServerAdmin cocowool@gmail.com
-DocumentRoot /home/cipher/Zend/workspaces/DefaultWorkspace/
-ServerName www.work.cn
-ErrorLog logs/www.work.cn-error_log
-CustomLog logs/www.work.cn-access_log common
+  ServerAdmin cocowool@gmail.com
+  DocumentRoot /home/cipher/Zend/workspaces/DefaultWorkspace/
+  ServerName www.work.cn
+  ErrorLog logs/www.work.cn-error_log
+  CustomLog logs/www.work.cn-access_log common
 
-SetEnv SRV_MEMCACHED_KEY_PREFIX     'work_cn'
-SetEnv SRV_MEMCACHED_HOST           'localhost'
-SetEnv SRV_MEMCACHED_SERVERS        '127.0.0.1:11211'
-SetEnv SRV_MEMCACHED_PORT           '11211'
+  SetEnv SRV_MEMCACHED_KEY_PREFIX     'work_cn'
+  SetEnv SRV_MEMCACHED_HOST           'localhost'
+  SetEnv SRV_MEMCACHED_SERVERS        '127.0.0.1:11211'
+  SetEnv SRV_MEMCACHED_PORT           '11211'
 
-<Directory "/home/cipher/Zend/workspaces/cgi">
-AllowOverride Options
-Allow from All
-</Directory>
+  <Directory "/home/cipher/Zend/workspaces/cgi">
+  AllowOverride Options
+  Allow from All
+  </Directory>
 </VirtualHost>
+```
 
 注意的问题：
 NameVirtualHost 在虚拟主机的配置文件中，只需要写一份就可以了，否则会报出一个 warnning；
@@ -97,6 +102,7 @@ mysql 的默认配置文件位于 /etc/my.cnf ，另外还有5个推荐的配置
 首先停掉系统中的 mysql 服务：sudo service mysqld stop
 移动数据文件到自己的目录下：sudo mv -f mysql/ ~/Data/，这里要注意权限
 修改 /etc/my.cnf 中的相关配置为实际情况：
+```mysql
 [mysqld]
 #datadir=/var/lib/mysql
 #socket=/var/lib/mysql/mysql.sock
@@ -106,6 +112,7 @@ socket=/home/cipher/Data/mysql/mysql.sock
 修改启动脚本 /etc/init.d/mysqld ：
 #get_mysql_option mysqld datadir "/var/lib/mysql"
 get_mysql_option mysqld datadir "/home/cipher/Data/mysql"
+```
 重新启动 mysql 服务： sudo service mysqld start
 使用命令：mysql -uroot --sock=/home/cipher/Data/mysql/mysql.sock 便可以进入数据库，创建一个测试的数据库 overtest，之后便可以在 /home/cipher/Data/mysql 下看到新建立了一个数据文件夹。
 这个时候，如果直接使用 mysql -uroot 进行登录，会提示：Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock'，原因当然是那个位置已经没有这个文件了
@@ -122,7 +129,7 @@ Memcached，
 
 sudo ntsysv，命令执行后，会出现一个图形界面，用空格选择需要随机启动的服务，然后点击OK就可以了。
 
-**六、系统性能的优化配置**
+## **六、系统性能的优化配置**
 
 (0)、启动问题
 
@@ -155,6 +162,7 @@ Privacy -> History -> 选择 Use Custom settings for History
 我们可以在home下创建 .vimperatorrc 来定义自己喜欢的快捷键，而不是用vimperator默认提供的。
 我的配置文件如下：
 
+```bash
 "---------------------------
 "Common setting
 "---------------------------
@@ -196,6 +204,7 @@ inoremap <C-v> <C-v><C-v>
 inoremap <C-x> <C-v><C-x>
 inoremap <C-z> <C-v><C-z>
 inoremap <C-y> <C-v><C-y>
+```
 
 参考资料:
 1、[Fedora 下 Apache 的配置](http://www.linuxidc.com/Linux/2009-02/18262.htm)
