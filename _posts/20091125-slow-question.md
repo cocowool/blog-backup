@@ -70,6 +70,7 @@ RewriteCond %{HTTP_REFERER} !^[http://www.abc.com/.*](http://www.abc.com/.*)$ [N
 RewriteCond %{HTTP_REFERER} !^[http://www.abc.com](http://www.abc.com)$ [NC]
 RewriteRule .*\.(gif|jpg|swf)$[http://www.abc.com/about/nolink.png](http://www.abc.com/about/nolink.png)[R,NC]
 这样盗链的请求会被重定向到一个错误页面，从而减少下载带给服务器的压力。
+
 参考资料：
 1、[部署 Apache 的一些技巧。](http://bbs.phpchina.com/viewthread.php?tid=99620)
 2、[Apache Server 负载能力测试](http://www.cnscn.org/htm_data/703/0806/15397.html)
@@ -79,9 +80,6 @@ RewriteRule .*\.(gif|jpg|swf)$[http://www.abc.com/about/nolink.png](http://www.a
 6、[Apache限制连接数和并发数](http://www.diybl.com/course/6_system/linux/Linuxjs/2008927/146147.html)
 7、[Apache安装mod_rewrite模块](http://www.admin99.net/read.php/278.htm)
 8、[Apache防盗链的简单实现](http://www.xiaohui.com/dev/server/20070330-apache-anti-leech.htm)
-Technorati 标签:[apache](http://technorati.com/tags/apache),[负载](http://technorati.com/tags/%e8%b4%9f%e8%bd%bd),[并发](http://technorati.com/tags/%e5%b9%b6%e5%8f%91),[ab](http://technorati.com/tags/ab),[mod_rewrite](http://technorati.com/tags/mod_rewrite),[mod_limitipconn](http://technorati.com/tags/mod_limitipconn)
-
-
 
 
 
