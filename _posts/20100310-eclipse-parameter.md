@@ -2,12 +2,15 @@
 title: Eclipse Galileo SR2 参数配置
 date: 2010-03-10 16:31:01
 tag: 
+keywords: eclipse, eclipse 参数
+description: eclipse参数配置
 ---
 
 要崩溃了，下载了 eclipse-jee-galileo-SR2-win32.zip ，解压缩，运行后提示：
 JVM   terminated. Exit   code=-1
 Google了一下，问题出在 eclipse.ini 上，但是发现大家解决这个问题的方法真是千奇百怪：
 先来看一下原始的配置文件
+
 > -startup
 plugins/org.eclipse.equinox.launcher_1.0.201.R35x_v20090715.jar
 --launcher.library
@@ -69,8 +72,6 @@ E:\Program Files\Java\jdk1.6.0_16\bin\javaw.exe
 -XX:+UseParallelGC
 -XX:PermSize=256M
 -XX:MaxPermSize=512M
-
-Technorati 标签:[eclipse](http://technorati.com/tags/eclipse),[galileo](http://technorati.com/tags/galileo),[jvm](http://technorati.com/tags/jvm),[terminate](http://technorati.com/tags/terminate),[启动故障](http://technorati.com/tags/%e5%90%af%e5%8a%a8%e6%95%85%e9%9a%9c)
 
 
 
