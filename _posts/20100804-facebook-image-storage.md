@@ -2,6 +2,8 @@
 title: Facebook的图片存储
 date: 2010-08-04 00:48
 tag: 
+keywords: 图片存储, facebook图片存储
+description: Facebook
 ---
 
 为了减少对昂贵的存储解决方案（诸如[NetApp](http://www.netapp.com/us/)和[Akamai](http://www.akamai.cn/enzs/)，我所在的单位用了一套NetApp，性能和稳定性都不错，价格当然也不菲），Facebook在2009年4月的时候推出了一套新的，名为Haystack的图片存储系统，来一个对每个月85亿次的图片上传（每天500G）。
