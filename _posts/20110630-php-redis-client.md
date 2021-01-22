@@ -2,6 +2,8 @@
 title: Redis的PHP客户端
 date: 2011-06-30 15:55:01
 tag: 
+keywords: redis, redis客户端, redis php客户端
+description: 本文主要介绍PHP客户端的安装和使用。
 ---
 
 Redis支持的客户端种类非常多，包括C、Java、PHP、Python等，本文主要介绍PHP客户端的安装和使用。
@@ -12,17 +14,16 @@ Redis的客户端实际上担负了通过网络协议与Redis Server进行通信
 
 官方提供的PHP客户端列表如下：
 
-
-
+|                          | predis                                                       | phpredis                                                     | Rediska |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
+| 易扩展                   | ∆                                                            |                                                              | ∆       |
+| 客户端策略和Hash算法定义 | ∆                                                            |                                                              | ∆       |
+| 实现方式                 | 纯PHP                                                        | PHP扩展（C语言）                                             | 纯PHP   |
+| 测试数据（本地环境下）   | 18900 SET/sec using 12 bytes for both key and value18300 GET/sec while retrieving the very same values0.210 seconds to fetch 30000 keys using _KEYS *_. | 29000 SET/sec using 12 bytes for both key and value30000 GET/sec while retrieving the very same values0.037 seconds to fetch 30000 keys using "KEYS *"". |         |
+| 测试结果（网络环境下）   | 3150 SET/sec using 12 bytes for both key and 3150 GET/sec while retrieving the very same 0.212 seconds to fetch 30000 keys using "KEYS *". | 3300 SET/sec using 12 bytes for both key and 3300 GET/sec while retrieving the very same 0.088 seconds to fetch 30000 keys using "KEYS *". |         |
+|                          |                                                              |                                                              |         |
 
 **特性比较**
-
-
-
-
-
-/*---------------------- Predis ----------------------------*/
-
 
 **Predis**
 
@@ -40,9 +41,6 @@ Predis是一个灵活和特性完备（PHP>5.3）的支持Redis的PHP客户端�
 Predis安装
 
 
-/*----------------------- phpredis ---------------------------*/
-
-
 **phpredis**
 
 
@@ -51,54 +49,44 @@ Predis安装
 
 Max下整合XAMPP的安装（需要XAMPP的Dev环境）
 
-
-sudo /Applications/XAMPP/xamppfiles/bin/phpize
-sudo MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load" ./configure --with-apxs=/Applications/XAMPP/xamppfiles/bin/apxs --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
-sudo make
-sudo make install
-
+```sh
+$ sudo /Applications/XAMPP/xamppfiles/bin/phpize
+$ sudo MACOSX_DEPLOYMENT_TARGET=10.6 CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp" CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe" LDFLAGS="-arch i386 -arch x86_64 -bind_at_load" ./configure --with-apxs=/Applications/XAMPP/xamppfiles/bin/apxs --with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config
+$ sudo make
+$ sudo make install
+```
 
 然后修改php.ini，重启服务就可以了。
 
-
 示例代码
-
-
+```php
 <?php
 echo 'phpredis sample:<br />';
 
-
 error_reporting(E_ALL);
 ini_set('display_errors','ON');
-
 
 $redis = new Redis();
 $redis->connect('127.0.0.1',6379);
 $redis->set('first_key_phpredis', 'Hello world');
 
-
 );
-
-
-/*------------------- Rediska -------------------------------*/
-
+```
 
 **Rediska**
 
-
 rediska 目前还处于 beta 阶段。他的代码托管在github上，可以方便的获取。另外也提供了PEAR版本，所以获取和安装都非常方便。可以使用PEAR包安装。
 
-
 本文使用的是 Mac 下的 XAMPP提供的PEAR进行安装。首先添加频道地址：
-
-
+```sh
 localhost:bin shiqiang$ sudo ./pear channel-discover[pear.geometria-lab.net](http://pear.geometria-lab.net/)
 Password:
 Adding Channel "[pear.geometria-lab.net](http://pear.geometria-lab.net/)" succeeded
 Discovery of channel "[pear.geometria-lab.net](http://pear.geometria-lab.net/)" succeeded
-
+```
 
 然后进行安装
+```sh
 localhost:bin shiqiang$ sudo ./pear channel-discover[pear.geometria-lab.net](http://pear.geometria-lab.net/)
 Password:
 Adding Channel "[pear.geometria-lab.net](http://pear.geometria-lab.net/)" succeeded
@@ -111,9 +99,10 @@ downloading Rediska-0.5.6.tgz ...
 Starting to download Rediska-0.5.6.tgz (116,203 bytes)
 .........................done: 116,203 bytes
 install ok: channel://pear.[geometria-lab.net/Rediska-0.5.6](http://geometria-lab.net/Rediska-0.5.6)
-
+```
 
 安装完成后，就可以看到本地的目录环境下已经有了Rediska的PEAR包
+```sh
 localhost:XAMPP shiqiang$ sudo find . -name 'Redis*'
 ./xamppfiles/lib/php/pear/data/Rediska
 ./xamppfiles/lib/php/pear/doc/Rediska
@@ -144,43 +133,35 @@ localhost:XAMPP shiqiang$ sudo find . -name 'Redis*'
 ./xamppfiles/temp/pear/download/Rediska-0.5.6/tests/library/Rediska/Options/RediskaInstanceTest.php
 ./xamppfiles/temp/pear/download/Rediska-0.5.6/tests/library/RediskaTest.php
 ./xamppfiles/temp/pear/download/Rediska-0.5.6.tgz
-
+```
 
 **简单使用的示例**
-
-
+```php
 <?php
-
-
 error_reporting(E_ALL);
 ini_set('display_errors','ON');
 
-
 $options = array(
-'namespace' => 'Application_',
-'servers'   => array(
-array('host' => '127.0.0.1', 'port' => 6379),
-array('host' => '127.0.0.1', 'port' => 6380)
-)
+  'namespace' => 'Application_',
+  'servers'   => array(
+    array('host' => '127.0.0.1', 'port' => 6379),
+    array('host' => '127.0.0.1', 'port' => 6380)
+  )
 );
-
 
 require_once 'Rediska.php';
 $rediska = new Rediska($options);//创建Rediska对象，连接服务器
 
-
 $key = new Rediska_Key('first_key');
 $key->setValue('first_value');
 
-
 $get_value = new Rediska_Key('first_key');
 print $get_value;//取回存储的值
-
+```
 
 **相对于Memcache的区别**
 1、支持的数据类型多样化。支持字符串、列表、集合、有序集合、Hash数组这几种数据类型。
 2、可以灵活的指定key存储在哪台服务器上。
-
 
 参考资料：
 1、[http://rediska.geometria-lab.net/](http://rediska.geometria-lab.net/)
@@ -188,16 +169,3 @@ print $get_value;//取回存储的值
 3、[PHP Redis](http://code.google.com/p/phpredis/)
 4、[膜拜Redis](http://hi.baidu.com/thinkinginlamp/blog/item/3358c93d174e35ce9f3d62bf.html)
 5、[redis客户端 predis与phpredis 比较](http://blog.csdn.net/lxzo123/archive/2011/05/12/6414458.aspx)
-
-
-
-
-
-
-
-
-
-
-
-
-
