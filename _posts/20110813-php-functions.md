@@ -3,6 +3,8 @@ title: method_exists VS is_callable
 date: 2011-08-13 21:53:01
 tag: PHP
 category: 开发
+keywords: method_exists, is_callable, php
+description: 介绍method_exists和is_callable的区别，提醒大家在实际项目中不要犯错。
 ---
 
 > 介绍method_exists和is_callable的区别，提醒大家在实际项目中不要犯错。
@@ -108,16 +110,3 @@ echo'<br />';
 ## 参考资料
 1、[is_callable](http://php.net/manual/en/function.is-callable.php)
 2、[method_exists](http://www.php.net/manual/en/function.method-exists.php)
-
-
-
-
-
-
-
-
-
-
-
-
-
