@@ -2,6 +2,8 @@
 title: 由于版本依赖造成的YUM段错误
 date: 2012-02-25 23:12:01
 tag: 
+keywords: yum, yum linux, linux
+description: zlib版本依赖造成的YUM段错误。
 ---
 
 最近在服务器（Centos 5.3，64位）上使用YUM，总是提示 Segmentation Fault，无论执行什么命令都是如此，一时不得其解。
