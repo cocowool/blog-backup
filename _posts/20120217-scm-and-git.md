@@ -2,6 +2,8 @@
 title: Git的深入理解与GitHub托管服务的使用
 date: 2012-02-17 17:13:01
 tag: 
+keywords: git, github, git 命令, scm
+description: 本文介绍了使用Git作为版本控制工具的具体使用方法。
 ---
 
 **源代码管理系统（SCM）与版本控制**
@@ -136,72 +138,53 @@ Git 支持许多数据传输协议，包括本地传输、 git://协议、http(s
 
 上面这段话，描述了我们在使用远程仓库以及与其他人协作过程中的大体流程，需要用到的一些远程仓库的操作如下：
 
-
 1、查看当前配置的远程仓库
 
 可以使用 git remote -v 来查看当前项目中都添加了哪些远程仓库
-![](file:///Users/shiqiang/Library/Application%20Support/Evernote/data/101370/content/p3537/36c54a59c6bdd63460bfb6c21715a813.png)
 
+![NSFileHandle](20120217-scm-and-git/NSFileHandle.png)
 
 其中Origin一般是自己在服务器上的远程仓库，其他的为他人的远程仓库。
 
-
 2、添加新的远程仓库
-
 
 要添加一个新的远程仓库，可以指定一个简单的名字，以便将来引用，运行 git remote add [shortname] [url]
 
-
 git remote add pb git://github.com/paulboone/ticgit.git
-
 
 3、抓取远程仓库的信息
 
-
 git fetch [remote-name]
-
 
 此命令会到远程仓库中拉取所有你本地仓库中还没有的数据。运行完成后，你就可以在本地访问该远程仓库中的所有分支，将其中某个分支合并到本地，或者只是取出某个分支，一探究竟。如果是克隆了一个仓库，此命令会自动将远程仓库归于 origin 名下。所以，git fetch origin 会抓取从你上次克隆以来别人上传到此远程仓库中的所有更新（或是上次 fetch 以来别人提交的更新）。有一点很重要，需要记住，fetch 命令只是将远端的数据拉到本地仓库，并不自动合并到当前工作分支，只有当你确实准备好了，才能手工合并。
 
-
 4、 从远程仓库抓取信息并合并
-
 
 git pull [remote-name]
 
-
 可以使用 git pull 命令自动抓取数据下来，然后将远端分支自动合并到本地仓库中当前分支。在日常工作中我们经常这么用，既快且好。实际上，默认情况下git clone 命令本质上就是自动创建了本地的 master 分支用于跟踪远程仓库中的 master 分支（假设远程仓库确实有 master 分支）。所以一般我们运行git pull，目的都是要从原始克隆的远端仓库中抓取数据后，合并到工作目录中的当前分支。
-
 
 5、推送数据到远程仓库
 
-
 git push [remote-name] [branch-name]
-
 
 项目进行到一个阶段，要同别人分享目前的成果，可以将本地仓库中的数据推送到远程仓库。实现这个任务的命令很简单： git push [remote-name] [branch-name]。如果要把本地的 master 分支推送到origin 服务器上（再次说明下，克隆操作会自动使用默认的 master 和 origin 名字），可以运行下面的命令:
 
-
 git push origin master
-
 
 只有在所克隆的服务器上有写权限，或者同一时刻没有其他人在推数据，这条命令才会如期完成任务。如果在你推数据前，已经有其他人推送了若干更新，那 你的推送操作就会被驳回。你必须先把他们的更新抓取到本地，合并到自己的项目中，然后才可以再次推送。
 
 
 6、查看远程仓库信息
 
-
 git remote show [remote-name]
-
 
 7、远程仓库的删除和重命名
 
-
-git remote rename ［old name] [new name]
-
-
-git remote rm [remote-name]
-
+```sh
+$ git remote rename ［old name] [new name]
+$ git remote rm [remote-name]
+```
 
 **Git与GitHub**
 
@@ -226,9 +209,9 @@ GitHub是一个利用Git提供免费的代码托管服务的网站（类似的�
 
 2、选择一个自己喜欢的项目，进行Fork。
 
-
 3、建立本地的资源池（Local Repo）。
-![](file:///Users/shiqiang/Library/Application%20Support/Evernote/data/101370/content/p3537/5e685bb2ebf8d8c57e272443d9cf7153.png)
+
+![NSFileHandle](20120217-scm-and-git/NSFileHandle-1499208.png)
 
 
 
@@ -248,7 +231,7 @@ git remote add upstream[https://github.com/shaneharter/PHP-Daemon.git](https://g
 git fetch upstream
 
 
-![](file:///Users/shiqiang/Library/Application%20Support/Evernote/data/101370/content/p3537/e74a303398651dc34e0c6446f0401504.png)
+![NSFileHandle](20120217-scm-and-git/NSFileHandle-1499225.png)
 
 
 
@@ -269,7 +252,6 @@ Mac下还有一个gitk，提供了图形化工具来进行历史的查阅。它�
 
 ![](./20120217-scm-and-git/20120217-885.05.20.png)
 
-
 参考资料：
 1、[Wiki GitHub](http://zh.wikipedia.org/zh/GitHub)
 2、[Git版本控制](http://zh.wikipedia.org/wiki/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6)
@@ -281,17 +263,3 @@ Mac下还有一个gitk，提供了图形化工具来进行历史的查阅。它�
 8、[Git详解之一：Git起步](http://www.open-open.com/lib/view/open1328069609436.html)
 9、[Open经验库Git系列文章](http://www.open-open.com/lib/list/282?pn=1)
 10、Pro Git
-
-
-
-
-
-
-
-
-
-
-
-
-
-

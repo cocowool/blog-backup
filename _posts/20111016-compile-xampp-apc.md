@@ -2,6 +2,8 @@
 title: 在Lion上为XAMPP编译APC
 date: 2011-10-16 11:22:01
 tag: 
+keywords: mac, mac xampp, xampp编译APC
+description: 介绍在Mac下为XAMPP编译APC的方法。
 ---
 
 平时在Mac下使用XAMPP进行开发，最近需要用到APC扩展，从PECL上下载了扩展的源文件，在本地进行了编译安装。下面是安装步骤。

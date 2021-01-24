@@ -2,6 +2,8 @@
 title: 使用PHP脚本来写Daemon程序
 date: 2011-12-04 15:48:01
 tag: 
+keywords: daemon, php daemon
+description: daemon进程有时人们也把它们称作"后台服务进程",daemon进程的寿命很长。
 ---
 
 **什么是Daemon进程**
@@ -68,13 +70,9 @@ tag:
 
 同文件权限掩码一样，我们的新进程会从父进程那里继承一些已经打开了的文件。这些被打开的文件可能永远不被我们的daemon进程读或写，但它们一样消耗系统资源，而且可能导致所在的文件系统无法卸下。需要指出的是，文件描述符为0、1和2的三个文件（文件描述符的概念将在下一章介绍），也就是我们常说的输入、输出和报错这三个文件也需要被关闭。很可能不少读者会对此感到奇怪，难道我们不需要输入输出吗？但事实是，在上面的第2步后，我们的daemon进程已经与所属的控制终端失去了联系，我们从终端输入的字符不可能达到daemon进程，daemon进程用常规的方法（如printf）输出的字符也不可能在我们的终端上显示出来。所以这三个文件已经失去了存在的价值，也应该被关闭。
 
-
-
-使用PHP编写Gearman的Worker守护进程
-
+### 使用PHP编写Gearman的Worker守护进程
 
 在我之前的文章中，介绍过Gearman的使用。在我的项目中，我使用了PHP来编写一直运行的Worker。如果按照Gearman官方推荐的例子，只是简单的一个循环来等待任务，会有一些问题，包括：1、当代码进行过修改之后，如何让代码的修改生效；2、重启Worker的时候，如何保证当前的任务处理完成才重启。
-
 
 针对这个问题，我考虑了以下的解决方法：
 1、每次修改完代码后，Worker需要手工重启（先杀死然后启动）。这个只能解决重新加载配置文件的问题。
@@ -89,86 +87,80 @@ tag:
 
 代码如下：
 
-
+```php
 <?php
 
 declare( ticks = 1 );
-//This case will check the config file regularly, if the config file changed, it will restart it self
+// This case will check the config file regularly, if the config file changed, it will restart it self
 // If you want to restart the daemon gracefully, give it a HUP signal
 // by shiqiang<cocowool@gmail.com> at 2011-12-04
 
-$init_md5=md5_file( 'config.php');
+$init_md5 = md5_file( 'config.php');
 
-//register signal handler
-pcntl_signal( SIGALRM, "signal_handler",true);
-pcntl_signal( SIGHUP, 'signal_handler',TRUE);
+// register signal handler
+pcntl_signal( SIGALRM, "signal_handler", true );
+pcntl_signal( SIGHUP, 'signal_handler', TRUE );
 
-$job_flag=FALSE;//Job status flag, to justify if the job has been finished
-$signal_flag=FALSE;//Signal status flag, to justify whether we received the kill -1 signal
+$job_flag = FALSE;    //Job status flag, to justify if the job has been finished
+$signal_flag = FALSE;    //Signal status flag, to justify whether we received the kill -1 signal
 
 while( 1 ){
-$job_flag=FALSE;//Job status flag
-print"Worker start running ... \n";
-sleep(5);
-print"Worker's task done ... \n";
-$flag=TRUE;//Job status flag
-AutoStart($signal_flag);
+    $job_flag = FALSE;    //Job status flag
+    print "Worker start running ... \n";
+    sleep(5);
+    print "Worker's task done ... \n";
+    $flag = TRUE;    //Job status flag
+    AutoStart( $signal_flag );
 }
 
-functionsignal_handler($signal) {
-global$job_flag;
-global$signal_flag;
+function signal_handler( $signal ) {
+    global $job_flag;
+    global $signal_flag;
 
-switch($signal){
-caseSIGQUIT:
-printdate('y-m-d H:i:s',time() ) . " Caught Signal : SIGQUIT - No :$signal\n";
-exit(0);
-break;
-caseSIGSTOP:
-printdate('y-m-d H:i:s',time() ) . " Caught Signal : SIGSTOP - No :$signal\n";
-break;
-caseSIGHUP:
-printdate('y-m-d H:i:s',time() ) . " Caught Signal : SIGHUP - No :$signal\n";
-if($flag===TRUE){
-AutoStart(TRUE);
-}else{
-$signal_flag=TRUE;
-}
-break;
-caseSIGALRM:
-printdate('y-m-d H:i:s',time() ) . " Caught Signal : SIGALRM - No :$signal\n";
-//pcntl_exec( '/bin/ls' );
-pcntl_alarm( 5 );
-break;
-default:
-break;
-}
-}
-
-functionAutoStart($signal=FALSE,$filename= 'config.php' ){
-global$init_md5;
-
-if($signal||md5_file($filename) !=$init_md5){
-print"The config file has been changed, we are going to restart. \n";
-$pid= pcntl_fork();
-if($pid== -1 ){
-print"Fork error \n";
-}elseif($pid> 0 ){
-print"Parent exit \n";
-exit(0);
-}else{
-$init_md5=md5_file($filename);
-print"Child continue to run \n";
-}
-}
+    switch( $signal ){
+        case SIGQUIT:
+            print date('y-m-d H:i:s', time() ) . " Caught Signal : SIGQUIT - No : $signal \n";
+            exit(0);
+            break;
+        case SIGSTOP:
+            print date('y-m-d H:i:s', time() ) . " Caught Signal : SIGSTOP - No : $signal \n";
+            break;
+        case SIGHUP:
+            print date('y-m-d H:i:s', time() ) . " Caught Signal : SIGHUP - No : $signal \n";
+            if( $flag === TRUE ){
+                AutoStart( TRUE );
+            }else{
+                $signal_flag = TRUE;
+            }
+            break;
+        case SIGALRM:
+            print date('y-m-d H:i:s', time() ) . " Caught Signal : SIGALRM - No : $signal \n";
+            //pcntl_exec( '/bin/ls' );
+            pcntl_alarm( 5 );
+            break;
+        default:
+            break;
+    }
 }
 
+function AutoStart( $signal = FALSE, $filename = 'config.php' ){
+    global $init_md5;
 
-
-
-
-
-
+    if( $signal || md5_file( $filename ) != $init_md5 ){
+        print "The config file has been changed, we are going to restart. \n";
+        $pid = pcntl_fork();
+        if( $pid == -1 ){
+            print "Fork error \n";
+        }else if( $pid > 0 ){
+            print "Parent exit \n";
+            exit(0);
+        }else{
+            $init_md5 = md5_file( $filename );
+            print "Child continue to run \n";
+        }
+    }
+}
+```
 
 参考资料：
 1、[PHP-Daemon](https://github.com/shaneharter/PHP-Daemon)

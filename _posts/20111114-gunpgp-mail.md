@@ -3,6 +3,8 @@ title: 如何使用GunPGP加密Apple Mail的邮件
 date: 2011-11-14 22:37:01
 tag: 
 cageory: Mac
+keywords: gnupgp, gnupgp加密, gnupgp加密邮件
+description: GnuPG全称GNU PrivacyGuard，它是基于公钥/私钥体系的加密工具PGP（Pretty Good Privacy）的开源版本它遵循OpenPGP标准。
 ---
 
 我和火星人也很好奇如何能够更安全的传输邮件，所以决定试一试。他的环境是 Linux Ubuntu ，我的环境是 Mac OS X Lion。
@@ -16,8 +18,6 @@ PGP使用双密匙来加密数据。每个使用PGP加密技术的人都要创�
 
 公匙和私匙相互作用对数据进行加密及解密。被公匙加密的数据只能被私匙解密，被私匙加密的数据也只能被一个公匙解密。这样就可以实现双重认证。
 
-
-
 例如，A要给B发信息：
 
 * A不想信息被其他人看见，怎么办？
@@ -30,12 +30,9 @@ PGP使用双密匙来加密数据。每个使用PGP加密技术的人都要创�
 
 * B收到信息后如何确定这信息是A发的呢？
 
-
 首先A必须通过某种途径把自己的公钥发给B。
 在发送信息前，A先用自己的密钥加密信息。
 B收到信息后就可以使用A的公钥来对收到的信息进行验证。这样就能确定信息来自A，这就是PGP所谓的签名(signature)与验证(verification)。
-
-
 
 **如何在Lion中使用PGP加密你的邮件**
 
@@ -53,8 +50,6 @@ GPGMail、GPG Keychain Access、MacGPG1、MacGPG2、GPGService、GPGPreference�
 
 
 安装之后，你就可以在 terminal 中看到 gpg 命令已经被安装好了。
-
-
 
 
 2、打开 GPG Keychain Access 生成自己的公钥和密钥对。
@@ -83,29 +78,15 @@ GPGMail、GPG Keychain Access、MacGPG1、MacGPG2、GPGService、GPGPreference�
 导出的格式选项中，选择 binary 的格式。笔者试验了 ASCII 格式好像不能够正确导出。将导出的公钥发送给其他人，同时将别人的公钥 Import 到 GPG keychain Access 中。
 
 4、最后，就可以在Mail中使用GPG进行邮件加密和签名。
+
 ![](./20111114-gunpgp-mail/11111.png)
-
-
 
 大功告成！
 
 参考资料：
 1、[GpGTools](http://gpgtools.org/)
-
 2、[GpGMail Not working after an os update](https://github.com/GPGTools/GPGMail/wiki/Not-working-anymore-after-an-OS-update)
 3、密码学简介
 4、[GPG签名和加密](http://lagignition.blog.163.com/blog/static/1287300232009101082517154/)
 5、[Apple Mail PGP](http://blog.sina.com.cn/s/blog_5595d514010008xe.html)
 6、[Using GNUPG encryption with Mac OS X Mail](http://www.wasuvi.com/?page_id=2368)
-
-
-
-
-
-
-
-
-
-
-
-
