@@ -2,6 +2,8 @@
 title: CentOS中设置系统级代理
 date: 2012-07-06 22:09:01
 tag: 
+keywords: centos, centos linux, centos 代理
+description: 在Centos中设置全局代理。
 ---
 
 
@@ -43,9 +45,3 @@ export_http_proxy
 1、[CentOS5.6下设置代理服务器](http://blog.csdn.net/tsangchoonhsia/article/details/6676834)
 2、[Virtualbox双网卡虚拟机Linux NAT不能上网](http://www.cnblogs.com/tigertall/archive/2012/01/02/2310253.html)
 3、[关于Centos YUM的代理设置](http://blog.chinaunix.net/space.php?uid=20255102&amp;do=blog&amp;id=1712939)
-
-
-
-
-
-
