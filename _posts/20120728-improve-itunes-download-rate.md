@@ -2,7 +2,7 @@
 title: 提高Mac下itunes的下载速度
 date: 2012-07-28 08:57:01
 tag: 
-keywords： iTunes, iTunes 下载速度, iTunes 下载慢
+keywords: iTunes, iTunes 下载速度, iTunes 下载慢
 description: 提高Mac下itunes的下载速度的小技巧。
 ---
 
