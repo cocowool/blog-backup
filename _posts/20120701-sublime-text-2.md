@@ -2,6 +2,8 @@
 title: Sublime Text 2以及Zen Coding
 date: 2012-07-01 16:02
 tag: 
+keywords: sublime text, sublime text zen coding, zen coding
+description: 使用Zen Coding开发CSS和HTML，简直爱不释手。
 ---
 
 
@@ -13,13 +15,15 @@ tag:
 
 使用Ctrl ＋ Alt ＋ Enter 呼出ZenCoding，我们可以用 div#content>ul>li*3>a[href="javascript:void(0);"]{Links$} 这样短短的一句话，生成下面一段代码：
 
+```html
 <did id="content">
-<ul>
-<li><a href="javascript:void(0);">Links1</a></li>
-<li><a href="javascript:void(0);">Links2</a></li>
-<li><a href="javascript:void(0);">Links3</a></li>
-</ul>
+  <ul>
+    <li><a href="javascript:void(0);">Links1</a></li>
+    <li><a href="javascript:void(0);">Links2</a></li>
+    <li><a href="javascript:void(0);">Links3</a></li>
+  </ul>
 </did>
+```
 
 这样神奇的书写方式，配合Sublime Text 实时预览的功能，整个过程真是妙不可言。
 
@@ -30,8 +34,6 @@ tag:
 1、安装包控制 Package Control。
 
 使用Ctrl ＋ ｀调出Console，然后输入以下代码并执行。
-
-
 
 2、重启Sublime Text 2，在Preferences->Package Settings中看到Package Control这一项表示安装成功。
 
@@ -90,7 +92,6 @@ tag:
 
 使用ZenCoding编写代码时，需要遵循一定的缩写规则：
 
-
 * E
 元素名（div、p）；
 * E#id
@@ -105,7 +106,6 @@ tag:
 多项元素
 * E$*N
 带序号的元素
-
 
 **Sublime Text 中使用Zen Coding的一些技巧**
 
@@ -131,15 +131,3 @@ tag:
 7、[Zen Coding in Sublime Text 2](http://lucifr.com/139231/zencoding-in-sublime-text-2/)
 8、[Zen Coding 让NotePad＋＋代码书写健步如飞](http://rpsh.net/archives/zen-coding-npp/)
 9、[Sublime Text 2 编辑器实用技巧](http://www.csser.com/board/4f59c2cb9c3694f227001cd7)
-
-
-
-
-
-
-
-
-
-
-
-
