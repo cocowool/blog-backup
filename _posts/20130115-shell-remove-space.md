@@ -2,6 +2,8 @@
 title: SHELL技巧：处理文件名中的那些空格
 date: 2013-01-15 21:47
 tag: 
+keywords: 文件名空格, linux 文件名空格, shell技巧, shell 处理文件名空格
+description: Linux下遇到文件名中有空格时，用shell处理就需要一些特殊的技巧，本文帮你整理总结到了一起。
 ---
 
 
@@ -35,16 +37,16 @@ tag:
 
 一个终极的解决办法就是设置IFS（the Internal Field Separator），不要用空格做为IFS，选择其他的符号。先来看看man page：
 
-IFS: The Internal Field Separator that is used for word splitting after expansion and to split lines into words with the read built-in command. The default value is “<space><tab><new-line>”.
+> IFS: The Internal Field Separator that is used for word splitting after expansion and to split lines into words with the read built-in command. The default value is “<space><tab><new-line>”.
 
 
 ![](./20130115-shell-remove-space/15215809-cb61f85865b24ba4b1bb381b12363eb6.png)
 
 另外一个办法就是在对文件名进行处理之前，先将空格替换为特殊的自定义符号，然后在处理结束的时候，再替换回来。
-
+```sh
 safename="$(echo name | sed 's/ /_-_/g')"
 original="$(echo $safename | sed s'/_-_/ /g')"
-
+```
 其他还有一些方法，例如利用find命令。
 
 ![](./20130115-shell-remove-space/15215816-35dbfa69c6014384944b38b1a157822a.png)

@@ -2,6 +2,8 @@
 title: JavaScript Mobile开发框架汇总
 date: 2012-12-11 09:47:01
 tag: 
+keywords: javascript, javascript 移动端框架, 移动端JS框架
+description: 目前Javascript移动开发框架有些共同的特点：专门为移动设备做了优化，提供标准的UI组件；提供跨平台的支持（Android、IOS、etc）；轻量级，由于手机网络访问的特点，所有的框架都要注意轻量；大量使用HTML5和CSS3标准。
 ---
 
 
@@ -45,15 +47,3 @@ Sencha Touch是世界上第一个基于HTML5的Mobile App框架，其前身基�
 5、[Titanium Mobile](http://www.appcelerator.com/platform/titanium-sdk)
 6、[The M Project](http://the-m-project.net/)
 7、[BootStrap入门教程](http://www.cnblogs.com/ventlam/archive/2012/05/28/2520703.html)
-
-
-
-
-
-
-
-
-
-
-
-
