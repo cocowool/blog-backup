@@ -2,6 +2,8 @@
 title: 让PHP 5.3支持MSSQL连接
 date: 2013-12-31 13:18
 tag: 
+keywords: php, php mssql
+description: 从5.3开始，PHP自带的dll不再支持2000以后的MS SQL Server了。整理了相关资料，实现了与Sql Server 2008的成功连接。
 ---
 
 
@@ -35,15 +37,3 @@ extension=php_sqlsrv_53_ts.dll
 4、[PHP 5.3如何连接MSSql Server](http://blog.csdn.net/sptoor/article/details/7704991)
 5、[安装SQL Server native client](http://msdn.microsoft.com/zh-cn/library/ms131321.aspx)
 6、[SQLServer 2012的问题](http://social.msdn.microsoft.com/Forums/ie/zh-CN/2e950ea0-0f1d-411b-99f6-e48d26269214/sqlserver2012?forum=sqlserverzhchs)
-
-
-
-
-
-
-
-
-
-
-
-

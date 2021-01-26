@@ -2,6 +2,8 @@
 title: PHP读取Excel文件内容
 date: 2014-10-15 10:50:01
 tag: 
+keywords: php, php excel, php读取Excel
+description: 项目需要读取Excel的内容，从百度搜索了下，主要有两个选择，第一个是PHPExcelReader，另外一个是PHPExcel。
 ---
 
 项目需要读取Excel的内容，从百度搜索了下，主要有两个选择，第一个是PHPExcelReader，另外一个是PHPExcel。
@@ -68,15 +70,3 @@ echo date("Y-m-d[H:i:s",PHPExcel_Shared_Date::ExcelToPHP($date));](file:///H:i:s
 3、[PHPExcel中文帮助（知识点）](http://www.jbxue.com/article/6308.html)
 4、[利用PHPExcel导入导出Excel文件](http://www.jb51.net/article/45382.htm)
 5、[PHPExcel常用功能指南](http://www.jb51.net/article/53895.htm)
-
-
-
-
-
-
-
-
-
-
-
-

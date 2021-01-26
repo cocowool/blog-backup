@@ -2,6 +2,8 @@
 title: 使用正则匹配并显示匹配的内容
 date: 2014-11-12 21:14:01
 tag: 
+keywords: find, find linux, 正则匹配
+description: 利用 find 实现将文件中的内容查找并显示出来。
 ---
 
 最近在解析HTML文件，遇到这样的一个场景。我需要将HTML文件中data-url="xxx"中的xxx查找并显示出来。

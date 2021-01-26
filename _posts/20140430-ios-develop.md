@@ -2,6 +2,8 @@
 title: iOS开发学习笔记:基础篇
 date: 2014-04-30 23:15
 tag: 
+keywords: iOS开发, iOS
+description: iOS开发需要一台Mac电脑、Xcode以及iOS SDK。Xcode是一个集成开发环境，iOS SDK则是开发应用所必需，不同的SDK分别对应不同的iOS版本或设备。
 ---
 
 iOS开发需要一台Mac电脑、Xcode以及iOS SDK。因为苹果设备都具有自己封闭的环境，所以iOS程序的开发必须在Mac设备上完成（当然，黑苹果应该也是可以的，但就需要花很多的精力去折腾基础环境），Xcode是一个集成开发环境，包括了编辑器、调试、模拟器等等一系列方便开发和部署的工具，iOS SDK则是开发应用所必需，不同的SDK分别对应不同的iOS版本或设备，通常我们需要下载多个iOS SDK以确保我们开发的程序能够在不同版本的iOS上正常运行。

@@ -2,6 +2,8 @@
 title: SED入门
 date: 2013-09-01 11:05:01
 tag: 
+keywords: sed, sed linux, sed入门
+description: SED的入门介绍，SED（Stream Editor）意为流编辑器，是Unix常见的命令行程序。。
 ---
 
 

@@ -2,6 +2,8 @@
 title: 超越按钮，拥抱触摸界面
 date: 2013-05-25 00:07:01
 tag: 
+keywords: 触摸界面, 触摸屏, 触摸屏设计
+description: 苹果iPhone手机的发布，可以说带来了一个全新的“触摸”时代。本文介绍触摸屏为我们带来的一些变化。
 ---
 
 
@@ -54,16 +56,3 @@ Stop Talking，Start Making
 2、[iOS Human Interface Guidelines](http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/)
 3、[Touch Gesture Reference Guide](http://www.lukew.com/ff/entry.asp?1071)
 4、[If you see a UI walkthrough, they blew it](http://blog.maxrudberg.com/post/38958984259/if-you-see-a-ui-walkthrough-they-blew-it)
-
-
-
-
-
-
-
-
-
-
-
-
-
