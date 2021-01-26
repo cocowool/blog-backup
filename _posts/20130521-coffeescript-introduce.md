@@ -2,6 +2,8 @@
 title: CoffeeScript学习笔记
 date: 2013-05-21 23:49:01
 tag: 
+keywords: coffeescript, coffeescript学习笔记
+description: CoffeeScript编程语言构建于Javascript之上，它可编译成高效JavaScript。可以在Web浏览器上，或者结合Node.js一类的技术构建服务端应用程序。
 ---
 
 
@@ -29,13 +31,13 @@ sudo npm install -g coffee-script
 
 **基本用法**
 
--c,--compile          将.coffee编译为.js文件
--w,--watch            监控文件的变化，并输出监控的结果
--o,--output [DIR]     将编译的结果文件输出到指定目录
--p,--print            将编译结果
--l,--lint             如果安装了 jsl (javascript lint)的话，使用lint检查代码
--s,--stdio            将其它程序的输出作为coffee的标准输入，并且获得JavaScript的标准输出。
--e,--eval             命令行的形式
+* -c,--compile          将.coffee编译为.js文件
+* -w,--watch            监控文件的变化，并输出监控的结果
+* -o,--output [DIR]     将编译的结果文件输出到指定目录
+* -p,--print            将编译结果
+* -l,--lint             如果安装了 jsl (javascript lint)的话，使用lint检查代码
+* -s,--stdio            将其它程序的输出作为coffee的标准输入，并且获得JavaScript的标准输出。
+* -e,--eval             命令行的形式
 
 ![](./20130521-coffeescript-introduce/21234823-2d3cf3d499174fbe91b146ef9f2c8063.png)
 
@@ -43,15 +45,3 @@ sudo npm install -g coffee-script
 1、[初步了解CoffeeScript：第一部分入门](http://www.ibm.com/developerworks/cn/web/wa-coffee1/index.html)
 2、[CoffeeScript](http://coffeescript.org/)
 3、[Wiki CoffeeScript](http://zh.wikipedia.org/zh-cn/CoffeeScript)
-
-
-
-
-
-
-
-
-
-
-
-

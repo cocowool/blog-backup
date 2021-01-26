@@ -2,6 +2,8 @@
 title: CSS中的计数器
 date: 2013-05-17 23:28:01
 tag: 
+keywords: css, css counter, css 计数器
+description: CSS的规范中，有一个很奇特的特性，支持计数器的功能。
 ---
 
 CSS的规范中，有一个很奇特的特性，支持计数器的功能。
@@ -18,21 +20,23 @@ CSS的规范中，有一个很奇特的特性，支持计数器的功能。
 这段代码表示了做一件事情的顺序，现在我们可以使用CSS的计数器来给这些步骤标注顺序。
 
 下面的代码：
+```css
 body {
-counter-reset: steps;
+	counter-reset: steps;
 }
 
 p{
-color: #242424;
-font-size: 16px;
-line-height: 20px;
+  color: #242424;
+  font-size: 16px;
+  line-height: 20px;
 }
 p:before {
-counter-increment: steps;
-content: "Step " counter(steps) ": ";
-font-weight: bold;
-font-size: 18px;
+  counter-increment: steps;
+  content: "Step " counter(steps) ": ";
+  font-weight: bold;
+  font-size: 18px;
 }
+```
 在浏览一下看看效果如何？每行之前都有了一个步骤的数字标注，很神奇吧。
 
 这个属性自CSS2.1起开始写入规范，目前大多数主流的浏览器都可以支持，唯一不支持的就是IE7了。
@@ -41,16 +45,3 @@ font-size: 18px;
 
 参考资料：
 1、[Learn to count with CSS](http://www.webdesignerdepot.com/2013/05/learn-to-count-with-css/)
-
-
-
-
-
-
-
-
-
-
-
-
-

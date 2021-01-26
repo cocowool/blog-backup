@@ -2,22 +2,29 @@
 title: jQuery的animate函数
 date: 2013-05-12 09:45:01
 tag: 
+keywords: jquery, jquery animate, javascript jquery
+description: jQuery提供了一个animate函数，可以通过改变CSS属性来实现一些动画效果。
 ---
 
 
 jQuery提供了一个animate函数，可以通过改变CSS属性来实现一些动画效果。
 
 用法如下：
+
+```javascript
 .animate( properties[, duration ][, easing ][, complete ])
+```
+
 或者
 
 .animate( properties, options )，其中 options 包含了duration、easing、queue、specialEasing、step、progress、complete、done、fail、always等多个属性。
 
 animate函数允许我们在所有使用数字值的CSS属性上创建动画效果。唯一必须的属性是一个 CSS 属性对象。例如：
-
+```javascript
 $('.class').animate({
-left:"100"
+	left:"100"
 });
+```
 
 **Animation Properties and Values**
 
@@ -33,7 +40,6 @@ left:"100"
 
 
 **Duration 持续时间**
-
 
 Duration 的单位为微秒，数值越高动画效果越慢，反之则越快。默认的时间是 400 毫秒。“fast”默认为 200 毫秒，“slow”默认为 600 毫秒。
 
@@ -60,15 +66,3 @@ fx 是对 jQuery.fx 的引用，包含了动画元素的一系列属性，例如
 1、[animate of jQuery](http://api.jquery.com/animate/)
 2、[jQuery的Index方法](http://www.w3school.com.cn/jquery/dom_element_methods_index.asp)
 3、[jQuery UI effect](http://jqueryui.com/effect/#easing)
-
-
-
-
-
-
-
-
-
-
-
-
