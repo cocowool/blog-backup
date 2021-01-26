@@ -2,6 +2,8 @@
 title: NMAP学习笔记
 date: 2021-01-26 14:24:51
 tags:
+keywords: nmap, nmap扫描, nmap使用
+description: nmap(Network Mapper)是一款用于网络扫描和安全审计软件开源软件，很多网络管理员也用它来进行网络设备管理、服务升级和主机监控。
 ---
 
 nmap(Network Mapper)是一款用于网络扫描和安全审计软件开源软件，支持Windows、Mac、Linux等多个平台。同时，很多网络管理员也用它来进行网络设备管理、服务升级和主机监控。NMAP使用原始的IP包来探测网络上存活的主机、服务、操作系统等各种信息。NMAP被设计用来进行大型网络的扫描，但也可以用来对单个目标进行扫描。Nmap还曾在20部电影大屏幕上出现过。
