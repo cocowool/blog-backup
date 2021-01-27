@@ -2,6 +2,8 @@
 title: 各种操作中心Operation Center一览
 date: 2014-12-21 10:30:01
 tag: 
+keywords: 操作中心, ECC, 指挥中心, 运维室, 总控中心
+description: Operation Center在中国可能有很多种名称，例如指挥中心、运维室、总控中心等等，国外可能也有很多名称，不管名称如何，任何一个上规模得数据总心或者运维单位一般都有一个这样得中心，来负责所管理IT设备、系统得运行维护工作。
 ---
 
 Operation Center在中国可能有很多种名称，例如指挥中心、运维室、总控中心等等，国外可能也有很多名称，不管名称如何，任何一个上规模得数据总心或者运维单位一般都有一个这样得中心，来负责所管理IT设备、系统得运行维护工作。最近几天，我搜集了网路上一些国外Operation Center得资料和信息，开拓视野，为国内相关设施得建设，增添一些可以参考的资源。
@@ -27,28 +29,41 @@ Operation Center在中国可能有很多种名称，例如指挥中心、运维�
 ![](./20141221-operation-datacenter/211034470152070.jpg)
 
 印度Reliance Communications的Network Operation Center
+
 ![](./20141221-operation-datacenter/211034544376036.jpg)
 
 Lucent’s Network Reliability Center in Aurora, Colorado (1998-99)
+
 ![](./20141221-operation-datacenter/211035011245860.jpg)
 
 Conexim’s NOC in Australia
+
 ![](./20141221-operation-datacenter/211035076243741.jpg)
 
 Akamai’s NOC in Cambridge, Massachusetts
+
 ![](./20141221-operation-datacenter/211035135466264.jpg)
 
 下面看一些比较朴素的操作中心
 
 Easy CGI’s NOC in Pearl River, New York
+
 ![](./20141221-operation-datacenter/211035233438071.jpg)
+
 Ensynch’s NOC in Tempe, Arizona
+
 ![](./20141221-operation-datacenter/211035296246953.jpg)
+
 TWAREN’s NOC (Taiwan Advanced Research & Education Network)
+
 ![](./20141221-operation-datacenter/211035358906905.jpg)
+
 The Planet’s NOC in Houston, Texas
+
 ![](./20141221-operation-datacenter/211035415306915.jpg)
+
 KDL’s NOC in Evansville, Indiana
+
 ![](./20141221-operation-datacenter/211035505463893.jpg)
 
 看一下波音公司的操作中心。

@@ -2,6 +2,8 @@
 title: 关于Advertising Campaign
 date: 2016-07-20 13:36:01
 tag: 
+keywords: 广告营销, 广告, 互联网广告
+description: Advertise Campaigns 是指为了传播企业创意或者宣传主题而采取的一些列的整合营销IMC活动，也称为广告战役。
 ---
 
 Advertise Campaigns 是指为了传播企业创意或者宣传主题而采取的一些列的整合营销（[IMC](https://en.wikipedia.org/wiki/Integrated_Marketing_Communications)）活动，也称为广告战役。广告战役主要在一段明确的时间内，通过不同的媒体渠道投放广告，现在经常会整合线上和线下渠道，包括社交媒体、电视、户外媒体（OOH）等等。
@@ -42,7 +44,9 @@ MODERN DAY IMPLICATIONS TO THE ADVANTAGES & DISADVANTAGES OF TRADITIONAL MEDIA C
 
 机构开始策划广告活动的时候他们就需要了解目标市场、目标用户的所有特点。目标用户是最有可能从广告主这里购买商品的个人或集体。可以根据关键特征、性别、年龄、职业、地理位置、婚姻状况、行为、收入水平、教育水平等作为区分目标用户的特征。
 
-性别区分男女，年龄经常按照10年的年龄段来区分，例如15-25年龄段。通过分析目标市场的年龄结构，广告就能够根据特点做出相应的努力。职业通常是人们为生存而从事的活动，也可能是一种特殊的工作，如学生、失业等。A person’s material status defines whether they are married or unmarried. Geographical location is a broad term specifying a particular area or place within a given country, state/ city, suburb or street as some examples. Income refers to home much money a person is earning annually which can help identify how much money they have left over after expenses to potential spend on a brand. The final factor to explain is education, whether a person went to school or not, what school they attended, what standard of education they have, diplomas, certificates, graduate, degrees, masters, PhD’s or other forms of defining educational factors. Knowing this information can help an advertiser understand their target markets level of thinking to help adapt the advertising campaign to be understood by the given target consumer/s.
+性别区分男女，年龄经常按照10年的年龄段来区分，例如15-25年龄段。通过分析目标市场的年龄结构，广告就能够根据特点做出相应的努力。职业通常是人们为生存而从事的活动，也可能是一种特殊的工作，如学生、失业等。
+
+> A person’s material status defines whether they are married or unmarried. Geographical location is a broad term specifying a particular area or place within a given country, state/ city, suburb or street as some examples. Income refers to home much money a person is earning annually which can help identify how much money they have left over after expenses to potential spend on a brand. The final factor to explain is education, whether a person went to school or not, what school they attended, what standard of education they have, diplomas, certificates, graduate, degrees, masters, PhD’s or other forms of defining educational factors. Knowing this information can help an advertiser understand their target markets level of thinking to help adapt the advertising campaign to be understood by the given target consumer/s.
 
 生意想要成功必须要找准产品或服务的目标市场，而将市场进行分层能够帮助更好的决策。通常将市场按以下四个维度进行区分：地理的、人口的、心理的以及行为上的。
 
@@ -76,7 +80,9 @@ MODERN DAY IMPLICATIONS TO THE ADVANTAGES & DISADVANTAGES OF TRADITIONAL MEDIA C
 
 广告中常常存在多感官的接触点。这些接触点帮助品牌建立与消费者之间的联系。现代社会的多种技术使消费者通过多种方式与品牌互动成为可能。最成功的接触点创造有价值的消费者与品牌间的联系，常见的例子包括社交媒体链接、二维码、广告传单、商标、公告牌、网站等其他的方式来连接消费者和品牌。
 
-多感官的的接触点是由人类感官识别品牌特点的潜意识过程。这些特征可能是与品牌关联的形状、颜色、材质、声音、气味或者口感等。由于市场竞争的加剧，在广告中考虑使用感官线索变得越来越重要。用户会在给定的感官特征引导下联想到他最熟悉的一个品牌。一个明显的例子就是红牛品牌，它使用颜色、形状和尺寸与其他竞争者明显有别的罐子来在市场竞争中胜出。A taller can looks like the 1st place podium when placed next to competitors, the design looks like the finish flag in racing representing winning.The opportunity for an advertising campaign to succeed is significantly increased with the use of multi sensory touch points used as a point of difference between brands.例子里说的是泰国的红牛包装，和国内的有所不同。
+多感官的的接触点是由人类感官识别品牌特点的潜意识过程。这些特征可能是与品牌关联的形状、颜色、材质、声音、气味或者口感等。由于市场竞争的加剧，在广告中考虑使用感官线索变得越来越重要。用户会在给定的感官特征引导下联想到他最熟悉的一个品牌。一个明显的例子就是红牛品牌，它使用颜色、形状和尺寸与其他竞争者明显有别的罐子来在市场竞争中胜出。
+
+> A taller can looks like the 1st place podium when placed next to competitors, the design looks like the finish flag in racing representing winning.The opportunity for an advertising campaign to succeed is significantly increased with the use of multi sensory touch points used as a point of difference between brands.例子里说的是泰国的红牛包装，和国内的有所不同。
 
 1、[Wiki Campaign](https://en.wikipedia.org/wiki/Campaign)
 2、[Advertising Campaign](https://en.wikipedia.org/wiki/Advertising_campaign)
@@ -84,16 +90,3 @@ MODERN DAY IMPLICATIONS TO THE ADVANTAGES & DISADVANTAGES OF TRADITIONAL MEDIA C
 4、[American Association of Advertising Agencies](https://en.wikipedia.org/wiki/American_Association_of_Advertising_Agencies)
 5、[AAAA.org](http://www.aaaa.org/)
 6、[Out-of-home advertising](https://en.wikipedia.org/wiki/Out-of-home_advertising)
-
-
-
-
-
-
-
-
-
-
-
-
-

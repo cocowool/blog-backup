@@ -2,6 +2,8 @@
 title: 如何让高度、宽度不定的容器保持水平、垂直居中
 date: 2015-06-28 22:14:01
 tag: 
+keywords: css, 水平居中, 垂直居中
+description: 使用CSS的方式解决网页元素水平居中、垂直居中的需求。
 ---
 
 这个题目似乎解决的办法很多，JS是最能够确保各种浏览器中一致性的，但是仍然可以使用CSS的方式来解决。这个问题分解为两个方面，第一解决左右居中的问题，第二解决上下居中的问题。
@@ -20,9 +22,48 @@ tag:
 
 综上，可以得出对于高度、宽度都不固定的容器，如何让其做到水平、垂直居中：
 
-1<!DOCTYPE html>2<html>3<head>4<metahttp-equiv=“Content-Type”content=“text/html;charset=utf-8″/>5<title>水平、垂直居中</title>6<styletype=“text/css”>7#container_outer{display:table;width:1200px;height:1000px;overflow:hidden;margin-left:50px;_position:relative;}8#container_inner{vertical-align:middle;display:table-cell;text-align:center;_position:absolute;_top:50%;_left:50%;}9#content{color:#fff;border:1px solid #000;display:inline-block;_position:relative;_top:-50%;_left:-50%;}10</style>11<body>12<divid=“container_outer”>13<divid=“container_inner”>14<divid=“content”>15动态内容...16</div>17</div>18</div>1920</body>21</html>
-
-
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<metahttp-equiv=“Content-Type”content=“text/html;charset=utf-8″/>
+		<title>水平、垂直居中</title>	
+		<style type=“text/css”>
+			#container_outer{
+				display:table;
+				width:1200px;
+				height:1000px;
+				overflow:hidden;
+				margin-left:50px;
+				_position:relative;
+			}
+			#container_inner{
+				vertical-align:middle;
+				display:table-cell;
+				text-align:center;
+				_position:absolute;
+				_top:50%;
+				_left:50%;
+			}
+			#content{
+				color:#fff;
+				border:1px solid #000;
+				display:inline-block;
+				_position:relative;
+				_top:-50%;
+				_left:-50%;
+			}
+	</style>
+<body>	
+<div id=“container_outer”>
+  <div id=“container_inner”>
+    <div id=“content”>动态内容...
+    </div>
+  </div>
+</div>
+</body>
+</html>
+```
 
 
 参考资料：
@@ -31,15 +72,3 @@ tag:
 3、[http://www.cnblogs.com/zhwl/p/3529473.html](http://www.cnblogs.com/zhwl/p/3529473.html)
 4、[CSS vertical-align](http://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp)
 5、[http://www.jb51.net/css/10337.html](http://www.jb51.net/css/10337.html)
-
-
-
-
-
-
-
-
-
-
-
-

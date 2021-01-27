@@ -2,6 +2,8 @@
 title: Robots.txt 协议详解及使用说明
 date: 2015-11-28 13:19:01
 tag: 
+keywords: robots, robots.txt, robots.txt协议
+description: Robots协议，也称为爬虫协议、机器人协议等，其全称为“网络爬虫排除标准（Robots Exclusion Protocol）”。网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。
 ---
 
 一、Robots.txt协议
@@ -62,15 +64,3 @@ content部分有四个选项：index、noindex、follow、nofollow，指令间�
 3、[详细的Robots.txt学习方法](http://www.chinaz.com/web/2011/1117/221058_2.shtml)
 4、[Robots Exclusion standard](https://en.wikipedia.org/wiki/Robots_exclusion_standard)
 5、[The web robots page](http://www.robotstxt.org/)
-
-
-
-
-
-
-
-
-
-
-
-

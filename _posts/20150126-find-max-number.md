@@ -2,6 +2,8 @@
 title: 两个有序数组中查找第K大数
 date: 2015-01-26 21:56:01
 tag: 
+keywords: 查找第K大数, 算法
+description: 两个数组A、B，长度分别为m、n，即A(m)、B(n)，分别是递增数组。求第K大的数字。
 ---
 
 题目：两个数组A、B，长度分别为m、n，即A(m)、B(n)，分别是递增数组。求第K大的数字。
@@ -25,58 +27,46 @@ tag:
 第K个元素有可能在B中，同理可以假设在B中，再进行一次搜索。复杂度为log(m)+log(n)。
 
 具体代码如下：
-int kthsmallest(int *a,int m,int *b,int n,int k) {if (m == 0) {
-return b[k - 1];
-}
-if (n == 0) {
-return a[k - 1];
-}
-if (k == 1) {
-return (a[0] < b[0])?a[0]:b[0];
-}
-if (k == m + n) {
-return (a[m - 1] > b[n - 1])?a[m - 1]:b[n - 1];
-}
-int i = ((double) m) / (m + n) * (k - 1);
-int j = k - 1 - i;
-if (j >= n) {
-j = n - 1;
-i = k - n;
-}
-if (((i == 0) || (a[i - 1] <= b[j])) && (b[j] <= a[i])) {
-return b[j];
-}
-if (((j == 0) || (b[j - 1] <= a[i])) && (a[i] <= b[j])) {
-return a[i];
-}
-if (a[i] <= b[j]) {
-return kthsmallest(a + i + 1, m - i - 1, b, j, k - i - 1);
-} else {
-return kthsmallest(a, i, b + j + 1, n - j - 1, k - j - 1);
-}
+```c
+int kthsmallest(int *a,int m,int *b,int n,int k) {
+  if (m == 0) {
+		return b[k - 1];
+	}
+  if (n == 0) {
+    return a[k - 1];
+  }
+  if (k == 1) {
+    return (a[0] < b[0])?a[0]:b[0];
+  }
+  if (k == m + n) {
+    return (a[m - 1] > b[n - 1])?a[m - 1]:b[n - 1];
+  }
+  int i = ((double) m) / (m + n) * (k - 1);
+  int j = k - 1 - i;
+  if (j >= n) {
+    j = n - 1;
+    i = k - n;
+  }
+  if (((i == 0) || (a[i - 1] <= b[j])) && (b[j] <= a[i])) {
+    return b[j];
+  }
+  if (((j == 0) || (b[j - 1] <= a[i])) && (a[i] <= b[j])) {
+    return a[i];
+  }
+  if (a[i] <= b[j]) {
+    return kthsmallest(a + i + 1, m - i - 1, b, j, k - i - 1);
+  } else {
+    return kthsmallest(a, i, b + j + 1, n - j - 1, k - j - 1);
+  }
 
 }
-
-
+```
 
 方法三：
 当然也可以在方法一的基础上，采用一些二分的办法进行优化，但是这种算法
-
 
 参考资料：
 1、[http://www.cnblogs.com/davidluo/articles/k-smallest-element-of-two-sorted-array.html](http://www.cnblogs.com/davidluo/articles/k-smallest-element-of-two-sorted-array.html)
 2、[http://blog.csdn.net/realxie/article/details/8078043](http://blog.csdn.net/realxie/article/details/8078043)
 3、[http://blog.csdn.net/shifuwawa/article/details/6121573](http://blog.csdn.net/shifuwawa/article/details/6121573)
 4、[http://eriol.iteye.com/blog/1172098](http://eriol.iteye.com/blog/1172098)
-
-
-
-
-
-
-
-
-
-
-
-
