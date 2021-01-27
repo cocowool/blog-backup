@@ -2,6 +2,8 @@
 title: Rsync服务介绍与配置
 date: 2017-03-14 14:51:01
 tag: 
+keywords: rsync, linux rsync, rsync 文件传输
+description: rsync 是一个用于增量文件传输的开源工具，rsync简直是不同服务器间传输文件、同步文件的利器。
 ---
 
 本文简要介绍Rsync的使用方法
@@ -16,8 +18,8 @@ rsync 是一个用于增量文件传输的开源工具，不得不说，rsync简
 
 ## 典型用法
 rsync 可以用来同步本地与远程服务器，包括将本地文件上传至远程服务器、将远程文件同步到本地等等。
-```rsync local-file user@remote-host:remote-file
-
+```sh
+rsync local-file user@remote-host:remote-file
 ```
 > 使用方法
 rsync [OPTION] … SRC … [USER@]HOST:DEST
@@ -83,15 +85,3 @@ rsync -arv —password-file=/etc/rsyncd.secrets /local_file user@remote_host::re
 3、[rsync tutorial](http://everythinglinux.org/rsync/)
 4、[wiki rsync](https://en.wikipedia.org/wiki/Rsync)
 5、[How rsync works](https://rsync.samba.org/how-rsync-works.html)
-
-
-
-
-
-
-
-
-
-
-
-

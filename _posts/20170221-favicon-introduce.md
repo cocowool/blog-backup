@@ -2,6 +2,8 @@
 title: 自定义地址栏与收藏夹中的图标
 date: 2017-02-21 09:42:01
 tag: 
+keywords: favicon, 收藏夹图标, 地址栏图标, shortcut icon
+description: favicon 在英文中有几个别名，叫做 shortcut icon，website icon，tab icon，URL icon，bookmark icon，对应中文来说也叫作网页小图标、网站缩略图或收藏夹图标、书签图标。
 ---
 
 
@@ -10,9 +12,12 @@ favicon 在英文中有几个别名，叫做 shortcut icon，website icon，tab 
 
 ## Favicon的历史
 1999年三月，微软发布了Internet Explorer 5，是首款支持 favicon 的浏览器。最初，favicon 就是一个放在网站根目录下的名为```favicon.ico```的文件。主要使用在 Internet Explorer 的收藏夹中，如果网站被添加到收藏夹中，那么在地址栏中也会被显示出来。这么做还有一个用意就是统计有多少用户收藏了这个网站（可以在日志中看 favicon 请求的次数）。现代浏览器则不管用户是否收藏该网站，都会把图标显示在地址栏或页签中。参考资料中[Favicon诞生记](https://zhuanlan.zhihu.com/p/19989351)有关于 Favicon 产生之初的有趣故事，大家可以看一看。
+
 [Word Wide Consortium W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)在HTML 4.01（1999年）中将favicon定为标准，并且在稍后2000年1月份定为 XHTML 1.0的标准。与IE中限制了存放位置和文件类型不同，标准仅是规定了应当使用一个带有```rel```属性的链接元素在```head```区域指定favicon的文件和类型。
+
 2003年，```.ico```被第三方组织[Internet Assigned Numbers Authority IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority)注册在 MIME type```image/vnd.microsoft.icon```中。
-[RFC5988](https://tools.ietf.org/html/rfc5988),在2010年的HTML5标准中，明确了```rel="icon"```的使用方法。```<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />```这种流行的用法明确了两个关系，一个作为```shortcut```快捷图标和```icon```图标。但是```shortcut```并非标准。在2011年的HTML标准中对此进行了解释
+
+[RFC5988](https://tools.ietf.org/html/rfc5988),在2010年的HTML5标准中，明确了```rel="icon"```的使用方法。```<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />```这种流行的用法明确了两个关系，一个作为```shortcut```快捷图标和```icon```图标。但是```shortcut```并非标准。在2011年的HTML标准中对此进行了解释。
 
 ## 使用方法及浏览器支持
 基本的 favicon 使用方法如下：
@@ -56,15 +61,3 @@ Favicons 经常会在针对HTTPS网站的 网络钓鱼（phishing） 或者 网�
 3. [Real Favicon Generator](http://realfavicongenerator.net/)
 4. [Favicon诞生记](https://zhuanlan.zhihu.com/p/19989351)
 5. [弄懂Favicon](http://www.w3cplus.com/css/understand-the-favicon.html)
-
-
-
-
-
-
-
-
-
-
-
-

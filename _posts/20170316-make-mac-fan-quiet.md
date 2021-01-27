@@ -2,6 +2,8 @@
 title: 让Mac风扇面对PD不再疯狂
 date: 2017-03-16 11:16:01
 tag: 
+keywords: parallels desktop, pd, Mac pd, Mac, pd风扇, parallels 风扇
+description: 你很可能使用了**Parallels Desktop**来运行你的Windows虚拟机，那么你将会体验风扇狂转、机器发烫的感觉。本文整理了几个方法，能够减少风扇狂转的频率。
 ---
 
 对于所有喜欢Mac操作系统的用户来说，如果办公环境必须使用Windows及Windows程序，那一定会非常崩溃，因为你很可能使用了**Parallels Desktop**来运行你的Windows虚拟机，那么你将会体验风扇狂转、机器发烫的感觉。此时，如果在终端中查看一下进程，会看到**prl_vm_app**消耗的CPU往往会在100%以上，也可以使用 Activity Monitor 查看一下。

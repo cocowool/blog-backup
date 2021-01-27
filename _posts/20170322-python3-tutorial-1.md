@@ -2,6 +2,8 @@
 title: Python 3.6学习笔记（一）
 date: 2017-03-22 14:42
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，基础的数据类型。
 ---
 
 > 知识是一座宝库，而实践就是开启这座宝库的钥匙。

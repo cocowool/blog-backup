@@ -2,6 +2,8 @@
 title: Python3.6学习笔记（二）
 date: 2017-03-27 15:27
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，Python的高级特性。
 ---
 
 
@@ -289,16 +291,3 @@ if __name__=='__main__':
 ```python
 pip install Pillow
 ```
-![](./2017-03-27-6626958/39469-20180710163655709-89635310.png)
-
-
-
-
-
-
-
-
-
-
-
-
