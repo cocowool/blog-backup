@@ -2,6 +2,8 @@
 title: 使用Fusioncharts实现后台处理进度的前台展示
 date: 2016-09-13 14:09:01
 tag: 
+keywords: fusioncharts, 进度条
+description: 本文解决在文件上传处理过程中，在前台动态展示处理进度的解决方案。
 ---
 
 本文要解决两个问题：
@@ -61,7 +63,87 @@ $('#userfile').AjaxFileUpload({
 
 最后就是整个过程的图形化界面显示，FusionCharts部分的代码如下：
 ```javascript
-1FusionCharts.ready(function(){2varfusioncharts =newFusionCharts({3type: 'hlineargauge',4renderAt: 'realchart',5id: 'realtime-chart',6width: '400',7height: '170',8dataFormat: 'json',9dataSource: {10"chart": {11"theme": "fint",12"caption": "后台处理进度",13"subcaption": "www.dcod.com",14"lowerLimit": "0",15"upperLimit": "100",16"numberSuffix": "%",17"chartBottomMargin": "40",18"valueFontSize": "11",19"valueFontBold": "0"20},21"colorRange": {22"color": [{23"minValue": "0",24"maxValue": "35",25"label": "文件上传",26}, {27"minValue": "35",28"maxValue": "100",29"label": "解压与保存",30}]31},32"pointers": {33"pointer": [{34"value": "0"35}]36},37"trendPoints": {38"point": [39//Trendpoint40{41"startValue": "70",42"displayValue": " ",43"dashed": "1",44"showValues": "0"45}, {46"startValue": "85",47"displayValue": " ",48"dashed": "1",49"showValues": "0"50},51//Trendzone52{53"startValue": "70",54"endValue": "85",55"displayValue": " ",56"alpha": "40"57}58]59}60},61"events": {62"rendered":function(evtObj, argObj){63evtObj.sender.intervalVar = setInterval(function(){64console.log("Txt x");65//定时获取服务端的数据66varprcnt = $.cookie('progress');6768//将数据提交给图表69FusionCharts.items["realtime-chart"].feedData("value=" +prcnt);70}, 5000);71},72"disposed":function(evtObj, argObj){73console.log('disposed');74clearInterval(evtObj.sender.intervalVar);75}76}77}78);7980fusioncharts.render();81});
+FusionCharts.ready(function(){
+         var fusioncharts = new FusionCharts({
+         type: 'hlineargauge',
+         renderAt: 'realchart',
+         id: 'realtime-chart',
+         width: '400',
+         height: '170',
+         dataFormat: 'json',
+         dataSource: {
+             "chart": {
+                 "theme": "fint",
+                 "caption": "后台处理进度",
+                 "subcaption": "www.dcod.com",
+                 "lowerLimit": "0",
+                 "upperLimit": "100",
+                 "numberSuffix": "%",
+                 "chartBottomMargin": "40",
+                 "valueFontSize": "11",
+                 "valueFontBold": "0"
+             },
+             "colorRange": {
+                 "color": [{
+                     "minValue": "0",
+                     "maxValue": "35",
+                     "label": "文件上传",
+                 }, {
+                     "minValue": "35",
+                     "maxValue": "100",
+                     "label": "解压与保存",
+                 }]
+             },
+             "pointers": {
+                 "pointer": [{
+                     "value": "0"
+                 }]
+             },
+             "trendPoints": {
+                 "point": [
+                     //Trendpoint
+                     {
+                         "startValue": "70",
+                         "displayValue": " ",
+                         "dashed": "1",
+                         "showValues": "0"
+                     }, {
+                         "startValue": "85",
+                         "displayValue": " ",
+                         "dashed": "1",
+                         "showValues": "0"
+                     },
+                     //Trendzone
+                     {
+                         "startValue": "70",
+                         "endValue": "85",
+                         "displayValue": " ",
+                         "alpha": "40"
+                     }
+                 ]
+             }
+         },
+        "events": {
+             "rendered":function(evtObj, argObj){
+                  evtObj.sender.intervalVar = setInterval(function(){
+                       console.log("Txt x");
+                       //定时获取服务端的数据
+                       var prcnt = $.cookie('progress');
+
+                       //将数据提交给图表
+                       FusionCharts.items["realtime-chart"].feedData("value=" + prcnt);
+                  }, 5000);
+             },
+             "disposed":function(evtObj, argObj){
+                  console.log('disposed');
+                  clearInterval(evtObj.sender.intervalVar);
+             }
+        }
+     }
+     );
+
+         fusioncharts.render();
+     });
 ```
 
 FusionCharts设置了一个轮训间隔，不断地从后台查询数据。因为我的后台处理过程都是在领带的ajax请求中完成的，所以采取了一个折衷的办法，ajax请求完成后，将进度写入到cookie中，然后FusionCharts定时从cookie中读取进度来进行展示。
@@ -74,15 +156,3 @@ FusionCharts设置了一个轮训间隔，不断地从后台查询数据。因�
 2、AjaxFileUpload
 3、[实现jQuery的Ajax文件上传](http://blog.163.com/zhou_shj/blog/static/6555644420104503138229/)
 4、[jQuery Cookie](https://github.com/carhartl/jquery-cookie)
-
-
-
-
-
-
-
-
-
-
-
-

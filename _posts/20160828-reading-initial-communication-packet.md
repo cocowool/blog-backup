@@ -2,6 +2,8 @@
 title: Mac下遇到 'reading initial communication packet’ 问题
 date: 2016-08-28 08:51:01
 tag: 
+keywords: mysql, lost connection to mysql
+description: Lost connection to MySQL server 问题解决记录。
 ---
 
 今天在开发过程中，一个单位跑的好好的项目，在家中的Mac下运行时，遇到了下面这个错误：
@@ -20,15 +22,3 @@ tag:
 参考资料：
 1、[Stack Overflow](http://stackoverflow.com/questions/5755819/lost-connection-to-mysql-server-at-reading-initial-communication-packet-syste)
 2、[51Jb](http://www.jb51.net/article/30774.htm)
-
-
-
-
-
-
-
-
-
-
-
-

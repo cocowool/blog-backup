@@ -2,6 +2,8 @@
 title: 使用PHP的正则抓取页面中的网址
 date: 2016-08-04 13:52:01
 tag: 
+keywords: php 正则, php 正则匹配网址, 正则匹配网址
+description: 链接也就是超级链接，是从一个元素（文字、图片、视频等）链接到另一个元素（文字、图片、视频等），本文介绍使用PHP正则表达式提取网页中的链接。
 ---
 
 最近有一个任务，从页面中抓取页面中所有的链接，当然使用PHP正则表达式是最方便的办法。要写出正则表达式，就要先总结出模式，那么页面中的链接会有几种形式呢？
@@ -28,11 +30,11 @@ http://www.xxx.com/xxx/yyy/zzz.html
 
 解释如下：
 
-(http|https)第一个括号内匹配的是协议部分。
+(http|https) 第一个括号内匹配的是协议部分。
 
-([\w\d\-_]+[\.\w\d\-_]+)第二个括号内匹配的是域名部分。
+([\w\d\-_]+[\.\w\d\-_]+) 第二个括号内匹配的是域名部分。
 
-([\/]?[\w\/\.]+)第三个括号内匹配的是相对路径。
+([\/]?[\w\/\.]+) 第三个括号内匹配的是相对路径。
 
 写到这个时候，基本上大部分的网址都能匹配到了，但是对于URL中带有参数的还不能抓取，这样有可能造成再次访问的时候页面报错。关于参数RFC1738规范中要求是用？来分割，后面带上参数，但是现代的RIA应用有可能使用其他奇怪的形式进行分割。
 
@@ -45,23 +47,9 @@ http://www.xxx.com/xxx/yyy/zzz.html
 例如使用 preg_match_all() 匹配时，结果数组索引0为全部结果、1为协议、2为域名、3为相对路径。
 
 
-
 参考资料：
 
 1、[百度百科：链接](http://baike.baidu.com/link?url=TYEHZIbJPnJNGCkh19Vp2Btg3KTlL_taFJpHIMv3_4LxCKh0augU9OaPXDzeiLP_732NP8cYzWzmdGg5X1Fxza)
 2、[百度百科：统一资源定位符 URL](http://baike.baidu.com/view/245485.htm)
 3、[RFC1738](https://www.ietf.org/rfc/rfc1738.txt)
 4、[https://segmentfault.com/q/1010000000584340](https://segmentfault.com/q/1010000000584340)
-
-
-
-
-
-
-
-
-
-
-
-
-

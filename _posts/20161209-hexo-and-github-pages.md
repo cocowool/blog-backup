@@ -2,6 +2,8 @@
 title: Mac下体验Hexo与Github Pages搭建
 date: 2016-12-09 10:54:01
 tag: 
+keywords: hexo, mac hexo, github pages, hexo搭建github pages
+description: Hexo支持生成静态博客内容，再结合Github Pages可以实现个人博客站点的快速搭建。
 ---
 
 很久之前就知道Github可以发布自己的博客，因为仅支持静态文件，一直懒于动手自己进行编辑。再了解到还存在[JekyII](https://hexo.io/)和[Hexo](https://hexo.io/)这样的内容生成框架后，终于决定体验一下。
@@ -21,7 +23,9 @@ nam install
 hexo server
 ```
 当看到Hexo is running的提示之后，就可以按照提示的地址在浏览器中预览博客效果了。
+
 ![](./20161209-hexo-and-github-pages/39469-20161209105601835-184073315.png)
+
 _config.yml 是博客的配置文件，能够定义博客名称、作者等各种全局的参数。
 package.json 应用数据，EJS、Sylus、Markdown三个渲染工具是默认安装的，如果不需要刻意卸载。但是对于最终要是使用 Markdown 来编辑博客的我来说，那是必不可少的。
 source 文件夹，文章原始的 md 文件都放在这个文件夹下面。通过生成器会对该文件夹下的 markdown、html 文件进行解析，其他的文件只做拷贝，放入 public 文件夹。
@@ -48,15 +52,3 @@ branch: hexo
 至此，使用 hexo 搭建环境发布内容的工作就完成了，你可以通过[http://yourname.github.io](http://yourname.github.io)访问页面，查看效果。
 为了让这两部分文件都保存下来，我们利用 git 中的分支功能。在本地环境查看有多少分支 git branch -a，一般只有一个 master。创建一个新的分支 git branch hexo
 将分支推送到远程服务器 git push origin hexo，在 hexo 的配置文件中选择将内容发布到 hexo 而本地的源码提交到 master 中。
-
-
-
-
-
-
-
-
-
-
-
-

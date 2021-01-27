@@ -2,6 +2,8 @@
 title: Codeigniter文件上传类型不匹配错误
 date: 2016-08-29 16:01:01
 tag: 
+keywords: codeigniter, codeigniter文件上传
+description: Codeigniter文件上传类型不匹配错误解决记录。
 ---
 
 Codeigniter的文件上传类方便了我们使用PHP来处理文件上传的操作，使用起来非常简单，如下：
@@ -17,13 +19,13 @@ $this->load->library('upload', $config);
 
 if ( ! $this->upload->do_upload())
 {
-$error = array('error' => $this->upload->display_errors());
-$this->load->view('upload_form', $error);
+  $error = array('error' => $this->upload->display_errors());
+  $this->load->view('upload_form', $error);
 }
 else
 {
-$data = array('upload_data' => $this->upload->data());
-$this->load->view('upload_success', $data);
+  $data = array('upload_data' => $this->upload->data());
+  $this->load->view('upload_success', $data);
 }
 ```
 
@@ -55,16 +57,3 @@ MIME是Multipurpose Internet Mail Extention的缩写，是描述消息内容类�
 参考资料：
 1、[W3c Mime](http://www.w3school.com.cn/media/media_mimeref.asp)
 2、[百科 Mime](http://baike.baidu.com/link?url=eBw3pgimYhpR-A69nQAvo4NFNIIv7Doa_oQ6NFxuK8vULgSh6qQBdbiCt1-iSuX4BMnSWf23dGKHBBhpelbzQ_)
-
-
-
-
-
-
-
-
-
-
-
-
-

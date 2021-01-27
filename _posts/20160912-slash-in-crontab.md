@@ -2,9 +2,13 @@
 title: Crontab中的除号（slash）到底怎么用？
 date: 2016-09-12 16:57:01
 tag: 
+keywords: crontab, crontab 除号
+description: crontab 是Linux中配置定时任务的工具，在各种配置中，我们经常会看到除号（Slash）的使用，那么这个除号到底标示什么意思，使用中有哪些需要注意的地方呢？
 ---
 
-crontab 是Linux中配置定时任务的工具，在各种配置中，我们经常会看到除号（Slash）的使用，那么这个除号到底标示什么意思，使用中有哪些需要注意的地方呢？
+crontab 是Linux中配置定时任务的工具，如果对于 crontab 还不太熟悉的朋友，可以参考 [Crontab的格式](http://edulinks.cn/2009/04/22/20090422-crontab/) 。
+
+在各种配置中，我们经常会看到除号（Slash）的使用，那么这个除号到底标示什么意思，使用中有哪些需要注意的地方呢？
 
 在定时任务中，我们经常有这样的需求，比如每5分钟查看一下日志，我们可以这么写：
 
@@ -44,16 +48,3 @@ crontab 是Linux中配置定时任务的工具，在各种配置中，我们经�
 3、[Wiki Cron](https://en.wikipedia.org/wiki/Cron)
 4、[StackOverflow Cron Syntax Query](http://stackoverflow.com/questions/6094999/crontab-syntax-query)
 5、[What does the slash in crontab actually do？](https://binblog.info/2014/10/17/what-does-the-slash-in-crontab-actually-do/)
-
-
-
-
-
-
-
-
-
-
-
-
-

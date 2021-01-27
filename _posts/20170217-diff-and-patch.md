@@ -2,6 +2,8 @@
 title: Linux中的Diff和Patch
 date: 2017-02-17 14:15:01
 tag: 
+keywords: diff, patch, linux diff, linux patch, linux
+description: diff 和 patch 是一对工具，使用这对工具可以获取更新文件与历史文件的差异，并将更新应用到历史文件上。
 ---
 
 本文主要记录两个命令的学习情况：diff 和 patch。diff 和 patch 是一对工具，使用这对工具可以获取更新文件与历史文件的差异，并将更新应用到历史文件上。在数学上说，diff就是对两个集合的差运算，patch就是对两个集合的和运算。
@@ -13,21 +15,23 @@ tag:
 #include <stdio.h>
 
 function old(){
-        printf("This is a file\n");
+  printf("This is a file\n");
 
-        return 0;
+  return 0;
 }
 ```
 ```c
 #include stdio.h
 
 function new(){
-        printf("This is b file\n");
-        return 0;
+  printf("This is b file\n");
+  return 0;
 }
 ```
 执行```diff original.txt updated.txt```的结果为
+
 ![](./20170217-diff-and-patch/39469-20170217141328175-625170629.png)
+
 下面先对结果中出现的一些符号做一些解释。```1,4c1```，这个内容输出实际上是给patch看的，表示告诉patch在original.txt文件中的1到4行应当被updated.txt中的内容替换，替换的内容是updated.txt的第1行。这里可能会出现三个字母表示不同的意义，分别是c表示更新、a表示追加、d表示删除。
 
 > c表示在original文件中的m,n行的内容将要被updated文件中的内容替换。
@@ -124,15 +128,3 @@ GNU的diff和patch还提供了一种格式，称为**the unified format**。这�
 1、[Using Diff and patch](https://linuxacademy.com/blog/linux/introduction-using-diff-and-patch/)
 2、[Diff比较两个文件夹](http://blog.chinaunix.net/uid-14735472-id-111118.html)
 3、[GNU Diff and patch](http://www.gnu.org/software/diffutils/manual/html_mono/diff.html)
-
-
-
-
-
-
-
-
-
-
-
-
