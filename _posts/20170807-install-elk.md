@@ -2,6 +2,8 @@
 title: ElasticSearch + Logstash + Kibana 搭建笔记
 date: 2017-08-07 10:06:01
 tag: 
+keywords: elasticsearch, logstash, kibana
+description: ELK安装部署与配置介绍。
 ---
 
 

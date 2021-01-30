@@ -2,6 +2,8 @@
 title: Wordpress中文章的特色图像Featured Image究竟存在哪里？
 date: 2017-08-02 09:54:01
 tag: 
+keywords: wordpress, wordpress特色图像
+description: Wordpress中图像物理文件保存在```wp-content/uploads```目录下，相关信息保存在 wp_posts 表中。
 ---
 
 最近项目需要，分析了一下Wordpress的特色图像 Feature Image的上传、保存方式，这一分析觉得Wordpress的数据结构设计还真是有想法。
@@ -220,15 +222,4 @@ SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (21) ORDE
 1、[如何设置Wordpress的特色图像](http://www.solagirl.net/how-to-setup-featured-image-in-wordpress.html)
 2、[WordPress数据库表及字段详解](http://www.ecdoer.com/post/wordpress-database.html)
 3、[理解和利用 WordPress 中的元数据（Metadata）](https://www.wpdaxue.com/understanding-and-working-with-metadata-in-wordpress.html)
-
-
-
-
-
-
-
-
-
-
-
 

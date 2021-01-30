@@ -1,7 +1,9 @@
 ---
-title: Log stash学习笔记（一）
+title: Logstash学习笔记（一）
 date: 2017-08-09 17:24:01
 tag: 
+keywords: logstash, elk, elasticsearch
+description: logstash作为数据源与数据存储分析工具之间的桥梁，结合 ElasticSearch以及Kibana，能够极大方便数据的处理与分析。
 ---
 
 Logstash是一款开源的数据收集引擎，具备实时管道处理能力。简单来说，logstash作为数据源与数据存储分析工具之间的桥梁，结合 ElasticSearch以及Kibana，能够极大方便数据的处理与分析。通过200多个插件，logstash可以接受几乎各种各样的数据。包括日志、网络请求、关系型数据库、传感器或物联网等等。
@@ -54,12 +56,12 @@ output {
 }
 ```
 配置文件可以用下面的命令验证是否有问题
-```bin/logstash -f filebeat.conf --config.test_and_exit
-
+```sh
+bin/logstash -f filebeat.conf --config.test_and_exit/
 ```
 如果验证没有问题，就可以用这个配置文件启动 logstash 了。
-```bin/logstash -f filebeat.conf
-
+```sh
+bin/logstash -f filebeat.conf
 ```
 之后再启动Filebeat，就可以在Filebeat终端窗口看到日志信息的输出，同时在logstash这边也能看到有日志输出。这就说明此时logstash已经能够正常接收beats送来的文件了。
 ![](./20170809-logstash-learning/39469-20170809172300167-238115856.png)

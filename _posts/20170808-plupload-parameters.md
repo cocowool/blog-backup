@@ -2,10 +2,13 @@
 title: Plupload设置自定义参数
 date: 2017-08-07 16:23:01
 tag: 
+keywords: html5, plupload 文件上传
+description: 在HTML 5比较流行的当下，Plupload是文件上传的不二之选，特别是Adobe宣布2020年将停止对Flash的更新支持。
 ---
 
 在HTML 5比较流行的当下，Plupload是文件上传的不二之选，特别是Adobe宣布2020年将停止对Flash的更新支持。本文记录一下如何在上传文件的时候，传递自定义参数。
 了解到两种方式，一种是通过 setOption 方法，一种是直接操作对象。
+
 ```javascript
 uploader.setOption("multipart_params", {
     "post_id"    : 1,
