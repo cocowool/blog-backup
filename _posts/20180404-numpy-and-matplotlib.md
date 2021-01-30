@@ -2,6 +2,8 @@
 title: 使用Numpy验证Google GRE的随机选择算法
 date: 2018-04-04 11:29
 tag: 
+keywords: numpy, numpy python
+description: 最近在读《SRE Google运维解密》第20章提到数据中心内部服务器的负载均衡方法，文章对比了几种负载均衡的算法，其中随机选择算法，非常适合用 Numpy 模拟并且用 Matplotlib 画图。
 ---
 
 最近在读《SRE Google运维解密》第20章提到数据中心内部服务器的负载均衡方法，文章对比了几种负载均衡的算法，其中随机选择算法，非常适合用 Numpy 模拟并且用 Matplotlib 画图，下面是我的代码：

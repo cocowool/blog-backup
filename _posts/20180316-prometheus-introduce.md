@@ -3,6 +3,8 @@ title: Prometheus 初体验
 date: 2018-03-16 22:11
 tag: 
 category: 运维
+keywords: prometheus, prometheus监控, prometheus linux
+description: Prometheus 是2012年由 SoundCloud 开源的系统监控和报警工具集，在 《Google SRE 运维解密》一书中也提到与Google内部的Borgmon思想一致。使用 Go 语言开发，适用于各个平台。
 ---
 
 > 本文环境 Redhat Linux 6.7, Prometheus 2.2.1，node_exporter 1.5.2

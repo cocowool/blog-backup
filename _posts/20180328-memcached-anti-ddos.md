@@ -3,6 +3,8 @@ title: 防止Memcached的DDOS攻击另外一个思路
 date: 2018-03-28 19:09
 tag: 
 category: 运维
+keywords: memcached, ddos
+description: memcached反射攻击利用了在互联网上暴露的大批量memcached服务器（一种分布式缓存系统）存在的认证和设计缺陷，攻击者通过向memcached服务器IP地址的默认端口11211发送伪造受害者IP地址的特定指令UDP数据包（stats、set/get指令），使memcached服务器向受害者IP地址反射返回比原始数据包大数倍的数据（理论最高可达5万倍，通过持续跟踪观察攻击流量平均放大倍数在100倍左右），从而进行反射攻击。
 ---
 
 3月3日，国家互联网应急中心通报了一条消息[关于利用memcached服务器实施反射DDoS攻击的情况通报](http://www.cert.org.cn/publish/main/9/2018/20180303110550151219900/20180303110550151219900_.html)通告了 memcached 服务器漏洞被黑客利用的情况，笔者的一台服务器也存在漏洞，因此将漏洞封堵的方法与大家分享一下。
@@ -10,6 +12,7 @@ category: 运维
 ### 攻击的原理
 
 memcached反射攻击利用了在互联网上暴露的大批量memcached服务器（一种分布式缓存系统）存在的认证和设计缺陷，攻击者通过向memcached服务器IP地址的默认端口11211发送伪造受害者IP地址的特定指令UDP数据包（stats、set/get指令），使memcached服务器向受害者IP地址反射返回比原始数据包大数倍的数据（理论最高可达5万倍，通过持续跟踪观察攻击流量平均放大倍数在100倍左右），从而进行反射攻击。
+
 本来Memcached提供的缓存服务应该只是对内部访问的，因此就设置了所有地址可访问，安全限制上就比较弱，黑客就利用这个特点，专门在互联网上找开放端口的 Memcached...
 
 > The web page caching utility was never designed to be internet-accessible and requires no authentication to access. But some administrators - as well as some Linux instances by default - have left TCP or UDP port 11211 open to internet-borne requests.
