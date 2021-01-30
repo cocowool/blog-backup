@@ -2,10 +2,11 @@
 title: IPython介绍
 date: 2017-12-26 17:27
 tag: 
+keywords: python, ipython
+description: IPython 是 Fernando 在 2001 开始开发的一个交互式的Python解释执行环境。
 ---
 
 > 本文编写时，IPython最新的版本为6.3和5.4。
-
 
 ### 介绍
 IPython 是 Fernando 在 2001 开始开发的一个交互式的Python解释执行环境。众所周知，Python提供了一个交互执行的环境，在命令行输入```python```或者```python3```就可以进入Python的命令行环境，但在实际工作中并不方便，IPython则提供了一个更为强大的环境，主要包括以下几方面内容：
@@ -91,15 +92,3 @@ IPython可以与matplotlib密切结合。
 1、[IPython](http://ipython.org)
 2、[Jupyter](https://jupyter.org)
 3、[matplotlib](http://matplotlib.org)
-
-
-
-
-
-
-
-
-
-
-
-

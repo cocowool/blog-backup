@@ -2,6 +2,8 @@
 title: Mysql中的条件语句if、case
 date: 2017-12-22 11:17:01
 tag: 
+keywords: mysql, mysql if case
+description: Mysql中的条件语句在我们对数据进行转换的时候比较有用，这样就不需要创建中转表。
 ---
 
 Mysql中的条件语句在我们对数据进行转换的时候比较有用，这样就不需要创建中转表。
@@ -39,22 +41,9 @@ UPDATE salary SET sex = IF(sex = 'm', 'f', 'm')
 ```sql
 select *,(CASE WHEN sex='1' THEN '男' WHEN sex='0' THEN '女' ELSE '保密' END) as sex_text from user
 ```
-**本文为作者原创，如果您觉得本文对您有帮助，请随意打赏，您的支持将鼓励我继续创作。**
-![](./2017-12-22-8085104/39469-20170825142904777-1467390737.png)
+
 参考资料：
 1、[Mysql if case总结](http://outofmemory.cn/code-snippet/1149/MySQL-if-case-statement-usage-summary)
 2、[Leetcode swap salary](https://leetcode.com/problems/swap-salary/description/)
 3、[select case when if 的一些用法](https://www.cnblogs.com/martinzhang/p/3220595.html)
-4、[IF Syntax](https://dev.mysql.com/doc/refman/5.7/en/if.html)
-
-
-
-
-
-
-
-
-
-
-
-
+4、[IF Syntax](https://dev.mysql.com/doc/refman/5.7/en/if.html)/

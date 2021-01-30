@@ -2,6 +2,8 @@
 title: Python获取数字的二进制值
 date: 2017-12-14 14:58:11
 tag: 
+keywords: python, python获取数字二进制, 二进制
+description: 如何通过Python获取一个整形数字的二进制表示。
 ---
 
 

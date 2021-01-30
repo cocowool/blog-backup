@@ -2,6 +2,8 @@
 title: Python数据分析笔记
 date: 2017-12-22 17:24:11
 tag: 
+keywords: python, python数据分析
+description: python进行数据分析的例子介绍。
 ---
 
 最近在看Python数据分析这本书，随手记录一下读书笔记。

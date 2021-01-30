@@ -2,6 +2,8 @@
 title: IP地址和CIDR
 date: 2018-01-17 16:51:11
 tag: 
+keywords: ip, cidr
+description: IPV4的地址是一个32位的二进制数，由网络ID和主机ID两部分组成，用来在网络中唯一的标识一台计算机。
 ---
 
 
