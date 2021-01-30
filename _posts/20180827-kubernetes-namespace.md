@@ -2,6 +2,8 @@
 title: Kubernetes命名空间
 date: 2018-08-27 18:51
 tag: Kubernetes
+keywords: kubernetes, kubernetes 命名空间, kubernetes linux
+description: Kubernetes中提供了命名空间，但是如果你的团队规模比较小并且集群规模也不大，完全可以不用Namespaces而使用```labels```来区分不同的资源，随着项目增多、集群规模扩大、人员的增加，你才需要使用Namespaces，通过namespace你可以创建多个虚拟的集群。
 ---
 
 > 本文环境为Kubernetes V1.11，操作系统版本为 CentOs 7.3，Kubernetes集群安装可以参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/)。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
@@ -9,6 +11,7 @@ tag: Kubernetes
 
 ## 1. 什么是Namespaces
 Kubernetes中提供了命名空间，但是如果你的团队规模比较小并且集群规模也不大，完全可以不用Namespaces而使用```labels```来区分不同的资源，随着项目增多、集群规模扩大、人员的增加，你才需要使用Namespaces，通过namespace你可以创建多个虚拟的集群。
+
 Namespaces提供了一种在不同用户间分隔集群资源的方法，未来Kubernetes可能会提供基于命名空间的权限控制。
 
 ## 2. Namespaces 的常用操作

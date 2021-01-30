@@ -2,6 +2,8 @@
 title: Go学习入门
 date: 2018-09-14 11:11
 tag: 
+keywords: go, go language
+description: Go语言宣称为互联网时代的C语言，那她有那些特性值得我们必须学习呢。
 ---
 
 

@@ -2,6 +2,8 @@
 title: 使用Python读取Mp3的标签信息
 date: 2018-06-22 14:39
 tag: 
+keywords: python, id3, python id3
+description: 写了一个 Python 脚本可以用来读取 ID3v1 的信息。
 ---
 
 
@@ -43,6 +45,7 @@ Tag数据放在音频数据之前还有一个好处，对于流式访问可以�
 **1、ID3v1的信息没有编码字段，所以有的时候同样的Mp3，在不同的系统环境中播放，会显示乱码。针对这个问题，打算再写一篇文章说一下如何探测编码。**
 **2、iTunes应该是优先使用ID3v2的信息**
 我把脚本放到了 github 上，感兴趣的同学可以通过[https://github.com/cocowool/py-id3](https://github.com/cocowool/py-id3)查看。
+
 ```python
 # Read ID3v1 tag information
 import os
