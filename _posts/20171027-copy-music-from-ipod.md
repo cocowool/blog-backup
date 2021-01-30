@@ -3,6 +3,8 @@ title: 将iPod中的音乐拷贝到Mac中
 date: 2017-10-27 20:26:11
 tag: 
 categories: Mac
+keywords: mac, iPod, 音乐拷贝, MP3拷贝
+description: 如何把音乐从 iPod 中再拷贝到新电脑中呢？
 ---
 
 

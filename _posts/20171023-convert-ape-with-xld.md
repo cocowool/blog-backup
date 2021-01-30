@@ -3,6 +3,8 @@ title: Mac下使用XLD转换无损音乐Ape
 date: 2017-10-23 23:02:11
 tag: 
 categories: Mac
+keywords: mac, xld, 转换无损ape
+description: 最近想要给音乐库增加一些音乐，下载了一些Ape格式的无损音乐，但是无法直接导入到iTunes中，必须经过其他工具转换成苹果的无损格式，XLD就是这样一款工具。
 ---
 
 最近想要给音乐库增加一些音乐，下载了一些Ape格式的无损音乐，但是无法直接导入到iTunes中，必须经过其他工具转换成苹果的无损格式，XLD就是这样一款工具。XLD的[下载](http://tmkk.undo.jp/xld/index_e.html)和安装非常方便，直接将APP拖入到/Application文件夹下就可以。

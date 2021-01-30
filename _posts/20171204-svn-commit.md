@@ -2,6 +2,8 @@
 title: 修改服务的运行权限，解决SVN Post Commit问题
 date: 2017-12-04 17:46:01
 tag: 
+keywords: svn, svn commit, svn post commit
+description: 在Windows Server中安装了VirtualSVN Server，然后设置了Post Commit Hooks，在提交代码到版本库之后，将代码check到本地的一个Server目录。
 ---
 
 先来看一下错误现象

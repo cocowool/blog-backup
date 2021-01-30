@@ -2,6 +2,8 @@
 title: SQL文件的BOM问题导致的invalid character错误及解决
 date: 2017-12-11 19:07
 tag: 
+keywords: sql, bom, invalid character
+description: BOM问题引起的“ORA-00911 invalid character”错误。
 ---
 
 最近在做数据的搬运工，将Oracle中的数据搬运到ES中，方案很成熟了，使用Logstash的jdbc-input执行SQL，然后将结果输出到ES中。这么简单的问题，在测试环境中测试也一帆风顺，可一上生产环境傻眼了，始终报“ORA-00911 invalid character”的错误。
