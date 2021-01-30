@@ -3,6 +3,8 @@ title: Mysql 编译安装并使用自定义用户启动
 date: 2018-01-23 10:17:11
 tag: 
 category: 运维
+keywords: mysql, mysql linux, mysql 编译
+description: Linux下Mysql 编译安装并使用自定义用户启动。
 ---
 
 > 本文基于 Redhat Linux 6.7 的环境，Mysql 版本为 5.5.37

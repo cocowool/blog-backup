@@ -2,6 +2,8 @@
 title: Pandas快速入门（一）
 date: 2018-01-19 14:02
 tag: 
+keywords: python, pandas, pandas数据分析
+description: Pandas数据分析快速入门。
 ---
 
 

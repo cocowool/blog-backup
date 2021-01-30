@@ -2,6 +2,8 @@
 title: Pandas删除数据的几种情况
 date: 2018-02-06 13:47
 tags: 
+keywords: python, pandas, pandas数据分析
+description: Pandas数据分析快速入门。
 ---
 
 > 开始之前，pandas中DataFrame删除对象可能存在几种情况
