@@ -2,6 +2,8 @@
 title: Linux系统管理员应该知道的journalctl知识
 date: 2018-09-21 11:10
 tag: 
+keywords: journalctl, journalctl linux, linux
+description: 在Systemd出现之前，Linux系统及各应用的日志都是分别管理的，Systemd开始统一管理了所有Unit的启动日志，这样带来的好处就是可以只用一个 journalctl命令，查看所有内核和应用的日志。
 ---
 
 > 在Systemd出现之前，Linux系统及各应用的日志都是分别管理的，Systemd开始统一管理了所有Unit的启动日志，这样带来的好处就是可以只用一个 journalctl命令，查看所有内核和应用的日志。
