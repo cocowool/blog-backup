@@ -2,6 +2,8 @@
 title: Python3.6学习笔记（三）
 date: 2017-03-29 16:51
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，Python面向对象编程。
 ---
 
 

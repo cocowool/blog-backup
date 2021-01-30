@@ -2,6 +2,8 @@
 title: phpExcel导出文件时内存溢出的问题
 date: 2017-05-23 13:50:01
 tag: 
+keywords: php, phpExcel, phpExcel 内存溢出
+description: 在使用PHPExcel导出文件时，经常会因为文件过大导致PHP内存溢出报错，为了解决这个问题，可以使用PHPExcel提供的参数进行优化。
 ---
 
 在使用PHPExcel导出文件时，经常会因为文件过大导致PHP内存溢出报错，为了解决这个问题，可以使用PHPExcel提供的参数进行优化。这里说的Excel文件过大并不一定是文件大小，更关键的在于文件内存放的数据和格式，如果数据很多，格式又比较丰富，那很容易会将PHP的内存耗尽。
@@ -85,15 +87,3 @@ $objPHPExcel = $objReader->load("test.xlsx”);
 1、[phpExcel how do I pass settings into class](http://stackoverflow.com/questions/14642865/phpexcel-how-do-i-pass-settings-into-class)
 2、[How to fix memory getting exhausted with PHPExcel?](https://stackoverflow.com/questions/3537604/how-to-fix-memory-getting-exhausted-with-phpexcel)
 3、[Lowest Memory Cache Method for PHPExcel](http://stackoverflow.com/questions/27607250/lowest-memory-cache-method-for-phpexcel)
-
-
-
-
-
-
-
-
-
-
-
-

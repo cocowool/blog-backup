@@ -2,6 +2,8 @@
 title: PHP命名空间学习笔记
 date: 2017-07-12 13:50:01
 tag: 
+keywords: php, php 5, php 7, php 命名空间
+description: 从广义上来说，命名空间是一种封装事物的方法。在很多地方都可以见到这种抽象概念。
 ---
 
 命名空间的支持版本:PHP 5 > 5.3.0，PHP 7 。
@@ -92,15 +94,3 @@ echo CONSTANT; // echoes the value of My\Full\CONSTANT
 
 参考资料：
 1、[PHP 命名空间](http://php.net/manual/zh/language.namespaces.php)
-
-
-
-
-
-
-
-
-
-
-
-

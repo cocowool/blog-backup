@@ -2,6 +2,8 @@
 title: Python3.6学习笔记（五）
 date: 2017-04-23 10:34
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，Python网络编程以及一些常用的内置模块。
 ---
 
 
@@ -214,15 +216,3 @@ tuple 可以表示不变集合，但是不方便从名称上看出用途。通�
 参考资料：
 1、[Python Web Server Gateway Interface v1.0](https://www.python.org/dev/peps/pep-0333/)
 2、[Webpy 框架](http://webpy.org)
-
-
-
-
-
-
-
-
-
-
-
-

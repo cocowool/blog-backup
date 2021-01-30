@@ -2,6 +2,8 @@
 title: Mysql中与时间相关的统计分析
 date: 2017-05-22 10:52:01
 tag: 
+keywords: mysql, mysql 时间函数, mysql 时间统计
+description: 最近项目需要统计一段日期范围内，根据每分钟、几分钟、每天分别统计汇总某些事件/指标的发生总次数，平均发生次数，因此总结了Mysql中与时间处理、统计相关的资料。
 ---
 
 最近项目需要统计一段日期范围内，根据每分钟、几分钟、每天分别统计汇总某些事件/指标的发生总次数，平均发生次数，因此总结了Mysql中与时间处理、统计相关的资料。
@@ -46,15 +48,3 @@ TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)
 1、[Mysql中Timstampdiff的用法](http://blog.csdn.net/xb12369/article/details/8646801)
 2、[Mysql的时间、日期函数](http://www.cnblogs.com/ggjucheng/p/3352280.html)
 3、[Mysql Date Time Functions](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,6 +2,8 @@
 title: Python3.6学习笔记（四）
 date: 2017-03-30 14:25
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，Python错误处理，调试和测试的一般方法。
 ---
 
 

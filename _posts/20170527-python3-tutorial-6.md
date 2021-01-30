@@ -2,6 +2,8 @@
 title: Python3.6学习笔记（六）
 date: 2017-05-27 17:22
 tag: 
+keywords: python, python 3.6, python学习笔记, python基础
+description: Python3.6学习笔记，WSGI规范。
 ---
 
 

@@ -2,6 +2,8 @@
 title: PhpSpreadsheet生成Excel时实现单元格自动换行
 date: 2017-07-13 10:11:01
 tag: 
+keywords: php, phpspreadsheet, excel 单元格自动换行
+description: PhpSpreadsheet是PHPExcel的替代版本，本文使用PhpSpreadsheet生成Excel的时候支持单元格内的自动换行。
 ---
 
 PhpSpreadsheet是PHPExcel的替代版本，PHPExcel的作者已经停止了更新，今天尝试了使用PhpSpreadsheet生成Excel的时候支持单元格内的自动换行，发现用法其实差不多。
@@ -31,15 +33,3 @@ $writer->save($filename);
 参考资料：
 1、[PhpSpreadsheet](http://phpspreadsheet.readthedocs.io/en/develop/)
 2、[PHPExcel单元格内自动换行](http://www.cnblogs.com/shanmao/archive/2013/08/23/phpexcel.html)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,6 +2,8 @@
 title: Eclipse中运行Tomcat遇到的内存溢出错误
 date: 2017-07-11 13:48:01
 tag: 
+keywords: eclipse, eclipse tomcat, tomcat 内存溢出
+description: 使用Eclipse(版本Indigo 3.7)调试Java项目的时候，遇到了内存溢出的错误，在Eclipse集成的Tomcat环境下，频繁进行热发布的时候会出现这个情况。
 ---
 
 使用Eclipse(版本Indigo 3.7)调试Java项目的时候，遇到了下面的错误：
@@ -21,15 +23,3 @@ at java.lang.ClassLoader.defineClassCond(Unknown Source)
 1、[Eclipse中通过Tomcat运行JavaWeb项目发生内存溢出：java.lang.OutOfMemoryError: PermGen space 错误的解决方案](http://blog.csdn.net/Crazy_Java1234/article/details/51554515)
 2、[Download Eclipse](https://www.eclipse.org/downloads/)
 3、[Java SDK Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-
-
-
-
-
-
-
-
-
-
-
-

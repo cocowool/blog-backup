@@ -2,6 +2,8 @@
 title: Composer使用体验
 date: 2017-07-13 16:54:01
 tag: 
+keywords: php composer, php, php linux
+description: Composer是PHP的包依赖管理器。
 ---
 
 
@@ -67,15 +69,3 @@ php composer.phar update
 
 参考资料：
 1、[Composer](https://getcomposer.org)
-
-
-
-
-
-
-
-
-
-
-
-

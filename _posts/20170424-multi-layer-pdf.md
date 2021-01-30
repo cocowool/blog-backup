@@ -2,6 +2,8 @@
 title: Python处理PDF及生成多层PDF
 date: 2017-04-24 15:08:01
 tag: 
+keywords: python, python pdf, python 多层PDF
+description: Python提供了众多的PDF支持库，本文是在Python3环境下，试用了Reportlab及PyPDF2两个库来完成PDF的生成的功能。
 ---
 
 Python提供了众多的PDF支持库，本文是在Python3环境下，试用了两个库来完成PDF的生成的功能。PyPDF对于读取PDF支持较好，但是没找到生成多层PDF的方法。Reportlab看起来更成熟，能够利用Canvas很方便的生成多层PDF，这样就能够实现图片扫描上来的内容也可以进行内容搜索的目标。
@@ -76,15 +78,3 @@ output.write(outputStream)
 6、[ReportLab](http://www.reportlab.com/opensource/)
 7、[用Python/reportlab生成PDF](https://www.dup2.org/node/1202)
 8、[Writing Pdf with Python: Add image](http://www.tylerlesmann.com/2009/jan/28/writing-pdfs-python-adding-images/)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,6 +2,8 @@
 title: 列出Windows域中所有的机器
 date: 2017-05-26 08:37:01
 tag: 
+keywords: windows, windows域
+description: 通过Powershell查询域中的所有机器。
 ---
 
 我所在的部门大概管理了300+台Windows终端，最近开始采用域的方式来进行管理。（别笑我们土，原来手工修改Windows口令太痛苦了）
@@ -25,15 +27,3 @@ get-adcomputer -filter {enabled -eq $true} -properties * | ft name, dnshostname,
 1、[How to get all active computer list in domain with some attributes?](https://social.technet.microsoft.com/Forums/windowsserver/en-US/452bd87c-f802-447c-91fb-e98b1b6ddb0e/how-to-get-all-active-computer-list-in-domain-with-some-attributes?forum=winserverDS)
 2、[Active Directory Reference Sheet](http://portal.sivarajan.com/2010/07/aduc-and-ldap-reference-sheet.html)
 3、[Oldcmp工具](http://www.joeware.net/freetools/tools/oldcmp/)
-
-
-
-
-
-
-
-
-
-
-
-
