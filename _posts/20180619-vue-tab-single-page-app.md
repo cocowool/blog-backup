@@ -3,6 +3,8 @@ title: 基于Vue、Bootstrap的Tab形式的进度展示
 date: 2018-06-19 09:07
 tag: 
 category: 开发
+keywords: vue, bootstrap, tab
+description: 最近基于Vue、Bootstrap做了一个箭头样式的进度展示的单页应用，并且支持了对于一个本地JS文件的检索，通过这个单页应用，对于Vue的理解又深入了一些。
 ---
 
 最近基于Vue、Bootstrap做了一个箭头样式的进度展示的单页应用，并且支持了对于一个本地JS文件的检索，通过这个单页应用，对于Vue的理解又深入了一些。在这里把主要的代码分享出来。

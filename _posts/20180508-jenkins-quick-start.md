@@ -3,6 +3,8 @@ title: Jenkins 快速搭建
 date: 2018-05-08 08:49
 tag: 
 category: 运维
+keywords: Jenkins, jenkins linux
+description: Jenkins 作为持续集成的重要工具，在DevOps整个工具链中有重要的地位。
 ---
 
 ### Jenkins 介绍

@@ -3,6 +3,8 @@ title: Tomcat 安装与配置
 date: 2018-06-01 09:59
 tag: Tomcat
 category: 运维
+keywords: tomcat, windows tomcat
+description: Tomcat 在官方网站中提供了两个 Windows 安装版本，一个是普通安装版，一个是解压版。普通安装版带了安装器，像我们安装其他Windows程序一样，可以通过安装界面下一步下一步直到安装完成。
 ---
 
 

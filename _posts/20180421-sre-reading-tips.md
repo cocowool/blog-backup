@@ -2,6 +2,8 @@
 title: Google SRE 读书笔记 扒一扒SRE用的那些工具
 date: 2018-04-21 15:22:11
 tag: 
+keywords: google sre, 读书笔记
+description: 总体而言，这本书是首次比较系统的披露Google内部SRE运作的一些指导思想、实践以及相关的问题，对于我们运维乃至开发人员都有一定的借鉴意义。
 ---
 
 

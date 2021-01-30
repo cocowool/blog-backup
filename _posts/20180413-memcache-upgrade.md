@@ -3,6 +3,8 @@ title: Memcache的安装与配置
 date: 2018-04-13 22:49:11
 tag: 
 category: 运维
+keywords: memcached, memcached linux
+description: 因为单位要求修复Memcached的DDOS漏洞，整理了本文。之前的文章[防止Memcached的DDOS攻击另外一个思路](http://www.cnblogs.com/cocowool/p/8665704.html)提到了解决方案，我们使用的版本较低，因此需要对 Memcached 进行升级，有需要的朋友可以参考。
 ---
 
 因为单位要求修复Memcached的DDOS漏洞，整理了本文。之前的文章[防止Memcached的DDOS攻击另外一个思路](http://www.cnblogs.com/cocowool/p/8665704.html)提到了解决方案，我们使用的版本较低，因此需要对 Memcached 进行升级，有需要的朋友可以参考。

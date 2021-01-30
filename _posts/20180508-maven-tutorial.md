@@ -3,6 +3,8 @@ title: Maven 快速入门
 date: 2018-05-08 14:05
 tag: 
 category: 运维
+keywords: maven, maven java, maven linux
+description: Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）。
 ---
 
 
@@ -10,6 +12,7 @@ category: 运维
 Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）
 首先，从官方[下载 Maven](https://maven.apache.org/download.html)，我这里下载的是 3.5 的版本。
 本文是在Mac环境中安装的，首先创建一个文件夹，将 tar 包解压缩。
+
 ```bash
 bogon:tools rousseau$ tar -xvzf apache-maven-3.5.3-bin.tar.gz 
 bogon:tools rousseau$ cd apache-maven-3.5.3/

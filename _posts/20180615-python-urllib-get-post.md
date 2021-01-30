@@ -2,6 +2,8 @@
 title: Python 网络请求模块 urllib 、requests
 date: 2018-06-15 16:54
 tags: 
+keywords: python, python urllib, python requests
+description: Python 给人的印象是抓取网页非常方便，提供这种生产力的，主要依靠的就是 urllib、requests这两个模块。
 ---
 
 Python 给人的印象是抓取网页非常方便，提供这种生产力的，主要依靠的就是 urllib、requests这两个模块。
