@@ -2,6 +2,8 @@
 title: Logstash使用jdbc_input同步Mysql数据时遇到的空时间SQLException问题
 date: 2017-08-25 13:46:01
 tag: 
+keywords: logstash, elasticsearch, 同步mysql数据
+description: Logstash的jdbc_input插件无法处理Mysql中默认的空时间。
 ---
 
 今天在使用Logstash的jdbc_input插件同步Mysql数据时，本来应该能搜索出10条数据，结果在Elasticsearch中只看到了4条，终端中只给出了如下信息

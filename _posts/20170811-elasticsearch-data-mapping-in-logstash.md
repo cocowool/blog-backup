@@ -2,6 +2,8 @@
 title: Logstash中如何处理到ElasticSearch的数据映射
 date: 2017-08-11 17:28:01
 tag: 
+keywords: logstash, logstash数据映射, elasticsearch
+description: Logstash作为一个数据处理管道，提供了丰富的插件，能够从不同数据源获取用户数据，进行处理后发送给各种各样的后台。
 ---
 
 Logstash作为一个数据处理管道，提供了丰富的插件，能够从不同数据源获取用户数据，进行处理后发送给各种各样的后台。这中间，最关键的就是要对数据的类型就行定义或映射。

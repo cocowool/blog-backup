@@ -2,6 +2,8 @@
 title: jQuery的attr方法处理checkbox的问题
 date: 2017-09-06 15:05:01
 tag: 
+keywords: jQuery, jquery attr, jquery checkbox
+description: 使用了 jQuery 1.10 的版本，想实现 checkbox 的全部选中和全部取消选中，使用了 attr 的方法。
 ---
 
 

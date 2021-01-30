@@ -2,6 +2,8 @@
 title: 如何进行Logstash logstash-input-jdbc插件的离线安装
 date: 2017-08-19 13:31:01
 tag: 
+keywords: logstash, logstash-input-jdbc插件, 离线安装
+description: 我们单位的服务器位于隔离区，不允许链接互联网，因此整理了在ELK集群上离线安装Logstash的jdbc input插件的方法，供大家参考。
 ---
 
 我们单位的服务器位于隔离区，不允许链接互联网，因此整理了在ELK集群上离线安装Logstash的jdbc input插件的方法，供大家参考。

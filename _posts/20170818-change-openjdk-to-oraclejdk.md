@@ -2,6 +2,8 @@
 title: 将Linux默认的OpenJDK替换为Oracle JDK
 date: 2017-08-18 09:08:01
 tag: 
+keywords: linux, openjdk, oracle jdk
+description: Logstash安装插件的时候，发生与系统自带的OpenJDK有关的错误，解决方案是将系统自带的OpenJDK更新为Oracle的JDK。
 ---
 
 在使用Logstash安装插件的时候，发生了一个错误，如下：

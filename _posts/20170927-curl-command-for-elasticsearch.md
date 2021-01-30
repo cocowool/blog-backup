@@ -3,6 +3,8 @@ title: Curl操作Elasticsearch的常用方法
 date: 2017-09-27 08:53:01
 tag: Elasticsearch
 categories: 运维
+keywords: elasticsearch, curl elasticsearch
+description: Elasticsearch对于文档操作，提供了以下几种API，本文就说明如何使用curl方式来调用这些API。
 ---
 
 Elasticsearch对于文档操作，提供了以下几种API，本文就说明如何使用curl方式来调用这些API。

@@ -2,6 +2,8 @@
 title: 利用Logstash插件进行Elasticsearch与Mysql的数据
 date: 2017-08-26 17:07:01
 tag: 
+keywords: logstash, elasticsearch, mysql
+description: 利用Logstash插件进行Elasticsearch与Mysql的数据。
 ---
 
 Logstash与Elasticsearch的安装就不多说了，我之前有两篇文章写的比较详细了[ElasticSearch + Logstash + Kibana 搭建笔记](http://www.cnblogs.com/cocowool/p/7297749.html)和[Filebeat+Logstash+ElasticSearch+Kibana搭建Apache访问日志解析平台](http://www.cnblogs.com/cocowool/p/7338426.html)。

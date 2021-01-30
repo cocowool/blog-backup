@@ -3,6 +3,8 @@ title: Mac环境下配置Tomcat+Eclipse
 date: 2017-09-28 11:02
 tag: 
 categories: 开发
+keywords: mac, tomcat, eclipse, mac eclipse
+description: mac下配置Tomcat和Eclipse的开发环境。
 ---
 
 

@@ -2,6 +2,8 @@
 title: 使用Logstash创建ES映射模版并进行数据默认的动态映射规则
 date: 2017-08-24 17:03
 tag: 
+keywords: logstash, elasticsearch, 动态映射
+description: Elasticsearch 能够自动检测字段的类型并进行映射，例如引号内的字段映射为 String，不带引号的映射为数字，日期格式的映射为日期等等。
 ---
 
 > 本文配置为 ELK 即（Elasticsearch、Logstash、Kibana）5.5.1。
