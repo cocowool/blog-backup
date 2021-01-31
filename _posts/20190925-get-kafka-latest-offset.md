@@ -2,6 +2,8 @@
 title: 获取Kafka每个分区最新Offset的几种方法
 date: 2019-09-25 20:19:25
 tag: 
+keywords: kafaka, kafka offset, kafka linux
+description: 本文介绍如何获取Kafka每个分区Offset的方法。
 ---
 
 目录

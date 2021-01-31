@@ -2,6 +2,8 @@
 title: Elasticsearch监控指南
 date: 2020-03-15 10:28:31
 tags: Elasticsearch
+keywords: elasticsearch, elasticsearch监控, elasticsearch监控指南
+description: Elasticsearch的出现很好的提供了搜索与分析能力，并且具备了实时响应、快速扩展、海量数据存储等等能力，非常方便、快速的满足了用户场景的需求。
 ---
 
 在当今的软件应用和互联网应用中，搜索与分析能力都是是非常重要的功能，几乎所有的移动APP中都提供了包括输入提示、搜索建议、位置搜索等常见的应用功能。这种场景下，后台的搜索和分析服务能力要具备实时响应、快速扩展、海量数据存储等等能力，Elasticsearch的出现很好的提供了这些能力，非常方便、快速的满足了用户场景的需求。

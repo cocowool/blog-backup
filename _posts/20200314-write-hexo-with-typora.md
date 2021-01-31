@@ -2,6 +2,8 @@
 title: Hexo博客写作与图片处理的经验
 date: 2020-03-14 08:07:13
 tags:
+keywords: hexo, hexo 博客, hexo 图片
+description: Hexo是一款非常优秀的开源博客管理工具，所有的博客文档都通过Markdown格式编写，Markdown编辑器有很多，原来的时候我经常用Evernote编写，但是Evernote写Markdown经常会出现输入法响应缓慢的情况。最近我从Evernote转到了Typora，想到哪里就能够敲字写到哪里，而且输入后马上就能够转换为友好的显示样式，体验非常好。
 ---
 
 Hexo是一款非常优秀的开源博客管理工具，所有的博客文档都通过Markdown格式编写，Markdown编辑器有很多，原来的时候我经常用Evernote编写，但是Evernote写Markdown经常会出现输入法响应缓慢的情况。最近我从Evernote转到了Typora，想到哪里就能够敲字写到哪里，而且输入后马上就能够转换为友好的显示样式，体验非常好。

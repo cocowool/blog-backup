@@ -2,6 +2,8 @@
 title: Flink101-快速示例
 date: 2019-11-19 19:15:19
 tag: 
+keywords: flink, flink docker
+description: 本文通过Docker快速构建Flink的学习演示环境。
 ---
 
 > 验证本文需要具备Docker及Docker-composer，作者使用的环境为Mac + Docker

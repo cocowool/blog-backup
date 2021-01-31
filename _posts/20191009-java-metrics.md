@@ -2,6 +2,8 @@
 title: Java Metrics工具介绍
 date: 2019-10-09 20:26:48
 tag: 
+keywords: java, java metrics, java linux
+description： 本文介绍如何通过Metric来帮助我们对应用程序的性能进行度量，这个包能够帮我省去很多统计方面的工作量。
 ---
 
 > 本文介绍如何通过Metric来帮助我们对应用程序的性能进行度量，这个包能够帮我省去很多统计方面的工作量。

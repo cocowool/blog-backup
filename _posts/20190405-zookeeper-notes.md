@@ -2,6 +2,8 @@
 title: Zookeeper学习笔记
 date: 2019-04-05 22:07
 tag: 
+keywords: zookeeper, zookeeper linux
+description: Zookeeper是一个分布式应用程序协调服务，主要负责集中维护配置信息的服务，提供分布式的同步机制。其所有的服务都是做为其他分布式应用的基础。
 ---
 
 目录

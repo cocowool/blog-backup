@@ -2,6 +2,8 @@
 title: Elasticsearch几项关键告警指标
 date: 2020-03-14 07:58:59
 tags: Elasticsearch
+keywords: elasticsearch, elasticsearch监控指标, elasticsearch告警指标
+description: 本文向大家介绍了Elasticsearch监控中需要关注的几个方面，通过阅读本文，你能够了解到在ES的日常使用和运维中，应该重点关注哪几个方面以及如何获取一些重要的指标。
 ---
 
 本文向大家介绍了Elasticsearch监控中需要关注的几个方面，通过阅读本文，你能够了解到在ES的日常使用和运维中，应该重点关注哪几个方面以及如何获取一些重要的指标。
