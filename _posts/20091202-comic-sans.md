@@ -2,7 +2,7 @@
 title: Comic Sans - 让人由爱到恨的字体
 date: 2009-12-02 18:25:01
 tag: 
-keywrods: comic sans, comic sans 字体
+keywords: comic sans, comic sans 字体
 description: 1994年，[Vincent Connare](http://www.connare.com/whycomic.htm)为 Microsoft 创造出了 Comic Sans 字体。
 ---
 
