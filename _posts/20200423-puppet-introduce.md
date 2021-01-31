@@ -2,6 +2,8 @@
 title: Puppet 各版本特性介绍与典型架构
 date: 2020-04-23 09:12:17
 tags:
+keywords: puppet, puppet版本特性, puppet架构
+description: puppet是一款著名的自动化运维管理工具，我们目前使用的比较老的Puppet版本，正在考虑是否升级，因此对各个版本的发布情况做了一个简单的总结。
 ---
 
 puppet是一款著名的自动化运维管理工具，我们目前使用的比较老的Puppet版本，正在考虑是否升级，因此对各个版本的发布情况做了一个简单的总结。

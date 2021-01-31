@@ -2,6 +2,8 @@
 title: Nginx 介绍及配置文件入门
 date: 2020-05-28 19:53:12
 tags:
+keywords: nginx, nginx入门, nginx介绍, nginx配置
+description: Nginx是一款轻量级的Web服务器，由于它占有系统资源少、处理并发能力强，因此Nginx的使用率越来越高，甚至超过了传统老牌的Web服务器Apache httpd。
 ---
 
 
