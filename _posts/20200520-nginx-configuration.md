@@ -56,6 +56,23 @@ events {
 
 http {
     # HTTP相关的配置，影响所有的虚拟主机配置
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    include /etc/nginx/conf.d/*.conf;
 
     server {
         # HTTP虚拟主机 Server 1的配置
@@ -78,6 +95,30 @@ stream {
         # 虚拟主机 Server 1 的配置
     }
 }
+```
+## 容器化安装
+我们可以采用容器的方式，快速安装运行 nginx。
+```sh
+$ docker pull nginx:1.16.0
+$ docker run --name es-nginx -p 80:80 -d nginx:1.16.0
+$ docker run --name es-nginx -p 80:80 -v ~/Projects/docker-conf/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v ~/Projects/docker-conf/nginx/logs:/var/log/nginx -v ~/Projects/vMeeting/dist:/usr/share/nginx/html -d nginx:1.16.0
+```
+
+### 重新加载Nginx
+```sh
+$ docker kill -s HUP container-name
+```
+
+### 重启Nginx容器
+```sh
+$ docker restart container-name
+```
+
+### 停掉容器并删除
+```sh
+$ docker ps -a
+$ docker stop <container id>
+$ docker rm <container id>
 ```
 
 ## 参考资料
