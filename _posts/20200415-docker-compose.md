@@ -193,9 +193,12 @@ volumes:
 * [使用Docker快速搭建PHP开发环境](https://www.edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
 * [Docker-compose 建立ELK集群](https://www.edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
 * [Flink101-快速示例](https://www.edulinks.cn/2019/11/19/20191119-flink-101-quick-start/)
+* [使用Docker快速搭建Redis集群]()
 
 ## 参考资料
 
 1. [Docker快速入门——Docker-Compose](https://www.cnblogs.com/phpk/p/11205467.html)
 2. [docker-compose-volumes的说明](https://www.cnblogs.com/lori/archive/2018/10/24/9843190.html)
 3. [docker-compose命令及yaml文件](https://www.cnblogs.com/g2thend/p/11746679.html)
+4. [Compose file version 2 reference](https://docs.docker.com/compose/compose-file/compose-file-v2/)
+
