@@ -38,6 +38,12 @@ setopt auto_cd
 # 消除重复的历史命令
 setopt HIST_IGNORE_DUPS
 
+# 设置history的时间戳，默认为Unix秒
+HIST_STAMPS="mm/dd/yyyy"
+
+# 设置启用的插件
+plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions)
+
 source $ZSH/oh-my-zsh.sh
 
 # ls 别名，默认显示详细信息
@@ -66,4 +72,5 @@ alias grep='grep --color=auto'
 2. [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 3. [终极 Shell](http://macshuo.com/?p=676)
 4. [oh-my-zsh 插件](https://hufangyun.com/2017/zsh-plugin/)
+5. [程序员内功系列--iTerm与Zsh篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
 
