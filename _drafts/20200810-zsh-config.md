@@ -48,6 +48,7 @@ alias grep='grep --color=auto'
 ## 日常使用
 
 * 查找历史命令 `Ctrl + r` 是最常用的，输入几个字母就能联想出敲过的命令
+* Git 插件提速git操作，例如 `git add --all` 可以缩写成 `gaa`，所有的命令在 `cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh` 中。这个插件是默认开启的。
 * 
 
 > 本文没有涉及如何切换默认Shell，因为Mac换到Catalina之后，已经将 zsh 设置为默认的 Shell 了。
