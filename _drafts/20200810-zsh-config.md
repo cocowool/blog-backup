@@ -49,7 +49,9 @@ alias grep='grep --color=auto'
 
 * 查找历史命令 `Ctrl + r` 是最常用的，输入几个字母就能联想出敲过的命令
 * Git 插件提速git操作，例如 `git add --all` 可以缩写成 `gaa`，所有的命令在 `cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh` 中。这个插件是默认开启的。
-* 
+* **autojump** 插件能够实现目录间的快速跳转，不仅仅是省略 `cd` 这么简单，还能够记住很多目录的名字，这样我们通过 `j folder-name` 这样的方式，就可以直接进入相关的目录，不用再关心前面的路径，使用起来非常方便。在Mac下需要先通过 `brew install autojump` 安装后才能启用该插件。
+* **zsh-syntax-highlighting** 插件能够对错误的shell命令给出颜色警告。安装方法 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting` 然后参照我之前的配置文件启用插件就行。
+* **zsh-autosuggestions** 能够自动进行命令提示，使用 Tab 或者 右箭头就可以补全，对于重复敲的命令非常方便。安装方法 `git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions` 然后参照我之前的配置文件启用插件就行。
 
 > 本文没有涉及如何切换默认Shell，因为Mac换到Catalina之后，已经将 zsh 设置为默认的 Shell 了。
 
@@ -58,4 +60,5 @@ alias grep='grep --color=auto'
 1. [zsh || bash 快捷键](https://www.jianshu.com/p/eeee90f27bcc)
 2. [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 3. [终极 Shell](http://macshuo.com/?p=676)
+4. [oh-my-zsh 插件](https://hufangyun.com/2017/zsh-plugin/)
 
