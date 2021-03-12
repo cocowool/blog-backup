@@ -65,6 +65,8 @@ Address: 220.181.38.148
 
 > dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried. Most DNS administrators use dig to troubleshoot DNS problems because of its flexibility, ease of use and clarity of output. Other lookup tools tend to have less functionality than dig.
 
+dig用来查询域名信息非常好用，一方面有大量的参数帮助控制查询行为和返回信息，甚至可以做到类似trace的功能，返回查询过程中每个节点的信息。并且dig不仅在linux中能使用，也可以在Windows中使用。可以从 [ISC](http://ftp.isc.org/isc/) 这个FTP上找到适合你的版本。
+
 使用 `dig` 命令来查询百度域名。
 
 ```sh
@@ -92,6 +94,123 @@ baidu.com.		69	IN	A	39.156.69.79
 
 
 ```
+
+查询根服务器
+
+```sh
+$ dig
+
+; <<>> DiG 9.10.6 <<>>
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52195
+;; flags: qr rd ra; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			348449	IN	NS	d.root-servers.net.
+.			348449	IN	NS	a.root-servers.net.
+.			348449	IN	NS	m.root-servers.net.
+.			348449	IN	NS	i.root-servers.net.
+.			348449	IN	NS	f.root-servers.net.
+.			348449	IN	NS	c.root-servers.net.
+.			348449	IN	NS	h.root-servers.net.
+.			348449	IN	NS	l.root-servers.net.
+.			348449	IN	NS	k.root-servers.net.
+.			348449	IN	NS	e.root-servers.net.
+.			348449	IN	NS	j.root-servers.net.
+.			348449	IN	NS	b.root-servers.net.
+.			348449	IN	NS	g.root-servers.net.
+
+;; Query time: 75 msec
+;; SERVER: 172.20.10.1#53(172.20.10.1)
+;; WHEN: Fri Mar 12 13:09:42 CST 2021
+;; MSG SIZE  rcvd: 239
+
+```
+
+带上跟踪标志的查询
+
+```sh
+$ dig baidu.com +trace d2
+
+; <<>> DiG 9.10.6 <<>> baidu.com +trace d2
+;; global options: +cmd
+.			24282	IN	NS	e.root-servers.net.
+.			24282	IN	NS	c.root-servers.net.
+.			24282	IN	NS	b.root-servers.net.
+.			24282	IN	NS	a.root-servers.net.
+.			24282	IN	NS	i.root-servers.net.
+.			24282	IN	NS	j.root-servers.net.
+.			24282	IN	NS	h.root-servers.net.
+.			24282	IN	NS	g.root-servers.net.
+.			24282	IN	NS	d.root-servers.net.
+.			24282	IN	NS	k.root-servers.net.
+.			24282	IN	NS	f.root-servers.net.
+.			24282	IN	NS	m.root-servers.net.
+.			24282	IN	NS	l.root-servers.net.
+;; Received 239 bytes from 172.20.10.1#53(172.20.10.1) in 5 ms
+
+com.			172800	IN	NS	a.gtld-servers.net.
+com.			172800	IN	NS	b.gtld-servers.net.
+com.			172800	IN	NS	c.gtld-servers.net.
+com.			172800	IN	NS	d.gtld-servers.net.
+com.			172800	IN	NS	e.gtld-servers.net.
+com.			172800	IN	NS	f.gtld-servers.net.
+com.			172800	IN	NS	g.gtld-servers.net.
+com.			172800	IN	NS	h.gtld-servers.net.
+com.			172800	IN	NS	i.gtld-servers.net.
+com.			172800	IN	NS	j.gtld-servers.net.
+com.			172800	IN	NS	k.gtld-servers.net.
+com.			172800	IN	NS	l.gtld-servers.net.
+com.			172800	IN	NS	m.gtld-servers.net.
+com.			86400	IN	DS	30909 8 2 E2D3C916F6DEEAC73294E8268FB5885044A833FC5459588F4A9184CF C41A5766
+com.			86400	IN	RRSIG	DS 8 1 86400 20210324170000 20210311160000 42351 . Vcwn1/pEqX4zjsyr5Py+PFgKGItxW75kcv8/211qf++2dR754MK7JHKe 5h9c6hsYAAIRxv8VtQt/q19bxxbEz8tj2ecrPB1gxkW2C/7FRb3laSk1 nF8rrawMZaC/qFg21JpreF89xGer5B/cEKV58WEyTJu7Z+hoPP+KQGgI y+BYM9zfr9gXml6uwJRUaqOybtRKfR9ydE0Upwc1ZEaoIkzbDJz8RqZz s5fY4uz7YdODSZqvxnghepQOphFJnHN2SFsQdQ7X9PyGSFkSTiXkA8uh zJEO6n0SgVrX2GP6ljvw21/LY1uksVtN2acQ4dXnNzLhAeeYo/xRB9lx TAkT+g==
+;; Received 1169 bytes from 198.41.0.4#53(a.root-servers.net) in 281 ms
+
+baidu.com.		172800	IN	NS	ns2.baidu.com.
+baidu.com.		172800	IN	NS	ns3.baidu.com.
+baidu.com.		172800	IN	NS	ns4.baidu.com.
+baidu.com.		172800	IN	NS	ns1.baidu.com.
+baidu.com.		172800	IN	NS	ns7.baidu.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 86400 IN NSEC3 1 1 0 - CK0Q1GIN43N1ARRC9OSM6QPQR81H5M9A  NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 86400 IN RRSIG NSEC3 8 2 86400 20210317044152 20210310043152 58540 com. pG8wfg9t0VCiLMi12MzGkhzJ59IQ/q6DjDM+BL55pm677+CQrsZkyZJC B6YOxOQojPQmV1HklP4H16tCumtxRbBE3ECtCDBJYsfBLq9CRQnv3t72 yrkJkhkK5kWM6n6C59KKCUnFyJ6gtROYJQEU50ZNzaiFn0jZcMIIuBfG LVhLTcOUpo+QZRw1IXvvmjdHf3yO+WZYZNwRYYzfrhPyEw==
+HPVUSBDNI26UDNIV6R0SV14GC3KGR4JP.com. 86400 IN NSEC3 1 1 0 - HPVVN3Q5E5GOQP2QFE2LEM4SVB9C0SJ6  NS DS RRSIG
+HPVUSBDNI26UDNIV6R0SV14GC3KGR4JP.com. 86400 IN RRSIG NSEC3 8 2 86400 20210317061829 20210310060829 58540 com. q0e23WSidBWy2d3qd1XBwsH+kc/JMcYxaskkyR9/GRWv8PA2oKSeU7QP qQcAQC4hoswc7SqZcoGRyy3HFGC4TrJ544oN+ldLsh075ncHkurQX1De qcZsMM3OmXeWyMyV/PvRe8QsJPOvoCSGNqwDZdXxmesl2OCNxyQ7dfgz K7XCn+9sVtz3V++v3bjo18e+qnJS8+IDFmY1BTHumUkFuQ==
+;; Received 757 bytes from 192.35.51.30#53(f.gtld-servers.net) in 137 ms
+
+baidu.com.		600	IN	A	220.181.38.148
+baidu.com.		600	IN	A	39.156.69.79
+baidu.com.		86400	IN	NS	ns4.baidu.com.
+baidu.com.		86400	IN	NS	ns2.baidu.com.
+baidu.com.		86400	IN	NS	ns3.baidu.com.
+baidu.com.		86400	IN	NS	ns7.baidu.com.
+baidu.com.		86400	IN	NS	dns.baidu.com.
+;; Received 240 bytes from 110.242.68.134#53(ns1.baidu.com) in 47 ms
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 37649
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;d2.				IN	A
+
+;; AUTHORITY SECTION:
+.			3600	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2021031101 1800 900 604800 86400
+
+;; Query time: 5 msec
+;; SERVER: 172.20.10.1#53(172.20.10.1)
+;; WHEN: Fri Mar 12 13:11:38 CST 2021
+;; MSG SIZE  rcvd: 106
+```
+
+
 
 ## whois
 
