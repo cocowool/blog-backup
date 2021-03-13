@@ -4,6 +4,7 @@ date: 2021-03-05 17:26:03
 tags:
 keywords: 弗雷德·特曼, 计算机名人录
 description: 弗雷德·特曼（Frederick Emmons Terman ），硅谷创业的元老人物，被誉为「硅谷之父」、「电子革命之父」。
+category: 计算机名人录
 ---
 
 ### 弗雷德·特曼
