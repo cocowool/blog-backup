@@ -15,11 +15,11 @@ keywords: 约翰·埃克特, John Eckert, 计算机名人录
 
 约翰·埃克特是一名计算机科学领域的工程师，其最著名的成就在于作为第一台真正意义上的电子计算机 **ENIAC** 的合作发明者。
 
-约翰·埃克特就读于宾夕法尼亚大学电子工程系，1941年获得本科学位，1943年获得研究生学位。在校期间，他就与他的导师 John W. Mauchly 一起在计算设备方面取得了很多重要的成就。
+约翰·埃克特就读于宾夕法尼亚大学电子工程系，1941年获得本科学位，1943年获得研究生学位。在校期间，他就与他的导师 [John William Mauchly]() 一起在计算设备方面取得了很多重要的成就。
 
 1946年，他们与政府签订了一份合同来建造一个电子计算机，即「**ENIAC** Electronic Numerical Integrator and Computer」，建造这台计算机的目的是用来计算弹道方程和编制射击表。
 
-1948年，约翰·埃克特与John W. Mauchly一起成立了一家电脑制造公司，一年后推出了 **BINAC** （Binary Automatic Computer），能够将数据存储在磁带上，而不再使用纸带。为了能够处理商业数据，约翰·埃克特和John W.Mauchly发明了第三代产品，即 **UNIVAC** (Universal Automatic Computer)，可以说他们的产品带动了电脑产业的兴起。UNIVAC共生产了46台，第一台UNIVAC在使用了73000小时后于1963年退役。最后一台一直运行到1969年退役。在1948年到1966年间，约翰·埃克特共提交了85项专利，多数与电子技术方面有关。
+1948年，约翰·埃克特与John William Mauchly一起成立了一家电脑制造公司，一年后推出了 **BINAC** （Binary Automatic Computer），能够将数据存储在磁带上，而不再使用纸带。为了能够处理商业数据，约翰·埃克特和John W.Mauchly发明了第三代产品，即 **UNIVAC** (Universal Automatic Computer)，可以说他们的产品带动了电脑产业的兴起。UNIVAC共生产了46台，第一台UNIVAC在使用了73000小时后于1963年退役。最后一台一直运行到1969年退役。在1948年到1966年间，约翰·埃克特共提交了85项专利，多数与电子技术方面有关。
 
 约翰·埃克特的公司在1950年被 Remington Rand Inc 收购，在1955年与 Sperry Rand Corp合并，随后改名为 [Unisys Corp]()。
 
