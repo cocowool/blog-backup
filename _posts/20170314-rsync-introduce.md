@@ -79,7 +79,16 @@ rsync -daemon
 rsync -arv —password-file=/etc/rsyncd.secrets /local_file user@remote_host::remote_module
 ```
 
+## Rsync算法介绍
+
+需要提及的是 rsync 以其优越的性能优势区别于其它几种 Linux 文件传输方法，其同步文件的速度相当快，这主要归功于 rsync 所使用的传输算法。简而言之 rsync 算法能在相当短的时间内计算出需要备份的数据，只对源文件与目标文件的不同之处进行传输，从而降低网络中传输的数据量，以此达到快速备份镜像的目的。下面通过一典型应用场景来描述 rsync 算法的基本原理：主机 A 与主机 B 均有对同一文件的拷贝，用户对主机 A 上的拷贝进行更新，主机 B 通过 rsync 算法对更新后的文件进行同步。以下是该算法的实现步骤：
+1. 主机 B 将原始拷贝划分成大小为 N 的不重合的若干块（文件末尾部分分块大小可能不足 N），并对这些数据块进行两种不同方式的校验：32 位的滚动弱校验、128 位的 MD4 强校验。弱校验较之强校验计算速度快。
+2. 主机 B 将每个数据块的弱校验、强校验结果发送给主机 A 。
+3. 主机 A 对更新后的文件拷贝中的每个长度为 N 的数据块进行弱校验并与从 B 接收到的弱校验值进行匹配，若相同再进行强校验匹配。由于弱校验的滚动特性可以快速地筛选出需要进行同步的数据块。该算法的运算量主要集中在主机 A 上。
+4. 通过上述计算，主机 A 将文件的不同部分发送给 B，B 接收到两个拷贝之间的不同之处，从而同步得到更新后的文件。
+
 ### 参考资料
+
 1、[rsyncd.conf](https://rsync.samba.org/ftp/rsync/rsyncd.conf.html)
 2、[rsync无密码同步方法](http://www.tuicool.com/articles/bUZJj2u)
 3、[rsync tutorial](http://everythinglinux.org/rsync/)
