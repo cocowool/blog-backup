@@ -2,7 +2,7 @@
 title: 使用PHP脚本来写Daemon程序
 date: 2011-12-04 15:48:01
 tag: 
-keywords: daemon, php daemon
+keywords: daemon, php daemon, php
 description: daemon进程有时人们也把它们称作"后台服务进程",daemon进程的寿命很长。
 ---
 
