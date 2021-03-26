@@ -1,6 +1,6 @@
 ---
 title: Content-Disposition 乱码问题解决记录
-keywords: 'python, python3, requests, Content-Disposition, 乱码'
+keywords: 'python, python3, requests, Content-Disposition, 乱码, Content-Disposition Utf-8, Utf-8'
 description: 因为不熟悉RFC2616规范，在解决Python Requests下载文件时的中文文件名问题遇到了一些波折。
 date: 2020-12-13 14:00:58
 tags:
