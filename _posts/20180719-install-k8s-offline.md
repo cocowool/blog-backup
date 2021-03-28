@@ -386,7 +386,7 @@ scheduler            Healthy   ok
 到这里Master节点就配置完毕。
 
 ## 4. 配置flannel网络
-Flannel可以使整个集群的docker容器拥有唯一的内网IP，并且多个node之间的docker0可以互相访问。[下载地址](下载地址)
+Flannel可以使整个集群的docker容器拥有唯一的内网IP，并且多个node之间的docker0可以互相访问。
 
 ## 5. 集群验证
 在101上执行命令，检查nodes，如果能看到，表明集群现在已经OK了。
