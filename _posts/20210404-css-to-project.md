@@ -2,8 +2,8 @@
 title: CSS工程化开发方法及优点
 date: 2021-04-04 21:06:28
 tags:
-keywords: 
-description: 
+keywords: sass, css, scss, css工程化开发
+description: 借助SASS或LESS拓展语言的支持，我们能够用工程化的方法开发CSS代码。
 ---
 
 ## 传统 CSS 开发存在的问题
