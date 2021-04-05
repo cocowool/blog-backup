@@ -216,6 +216,86 @@ Mode: standalone
 Node count: 8
 ```
 
+## Zookeeper API 及编程
+
+### API简介
+ZooKeeper API 共包含 5 个包，分别为： org.apache.zookeeper ， org.apache.zookeeper.data ， org.apache.zookeeper.server ， org.apache.zookeeper.server.quorum 和 org.apache.zookeeper.server.upgrade 。
+
+其中 org.apache.zookeeper 包含 ZooKeeper 类，它我们编程时最常用的类文件。这个类是 ZooKeeper 客户端库的主要类文件。如果要使用 ZooKeeper 服务，应用程序首先必须创建一个 Zookeeper 实例，这时就需要使用此类。一旦客户端和 ZooKeeper 服务建立起连接， ZooKeeper 系统将会分配给此连接回话一个 ID 值，并且客户端将会周期地向服务器发送心跳来维持会话的连接。只要连接有效，客户端就可以调用 ZooKeeper API 来做相应的处理。
+
+下表是一些常用的方法
+| 功能 | 描述 |
+|---|---|
+| create | 在本地目录树中创建一个节点 |
+| delete | 删除一个节点 |
+| exists | 测试本地是否存在目标节点 |
+| get/set data | 从目标节点上读取 / 写数据 |
+| get/set ACL | 获取 / 设置目标节点访问控制列表信息 |
+| get children | 检索一个子节点上的列表 |
+| sync | 等待要被传送的数据 |
+
+### API的使用
+使用了Spring Boot，连接Docker中启动的ZK，具体代码可以参考我的GITHUB。
+```java
+import org.apache.zookeeper.CreateMode;
+import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.WatchedEvent;
+import org.apache.zookeeper.Watcher;
+import org.apache.zookeeper.ZooDefs;
+import org.apache.zookeeper.ZooKeeper;
+
+@RestController
+public class MeetingController implements Watcher {
+    private static final int SESSION_TIMEOUT = 1000; // 回话超时时间
+    private static CountDownLatch latch = new CountDownLatch(1);
+    private ZooKeeper zk;
+    private static final String REGISTRY_PATH = "/registry";
+
+    @Autowired
+    private MeetingRepository meetingRepository;
+
+    Watcher wh = new Watcher(){
+        public void process(org.apache.zookeeper.WatchedEvent event){
+            System.out.println(event.toString());
+        }
+    };
+
+    // ZK测试
+    @RequestMapping("/zk")
+    public String testZk() throws InterruptedException, KeeperException {
+
+        try {
+            zk = new ZooKeeper("localhost:2181", SESSION_TIMEOUT, this.wh);
+            // latch.await();
+
+            if(zk.exists(REGISTRY_PATH, false) == null){
+                zk.create(REGISTRY_PATH, "hello registry".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+
+                System.out.println(new String(zk.getData(REGISTRY_PATH, false, null)));
+            }else{
+                zk.setData(REGISTRY_PATH, "hello zk".getBytes(), 0);
+
+                System.out.println(new String(zk.getData(REGISTRY_PATH, false, null)));
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        // ZooKeeper zk = null;
+
+        return "zk test";
+    }
+}
+```
+
+## 参考资料
+1. [Apache Zookeeper](https://zookeeper.apache.org)
+2. [百度百科 Zookeeper](https://baike.baidu.com/item/zookeeper/4836397?fr=aladdin)
+3. [Zookeeper的功能以及工作原理](https://www.cnblogs.com/felixzh/p/5869212.html)
+4. [Zookeeper系列一：Zookeeper基础命令操作](https://blog.csdn.net/dandandeshangni/article/details/80558383)
+5. [ZooKeeper系列之六：ZooKeeper四字命令](https://blog.csdn.net/shenlan211314/article/details/6187029)
+6. [ZooKeeper系列之九：ZooKeeper API简介及编程](https://blog.csdn.net/shenlan211314/article/details/6187037)
+
 ## 参考资料
 
 1. [Apache Zookeeper](https://zookeeper.apache.org)

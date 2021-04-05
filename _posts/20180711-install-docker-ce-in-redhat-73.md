@@ -46,6 +46,51 @@ $ sudo docker run hello-world
 ```
 能够看到输出 Hello from Docker! 就OK了。
 
+## 配置为系统服务
+
+首先创建service文件
+```sh
+$ vim /usr/lib/systemd/system/docker.service
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target firewalld.service
+Wants=network-online.target
+ 
+[Service]
+Type=notify
+# the default is not to use systemd for cgroups because the delegate issues still
+# exists and systemd currently does not support the cgroup feature set required
+# for containers run by docker
+ExecStart=/usr/bin/dockerd $DOCKER_NETWORK_OPTIONS
+ExecReload=/bin/kill -s HUP $MAINPID
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+#TasksMax=infinity
+TimeoutStartSec=0
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+# restart the docker process if it exits prematurely
+Restart=on-failure
+StartLimitBurst=3
+StartLimitInterval=60s
+ 
+[Install]
+WantedBy=multi-user.target
+$ systemctl daemon-reload
+$ systemctl start docker
+$ ps -ef | grep doc
+root     10321     1  3 09:35 ?        00:00:00 /usr/bin/dockerd
+root     10325 10321  0 09:35 ?        00:00:00 docker-containerd --config /var/run/docker/containerd/containerd.toml
+```
+
 
 ## 参考资料
 
