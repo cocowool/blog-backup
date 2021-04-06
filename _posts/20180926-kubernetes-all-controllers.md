@@ -337,6 +337,8 @@ spec:
             - date; echo Hello from the Kubernetes cluster
           restartPolicy: OnFailure
 ```
+schedule 的格式为分、时、日、月、周。
+
 所有的编排文件都上传到了我的[Github](https://github.com/cocowool/k8s-go/tree/master/controller)上，大家可以自行[下载](https://github.com/cocowool/k8s-go/tree/master/controller)。
 
 
