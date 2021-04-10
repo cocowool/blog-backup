@@ -3,7 +3,8 @@ title: Linux修改文件创建时间
 date: 2021-04-07 08:36:25
 tags:
 keywords: touch, 文件创建时间, linux touch, linux
-category: 通过touch命令可以修改文件创建时间。
+category: 
+description: 通过touch命令可以修改文件创建时间。
 ---
 
 touch命令一直被我用来作为创建一个空白文件的命令，但是今天我才发现，原来touch命令主要的作用是用来修改文件时间，怪不得我的服务器上被黑客上传的文件都是很久之前的创建时间。
