@@ -1,7 +1,9 @@
 ---
-title: 20210401-flink-102-basic-concepts
+title: Flink 基础概念
 date: 2021-04-01 21:46:10
 tags:
+keywords: flink, 流计算, flink linux
+description: Flink首先是一个框架，为我们提供了处理有状态数据流的分布式计算能力。
 ---
 
 ## Flink是什么
