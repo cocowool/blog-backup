@@ -1,5 +1,5 @@
 ---
-title: 查看Linux CPU使用率的7中方法
+title: 查看Linux CPU使用率的7种方法
 date: 2021-04-09 09:40:53
 tags:
 keywords:
