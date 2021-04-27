@@ -100,12 +100,14 @@ $ sudo route -v add ip gateway [-netmask net-mask-ip]
 $ sudo route -v add -net 128.192 gateway
 # -host 参数可以指定添加一个具体的地址
 $ sudo route -v add -host 128.192.214.29 gateway
+$ sudo route -n add -net 192.168.0.0（需进入的网段） -netmask 255.255.255.0 （掩码）192.168.5.254 （进该网段的网关）
 ```
 
 ### 删除路由
 
 ```sh
 $ sudo route -v delete ip
+$ sudo route -v delete -net 10.10.12.0（某网段） -gateway 10.10.12.1（某网关）
 ```
 
 ### 清空路由表
