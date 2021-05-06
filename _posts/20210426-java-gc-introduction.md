@@ -1,5 +1,5 @@
 ---
-title: 20210426-java-gc-introduction
+title: Java GC介绍
 date: 2021-04-26 16:46:45
 tags:
 keywords: gc, java gc, gc介绍

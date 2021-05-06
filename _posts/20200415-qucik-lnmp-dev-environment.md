@@ -36,6 +36,14 @@ $ cd lnmp
 $ mkdir -p nginx/www nginx/logs nginx/conf.d
 ```
 
+在新建的 www 目录中新建 index.php 文件，用来检测 php 环境是否搭建成功。
+
+```php
+<?php
+  phpinfo();
+?>
+```
+
 在`nginx/conf`目录下准备`nginx`的配置文件php.conf。
 
 ```
