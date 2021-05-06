@@ -6,7 +6,7 @@ keywords: crontab, crontab 除号
 description: crontab 是Linux中配置定时任务的工具，在各种配置中，我们经常会看到除号（Slash）的使用，那么这个除号到底标示什么意思，使用中有哪些需要注意的地方呢？
 ---
 
-crontab 是Linux中配置定时任务的工具，如果对于 crontab 还不太熟悉的朋友，可以参考 [Crontab的格式](http://edulinks.cn/2009/04/22/20090422-crontab/) 。
+crontab 是Linux中配置定时任务的工具，如果对于 crontab 还不太熟悉的朋友，可以参考 [Crontab的格式](http://www.edulinks.cn/2009/04/22/20090422-crontab/) 。
 
 在各种配置中，我们经常会看到除号（Slash）的使用，那么这个除号到底标示什么意思，使用中有哪些需要注意的地方呢？
 

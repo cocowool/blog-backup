@@ -8,7 +8,7 @@ description: 系统中原有 Mysql4 ，但是需要使用 Mysql5 的一些新特
 
 系统中原有 Mysql4 ，但是需要使用 Mysql5 的一些新特性，但是 Mysql4 又不能够删除，所以需要同时安装两个版本的 Mysql。
 
-> 如果哪个年代有Docker，就不用这么麻烦了，穿梭于2021-1-18日留下此评论。对于Docker，可以从[Docker入门介绍](http://edulinks.cn/2018/06/20/20180620-docker-overview/) 入手
+> 如果哪个年代有Docker，就不用这么麻烦了，穿梭于2021-1-18日留下此评论。对于Docker，可以从[Docker入门介绍](http://www.edulinks.cn/2018/06/20/20180620-docker-overview/) 入手
 
 为此，用测试机进行了实验，安装下面两个版本的 Mysql。
 * mysql-standard-4.1.15-pc-linux-gnu-i686-glibc23.tar.gz

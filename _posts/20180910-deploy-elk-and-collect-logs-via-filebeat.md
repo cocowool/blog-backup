@@ -6,7 +6,7 @@ keywords: kubernetes, k8s, 日志, 日志管理
 description: 日志对于我们管理Kubernetes集群及其上的应用具有非常重要的作用，特别是在出现故障或者Bug的时候。本文介绍Kubernetes部署ELK并使用Filebeat收集容器日志的方法。
 ---
 
-> 本文的试验环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
+> 本文的试验环境为CentOS 7.3，Kubernetes集群为1.11.2，安装步骤参见[kubeadm安装kubernetes V1.11.1 集群](https://www.cnblogs.com/cocowool/p/kubeadm_install_kubernetes.html)。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://www.edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
 
 ## 1. 环境准备
 

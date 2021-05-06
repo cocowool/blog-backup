@@ -10,7 +10,7 @@ tags:
 
 目前 Java 语言的版本很多，除了常用的 Java 8，有一些遗留项目可能使用了 Java 7，也可能有一些比较新的的项目使用了 Java 10 以上的版本。如果想切换自己本地的 Java 开发环境，折腾起来还是需要花费一些时间的，并且日后在不同版本间切换每次都要折腾一次。
 
-Docker 的出现让我们维护不同版本的开发编译环境变得简单，如果你还不知道什么是 Docker 可以看看 [Docker 入门介绍](http://edulinks.cn/2018/06/20/20180620-docker-overview/)。我们可以采用两种方式来构建 java 的开发环境，一种是在容器内编译运行，一种是在容器外编译运行，下面分别来看看具体如何操作。
+Docker 的出现让我们维护不同版本的开发编译环境变得简单，如果你还不知道什么是 Docker 可以看看 [Docker 入门介绍](http://www.edulinks.cn/2018/06/20/20180620-docker-overview/)。我们可以采用两种方式来构建 java 的开发环境，一种是在容器内编译运行，一种是在容器外编译运行，下面分别来看看具体如何操作。
 
 >  准备工作：首先确保已经安装了 Docker ，如果方便可以提前把 `openjdk:8` 的镜像拉取下来，到时可以节省大家的时间。本文在 macOs 10.15.7 、Docker 19.03.8 的环境下验证通过。
 
@@ -111,13 +111,13 @@ Hello world.
 
 本文仅仅构建了一个简单的 java 开发环境，使用这种方式编译运行 java 程序的好处是无需在本地安装 jdk ，在需要为多个 jdk 版本编译程序的时候更加方便。但是对于复杂的工程常常使用 maven 或者 graddle 进行构建，这种项目能否使用本文提到的方式来构建呢，敬请期待本系列的下一篇文章，也欢迎大家关注公众号获得最新的文章推送。如果想要进一步了解 Docker 的相关知识，可以参考我之前的文章。
 
-* [Docker 入门介绍](http://edulinks.cn/2018/06/20/20180620-docker-overview/)
-* [Docker Compose 使用介绍](http://edulinks.cn/2020/04/15/20200415-docker-compose/)
-* [在Redhat 7.3中采用离线方式安装Docker](http://edulinks.cn/2018/07/11/20180711-install-docker-ce-in-redhat-73/)
-* [创建自己的Docker基础镜像](http://edulinks.cn/2018/06/27/20180627-make-your-own-base-docker-image/)
-* [Docker存出载入镜像](http://edulinks.cn/2018/07/16/20180716-docker-save-load-image/)
-* [使用 Docker 快速搭建PHP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
-* [Docker Compose 建立ELK集群](http://edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
+* [Docker 入门介绍](http://www.edulinks.cn/2018/06/20/20180620-docker-overview/)
+* [Docker Compose 使用介绍](http://www.edulinks.cn/2020/04/15/20200415-docker-compose/)
+* [在Redhat 7.3中采用离线方式安装Docker](http://www.edulinks.cn/2018/07/11/20180711-install-docker-ce-in-redhat-73/)
+* [创建自己的Docker基础镜像](http://www.edulinks.cn/2018/06/27/20180627-make-your-own-base-docker-image/)
+* [Docker存出载入镜像](http://www.edulinks.cn/2018/07/16/20180716-docker-save-load-image/)
+* [使用 Docker 快速搭建PHP开发环境](http://www.edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
+* [Docker Compose 建立ELK集群](http://www.edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
 
 ## 参考资料
 

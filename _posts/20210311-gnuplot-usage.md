@@ -3,10 +3,10 @@ title: GNUPLOT使用技巧总结
 date: 2021-03-10 09:57:51
 tags:
 keywords: gnuplot, gnuplot linux, 作图, gnuplot 作图
-description: Gnuplot 是一款非常著名的作图软件，支持Mac、Linux等多种操作系统类型，我曾写过「[Mac OS X下GnuPlot的安装](http://edulinks.cn/2011/07/03/20110703-install-gnuplot/)」以及「[利用Apache ab以及GNUPlot来进行Web测试](http://edulinks.cn/2011/07/25/20110725-ab-test/)」两篇文章来介绍如何使用这个工具。
+description: Gnuplot 是一款非常著名的作图软件，支持Mac、Linux等多种操作系统类型，我曾写过「[Mac OS X下GnuPlot的安装](http://www.edulinks.cn/2011/07/03/20110703-install-gnuplot/)」以及「[利用Apache ab以及GNUPlot来进行Web测试](http://www.edulinks.cn/2011/07/25/20110725-ab-test/)」两篇文章来介绍如何使用这个工具。
 ---
 
-Gnuplot 是一款非常著名的作图软件，支持Mac、Linux等多种操作系统类型，我曾写过「[Mac OS X下GnuPlot的安装](http://edulinks.cn/2011/07/03/20110703-install-gnuplot/)」以及「[利用Apache ab以及GNUPlot来进行Web测试](http://edulinks.cn/2011/07/25/20110725-ab-test/)」两篇文章来介绍如何使用这个工具。
+Gnuplot 是一款非常著名的作图软件，支持Mac、Linux等多种操作系统类型，我曾写过「[Mac OS X下GnuPlot的安装](http://www.edulinks.cn/2011/07/03/20110703-install-gnuplot/)」以及「[利用Apache ab以及GNUPlot来进行Web测试](http://www.edulinks.cn/2011/07/25/20110725-ab-test/)」两篇文章来介绍如何使用这个工具。
 
 最近翻出了之前整理的更为详细的使用说明，发布出来希望能帮大家熟悉这个工具。
 

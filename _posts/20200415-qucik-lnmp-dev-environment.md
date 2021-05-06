@@ -74,7 +74,7 @@ server {
 
 在工作目录下创建`docker-compose.yml`编排文件。
 
->  关于`docker-compose`的详细介绍可以参考我之前的文章[docker-compose 使用介绍](http://edulinks.cn/2020/04/15/20200415-docker-compose/)。
+>  关于`docker-compose`的详细介绍可以参考我之前的文章[docker-compose 使用介绍](http://www.edulinks.cn/2020/04/15/20200415-docker-compose/)。
 
 ```yaml
 version: "2.1"
@@ -115,7 +115,7 @@ networks:
 
 至此，我们完成了所有的准备工作，马上可以启动查看效果。
 
-在这个编排文件中，我对Mysql使用了固定的IP地址，这样在后续重启环境的过程中，我就不用修改PHP的数据库配置文件了。关于固定容器IP地址的更详细的方法，可以参考[如何让容器具有固定IP](http://edulinks.cn/2019/04/17/2019-04-17-run_container_with_static_ip/)
+在这个编排文件中，我对Mysql使用了固定的IP地址，这样在后续重启环境的过程中，我就不用修改PHP的数据库配置文件了。关于固定容器IP地址的更详细的方法，可以参考[如何让容器具有固定IP](http://www.edulinks.cn/2019/04/17/2019-04-17-run_container_with_static_ip/)
 
 ## 运行效果
 
@@ -170,7 +170,7 @@ location ~ \.php(.*)$ {
 ## 参考资料
 
 1. [Docker秒搭建Php7开发环境](https://www.jianshu.com/p/43037ce40b00)
-2. [docker-compose 使用介绍](http://edulinks.cn/2020/04/15/20200415-docker-compose/index.html)
+2. [docker-compose 使用介绍](http://www.edulinks.cn/2020/04/15/20200415-docker-compose/index.html)
 3. [Docker PHP](https://www.jianshu.com/p/f58740a885a9)
 4. [docker完整配置nginx+php+mysql](https://www.cnblogs.com/saysmy/p/10389902.html)
 5. [Docker php安装扩展步骤详解](https://www.cnblogs.com/yinguohai/p/11329273.html)

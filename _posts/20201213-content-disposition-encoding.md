@@ -25,7 +25,7 @@ value, params = cgi.parse_header( response.headers['Content-Disposition'] )
 print(params['filename'])
 ```
 
-因为我是用容器中的Python执行环境（这样做的好处就是我可以不用受困于管理本地多个Python版本，并且能够实现快速的迁移，可以参考 [利用 Docker 构建一个简单的 java 开发编译环境](http://edulinks.cn/2020/11/12/20201111-build-java-devlopment-env-with-docker/) 来实现）。刚开始以为是 Docker 内字符编码的问题，因为随便百度一下，都能看到很多反映容器环境下的应用输出中文日志乱码的问题。但是，通过在容器内创建中文名称的文件，以及 `curl` 命令请求文件header的方式，都验证出官方提供的 Python3.6 镜像实际上是支持中文的。
+因为我是用容器中的Python执行环境（这样做的好处就是我可以不用受困于管理本地多个Python版本，并且能够实现快速的迁移，可以参考 [利用 Docker 构建一个简单的 java 开发编译环境](http://www.edulinks.cn/2020/11/12/20201111-build-java-devlopment-env-with-docker/) 来实现）。刚开始以为是 Docker 内字符编码的问题，因为随便百度一下，都能看到很多反映容器环境下的应用输出中文日志乱码的问题。但是，通过在容器内创建中文名称的文件，以及 `curl` 命令请求文件header的方式，都验证出官方提供的 Python3.6 镜像实际上是支持中文的。
 
 ```shell
 # ls

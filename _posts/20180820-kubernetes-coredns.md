@@ -6,7 +6,7 @@ keywords: kubernetes, k8s, coredns
 description: CoreDNS在Kubernetes1.11版本已经做为GA功能释放，成为Kubernetes默认的DNS服务替代了Ku be-DNS，目前是kubeadm、kube-up、minikube和kops安装工具的默认选项。
 ---
 
-> 本文介绍 CoreDNS 相关配置以及验证方法，实验环境为 Kubernetes 1.11，搭建方法参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
+> 本文介绍 CoreDNS 相关配置以及验证方法，实验环境为 Kubernetes 1.11，搭建方法参考[kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://www.edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
 
 
 ## busybox 的槽点

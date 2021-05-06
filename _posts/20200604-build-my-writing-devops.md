@@ -69,7 +69,7 @@ description: 从2008年开始写博客，到2020年断断续续的坚持了有�
 ## 提高效率的工具
 
 * [MdNice](https://www.mdnice.com) 一个Markdown格式转化为公众号文章格式的工具，是我用过的最好的，生成的样式复制到公众号编辑框基本不会发生问题。美中不足今年作者加了限制，如果想要复制到公众号必须注册登陆。
-* Typora 这个用来编辑Markdown真的是非常舒服，参考我的 [Hexo博客写作与图片处理的经验](http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/)
+* Typora 这个用来编辑Markdown真的是非常舒服，参考我的 [Hexo博客写作与图片处理的经验](http://www.edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/)
 
 ## 参考资料
 

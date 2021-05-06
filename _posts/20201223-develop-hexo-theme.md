@@ -112,7 +112,7 @@ $ tree -L 2
 * 页面结构（模板）的设计开发。开发一个页面，首先是确定页面的布局和页面的元素，这些都在模板文件夹中进行编辑开发。Hexo 支持两种模板引擎，分别是 EJS（[EJS官方文档](https://ejs.bootcss.com)）和 Stylus。
 * 页面样式的设计开发。页面所用的样式表文件可以放在 source 文件夹内。我们可以用原生的CSS语法来编写样式表，如果习惯 SCSS 等方式来编写，需要安装相应 render 插件。例如如果要使用 scss，则需要通过 `npm install --save hexo-renderer-sass` 安装sass插件。
 
-> 如果使用 Typora 进行博客撰写的朋友遇到图片插入与发布相关的问题，建议阅读我的 [Hexo博客写作与图片处理的经验](http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/) 这篇文章，帮你搞定图片本地浏览与服务器端浏览都能够正常显示。
+> 如果使用 Typora 进行博客撰写的朋友遇到图片插入与发布相关的问题，建议阅读我的 [Hexo博客写作与图片处理的经验](http://ww.edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/) 这篇文章，帮你搞定图片本地浏览与服务器端浏览都能够正常显示。
 
 
 ## 参考资料

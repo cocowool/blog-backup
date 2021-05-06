@@ -8,7 +8,7 @@ description: Mac下如何在模拟器中安装Android apk。
 ---
 
 
-安装了Android模拟器之后（具体模拟器的安装步骤可以参考 [Mac下安装Android模拟器](http://edulinks.cn/2011/07/27/20110727-install-android-simulator/)），我们可能经常需要将从网上下载来得apk进行安装，在没有Eclipse开发环境的情况下，也可以进行安装，具体的方法如下：
+安装了Android模拟器之后（具体模拟器的安装步骤可以参考 [Mac下安装Android模拟器](http://www.edulinks.cn/2011/07/27/20110727-install-android-simulator/)），我们可能经常需要将从网上下载来得apk进行安装，在没有Eclipse开发环境的情况下，也可以进行安装，具体的方法如下：
 
 1. 进入终端，找到adb
 

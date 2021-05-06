@@ -9,7 +9,7 @@ description: 克劳德·艾尔伍德·香农是美国数学家、信息论的创
 
 ## 克劳德·艾尔伍德·香农
 
-克劳德·艾尔伍德·香农（Claude Elwood Shannon ，1916年4月30日 - 2001年2月24日）是美国数学家、信息论的创始人，是世界上第一个使用 `bit` 这个词的人。克劳德·艾尔伍德·香农 和 [约翰·冯·诺依曼](http://edulinks.cn/2021/01/17/20210117-john-von-neumann/)、[霍华德·艾肯](http://edulinks.cn/2021/01/23/20210124-howard-aiken/)、[艾伦·麦席森·图灵](http://edulinks.cn/2021/01/09/20210109-turing/) 等计算机鼻祖是同时代人。
+克劳德·艾尔伍德·香农（Claude Elwood Shannon ，1916年4月30日 - 2001年2月24日）是美国数学家、信息论的创始人，是世界上第一个使用 `bit` 这个词的人。克劳德·艾尔伍德·香农 和 [约翰·冯·诺依曼](http://www.edulinks.cn/2021/01/17/20210117-john-von-neumann/)、[霍华德·艾肯](http://www.edulinks.cn/2021/01/23/20210124-howard-aiken/)、[艾伦·麦席森·图灵](http://www.edulinks.cn/2021/01/09/20210109-turing/) 等计算机鼻祖是同时代人。
 
 ![img](20210207-claude-elwood-shannon/Shannon-Life-p60-x640.jpg)
 

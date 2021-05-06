@@ -110,17 +110,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 
-可以看到镜像内的 python 环境已经支持 requests 包了。利用这种方式，我们不用在本地维护开发环境，特别是多个版本的开发环境，通过 Docker 生成不同版本的镜像能够快速的实现多版本的开发环境，大家可以参考 [利用 Docker 构建一个简单的 java 开发编译环境](http://edulinks.cn/2020/11/12/20201111-build-java-devlopment-env-with-docker/) 。自己定义的各种镜像，可以上传到 DockerHub，更换电脑后仅需要安装 Docker，之前的各种开发环境就回来了。
+可以看到镜像内的 python 环境已经支持 requests 包了。利用这种方式，我们不用在本地维护开发环境，特别是多个版本的开发环境，通过 Docker 生成不同版本的镜像能够快速的实现多版本的开发环境，大家可以参考 [利用 Docker 构建一个简单的 java 开发编译环境](http://www.edulinks.cn/2020/11/12/20201111-build-java-devlopment-env-with-docker/) 。自己定义的各种镜像，可以上传到 DockerHub，更换电脑后仅需要安装 Docker，之前的各种开发环境就回来了。
 
 对于 Docker 有进一步兴趣的，可以参考我的其他文章：
 
-* [Docker 入门介绍](http://edulinks.cn/2018/06/20/20180620-docker-overview/)
-* [在Redhat 7.3中采用离线方式安装Docker](http://edulinks.cn/2018/07/11/20180711-install-docker-ce-in-redhat-73/)
-* [创建自己的Docker基础镜像](http://edulinks.cn/2018/06/27/20180627-make-your-own-base-docker-image/)
-* [Docker存出载入镜像](http://edulinks.cn/2018/07/16/20180716-docker-save-load-image/)
-* [Docker Compose 使用介绍](http://edulinks.cn/2020/04/15/20200415-docker-compose/)
-* [使用 Docker 快速搭建PHP开发环境](http://edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
-* [Docker Compose 建立ELK集群](http://edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
+* [Docker 入门介绍](http://www.edulinks.cn/2018/06/20/20180620-docker-overview/)
+* [在Redhat 7.3中采用离线方式安装Docker](http://www.edulinks.cn/2018/07/11/20180711-install-docker-ce-in-redhat-73/)
+* [创建自己的Docker基础镜像](http://www.edulinks.cn/2018/06/27/20180627-make-your-own-base-docker-image/)
+* [Docker存出载入镜像](http://www.edulinks.cn/2018/07/16/20180716-docker-save-load-image/)
+* [Docker Compose 使用介绍](http://www.edulinks.cn/2020/04/15/20200415-docker-compose/)
+* [使用 Docker 快速搭建PHP开发环境](http://www.edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)
+* [Docker Compose 建立ELK集群](http://www.edulinks.cn/2020/01/15/20200115-docker-compose-elk-cluster/)
 
 最后说点杂事，2021年刚开始没几天，年前立下的雄心壮志马上被各种无计划的事打乱了，感觉总是被打断，感觉总是时间不够用，原来以为是自己能力不够用，最近在云+社区上读了一个时间管理系列文章，才发现原来是自己坚持不够，给了自己点信心，2021刚开始还要继续加油才是，附上这个系列文章的链接，感兴趣的朋友可以读一读。
 

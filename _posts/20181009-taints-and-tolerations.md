@@ -6,7 +6,7 @@ keywords: kubernetes, k8s, taints, tolerations, 节点亲和, 节点反亲和
 description:  Taints 描述节点拒绝一个或一组Pods的策略。其实现原理为首先通过 kubectl taint 命令为Node定义一些瑕疵，然后在Pod的描述文件中指定它的容忍度，即不能够容忍哪些瑕疵，这样在调度的时候Pod将不会被调度到哪些有瑕疵的Node上。
 ---
 
-> 本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
+> 本文的演练环境为基于 Virtualbox 搭建的 Kubernetes 集群，具体搭建步骤可以参考 [kubeadm安装kubernetes V1.11.1 集群](https://www.edulinks.cn/2018/07/24/20180724-kubeadm-install-kubernetes/) 。想要了解更多 Kubernetes 相关知识，可以阅读 [Kubernetes 系列学习文章](http://www.edulinks.cn/2020/10/16/20201016-kubernetes-articles/)。
 
 节点亲和性是描述Pods如何分配到一个或一组节点的策略，亲和性的相关资料可以参考[Kubernetes中的亲和性与反亲和性](https://www.cnblogs.com/cocowool/p/kubernetes_affinity.html)。与亲和性规则不同， Taints 描述节点拒绝一个或一组Pods的策略。其实现原理为首先通过```kubectl taint```命令为Node定义一些瑕疵，然后在Pod的描述文件中指定它的容忍度，即不能够容忍哪些瑕疵，这样在调度的时候Pod将不会被调度到哪些有瑕疵的Node上。可以看下图，只有Taint和Toleration匹配的时候，Pod才会调度到对应的节点上。
 ![](./20181009-taints-and-tolerations/39469-20181120165032819-1378108684.png)
