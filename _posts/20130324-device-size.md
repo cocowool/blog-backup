@@ -9,7 +9,7 @@ description: 移动设备界面设计中，不通设备尺寸差别非常大，�
 
 目前在为移动设备设计界面时，最头疼的问题莫过于尺寸的问题。我们无法使用固定的尺寸来进行设计，因为不同设备的大小千变万化。但是如果我们了解了设备的物理特性后，这将有助于我们进行更好的设计。
 
-![](./20130324-device-size/24174446-a22117a0073d4411b864a5d6b6d1b571.png)
+![](/20130324-device-size/24174446-a22117a0073d4411b864a5d6b6d1b571.png)
 
 不同的设备可能具有相同的屏幕分辨率，但是他们的物理特性差别却非常大。一代iPad的屏幕尺寸是9.7寸，分辨率为1024*768、132dpi。Kindle Kyeboard 3G的物理尺寸只有6寸，同样是768*1024的分辨率，像素却是212dpi。
 
@@ -51,7 +51,7 @@ description: 移动设备界面设计中，不通设备尺寸差别非常大，�
 
 PPI的计算公式，如果一个屏幕宽1280px，高720px，对角线尺寸为4.3inches，那么PPI的计算方式为：
 
-![](./20130324-device-size/24174506-2c27a4726b14445b82c0fd6104a70374.png)
+![](/20130324-device-size/24174506-2c27a4726b14445b82c0fd6104a70374.png)
 
 参考资料：
 1、[Device Size Matters: Responsive Web Design With Physical Units](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/)

@@ -8,7 +8,7 @@ description: PhpSpreadsheet是PHPExcel的替代版本，本文使用PhpSpreadshe
 
 PhpSpreadsheet是PHPExcel的替代版本，PHPExcel的作者已经停止了更新，今天尝试了使用PhpSpreadsheet生成Excel的时候支持单元格内的自动换行，发现用法其实差不多。
 先来看一下Excel单元格中的换行，手工输入Alt+Enter可以进行换行，实际上是选择了一个“自动换行”的属性。
-![](./20170713-phpspreadsheet-make-enter/39469-20170713100958275-1627855116.png)
+![](/20170713-phpspreadsheet-make-enter/39469-20170713100958275-1627855116.png)
 下面来看PhpSpreadsheet代码
 
 ```php

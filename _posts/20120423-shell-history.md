@@ -10,13 +10,13 @@ description: 本文介绍shell的发展历史。
 
 Bourne Shell     是1977年发布的Unix Version 7 中的默认Shell。目前大多数Unix系统仍保留着原始的 /bin/sh，或者保留一个软连接到其他Shell上 。该程序由 Stephen Bourne 在贝尔实验室工作期间开发，它的开发是做为 Thompson Shell 的一个替代。随着《The UNIX Programming Environment》（作者Brain W. Kernighan、Rob Pike）一书的出版，Bourne Shell开始变得流行起来。
 
-![](./20120423-shell-history/201204231411503185.png)
+![](/20120423-shell-history/201204231411503185.png)
 
 随着时间的发展，伴随着不断更新的系统（Version 7、SystemIII、SVR2、SVR3、SVR4），AT&T不断地增强shell的功能，但是因为shell一直没有版本号，所以我们只能依靠其支持的特性来区分SHELL的版本。
 
 对于SHELL的一些批评：交互式的使用不够友好（当时C Shell提供了history、aliases、job control等命令）；Unix系统使用C写成，但是shell的语法缺不像C，倒是有点像ALGOL；缺少正则表达式支持。
 
-![](./20120423-shell-history/201204231411538117.png)
+![](/20120423-shell-history/201204231411538117.png)
 
 后续的故事
 
@@ -28,7 +28,7 @@ Korn Shell （ksh）由 David Korn 编写，1983年在USENIX上宣布。它向�
 
 Bash （the Bourne-Agian shell）由 Brian Fox 为GNU项目编写，目的是代替sh。首次发布于1989年，作为GNU项目的一个程序广泛分布在Linux、Mac OS X、Cygwin上。Brain Fox作为FSF的员工，首次开始工作是在1988年的1月10号，一年之后，发布了.99的测试版本。
 
-![](./20120423-shell-history/201204231411565972.png)
+![](/20120423-shell-history/201204231411565972.png)
 
 参考资料：
 1、The Linux Command Line: A Complete Introduction

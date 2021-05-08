@@ -33,7 +33,7 @@ spec:
 在没有设置资源使用限制的情况下，Pod可能使用超过请求的资源数量。对于CPU资源来说，如果同时有两个Pod请求剩余的资源，在分配剩余资源时，调度器会根据请求数量的比例在不同的Pod间分配资源。例如Pod A请求100m的CPU，Pod B请求20m的CPU，在两个Pod中CPU使用超过请求时，会根据5:1的比例分配。
 ![](20200604-kubernetes-resource-quota/39469-20181116143500100-1365453894.png)
 使用```kubectl describe nodes```命令可以查看Node资源使用的情况。
-![](./20200604-kubernetes-resource-quota/39469-20181116143539226-2052921140.png)
+![](/20200604-kubernetes-resource-quota/39469-20181116143539226-2052921140.png)
 如果Kubernetes找不到满足资源请求的Node，则Pod创建会停留在Pending状态。
 
 ### 设置资源使用上限

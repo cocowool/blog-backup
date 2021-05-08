@@ -16,7 +16,7 @@ Twitter 图书俱乐部 Twitter Book Clubs
 
 通过在Twitter上使用话题标签（Hashtags）并且@作者，企鹅美国（Pengui USA）与Twitter一同进行了一些创新。每个月，企鹅美国会选择他旗下的一位作者的图书，邀请Twitter上的用户通过#关键词#并且@作者的方式进行讨论，仿佛是在召开迷你的书友会。
 
-![](./20120924-publisher-in-social/201209242318217862.png)
+![](/20120924-publisher-in-social/201209242318217862.png)
 
 在Facebook中使用的不同策略
 
@@ -26,7 +26,7 @@ Tumblr比前两者更受欢迎
 
 博客广告公司Blogads在一月份做了一项调查，发现Tumblr在出版商中尤其受欢迎。HarperCollins就采用了多个Tumblrs帐号，他的员工每天发布不同主题的图片，例如“Seen On the subway”，鼓励大家分享在地铁上阅读HarperCollins图书的场景。
 
-![](./20120924-publisher-in-social/201209242318451866.png)
+![](/20120924-publisher-in-social/201209242318451866.png)
 
 由以上的例子总结到，在社交媒体的时代，作者和读者的互动越来越重要。
 

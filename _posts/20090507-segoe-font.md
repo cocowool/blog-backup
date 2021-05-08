@@ -8,12 +8,12 @@ description: 作为微软的官方品牌字体，Segoe Font是一种非常优雅
 
 作为微软的官方品牌字体，Segoe Font是一种非常优雅的字体，小到海报大到Logo，Segoe字体应用在微软品牌宣传的各种领域，最著名的就是在Vista中的应用。你很难在网络上下载到这个字体，如果不管通过何种渠道得到了她，你应该珍惜她。她就像Helvetica一样好用，借助ClearType技术，她在小字体时甚至表现的更加清晰。如果你想自己做一个Microsoft的Logo，那么你必须使用她才行。
 
-![](./20090507-segoe-font/1.jpg)
+![](/20090507-segoe-font/1.jpg)
 
 这个网址 http://www.istartedsomething.com/20070531/download-segoe-collection/ 曾在2007年5月31日的时候，很敏感的找到了意外在微软站点上发布的Segoe全套字体的下载，作者发布了字体的共享，不过不幸的，很快微软的A-Team(版权维护部门
 Microsoft Legal Council)找上门来，作者也随即撤下了下载。作者表示A-Team一点也不幽默。(The A-Team has struck again.They're no fun.)
 
-![](./20090507-segoe-font/2.jpg)
+![](/20090507-segoe-font/2.jpg)
 
 Segoe系列的字体至少包含了27种，不仅包括ClearType类型，也包括PostScript、For Mac等各种字体。
 

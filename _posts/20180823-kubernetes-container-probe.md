@@ -147,7 +147,7 @@ spec:
 
 ## 4. 配置参数
 我们可以通过```kubectl explain```命令来查看具体的配置属性，在这里还是简单列一下主要的属性。
-![](./20180823-kubernetes-container-probe/39469-20180823092634108-1558225741.png)
+![](/20180823-kubernetes-container-probe/39469-20180823092634108-1558225741.png)
 
 * initialDelaySeconds：检查开始执行的时间，以容器启动完成为起点计算
 * periodSeconds：检查执行的周期，默认为10秒，最小为1秒

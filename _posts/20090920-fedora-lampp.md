@@ -154,9 +154,9 @@ sudo yum install gnome-do gonme-do-plugins*
 
 最后，附上现在的桌面和主题。
 
-![](./20090920-fedora-lampp/Screenshot-1.png)
+![](/20090920-fedora-lampp/Screenshot-1.png)
 
-![](./20090920-fedora-lampp/Screenshot.png)
+![](/20090920-fedora-lampp/Screenshot.png)
 
 参考资料：
 1、[Fedora11 安装配置指南中文版](http://www.ownlinux.cn/2009/06/14/fedora-11-install-configure.html)

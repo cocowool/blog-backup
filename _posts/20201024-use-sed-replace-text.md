@@ -89,6 +89,9 @@ $ sed '/patternA/d;/patternB/d' fileName.txt
 $ sed 's/^/ABC /' fileName.txt #在每一行增加ABC
 
 $ sed 's/patternA/String/' fileName.txt #将匹配的内容替换为指定的字符串
+
+# 将查找到包含查找字符串的所有文件中的字符串都进行替换
+$ sed -i "" 's/(\.\//(\//g' `grep -rl "(\./" source/_posts/*md`
 ```
 
 虽然容器、云基础设施非常普遍的今天，在企业做运维场景下我们直接使用 `sed` 命令的机会逐渐变少。但 `sed`就像单兵作战时的秘密武器，如果我们能够熟练的掌握，就能够做到手中有粮遇事不慌，借此机会在老板面前展示一番，那么你的前途就大大的了。

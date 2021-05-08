@@ -17,7 +17,7 @@ description: 通过ZendStudio的EPIC插件，可以在ZendStudio中编辑Perl脚
 
 如果您不能打开下载的网址，也可以到 sourceforge 下在相应的软件包，然后参考 2 的方法，在本地搭建一个 update 服务,然后通过本地网络进行更新
 
-![](./20101110-zendstudio-support-perl/Screenshot.png)
+![](/20101110-zendstudio-support-perl/Screenshot.png)
 
 3、安装过程中，按照提示进行一步一步的选择，完成后，会提示重启，之后就可以正常打开 .pl 的文件了，带有语法高亮。
 

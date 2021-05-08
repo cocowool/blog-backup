@@ -39,7 +39,7 @@ chello                    0.1                 0ffaacaa21e5        36 minutes ago
 
 ### 创建 Linux 镜像：alpine
 目前比较流行的 rootfs 应该就是 alpine 了，因为他的体积特别小，最简单的环境只需要 5M ，下面是他的目录结构，下载地址在[这里](https://alpinelinux.org/downloads/)。
-![](./20180627-make-your-own-base-docker-image/39469-20180627192218133-1863209962.png)
+![](/20180627-make-your-own-base-docker-image/39469-20180627192218133-1863209962.png)
 下载了 alpine 之后，我们构建 Dockerfile
 ```yaml
 FROM scratch

@@ -39,7 +39,7 @@ sudo npm install -g coffee-script
 * -s,--stdio            将其它程序的输出作为coffee的标准输入，并且获得JavaScript的标准输出。
 * -e,--eval             命令行的形式
 
-![](./20130521-coffeescript-introduce/21234823-2d3cf3d499174fbe91b146ef9f2c8063.png)
+![](/20130521-coffeescript-introduce/21234823-2d3cf3d499174fbe91b146ef9f2c8063.png)
 
 参考资料：
 1、[初步了解CoffeeScript：第一部分入门](http://www.ibm.com/developerworks/cn/web/wa-coffee1/index.html)

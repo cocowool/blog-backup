@@ -145,7 +145,7 @@ n [145]: jgd['成交金额'].resample('M').sum().plot()
 Out[145]: <matplotlib.axes._subplots.AxesSubplot at 0x10cc78080>
 ```
 如下图：
-![](./20180205-pandas-introduce-2/39469-20180206095943810-555327950.png)
+![](/20180205-pandas-introduce-2/39469-20180206095943810-555327950.png)
 
 ### 分组统计
 对于分组统计，通常的步骤是“分割、应用（统计函数）、合并”。

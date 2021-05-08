@@ -74,11 +74,11 @@ spec:
 
 ### 验证
 上面的例子中，我配置的域名为 ingressweb.com ，在本地修改host，指向ingress-controller运行的节点，通过浏览器访问[http://ingressweb.com](http://ingressweb.com)可以看到 tomcat 的界面，通过[http://ingressweb.com/httpd](http://ingressweb.com/httpd)可以看到httpd的It Works！界面。
-![](./20200612-kubernetes-ingress/39469-20181029195709501-358365666.png)
+![](/20200612-kubernetes-ingress/39469-20181029195709501-358365666.png)
 
 ## Nginxinc 的方案
 看一下Nginx Ingress Controller的示意图
-![](./20200612-kubernetes-ingress/NGINX-Plus-Features-Kubernetes-Ingress-Controller-644x372@2x-640x370.png)
+![](/20200612-kubernetes-ingress/NGINX-Plus-Features-Kubernetes-Ingress-Controller-644x372@2x-640x370.png)
 Nginx Ingress Controller 支持的功能
 
 * 暴露服务，一般有两种方式，通过不同的主机名（如 serviceA.com，serviceB.com）或者通过不同的URL（如 /serviceA 和 /serviceB）。

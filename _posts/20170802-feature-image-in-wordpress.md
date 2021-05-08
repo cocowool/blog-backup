@@ -23,7 +23,7 @@ description: Wordpress中图像物理文件保存在```wp-content/uploads```目�
 
 ### 如何获取特色图像 Featured Image
 那么，对于一个文章，是如何来获取特色图像 Featured Image的，下面来看一下。在后台的文章编辑界面，特色图像显示在这个位置。
-![](./20170802-feature-image-in-wordpress/39469-20170801095318771-1634646042.png)
+![](/20170802-feature-image-in-wordpress/39469-20170801095318771-1634646042.png)
 对应的后台代码是 wp-admin/includes/meta-boxes.php
 
 ```php
@@ -215,7 +215,7 @@ function update_meta_cache($meta_type, $object_ids) {
 SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (21) ORDER BY meta_id ASC
 ```
 可以看到结果如下，_thumbnail_id 对应的就是 wp_posts 中的记录ID，从而可以取到图片对应的地址和相关信息。
-![](./20170802-feature-image-in-wordpress/39469-20170801095337052-173965411.png)
+![](/20170802-feature-image-in-wordpress/39469-20170801095337052-173965411.png)
 > 本文内容基于 Wordpress 4.8版本
 
 参考资料：

@@ -11,7 +11,7 @@ description: 在 Bing Video 中，视频的来源很多，youtube、NBC、MTV、
 在 Bing Video 中，视频的来源很多，youtube、NBC、MTV、TODAY等等，同时界面中提供了一个 DIM Lights 的方便的功能，希望能够留住用户。
 
 与此同时，yahoo video、google video 等都开始允许在搜索结果中播放视频，那么对于那些视频分享网站来说，是否应该感觉到危机了呢？
-![](./20091111-bing-video/20091110_bing_video.png)
+![](/20091111-bing-video/20091110_bing_video.png)
 参考资料：
 1、[Bing Videos](http://www.bing.com/videos/browse)
 2、[MSN Video](http://video.msn.com/)

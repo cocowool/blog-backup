@@ -8,7 +8,7 @@ description: SMTP是Simple Mail Transfer Protocol的简写。本文介绍相关�
 
 SMTP是Simple Mail Transfer Protocol的简写。邮件是日常工作、生活中不能缺少的一个工具，下面是邮件收发的流程。
 
-![](./20120314-smtp-command/201203140938068432.png)
+![](20120314-smtp-command/201203140938068432.png)
 
 邮件的发送，主要是通过SMTP协议来实现的。SMTP协议最早在RFC 821（1982年）中定义，最后更新是在RFC 5321（2008年）中，更新中包含了扩展SMTP（ESMTP）。
 

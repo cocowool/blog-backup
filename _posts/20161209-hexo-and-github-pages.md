@@ -24,7 +24,7 @@ hexo server
 ```
 当看到Hexo is running的提示之后，就可以按照提示的地址在浏览器中预览博客效果了。
 
-![](./20161209-hexo-and-github-pages/39469-20161209105601835-184073315.png)
+![](/20161209-hexo-and-github-pages/39469-20161209105601835-184073315.png)
 
 _config.yml 是博客的配置文件，能够定义博客名称、作者等各种全局的参数。
 package.json 应用数据，EJS、Sylus、Markdown三个渲染工具是默认安装的，如果不需要刻意卸载。但是对于最终要是使用 Markdown 来编辑博客的我来说，那是必不可少的。

@@ -6,16 +6,16 @@ keywords: linux, solaris
 description: Solaris恢复收费，免费的Linux万岁。
 ---
 
-![](./20100407-solaris-linux/0074_thumb.png)
+![](/20100407-solaris-linux/0074_thumb.png)
 
 中午的时候看到这个标题，顿时没了困意，Long Live Linux~~
 文中据说窥到了Oracle今后行动的一些端倪，是的从去年以来，我们一直都在等待着这个巨人的行动。
 
 从1993年Linux诞生以来，这个家伙改变了整个IT界，曾经昂贵、封闭的Unix系统，在IBM的倒伐和Google的无视下，现在已经奄奄一息了。
 
-![](./20100407-solaris-linux/image_thumb.png)
+![](/20100407-solaris-linux/image_thumb.png)
 
-![](./20100407-solaris-linux/image_thumb_1.png)
+![](/20100407-solaris-linux/image_thumb_1.png)
 
 无需多说，看看这个对比吧(补充一下，上图是**基于超级计算机市场得来的统计数据**)
 就连Unix界的巨人，Sun Microsystems也认识到，昨日的辉煌已经不在了，于是，在2005年我们便有了可以自由下载使用的Solaris 10。

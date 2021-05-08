@@ -36,10 +36,10 @@ usage: prometheus [<flags>]
 [root@bj1eccap01 prometheus-2.2.1.linux-amd64]# ./prometheus --config.file=prometheus.yml
 ```
 这之后就可以通过浏览查看服务的运行状况了，打开浏览器输入[http://localhost:9090/graph](http://localhost:9090/graph)
-![](./20180316-prometheus-introduce/39469-20180316220949653-1982521887.png)
+![](/20180316-prometheus-introduce/39469-20180316220949653-1982521887.png)
 Prometheus 提供了两种方式查看指标 graph 模式可以直接看到指标曲线，metrics 则看到原始的监控数据。通过切换到 console 界面可以看到。
-![](./20180316-prometheus-introduce/39469-20180316221010640-679027352.png)
-![](./20180316-prometheus-introduce/39469-20180316221032550-1964647279.png)
+![](/20180316-prometheus-introduce/39469-20180316221010640-679027352.png)
+![](/20180316-prometheus-introduce/39469-20180316221032550-1964647279.png)
 
 ### node_exporter 安装
 
@@ -49,7 +49,7 @@ node_exporter 用来收集服务器的监控信息，目前稳定版本为1.15.2
 [root@bj1eccap01 ~]# cd node_exporter-0.15.2.linux-amd64
 [root@bj1eccap01 node_exporter-0.15.2.linux-amd64]# ./node_exporter
 ```
-![](./20180316-prometheus-introduce/39469-20180316221050544-1463908993.png)
+![](/20180316-prometheus-introduce/39469-20180316221050544-1463908993.png)
 
 ### 运算与统计
 

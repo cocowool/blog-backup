@@ -39,15 +39,15 @@ description: 使用Zen Coding开发CSS和HTML，简直爱不释手。
 
 3、通过Command ＋ Shift＋ P调出包管理，输入 Install ，选择Install Package
 
-![](./20120701-sublime-text-2/201207011621492721.png)
+![](/20120701-sublime-text-2/201207011621492721.png)
 
 4、之后再输入zen coding来找到要安装的包，安装后就可以使用了。
 
-![](./20120701-sublime-text-2/201207011621559095.png)
+![](/20120701-sublime-text-2/201207011621559095.png)
 
 安装完成后，我们就可以使用Ctrol ＋ Alt ＋ Enter 来呼出ZenCoding了。实际上，所有的安装包的路径，我们也可以直接下载ZenCoding的代码包，放到这个路径下。
 
-![](./20120701-sublime-text-2/201207011622024955.png)
+![](/20120701-sublime-text-2/201207011622024955.png)
 
 除了Sublime Text 之外，Zen Coding还支持其他众多的编辑器，列表如下，看看有没有自己平时喜欢的编辑器吧。
 
@@ -115,7 +115,7 @@ description: 使用Zen Coding开发CSS和HTML，简直爱不释手。
 
 2、嵌套代码（Wrap with Abbreviation）
 
-![](./20120701-sublime-text-2/201207011622051593.png)
+![](/20120701-sublime-text-2/201207011622051593.png)
 
 如上图所示，可以实现在已经写好的代码外面嵌套其他的代码，实现方式是将光标放置到想要嵌套的标签上，然后使用Control ＋ Alt ＋ Enter 呼出ZC的命令行，就可以了。
 

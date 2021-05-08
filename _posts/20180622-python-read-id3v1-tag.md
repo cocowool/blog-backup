@@ -15,7 +15,7 @@ Michael Mutschler 在 1997 对格式进行了微小的调整，压缩了Comment�
 
 ### ID3v1
 附着在音频数据之后，长度为128bytes，每个字段最大支持30个字符。
-![](./20180622-python-read-id3v1-tag/39469-20180622143756058-1269044464.png)
+![](/20180622-python-read-id3v1-tag/39469-20180622143756058-1269044464.png)
 具体的字段信息
 
 在数据开始之前，总是有三个字符```TAG```，这样和上面的字段加起来，正好是128bytes。如果Artist字段内容不足30个字符，不足的部分用0填充。
@@ -23,7 +23,7 @@ Michael Mutschler 在 1997 对格式进行了微小的调整，压缩了Comment�
 ### ID3v2
 ID3v2是加在音频数据前面的一组数据，每项具体的数据称为frame(例如歌曲名称)。可以包含任意类型的数据，每个frame最大支持16MB，整个tag大小最大支持256MB。存储编码支持Unicode，这样就不会产生乱码问题。
 Tag数据放在音频数据之前还有一个好处，对于流式访问可以首先获得歌曲信息并展现给用户。
-![](./20180622-python-read-id3v1-tag/39469-20180622143813329-1167316642.png)
+![](/20180622-python-read-id3v1-tag/39469-20180622143813329-1167316642.png)
 列举一些特性：
 
 * The ID3v2 tag is a container format, just like IFF or PNG files, allowing new frames (chunks) as evolution proceeds.

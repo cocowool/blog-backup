@@ -42,13 +42,13 @@ margin-left:-200px;margin-top:-200px;}
 
 这样，在FF3、IE6/7中都能，很好的实现水平和垂直居中，而在chrome中，出现了问题。
 
-![](./20090314-chrome-css/2009-3-13-12-06-25.png)
+![](/20090314-chrome-css/2009-3-13-12-06-25.png)
 最后，发现是chrome对于position的解析和其他浏览器不同，加入css hack for chrome后，一切正常。
 
 ```css
 body:nth-of-type(1) #contentbox { position:absolute;}
 ```
 
-![](./20090314-chrome-css/chrome_min.png)
+![](/20090314-chrome-css/chrome_min.png)
 
 
