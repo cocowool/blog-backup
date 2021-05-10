@@ -22,7 +22,7 @@ description: 本文介绍Kubernetes的基础概念，包括Pod和部署问题。
 
 ## Kubernetes Nodes
 Pod总是运行在Node上，Node可以是物理机也可以是虚拟机。在之前的[Kubernetes基础的文章](https://www.cnblogs.com/cocowool/p/k8s_base_concept.html)中，一个Node包含的组件有Kubelet、容器环境以及kube-proxy。结构如下图所示：
-![](/20180717-k8s-describe-node-pod-and-service/39469-20180717133753552-187323580.png)
+![](20180717-k8s-describe-node-pod-and-service/39469-20180717133753552-187323580.png)
 
 ## kubectl － Kubernetes的CLI管理工具
 kubectl是kubernetes的命令行管理工具。这里主要介绍在获取信息方面的一些功能。kubectl运行的时候，默认会在default的命名空间下查找资源，如果我们需要在自己的命名空间下查找资源，需要指定```--namespace=xxx```参数。
@@ -104,8 +104,8 @@ Kubernetes中的Service是集群中一组Pod以及访问策略的抽象。可以
 * LoadBalancer，利用外部的负载均衡设施进行服务的访问。
 * ExternalName，这是1.7版本之后 kube-dns 提供的功能。
 服务提供了在一组Pods之间分配流量的功能，同时也是因为服务这个抽象层的存在，Kubernetes才能够在不影响应用的情况下进行扩缩容。通常Service通过label和selector来确定可操作的对象。label可以在对象创建时指定，也可以在运行时修改。
-![](/20180717-k8s-describe-node-pod-and-service/39469-20180717133839121-192690690.png)
-![](/20180717-k8s-describe-node-pod-and-service/39469-20180717133846706-1928835253.png)
+![](20180717-k8s-describe-node-pod-and-service/39469-20180717133839121-192690690.png)
+![](20180717-k8s-describe-node-pod-and-service/39469-20180717133846706-1928835253.png)
 
 ### 查看服务状态
 ```bash

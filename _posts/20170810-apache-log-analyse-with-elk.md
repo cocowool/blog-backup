@@ -38,12 +38,12 @@ output {
 }
 ```
 本文使用了grok插件，grok是Logstash默认自带的Filter插件，能够帮助我们将未结构化的日志数据转化为结构化、可查询的数据格式。grok对日志的解析基于特定的正则模式匹配，对于Apache的Access Log 访问日志，多数情况下我们都适用combined格式。
-![](/20170810-apache-log-analyse-with-elk/39469-20170810113709558-1693242570.png)
+![](20170810-apache-log-analyse-with-elk/39469-20170810113709558-1693242570.png)
 可以看到现在logstash输出的内容包括原始日志信息，以及按照日志格式解析后的各字段信息。
 
 #### GeoIP插件
 配置参考上面，使用了GeoIP插件后，可以对访问IP进行反向解析，返回地址信息。可以用于后续做图。
-![](/20170810-apache-log-analyse-with-elk/39469-20170810113739917-1029447653.png)
+![](20170810-apache-log-analyse-with-elk/39469-20170810113739917-1029447653.png)
 但是仅仅这样还不够，因为进入ES的数据会自动进行映射，而对于地理数据，需要映射为特殊的geo_point类型，本文未做详细阐述，后续会有文章专门解决这个问题。
 
 #### timestamp
@@ -65,7 +65,7 @@ ElasticSearch基本上无需做配置，安装可以参考我之前的文章[Ela
 curl 'localhost:9200/_cat/indices?v'
 ```
 结果如下图
-![](/20170810-apache-log-analyse-with-elk/39469-20170810113756777-35038291.png)
+![](20170810-apache-log-analyse-with-elk/39469-20170810113756777-35038291.png)
 
 #### **查询索引数据**
 $DATE需要替换成具体的日期（格式YYYY.MM.DD)，本文就是logstash-2017.08.10。
@@ -75,9 +75,9 @@ curl -XGET 'localhost:9200/logstash-$DATE/_search?pretty&q=response=200’
 
 ### Kibana
 首先在Kibana中创建Index Pattern，索引选择**access_log**，时间戳选择 timestamp 或者 datetime，然后在 Discover 中就可以看到数据了。
-![](/20170810-apache-log-analyse-with-elk/39469-20170810113809558-1044745789.png)
+![](20170810-apache-log-analyse-with-elk/39469-20170810113809558-1044745789.png)
 结合Visualize和Dashboar，可以做出按时间统计的访问曲线和返回状态饼图。
-![](/20170810-apache-log-analyse-with-elk/39469-20170810113820824-1473160811.png)
+![](20170810-apache-log-analyse-with-elk/39469-20170810113820824-1473160811.png)
 
 参考资料：
 1、[Logstash Reference](https://www.elastic.co/guide/en/logstash/current/advanced-pipeline.html)

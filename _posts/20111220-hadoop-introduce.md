@@ -35,7 +35,7 @@ $ sudo apt-get install rsync
 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0/jre/
 执行 bin/hadoop 命令，如果如下图所示，我们就做好使用 Hadoop 的准备了。
 
-![](/20111220-hadoop-introduce/201112201253263344.png)
+![](20111220-hadoop-introduce/201112201253263344.png)
 
 可以用三种方式使用Hadoop：
 本地模式(Local Standalone Mode)；
@@ -50,7 +50,7 @@ $ sudo apt-get install rsync
 
 这个任务是分析日志中出现的favicon的次数，统计结果如下：
 
-![](/20111220-hadoop-introduce/201112201253265886.png)
+![](20111220-hadoop-introduce/201112201253265886.png)
 
 其中part文件中存储了我要查找的favicon字符串出现的次数。
 

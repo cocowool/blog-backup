@@ -44,7 +44,7 @@ transition:width .25s ease-in-out, background-color .25s linear;
 
 由此可见，transition 属性中包含了三个基本的属性：样式属性(CSS property)、持续时间(Duration)、计时函数(Timing Function)、延时(Delay)
 
-![](/20100125-css3-transition/image_thumb.png)
+![](20100125-css3-transition/image_thumb.png)
 
 看到这个图，大家对于这几个参数的作用应该了解了吧。很简单的几个参数设置，实现了我们之前需要用大量js脚本实现的效果，那么有什么理由不期待CSS3的到来呢。
 

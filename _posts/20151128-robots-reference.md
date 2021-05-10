@@ -27,7 +27,7 @@ Sitemap:sitemap.xml
 这里通过Sitemap指定固定的网站地图页面。目前对此表示支持的搜索引擎公司有Google, Yahoo, Ask and MSN。而中文搜索引擎公司，显然不在这个圈子内。这样做的好处就是，站长不用到每个搜索引擎的站长工具或者相似的站长部分，去提交自己的sitemap文件，搜索引擎的蜘蛛自己就会抓取robots.txt文件，读取其中的sitemap路径，接着抓取其中相链接的网页。
 
 **京东的Robots.txt。（时间：2015-11-25）**
-![](/20151128-robots-reference/39469-20151128131803499-988227839.png)
+![](20151128-robots-reference/39469-20151128131803499-988227839.png)
 
 二、Robots.txt以外的内容
 
@@ -56,7 +56,7 @@ content部分有四个选项：index、noindex、follow、nofollow，指令间�
 2、如果后台和前台在一个域名下，不希望爬虫抓取后台程序的，可以在Robots.txt明确不让爬虫抓取的目录。但这会不会被某些恶意分子一下子就能够知道后台目录呢？
 
 3、国内常见搜索机器人的名字
-![](/20151128-robots-reference/39469-20151128131749812-1855865919.png)
+![](20151128-robots-reference/39469-20151128131749812-1855865919.png)
 
 参考资料：
 1、[Robots协议](http://baike.baidu.com/link?url=4bmJ0pVWcEcXFXr12RhSUQUErwFXlnBDTwTdoBgzln5Z7_f4w17iak5F1lARYjiqIg8oKP0j5wjvdNRTTbYNUPWqWShsXPG1UtmtrMgZq05FcchgcTsngyfrwLUKCLJ9)

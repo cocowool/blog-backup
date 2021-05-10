@@ -20,7 +20,7 @@ Mac OS X操作系统（10.7.4+）、Xcode 4.5和iOS6 SDK、Xcode命令行工具�
 在早期的Phonegap版本中，会提供一个dmg安装包，安装后就会在Xcode中添加一个Phonegap的工程模板。但是新的2.6.0不再采用这种方式，而是使用了命令行的创建方式。
 解压缩后，我们可以在lib目录下看到众多的平台类型，找到ios然后使用Terminal进入到bin目录下。
 
-![](/20130420-ios-app-develop/20231740-c644dbe5a0c44b59a9bc1acf1e1a1769.png)
+![](20130420-ios-app-develop/20231740-c644dbe5a0c44b59a9bc1acf1e1a1769.png)
 
 执行：
 
@@ -39,7 +39,7 @@ Mac OS X操作系统（10.7.4+）、Xcode 4.5和iOS6 SDK、Xcode命令行工具�
 执行程序：
 使用Finder定位到项目目录，双击 HelloWorld.scodeproj 就会在Xcode中打开项目。默认的模拟器是iPad，修改为你需要的模拟器。执行 Command + R 就可以运行项目，效果如下：
 
-![](/20130420-ios-app-develop/20231710-43b49ab4cf0f4b7885c0d493c313a6ab.png)
+![](20130420-ios-app-develop/20231710-43b49ab4cf0f4b7885c0d493c313a6ab.png)
 
 现在，我们就可以利用Cordorva的API来编辑 www 目录下的文件，来实现自己想要的功能了。
 

@@ -87,7 +87,7 @@ Hello, world!
 ## 6. Go的工程管理
 Go消除了工程文件的概念，完全用目录结构和包名来推导工程结构和构建顺序。
 看一个简单的命令行计算器工程的目录结构，代码在[这里](https://github.com/cocowool/k8s-go/tree/master/golearn/calcproject)
-![](/20180914-go-introduce/39469-20180914111126339-138017365.png)
+![](20180914-go-introduce/39469-20180914111126339-138017365.png)
 想要编译这个工程，执行以下命令。
 ```bash
 bogon:calcproject rousseau$ export GOPATH=$(pwd)

@@ -17,7 +17,7 @@ description: 利用HTTP头中的Cache相关属性，来优化网站访问速度�
 
 下面这个图例说明了浏览器和服务器之间如何进行交互。
 
-![](/20110822-http-cache/1111.png)
+![](20110822-http-cache/1111.png)
 
 **缓存的缺点**
 
@@ -30,7 +30,7 @@ description: 利用HTTP头中的Cache相关属性，来优化网站访问速度�
 Last-modified: Fri, 16 Mar 2007 04:00:25 GMT
 File Contents (could be an image, HTML, CSS, Javascript...)
 
-![](/20110822-http-cache/2222.png)
+![](20110822-http-cache/2222.png)
 
 这样浏览器就知道他收到的这个文件创建时间，在后续的请求中，浏览器会按照下面的规则进行验证：
 1、浏览器：Hey，我需要logo.png这个文件，如果是在  Fri, 16 Mar 2007 04:00:25 GMT 之后修改过的，请发给我。
@@ -53,7 +53,7 @@ File Contents (could be an image, HTML, CSS, Javascript...)
 
 接下来的访问顺序如下图所示：
 
-![](/20110822-http-cache/3333.png)
+![](20110822-http-cache/3333.png)
 
 1、浏览器：Hey，我需要Logo.png这个文件，有没有不匹配“ead145f”这个串的
 2、服务器：（检查ETag...）
@@ -71,7 +71,7 @@ File Contents (could be an image, HTML, CSS, Javascript...)
 Expires: Tue, 20 Mar 2007 04:00:25 GMT
 File Contents (could be an image, HTML, CSS, Javascript...)
 
-![](/20110822-http-cache/4444.png)
+![](20110822-http-cache/4444.png)
 
 这样，在过期之前，我们就避免了和服务器之间的连接。浏览器只需要自己判断手中的材料是否过期就可以了，完全不需要增加服务器的负担。
 

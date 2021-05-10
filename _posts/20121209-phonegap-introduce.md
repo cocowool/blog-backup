@@ -14,7 +14,7 @@ Mobile Application与Web Application的区别：
 
 ### PhoneGap架构
 
-![](/20121209-phonegap-introduce/201212092003294705.png)
+![](20121209-phonegap-introduce/201212092003294705.png)
 
 ### Android开发环境准备
 

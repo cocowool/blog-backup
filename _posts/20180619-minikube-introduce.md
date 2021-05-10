@@ -49,11 +49,11 @@ minikube start --registry-mirror=https://registry.docker-cn.com
 minikube dashboard
 ```
 随后浏览器中会自动打开这个界面。
-![](/20180619-minikube-introduce/39469-20180619113017294-1321626965.png)
+![](20180619-minikube-introduce/39469-20180619113017294-1321626965.png)
 
 ### 使用
 Minikube在本地虚拟机环境中部署 Kubernetes。
-![](/20180619-minikube-introduce/39469-20180619113030619-1842549291.png)
+![](20180619-minikube-introduce/39469-20180619113030619-1842549291.png)
 
 #### 启动 Cluster
 

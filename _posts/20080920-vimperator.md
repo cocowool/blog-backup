@@ -9,16 +9,16 @@ description: vimperator是一款firefox扩展，能够将firefox改造为vim浏�
 > **First there was a Navigator, then there was an Explorer. Later it was time for a Konqueror. Now it's time for an Imperator, the VIMperator :)**
 
 如果你是Firefox的用户，如果你不熟悉Vim，那么当你第一次面对下面的Firefox时，你的感觉会和我一样。
-![](/20080920-vimperator/092008_1528_Vimperator1.png)
+![](20080920-vimperator/092008_1528_Vimperator1.png)
 
 工具栏也没有了、地址栏也没有了、状态栏也没有了、左右的边框都没有了、天啊，这还是Firefox吗
 
 到了官方站点，看到了提示：
-![](/20080920-vimperator/092008_1528_Vimperator2.png)
+![](20080920-vimperator/092008_1528_Vimperator2.png)
 不过任凭 `Ctrl–q`，还是`Ctrl–z`都没有能够让我回到熟悉的FF界面，难道是火星
 
 接着往下看，终于找到：
-![](/20080920-vimperator/092008_1528_Vimperator3.png)
+![](20080920-vimperator/092008_1528_Vimperator3.png)
 通过设置，终于找回了亲切的菜单栏和地址栏。
 
 感谢主页的这些关键说明

@@ -22,7 +22,7 @@ Jenkins安装的最小环境要求为：
 
 #### 快速搭建方式一：RPM安装
 Jenkins提供可以独立安装运行的RPM包，从[这里](https://pkg.jenkins.io/redhat-stable/)下载。我在这个页面下载的时候发现一个问题，rpm包并不完全是按照时间排序的，希望官方能够解决这个问题。
-![](/20180508-jenkins-quick-start/39469-20180508085029775-1298626335.png)
+![](20180508-jenkins-quick-start/39469-20180508085029775-1298626335.png)
 
 > RPM安装方法采用的环境是
 Redhat Linux 7.3
@@ -58,7 +58,7 @@ May 07 16:53:23 localhost.localdomain systemd[1]: Starting firewalld - dynamic f
 May 07 16:53:24 localhost.localdomain systemd[1]: Started firewalld - dynamic firewall daemon.
 [root@bogon ~]# systemctl stop firewalld
 ```
-![](/20180508-jenkins-quick-start/39469-20180508085103438-1435698666.png)
+![](20180508-jenkins-quick-start/39469-20180508085103438-1435698666.png)
 插件安装的过程。
 
 #### 快速搭建方式二：Docker运行
@@ -77,7 +77,7 @@ bogon:docker rousseau$ docker run -p 8080:8080 jenkinsci/blueocean
 首先从docker hub上请求 jenkinsci/blueocean 的镜像，这一步骤会花一点时间，全部请求完成后，就可以执行第二步。
 第一次启动 jenkins 的时候，会将初始密码以 log 的形式输出到终端上，要注意观察。后续的界面上也有密码存放文件位置的提示。
 根据界面操作，我们就能到Jenkins的欢迎界面了。
-![](/20180508-jenkins-quick-start/39469-20180508085002672-1082837803.png)
+![](20180508-jenkins-quick-start/39469-20180508085002672-1082837803.png)
 参考资料：
 1、[Install Jenkins](https://jenkins.io/doc/book/installing)
 

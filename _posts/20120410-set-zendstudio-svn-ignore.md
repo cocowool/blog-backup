@@ -11,17 +11,17 @@ description: 在ZendStudio中配置svn:ignore。
 1、在ZendStudio的全局设置中设置
 在Window -> Preferences 中找到 Team -> Ignored Resources，然后将需要屏蔽的项目添加进去，应用就可以了。
 
-![](/20120410-set-zendstudio-svn-ignore/201204101716533847.png)
+![](20120410-set-zendstudio-svn-ignore/201204101716533847.png)
 
 2、在项目中单独设置特定文件
 选中不希望加入到SVN中的文件后，点击右键，按下图所示，就可以设置 svn:ignore
 
-![](/20120410-set-zendstudio-svn-ignore/20120410171654301.png)
+![](20120410-set-zendstudio-svn-ignore/20120410171654301.png)
 
 3、利用 SetProperty 设置项目的属性
 在工程中点击右键，选择Team->Show Properties 或者 Set Properties ，在出现的 Properties 面板中，点击右键，选择 Add，然后按照下图所示，添加自己需要忽略的文件
 
-![](/20120410-set-zendstudio-svn-ignore/201204101716558043.png)
+![](20120410-set-zendstudio-svn-ignore/201204101716558043.png)
 
 参考资料：
 1、[Hide .project files from svn in zend studio](http://lenss.nl/2008/06/hide-project-files-from-svn-in-zend-studio-for-eclipse/)

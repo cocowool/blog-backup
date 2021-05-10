@@ -71,13 +71,13 @@ $ make install
 
 在php.ini打开扩展后，重启apache就可以使用了
 
-![](/20100816-graphicsmagick/image_thumb_1.png)
+![](20100816-graphicsmagick/image_thumb_1.png)
 
 **与magickwand的比较**：
 
 本文使用了20个大小不同的图片文件，分别使用gmagick和magickwand来完成打开图片、读取图片信息、关闭图片的操作，最后得出的结果如下：
 
-![](/20100816-graphicsmagick/image_thumb.png)
+![](20100816-graphicsmagick/image_thumb.png)
 
 总体上看，magickwand的效率要比GraphicsMagick差不少，但是效率的提升貌似与所处理的文件没有明显的线性关系，也许是图片太小了，据说GraphicsMagick可以处理Gb级的图片，更多的使用细节，只能在今后进一步研究了。
 

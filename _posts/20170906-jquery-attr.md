@@ -23,7 +23,7 @@ Get the value of an attribute for the first element in the set of matched elemen
 > As of jQuery 1.6, the .attr() method returns undefined for attributes that have not been set.**To retrieve and change DOM properties such as the checked, selected, or disabled state of form elements, use the .prop() method.**
 
 文档还特别对 attr() 和 prop() 进行了对比，总体来说 jQuery 1.6 版本之后，为了保证函数在不同环境下表现的一致性，建议对于获取 DOM 元素的固有属性，使用 prop() 方法，如果需要修改个性化（自定义）的属性字段，则需要使用 attr 方法。
-![](/20170906-jquery-attr/39469-20170906150427897-1646491621.png)
+![](20170906-jquery-attr/39469-20170906150427897-1646491621.png)
 关于 checked 属性，还特别说了一下，我也不知道如何用汉字区分 attribute 和 property，还是摘抄下来吧。
 
 > Nevertheless, the most important concept to remember about the checked attribute is that it does not correspond to the checked property. The attribute actually corresponds to the defaultChecked property and should be used only to set the initial value of the checkbox. The checked attribute value does not change with the state of the checkbox, while the checked property does. Therefore, the cross-browser-compatible way to determine if a checkbox is checked is to use the property

@@ -16,7 +16,7 @@ description: 生成EOT字体的三种方法。
 
 1、在线字体转换：[Font Squirrel](http://www.fontsquirrel.com/fontface/generator)
 
-![](/20110410-generate-eot/201104101554453143.png)
+![](20110410-generate-eot/201104101554453143.png)
 
 这个网站为我们提供了一个在线的字体转换服务，缺点是对于字体文件的大小有限制，更适合用来转换英文类的字体。
 

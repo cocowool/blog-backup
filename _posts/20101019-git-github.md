@@ -12,7 +12,7 @@ description: 介绍下Ubuntu环境中使用git和github的方法。
 我使用了ubuntu 10.04 ，默认情况下，ubuntu 中并没有安装，所以首先需要在系统中进行 git 的安装。
 `sudo apt-get install git-core` 安装完成后，在终端中输入 git 就可以看到相关的命令了。如果只是需要使用git来管理本地的代码，那么现在就可以使用了。如果需要和github上的项目结合，还需要做其他的一些操作。
 
-![](/20101019-git-github/Screenshot.png)
+![](20101019-git-github/Screenshot.png)
 
 2、github帐号的申请
 
@@ -38,7 +38,7 @@ git config --global user.email = "邮箱"
 
 在 github.com 的界面中 选择右上角的 Account Settings，然后选择 SSH Public Keys ，选择新加。Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
 
-![](/20101019-git-github/Screenshot-1.png)
+![](20101019-git-github/Screenshot-1.png)
 
 进行到这里，我们也可以利用github来管理我们的项目和参与开源工作了，大体上使用git分为三种方式。
 
@@ -66,7 +66,7 @@ git config --global user.email = "邮箱"
 
 2、之后，会有一个如何上传的提示，如下图已经很详细了。
 
-![](/20101019-git-github/Screenshot.png)
+![](20101019-git-github/Screenshot.png)
 
 **Fork别人的项目**
 

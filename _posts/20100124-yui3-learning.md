@@ -51,7 +51,7 @@ Y.io("/foo/bar/some_widget", {
 
 在排查这个错误的时候因为不了解 YUI Loader 的工作原理，所以费了一些周折，同样不了解的同学可以去[这里](http://www.zhuoqun.net/html/y2008/1118.html)看一下，补充一下相关知识。我将 io-base.js 的最新版本下载下来，覆盖了本地文件之后，发现问题并没有解决，使用firebug查看，如下：
 
-![](/20100124-yui3-learning/image_thumb.png)
+![](20100124-yui3-learning/image_thumb.png)
 
 原来这些模块都还是通过combo调用的远程的，很奇怪的是为什么在firebug的网络中没有看到这个链接消耗的时间呢，难道他不消耗带宽？
 

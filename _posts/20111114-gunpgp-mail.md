@@ -55,11 +55,11 @@ GPGMail、GPG Keychain Access、MacGPG1、MacGPG2、GPGService、GPGPreference�
 2、打开 GPG Keychain Access 生成自己的公钥和密钥对。
 
 
-![](/20111114-gunpgp-mail/55555.png)
+![](20111114-gunpgp-mail/55555.png)
 
 正常情况下，第一次打开的时候，列表中应该是个空白的界面，紧接着会提醒用户生成自己的密钥对。
 
-![](/20111114-gunpgp-mail/44444.png)
+![](20111114-gunpgp-mail/44444.png)
 
 创建密钥对，默认会用你的电脑帐号对应的邮箱，你也可以选择或者输入其他的邮箱。Full name部分注意用户名要大于五个字符，所以中文姓名会有提示。Length 一般选择2048,也可以选择4096这样安全性能够更高一些。完成后，点击 Generate Key，生成自己的密钥对。
 
@@ -69,17 +69,17 @@ GPGMail、GPG Keychain Access、MacGPG1、MacGPG2、GPGService、GPGPreference�
 
 选中自己的密钥对，点击右键，选择导出。
 
-![](/20111114-gunpgp-mail/33333.png)
+![](20111114-gunpgp-mail/33333.png)
 
 
 
-![](/20111114-gunpgp-mail/22222.png)
+![](20111114-gunpgp-mail/22222.png)
 
 导出的格式选项中，选择 binary 的格式。笔者试验了 ASCII 格式好像不能够正确导出。将导出的公钥发送给其他人，同时将别人的公钥 Import 到 GPG keychain Access 中。
 
 4、最后，就可以在Mail中使用GPG进行邮件加密和签名。
 
-![](/20111114-gunpgp-mail/11111.png)
+![](20111114-gunpgp-mail/11111.png)
 
 大功告成！
 

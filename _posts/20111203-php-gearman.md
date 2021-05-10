@@ -30,13 +30,13 @@ make install
 
 安装需要系统提供了 libevent，如果没有编译就会报错。编译安装完成后的提示如下：
 
-![](/20111203-php-gearman/111.png)
+![](20111203-php-gearman/111.png)
 
 其中 libsqlite3、lbdrizzle、libmemcached、libpq、tokyocabinet的支持都是对于持久化来说的，如果需要要确保系统中安装了这些数据库。
 
 安装完成后，gearmand 提供了以下这些配置参数
 
-![](/20111203-php-gearman/222.jpg)
+![](20111203-php-gearman/222.jpg)
 
 **性能的问题：**
 
@@ -56,7 +56,7 @@ Processing Thread 处理线程  － 只有一个：负责管理列表和Hash表
 
 实际上 Job Server 是存在单点问题的，我们只能通过增加冗余 Job Server 的方式来解决这个问题。就如官方的图例所示，下图：
 
-![](/20111203-php-gearman/333.jpg)
+![](20111203-php-gearman/333.jpg)
 
 我们可以通过配置域名、多个服务器配置列表等方法，在遇到其中一个 Job Server 失败时，将 Client 的请求转向另外的 Job Server。这种情况下，Job Server 中原来存在的任务会发生丢失，除非使用了数据库或其他类似的持久化方法。
 
@@ -64,7 +64,7 @@ Processing Thread 处理线程  － 只有一个：负责管理列表和Hash表
 
 通过 gearmand -vvvvvvv  分析发现，如果 gearmand 关闭并重新启动后，原来的 worker 会马上与 Job Server 建立连接，并询问是否有任务。
 
-![](/20111203-php-gearman/444.jpg)
+![](20111203-php-gearman/444.jpg)
 
 3、使用持久队列避免任务的丢失
 

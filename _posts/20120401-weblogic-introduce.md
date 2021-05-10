@@ -22,7 +22,7 @@ Administration Server ：
 
 管理服务器是控制整个域配置的中心操作节点，管理服务器维护着整个域 Domain 的配置并将配置分配到每个被管理服务器 Managed Server 中，每个域中都必须有一个Administration Server。我们可以通过三个渠道访问管理服务器：Admin Server console、Oracle WebLogic Scripting Tool WLST、JMX客户端（通过WebLogic提供的API来实现），最后我们还可以通过SNMP协议来监控Admin Server的状态。
 
-![](/20120401-weblogic-introduce/20120401152913776.png)
+![](20120401-weblogic-introduce/20120401152913776.png)
 
 Admin Server 如果挂了，对于Domain中的Managed Server不会产生影响，如果配置了集群，对于负载均衡和Failover机制也不会产生影响，因为这些都是基于配置文件的（config.xml），而不依赖与Admin Server的实例。Admin Server 不必时刻运行，当我们需要修改配置或者部署应用时，把Admin Server运行起来就行。
 
@@ -34,13 +34,13 @@ Machine ：
 
 Machine 是指运行WebLogic Server实例的物理机器，通常与部属在其上的Managed Server相关连。Machine用于Node Manager（一个运行在物理服务器上的进程，可以远程重启Admin 和 Managed Server）重启失败的Managed Server，以及为集群的Managed Servers选择合适的Session存放位置（Session避免存放在同一台Machine上）。
 
-![](/20120401-weblogic-introduce/201204011529153086.png)
+![](20120401-weblogic-introduce/201204011529153086.png)
 
 Node Manager：
 
 运行在物理服务器上的一个进程，用来远程执行Admin Server 和 Managed Server的启动 Start、停止 Stop、挂起 Suspend、重启 Restart 操作。该进程与Domain并不关联但是与Machine相关连，如果你想在Admin Console 中对Server进行控制，则必须安装Node Manager。Node Manager 提供了Java-based和Script-based两个版本，实现的功能一样。
 
-![](/20120401-weblogic-introduce/201204011529167970.png)
+![](20120401-weblogic-introduce/201204011529167970.png)
 
 Cluster ：
 
@@ -48,7 +48,7 @@ Cluster ：
 
 J2EE Standard ：
 
-![](/20120401-weblogic-introduce/201204011529186377.png)
+![](20120401-weblogic-introduce/201204011529186377.png)
 
 J2EE框架中的其他内容：JDBC、JNDI、JTA、JMS、JAAS、JMX、RMI-IIOP等。
 Java Servlets and JavaServer Pages：

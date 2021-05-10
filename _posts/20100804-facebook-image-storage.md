@@ -10,7 +10,7 @@ description: Facebook推出的Haystack图片存储系统介绍。
 
 [Jason Sobel](http://www.facebook.com/people/Jason-Sobel/1014953)，NetApp的前工程师主持了这次改造，基本的架构来自于2008年的[Stanford ACM presentation by Jason Sobel](http://www.flowgram.com/fg/2qi3k8eicrfgkv/)。新的架构让Facebook使用普通的服务器就能够支撑图片存储的需求，减少了对CDN的依赖。
 
-![](/20100804-facebook-image-storage/image_thumb.png)
+![](20100804-facebook-image-storage/image_thumb.png)
 
 Facebook有两种主要的图片存储类型，也是所有社交网站共同的特点：头像和相册。用户上传相册，以档案的形式存放，很少会删除，也不会立即读取。头像则是每个人都会拥有，并且有不同的尺寸。过去，Facebook极度依赖CDN来保护自己的服务器遭受大量的访问。
 
@@ -35,7 +35,7 @@ Facebook的图片被世界各地的人们浏览，图片命名也包含了很多
 * Last access time
 * Reference counts
 
-![](/20100804-facebook-image-storage/image_thumb_2.png)
+![](20100804-facebook-image-storage/image_thumb_2.png)
 
 Haystack 存储10GB的数据只需要10Mb的元数据，这些原数据可以驻留在内存中，这样读取文件的时候就只需要一次磁盘寻道。Cachr仍然是第一道防线，快速的处理对于图片的请求。
 

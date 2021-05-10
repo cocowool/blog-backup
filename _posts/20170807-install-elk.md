@@ -81,7 +81,7 @@ bootstrap.system_call_filter: false
 ```
 
 ### Logstash 安装
-![](/20170807-install-elk/39469-20170807100506284-855989471.png)
+![](20170807-install-elk/39469-20170807100506284-855989471.png)
 1、下载并解压 Logstash，本文用的 Logstash-5.5.1 版本
 2、创建一个简单的配置文件 logstash_test.conf
 
@@ -117,7 +117,7 @@ elasticsearch.url: "http://localhost:9200”
 ./bin/kibana
 4、访问查看Kibana启动是否成功，并检索查看数据
 [http://localhost:5601](http://localhost:5601)
-![](/20170807-install-elk/39469-20170807100525580-1389653745.png)
+![](20170807-install-elk/39469-20170807100525580-1389653745.png)
 
 
 

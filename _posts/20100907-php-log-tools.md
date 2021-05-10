@@ -19,7 +19,7 @@ LogAnalyzer的原名为phpLogCon，他在2010年的3月29日发布了3.0的稳�
 
 2、Jawstats
 
-![](/20100907-php-log-tools/image_thumb.png)
+![](20100907-php-log-tools/image_thumb.png)
 
 这是一款基于Awstat的PHP开源程序，提供了非常漂亮的分析统计结果的展示界面，支持中文。他的作者是[Jon Come](http://joncom.be/)。
 
@@ -59,7 +59,7 @@ Webalizer虽然不是PHP的，但是上面LogMiner总是拿这个作比较，就
 结合看到的这些工具，针对我们单位的实际需求，感觉 Awstat + JAWStats 组合更为好一点。因为日志会收集到单独的日志服务器上，所以性能上的消耗也就不会在意了。接下来看看实际的效果吧。
 PS：刚才看AWS的文档，看到一个对比，可能对于特性的了解能够更加的一目了然。
 
-![](/20100907-php-log-tools/image_thumb_1.png)
+![](20100907-php-log-tools/image_thumb_1.png)
 
 参考资料：
 1、[CrunchTools](http://crunchtools.com/)

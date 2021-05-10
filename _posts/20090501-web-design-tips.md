@@ -18,10 +18,10 @@ description: 易用性就是是你的网站对用户来说使用更简单，能�
 
 国外的站点很多使用Tagline或者醒目的Flash，国内的站点也可以 这么用，有的时候内容多的时候，还可以是Banner+焦点图，这个要区分不同的网站类型来对待。例如对于产品型的网站，完全可以只使用一个焦点图或者醒目的有特色的Flash来吸引注意，如果是资讯类的或者专题类的页面，则可能既要有Banner，来突出这个页面的主题，也要有焦点图，来显示最近的一些动态。这个需要在制作的过程中不断地体会积累。
 
-![](/20090501-web-design-tips/site1.jpg)
+![](20090501-web-design-tips/site1.jpg)
 
-![](/20090501-web-design-tips/site2.jpg)
-![](/20090501-web-design-tips/site3.png)
+![](20090501-web-design-tips/site2.jpg)
+![](20090501-web-design-tips/site3.png)
 
 ### 二、提供站内搜索。
 
@@ -29,7 +29,7 @@ description: 易用性就是是你的网站对用户来说使用更简单，能�
 
 搜索框的长度和位置也需要加一点注意，不能太小，位置最好放在右上区域，因为根据用户的浏览习惯呈现出”F“的趋势（F Pattern），提交按钮的文字最好能够明确的告诉用户，接下来将要发生的动作是搜索。
 
-![](/20090501-web-design-tips/site5.png)
+![](20090501-web-design-tips/site5.png)
 
 
 
@@ -57,7 +57,7 @@ description: 易用性就是是你的网站对用户来说使用更简单，能�
 
 Jacbo Nilsen通过视觉追踪发现用户的浏览很像一个F型，他们从左到用从上到下的”扫描“页面。
 
-![](/20090501-web-design-tips/site9.jpg)
+![](20090501-web-design-tips/site9.jpg)
 
 他的实验同时也得出了一下结论：
 

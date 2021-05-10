@@ -21,7 +21,7 @@ Get-ADComputer -Filter {enabled -eq $true} -properties *|select Name, DNSHostNam
 get-adcomputer -filter {enabled -eq $true} -properties * | ft name, dnshostname, operating system, @{n=‘lastlogontimestamp’;e={[DateTime]::FromFileTime($_.Lastlogontimestamp)}}
 ```
 查询的结果是这样的。
-![](/20170526-list-domain-machines/39469-20170526083642122-543815414.png)
+![](20170526-list-domain-machines/39469-20170526083642122-543815414.png)
 
 参考资料：
 1、[How to get all active computer list in domain with some attributes?](https://social.technet.microsoft.com/Forums/windowsserver/en-US/452bd87c-f802-447c-91fb-e98b1b6ddb0e/how-to-get-all-active-computer-list-in-domain-with-some-attributes?forum=winserverDS)

@@ -16,7 +16,7 @@ description: Binary Search Tree 以及一道 LeetCode 题目
 > A binary search tree is a rooted binary tree, whose internal nodes each store a key (and optionally, an associated value) and each have two distinguished sub-trees, commonly denoted left and right. The tree additionally satisfies the binary search property, which states that the key in each node must be greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree.[1]:287 (The leaves (final nodes) of the tree contain no key and have no structure to distinguish them from one another.
 
 看一下下面这个图一下子就能理解，就是说每个节点左边的值一定小于右边。
-![](/20180308-bst-leetcode/39469-20180308133853584-434040861.png)
+![](20180308-bst-leetcode/39469-20180308133853584-434040861.png)
 了解到这个约束，这个题目解起来就比较简单了：
 
 ```python

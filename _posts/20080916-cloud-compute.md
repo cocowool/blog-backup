@@ -9,7 +9,7 @@ description: 云计算就是通过云（aka 也就是常说的了网络）网络
 
 感觉像是云计算的一个推崇者，为云计算在做广告，[Robyn Peterson](http://www.pcmag.com/author_bio/0,1908,a=2550,00.asp)的文章[What you need to know about cloud computing](http://www.pcmag.com/article2/0,2817,2330238,00.asp)。
 
-![](/20080916-cloud-compute/091608_0518_1.png)
+![](20080916-cloud-compute/091608_0518_1.png)
 **云计算可以保证我们不再受硬件的困扰，真的是这样吗？**
 
 在为一个小型商业或者大型企业构建IT结构的时候，我们常常需要花费大笔的钱财去购买设备或者租赁设备，但是随着云计算的出现，我们有多了一个选择，将所有的应用移植到云计算中去。

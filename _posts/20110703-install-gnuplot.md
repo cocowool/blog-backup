@@ -94,7 +94,7 @@ make && sudo make install
 
 完成之后，就可以通过 `gnuplot,plot sin(x)` 查看作图的效果了
 
-![](/20110703-install-gnuplot/xxx.png)
+![](20110703-install-gnuplot/xxx.png)
 
 参考资料：
 1、[gnuplot homepage](http://www.gnuplot.info/)

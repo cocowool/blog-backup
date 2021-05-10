@@ -16,7 +16,7 @@ Pod是Kubernetes中能够创建和部署的最小单元，是Kubernetes集群中
 
 * 单容器Pod，最常见的应用方式。
 * 多容器Pod，对于多容器Pod，Kubernetes会保证所有的容器都在同一台物理主机或虚拟主机中运行。多容器Pod是相对高阶的使用方式，除非应用耦合特别严重，一般不推荐使用这种方式。一个Pod内的容器共享IP地址和端口范围，容器之间可以通过 localhost 互相访问。
-![](/20180808-kubernetes-pod-detail/pod.svg)
+![](20180808-kubernetes-pod-detail/pod.svg)
 Pod并不提供保证正常运行的能力，因为可能遭受Node节点的物理故障、网络分区等等的影响，整体的高可用是Kubernetes集群通过在集群内调度Node来实现的。通常情况下我们不要直接创建Pod，一般都是通过Controller来进行管理，但是了解Pod对于我们熟悉控制器非常有好处。
 
 ### 1.2 Pod带来的好处

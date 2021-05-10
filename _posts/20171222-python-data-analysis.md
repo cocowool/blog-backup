@@ -89,7 +89,7 @@ In [31]: import matplotlib.pyplot as plt
 
 In [32]: plt.show()
 ```
-![](/20171222-python-data-analysis/39469-20171222172318553-77594511.png)
+![](20171222-python-data-analysis/39469-20171222172318553-77594511.png)
 
 
 ### 参考资料：

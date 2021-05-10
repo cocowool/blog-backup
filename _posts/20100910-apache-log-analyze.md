@@ -73,7 +73,7 @@ perl awstats.pl -config=baiduleju -update
 
 JAWStat需要Apache和PHP的支持，所以需要已经配置了相应的环境。它提供了一个非常友好的界面和方便的操作服务，而且支持不同的语言版本。截图如下：
 
-![](/20100910-apache-log-analyze/image_thumb.png)
+![](20100910-apache-log-analyze/image_thumb.png)
 
 配置也非常简单，只需要在程序的config.php文件中修改相应的参数就可以了。但是我发现在分析日志文件大的时候，会产生内存溢出的问题，需要修改一下最大内存限制。感觉处理方式上海由改进的可能，但是作者对这个的开发已经停滞了好久了。
 
