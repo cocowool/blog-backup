@@ -3,7 +3,7 @@ title: 神奇的tmux
 date: 2021-05-13 13:28:15
 tags:
 keywords: tmux, terminal, linux
-description: 
+description: 本文介绍终端工具tmux，适合工作在*nix环境下的用户。
 ---
 
 本文适合于对于脱离鼠标有着强烈愿望的开发、运维以及一切工作在*nix环境下的用户。它提供了一个在单一环境下打开多个终端、窗口的方式。对于大多数现代的终端以及终端工具来说，基本上都提供了Tab的功能，但是tmux仍有着无可比拟的魅力，让你最终喜欢上她。
