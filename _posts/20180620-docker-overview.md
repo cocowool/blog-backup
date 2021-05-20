@@ -1,7 +1,7 @@
 ---
 title: Docker 入门介绍
 date: 2018-06-20 11:12:13
-updated: 2020-05-02 16:22:39
+updated: 2021-05-20 20:22:39
 tag: 
 keywords: docker, docker介绍, docker镜像, docker daemon, docker client, docker 仓库
 description: Docker 是一个应用程序开发、部署、运行的平台，使用 go 语言开发。相较于传统的主机虚拟化，Docker 提供了轻量级的应用隔离方案，并且为我们提供了应用程序快速扩容、缩容的能力。
@@ -95,23 +95,32 @@ Docker的网络子系统是可插拔的，支持bridge、host、overlay、macvla
 
 上图说明了不同方式的区别，**Volumes**是存在本地文件系统中的一部分，其他应用程序不能对这个文件系统进行修改，Linux下在```/var/lib/docker/volumes```。这是数据持久化的最好方案。**Bind Mount**允许将主机中任何位置的数据挂载，这些数据的读写没有收到保护。**tmps**是存储在主机内存中的数据。
 
-## 技术依赖
+## 常用的Docker命令
 
-Docker 严重依赖操作系统的虚拟化特性，主要包括以下几点。
+```sh
+# 运行friendlyhello，并将容器的80端口映射到本机的4000端口
+$ docker run -p 4000:80 friendlyhello
 
-### namespaces
+# 运行一个mysql容器，并在运行结束后删除
+$ docker pull mysql
+$ docker run --name mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
-### Control Groups
+# 查看已经创建的容器
+$ docker ps
 
-Control Groups 也称```cgroups```，主要是解决Linux系统中进程间的资源隔离与权限访问的相关问题。
+# 查看容器的信息
+$ docker inspect image-id
 
-### Union file Systems
+# 执行容器中的命令
+$ docker exec -it container-name bash
 
-### container format
+# 挂载宿主机文件或目录到容器，下面将sh-valley目录挂载到容器的/home/go目录下
+$ docker run -it -v /Users/shiqiang/Projects/sh-valley:/home/go golang bash
 
-容器格式是结合了namespace、cgroups、UnionFS在内的一个封装。
+```
 
 ## 参考资料：
+
 1. [Docker Overview](https://docs.docker.com/engine/docker-overview/)
 2. [Linux Namespaces机制——实现](https://www.cnblogs.com/lisperl/archive/2012/05/03/2480573.html)
 3. [Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
