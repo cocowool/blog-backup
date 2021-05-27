@@ -1,6 +1,6 @@
 ---
 title: Mac更换SSD硬盘后系统全新安装的方法
-date: 2021-05-27 08:21:33
+date: 2012-10-06 08:21:33
 tags:
 keywords: Mac
 description: Macbook pro更换了SSD硬盘后重新安装操作系统的方法。
