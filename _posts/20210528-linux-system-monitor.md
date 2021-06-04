@@ -36,8 +36,8 @@ tags:
 
 进程监控一般都属于自定义监控的范围，根据部署的应用类型，指定进程关键字，通过监控代理程序定时 `ps -ef` 查看进程列表，一旦发现进程丢失则触发告警。
 
-* 用户打开进程数。
-* 僵尸进程数量。
+* 用户打开进程数。生产系统中，进程的数量一般是固定的，因此通过 `ps -u {username}` 获取某个用户打开的进程数量，如果数量发生异常变化则可能预示系统的问题。也可以使用 `top -U {USERNAME}` 命令来查看该用户正在运行的进程。还可以使用 `pgrep` 命令查看，具体使用方法可以参考附录中的文章。
+* 僵尸进程数量。僵尸进程是程序处理不当时遗留的产物，一般不会占用太多的系统资源。但是僵尸进程会占用系统进程号，而系统进程号的数量是有上线的。如果因为程序BUG造成僵尸进程快速、大量的生成，可能会影响正常的系统调度。可以使用 `ps -ef | grep defunct | grep -v grep | wc -l` 命令来获取僵尸进程的数量。
 
 ## 参考资料
 
@@ -48,6 +48,7 @@ tags:
 5. [服务器负载检测、IO性能及磁盘繁忙监控-iostat命令使用](https://blog.csdn.net/zhujq_icode/article/details/78864270)
 6. [CPU、Load、内存及网络等系统指标异常的排查](https://blog.csdn.net/fuzhongmin05/article/details/100051291)
 7. [Linux Swap详解](https://www.cnblogs.com/zhongguiyao/p/13963998.html)
+8. [linux命令详解：pgrep命令](https://www.cnblogs.com/Alight/p/4802414.html)
 
 
 
