@@ -46,6 +46,11 @@ function FindProxyForURL(url, host) {
   }else{
   	//返回两个代理地址，依次访问
   	return "PROXY proxy1.my.com:8080; PROXY proxy2.my.com:8080; DIRECT";
+  }
+  
+  //返回SOCKS代理
+  if ( host == "socks.com") {
+  	return "SOCKS host:port"; 
   }  
 }
 ```
