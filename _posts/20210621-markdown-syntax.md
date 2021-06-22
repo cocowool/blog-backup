@@ -2,8 +2,8 @@
 title: Markdown 语法
 date: 2021-06-21 18:19:50
 tags:
-keywords:
-description:
+keywords: markdown
+description: 2014年以后博客园开始支持Markdown，突然发现Markdown真的非常适合用来写技术文档，只因为一个突出的优点：**让作者能够专注到写作本身，格式也能够通过书写的方式来实现，再也不用先写文字再做格式调整的事情，这样写作流程连贯、一气呵成，给人的感觉非常爽**。
 ---
 
 我从2008年开始在博客园写技术类文档，最早的时候不知道Markdown，而且博客园也没有提供Markdown编辑器，当时都采用富文本编辑器来写，每次调整格式都需要挺长时间。当时笔记软件还用微软的OneNote，因为也不支持Markdown，因此用的也还算平稳。
