@@ -1,7 +1,9 @@
 ---
-title: 20210628-leetcode-maximum-binary-tree
+title: Leetcode：构建最大数二叉树
 date: 2021-06-28 10:33:20
 tags:
+keywords: 算法, leetcode, 刷题
+description: 构建最大数二叉树。
 ---
 
 ### 题目要求，[题目地址](https://leetcode.com/problems/maximum-binary-tree/description/)
