@@ -7,10 +7,10 @@ description: 如何通过Python获取一个整形数字的二进制表示。
 ---
 
 
-### 目标
+## 目标
 想要获取一个整形数字的二进制表示
 
-### bin 内置函数
+## bin 内置函数
 看一下官方的解释
 Convert an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If x is not a Python int object, it has to define an **index**() method that returns an integer. Some examples。
 
@@ -42,11 +42,58 @@ def bindigits(n, bits):
 111111111000010110010111
 ```
 
+## Python中的二进制数据类型 
+Python中提供了三种二进制数据类型：
+* bytes
+* bytearray
+* memoryview
+
+### Bytes Object
+
+Bytes对象是不可改变顺序的字节串。
+
+Bytes语法与String类似，只不过需要以```b```开头。
+
+```python
+# 单引号
+b'still allows embedded "double" quotes'
+# 双引号
+b"still allows embedded 'single' quotes"
+# 三引号
+b'''3 single quotes'''
+b"""3 double quotes"""
+```
+
+只有ASCII字符才可以这么写，除此之外的都必须用bytes的形式来写。
+由于2个十六进制数字精确地对应于单个字节，所以十六进制数字是用于描述二进制数据的通常使用的格式。
+
+### Bytearray Object
+
+bytearray 是bytes对象的可变对象。对于bytearray对象没有专用的字面值语法，只能通过构造函数创建。
+
+### memoryview 函数
+
+**memoryview()** 函数返回给定参数的内存查看对象(memory view)。
+
+代码示例
+
+```python
+>>> v = memoryview(bytearray("abcefg", "utf-8"))
+>>> print(v[1])
+98
+>>> print(v[-1])
+103
+>>> print(v[1:4].tobytes())
+b'bce'
+```
+
+
+
 ### 参考资料：
+
 1、[Python bin](https://docs.python.org/3/library/functions.html#bin)
 2、[Two's Complement Binary in Python?](https://stackoverflow.com/questions/12946116/twos-complement-binary-in-python)
 3、[integers](http://docs.python.org/reference/lexical_analysis.html#integers)
-
 
 
 
