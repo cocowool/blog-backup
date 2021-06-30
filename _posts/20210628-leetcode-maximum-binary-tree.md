@@ -1,5 +1,5 @@
 ---
-title: Leetcode：构建最大数二叉树
+title: Leetcode:构建最大数二叉树
 date: 2021-06-28 10:33:20
 tags:
 keywords: 算法, leetcode, 刷题
