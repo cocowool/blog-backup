@@ -3,6 +3,7 @@ title: Ansible 使用体验
 date: 2021-07-04 21:24:17
 tags:
 keywords: ansible, 自动化运维
+description: 本文介绍 Ansible 的安装方法与初步的使用体验。
 ---
 
 ## 安装
