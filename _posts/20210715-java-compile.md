@@ -6,8 +6,6 @@ keywords: java, java编译
 description: 介绍Java编译的方法和参数。
 ---
 
-[TOC]
-
 ## 编译
 
 ### javac 编译
@@ -20,7 +18,6 @@ $ javac -Djava.ext.dirs=./lib Main.java
 ### 注意事项
 * 一个`java`文件中可以有多个类，但是只能有一个用`public`修饰的类，并且这个类的名字要和`java`文件的名字相同（区分大小写）。
 * 如果整个文件都没有 `public`类，则文件名可以与所有类不相同。
-* 
 
 ## 运行
 Java程序运行必须指定一个带有`main`函数的`main class`。
