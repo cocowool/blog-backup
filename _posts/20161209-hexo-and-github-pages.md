@@ -52,3 +52,8 @@ branch: hexo
 至此，使用 hexo 搭建环境发布内容的工作就完成了，你可以通过[http://yourname.github.io](http://yourname.github.io)访问页面，查看效果。
 为了让这两部分文件都保存下来，我们利用 git 中的分支功能。在本地环境查看有多少分支 git branch -a，一般只有一个 master。创建一个新的分支 git branch hexo
 将分支推送到远程服务器 git push origin hexo，在 hexo 的配置文件中选择将内容发布到 hexo 而本地的源码提交到 master 中。
+
+### 四、插件安装
+
+**hexo-render-sass**
+
