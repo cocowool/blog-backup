@@ -12,6 +12,7 @@ description: Hexo支持生成静态博客内容，再结合Github Pages可以实
 [Github Pages](https://pages.github.com/)的申请过程就不再搬砖，Github的[页面](https://pages.github.com/)上说的很清楚，注意每个用户只能创建一个与自己用户名相同的Pages。
 Pages申请好之后，可以克隆到本地的文件夹，这样 hexo 运行的文件夹就准备好，可以开始准备本地的hexo环境。
 hexo需要有nodes和nam的支持，我先安装了[6.9.2版本的node](https://nodejs.org/dist/v6.9.2/node-v6.9.2.pkg)，使用的是安装包，当然也可以使用[homebrew](http://brew.sh/)等工具。安装hexo很简单：
+
 ```bash
 $ npm install hexo-cli -g
 ```
@@ -31,11 +32,17 @@ package.json 应用数据，EJS、Sylus、Markdown三个渲染工具是默认安
 source 文件夹，文章原始的 md 文件都放在这个文件夹下面。通过生成器会对该文件夹下的 markdown、html 文件进行解析，其他的文件只做拷贝，放入 public 文件夹。
 themes 主题文件夹，默认的主题为 landscape。
 
-### 二、主题更换。
+### 二、必备插件的安装
+
+* hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装
+* 
+
+### 三、主题更换。
+
 默认的主题美观性基本上没有，hexo 支持自己开发博客主题，但是刚开始的时候最好还是选择一个比较成熟的主题先上手。hexo 官方有一个提供预览图的[列表](https://hexo.io/themes/)，也有一个更完整的[列表](https://github.com/hexojs/hexo/wiki/Themes)，我这里要使用的是[yilia](https://github.com/litten/hexo-theme-yilia)，后续考虑自己定义一个。
 更换theme的步骤包括获取 theme 文件，修改配置，可以参考 yilia 的文档进行。
 
-### 三、生成与发布
+### 四、生成与发布
 编辑完自己的文章后，本地预览觉得效果还可以的话，就可以生成等待发布的页面了。
 ```bash
 hexo generate
