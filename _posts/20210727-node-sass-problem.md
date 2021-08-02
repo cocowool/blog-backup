@@ -53,6 +53,7 @@ v16.5.0
 本次熟悉了几个命令
 
 * `npm config set/get` 设置npm的配置或读取npm的配置
+* `npm config get cache` 查看npm缓存目录的位置
 * `nom config ls -l` 查看npm的详细配置
 * `nom ls -g` 查看npm安装的全局包
 * `npm outdated -g` 查看需要更新的全局包，不加参数表示查看本地需要更新的包
