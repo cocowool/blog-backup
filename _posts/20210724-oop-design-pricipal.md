@@ -1,5 +1,6 @@
 ---
-title: 20210724-oop-design-pricipal
+title: 面向对象设计原则
 date: 2021-07-24 00:30:41
 tags:
 ---
+

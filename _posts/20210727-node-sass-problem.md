@@ -60,6 +60,48 @@ v16.5.0
 * `npm uninstall -g hexo` 卸载全局安装的包
 * `npm update -g hexo` 更新全局安装的包 
 
+## 另外一个问题
+
+为了更深入了解 node-sass 写了一个js脚本用来测试node-sass的使用，脚本内容很简单，仅仅引用了node-sass模块，执行的时候报错，提示找不到 `vendor` 目录。
+
+```sh
+$ node test.js                        
+node:internal/fs/utils:343
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, scandir '/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/vendor'
+    at Object.readdirSync (node:fs:1380:3)
+    at Object.getInstalledBinaries (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/extensions.js:134:13)
+    at foundBinariesList (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/errors.js:20:15)
+    at foundBinaries (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/errors.js:15:5)
+    at Object.module.exports.missingBinary (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/errors.js:45:5)
+    at module.exports (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/binding.js:15:30)
+    at Object.<anonymous> (/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/lib/index.js:13:35)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1124:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32) {
+  errno: -2,
+  syscall: 'scandir',
+  code: 'ENOENT',
+  path: '/Users/shiqiang/Projects/www.edulinks.cn/test-blog/node_modules/node-sass/vendor'
+}
+```
+
+进入到 `node_modules/node-sass` 下面看确实没有 vendor 目录，
+
+按照官方的指引执行下面的命令
+
+```sh
+$ cd node-sass
+$ npm install
+$ node scripts/build -f  # use -d switch for debug release
+# if succeeded, it will generate and move
+# the binary in vendor directory.
+```
+
+
+
 ## 参考资料
 
 1. [node-gyp的作用是什么](https://www.zhihu.com/question/36291768)
@@ -67,4 +109,5 @@ v16.5.0
 3. [Apple Developer Downloads](https://developer.apple.com/download/all/?q=xcode)
 4. [Installation notes for macOS Catalina](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md)
 5. [GIthub node-gyp](https://github.com/nodejs/node-gyp#readme)
+6. [node-sass](https://github.com/sass/node-sass)
 
