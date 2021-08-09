@@ -1,8 +1,11 @@
 ---
 title: node-sass安装遇到的错误
 date: 2021-07-27 13:32:34
-tags:
+keywords: node-sass, npm, npm install, node-gyp
+description: Node版本升级后，带来的npm install安装失败问题。
 ---
+
+> 本文记录MacOS Catalina环境下，Node版本升级到16.5.0之后，导致的node-sass不能使用，而更新安装node-sass失败问题的解决过程，以及在此过程中对于npm更加深入的了解，希望能够帮助到有同样困惑的同学。
 
 前两天系统安装了 `nmap` 后，`hexo new` 新文章的时候就报下面的错误。
 
@@ -44,6 +47,13 @@ v16.5.0
 
 查看 node-sass 的版本是4.14.1，从 node-sass 的官方看到这个版本是不支持 node v16版本的，要从 node-sass 6.0.0 之后才开始支持。尝试安装最新版本的 node-sass 报错依旧，探索了几天觉得应该是 node-gyp 环境问题造成的。
 
+## node-gyp
+
+[gyp](https://gyp.gsrc.io/index.md) 是一个用来生成项目文件的工具，一开始是设计给 chromium 项目用的，生成项目文件后可以调用GCC、vsbuild、xcode等不通平台的编译工具进行编译。node 程序中需要调用一些其他语言编写的工具或dll，因此首先需要编译一下，否则会出现跨平台后无法正常使用的问题。
+
+
+## 解题思路
+
 为了能够
 
 1. 初始化一个Hexo博客，尝试安装 hexo-renderer-sass看是否报错。搞明白npm install hexo-renderer-sass 的过程，看是哪个环境依赖导致的问题。
@@ -55,10 +65,6 @@ v16.5.0
 * install.js
 * run-script.js
 * 
-
-## node-gyp
-
-[gyp](https://gyp.gsrc.io/index.md) 是一个用来生成项目文件的工具，一开始是设计给 chromium 项目用的，生成项目文件后可以调用GCC、vsbuild、xcode等不通平台的编译工具进行编译。node 程序中需要调用一些其他语言编写的工具或dll，因此首先需要编译一下，否则会出现跨平台后无法正常使用的问题。
 
 ## 因祸得福
 
