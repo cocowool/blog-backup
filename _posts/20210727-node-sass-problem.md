@@ -50,7 +50,11 @@ v16.5.0
 2. 初始化一个npm项目，安装并调用node-sass看是否报错。
 3. 创建一个新的hexo插件，支持sass的编译。
 
+## npm install过程
 
+* install.js
+* run-script.js
+* 
 
 ## node-gyp
 
