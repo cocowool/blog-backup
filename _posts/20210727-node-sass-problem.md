@@ -54,17 +54,72 @@ v16.5.0
 
 ## 解题思路
 
-为了能够
+通过查看 node-sass 官方页面介绍，基本明确是当前使用的 node-sass 版本无法在高版本Node下正常运行，因此需要升级 node-sass。升级 node-sass 又依赖 node-gyp 的更高版本。因此，依次升级 node-gyp 、node-sass 后本地的问题就解决了。为了验证解决问题的思路和方法，设计了两个场景来一步一步寻找定位问题的根本原因。 
 
-1. 初始化一个Hexo博客，尝试安装 hexo-renderer-sass看是否报错。搞明白npm install hexo-renderer-sass 的过程，看是哪个环境依赖导致的问题。
-2. 初始化一个npm项目，安装并调用node-sass看是否报错。
-3. 创建一个新的hexo插件，支持sass的编译。
+* **场景一**：初始化一个Hexo博客，尝试安装 hexo-renderer-sass看是否报错。搞明白npm install hexo-renderer-sass 的过程，看是哪个环境依赖导致的问题。
+* **场景二**：初始化一个npm项目，安装并调用node-sass看是否报错，验证项目对node-sass引用情况。
 
-## npm install过程
+随着越来越多的人将Node版本升级，使用到 hexo-renderer-sass 插件的朋友应该都会遇到这个问题，目前看到插件作者还没有更新的动态，后续我可能会提交一个 request 或创建一个新的hexo插件，来支持更高版本的Node。
 
-* install.js
-* run-script.js
-* 
+## 场景一：问题复现
+
+```sh
+$ hexo init test-blog
+...
+INFO  Start blogging with Hexo!
+```
+
+看到成功信息后，使用 `hexo server` 检查能否正常打开页面。然后安装 hexo-renderer-sass 插件可以看到文章开头的报错。
+
+```sh
+$ npm install --save hexo-renderer-sass
+npm WARN old lockfile 
+npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+npm WARN old lockfile 
+npm WARN old lockfile This is a one-time fix-up, please be patient...
+npm WARN old lockfile 
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm ERR! code 1
+npm ERR! path /Users/shiqiang/Projects/www.edulinks.cn/0806-test-blog/node_modules/node-sass
+npm ERR! command failed
+npm ERR! command sh -c node-gyp rebuild
+npm ERR! gyp info it worked if it ends with ok
+npm ERR! gyp info using node-gyp@3.8.0
+npm ERR! gyp info using node@16.5.0 | darwin | x64
+npm ERR! gyp ERR! configure error 
+npm ERR! gyp ERR! stack Error: Command failed: /usr/bin/python3 -c import sys; print "%s.%s.%s" % sys.version_info[:3];
+npm ERR! gyp ERR! stack   File "<string>", line 1
+npm ERR! gyp ERR! stack     import sys; print "%s.%s.%s" % sys.version_info[:3];
+npm ERR! gyp ERR! stack                       ^
+npm ERR! gyp ERR! stack SyntaxError: invalid syntax
+npm ERR! gyp ERR! stack 
+npm ERR! gyp ERR! stack     at ChildProcess.exithandler (node:child_process:397:12)
+npm ERR! gyp ERR! stack     at ChildProcess.emit (node:events:394:28)
+npm ERR! gyp ERR! stack     at maybeClose (node:internal/child_process:1067:16)
+npm ERR! gyp ERR! stack     at Socket.<anonymous> (node:internal/child_process:453:11)
+npm ERR! gyp ERR! stack     at Socket.emit (node:events:394:28)
+npm ERR! gyp ERR! stack     at Pipe.<anonymous> (node:net:672:12)
+npm ERR! gyp ERR! System Darwin 19.6.0
+npm ERR! gyp ERR! command "/usr/local/Cellar/node/16.5.0/bin/node" "/Users/shiqiang/Projects/www.edulinks.cn/0806-test-blog/node_modules/.bin/node-gyp" "rebuild"
+npm ERR! gyp ERR! cwd /Users/shiqiang/Projects/www.edulinks.cn/0806-test-blog/node_modules/node-sass
+npm ERR! gyp ERR! node -v v16.5.0
+npm ERR! gyp ERR! node-gyp -v v3.8.0
+npm ERR! gyp ERR! not ok
+```
+
+此时本地的环境信息如下。
+```sh
+$ node --version                       
+v16.5.0
+$ npm --version                        
+7.20.2
+$ node-gyp --version
+v8.1.0
+$ sass --version     
+1.35.2 compiled with dart2js 2.13.4
+````
 
 ## 因祸得福
 
@@ -81,17 +136,10 @@ v16.5.0
 * `npm install /local/plugin/path` 可以本地安装npm包
 * 
 
-## 问题复现
+## npm install过程
 
-```sh
-$ hexo init test-blog
-...
-INFO  Start blogging with Hexo!
-```
-
-看到成功信息后，使用 `hexo server` 检查能否正常打开页面。
-
-
+* install.js
+* run-script.js
 
 ## 另外一个问题
 
