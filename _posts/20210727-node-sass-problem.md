@@ -121,25 +121,35 @@ $ sass --version
 1.35.2 compiled with dart2js 2.13.4
 ````
 
-## 因祸得福
+查看 package.json 显示对于 node-sass 的版本要求是 4.* 版本。Node升级到16版本以上之后，必须是node-sass 6.0以上的版本才支持。`npm install` 的时候，默认是从npmjs下载，但是作者没有更新这个版本依赖，因此想到将相关代码 fork 到我的仓库中，然后通过github安装。可以将 package.json 修改为下面
 
-本次熟悉了几个命令
+```sh
+"hexo-renderer-sass": "github:cocowool/hexo-renderer-sass",
+```
 
-* `npm config set/get` 设置npm的配置或读取npm的配置
-* `npm config get cache` 查看npm缓存目录的位置
-* `npm config get prefix` 查看全局npm安装的路径，查到之后可以在 `${prefixUrl}/lib/node_modules/npm` 下看到npm的源码，例如想要查看 `npm install` 的代码，可以在 `/usr/local/lib/node_modules/npm/lib/install.js` 中看到
-* `npm config ls -l` 查看npm的详细配置
-* `npm ls -g` 查看npm安装的全局包
-* `npm outdated -g` 查看需要更新的全局包，不加参数表示查看本地需要更新的包
-* `npm uninstall -g hexo` 卸载全局安装的包
-* `npm update -g hexo` 更新全局安装的包 
-* `npm install /local/plugin/path` 可以本地安装npm包
-* 
+然后重新执行 `npm install` 就可以正常安装了。
 
-## npm install过程
-
-* install.js
-* run-script.js
+```sh
+npm http fetch GET 200 https://codeload.github.com/cocowool/hexo-renderer-sass/tar.gz/64987aa78f10d6622915bf4350407b238b1b0448 1110ms (cache miss)
+npm timing reifyNode:node_modules/hexo-renderer-sass Completed in 1453ms
+npm timing reify:unpack Completed in 1462ms
+npm timing reify:unretire Completed in 1ms
+npm timing build:queue Completed in 5ms
+npm timing build:link:node_modules/node-sass Completed in 3ms
+npm timing build:link:node_modules/nopt Completed in 3ms
+npm timing build:link:node_modules/node-gyp Completed in 3ms
+npm timing build:link:node_modules/sass-graph Completed in 3ms
+npm timing build:link:node_modules/rimraf Completed in 3ms
+npm timing build:link:node_modules/uuid Completed in 3ms
+npm timing build:link:node_modules/sshpk Completed in 3ms
+npm timing build:link:node_modules/normalize-package-data/node_modules/semver Completed in 3ms
+npm timing build:link:node_modules/node-gyp/node_modules/semver Completed in 3ms
+npm timing build:link:node_modules/read-pkg/node_modules/semver Completed in 3ms
+npm timing build:link Completed in 4ms
+npm info run node-sass@6.0.1 install node_modules/node-sass node-gyp rebuild
+npm info run node-sass@6.0.1 install { code: 0, signal: null }
+npm timing build:run:install:node_modules/node-sass Completed in 104719ms
+```
 
 ## 另外一个问题
 
@@ -181,6 +191,23 @@ $ node scripts/build -f  # use -d switch for debug release
 # the binary in vendor directory.
 ```
 
+## 因祸得福
+
+本次熟悉了几个命令
+
+* `npm config set/get` 设置npm的配置或读取npm的配置
+* `npm config get cache` 查看npm缓存目录的位置，默认位于 `/Users/shiqiang/.npm/_cacache`
+* `npm config get prefix` 查看全局npm安装的路径，查到之后可以在 `${prefixUrl}/lib/node_modules/npm` 下看到npm的源码，例如想要查看 `npm install` 的代码，可以在 `/usr/local/lib/node_modules/npm/lib/install.js` 中看到
+* `npm config ls -l` 查看npm的详细配置
+* `npm ls -g` 查看npm安装的全局包
+* `npm outdated -g` 查看需要更新的全局包，不加参数表示查看本地需要更新的包
+* `npm uninstall -g hexo` 卸载全局安装的包
+* `npm update -g hexo` 更新全局安装的包 
+* `npm install /local/plugin/path` 可以本地安装npm包
+* `npm install --verbose` 可以看到安装过程的详细信息
+* `npm cache clean --force` 强制清理本地缓存
+
+
 ## Sass
 
 在今年2月份的时候，还写了一篇介绍SASS的文章《[SASS学习笔记](http://www.edulinks.cn/2021/02/08/20210208-sass-notes/)》，这篇中仅记录了语法方面的知识，没有介绍安装使用方面的内容。
@@ -193,10 +220,6 @@ $ sass --version
 ```
 
 也可以使用 `npm install -g sass` 命令来安装JS版本的sass。
-
-
-
-
 
 
 ## 参考资料
