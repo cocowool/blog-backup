@@ -119,7 +119,7 @@ $ node-gyp --version
 v8.1.0
 $ sass --version     
 1.35.2 compiled with dart2js 2.13.4
-````
+```
 
 查看 package.json 显示对于 node-sass 的版本要求是 4.* 版本。Node升级到16版本以上之后，必须是node-sass 6.0以上的版本才支持。`npm install` 的时候，默认是从npmjs下载，但是作者没有更新这个版本依赖，因此想到将相关代码 fork 到我的仓库中，然后通过github安装。可以将 package.json 修改为下面
 
@@ -204,6 +204,7 @@ $ node scripts/build -f  # use -d switch for debug release
 * `npm uninstall -g hexo` 卸载全局安装的包
 * `npm update -g hexo` 更新全局安装的包 
 * `npm install /local/plugin/path` 可以本地安装npm包
+* ` npm install --save github:cocowool/hexo-renderer-sass --verbose` 可以从github上安装相关的依赖包
 * `npm install --verbose` 可以看到安装过程的详细信息
 * `npm cache clean --force` 强制清理本地缓存
 
@@ -232,5 +233,5 @@ $ sass --version
 6. [node-sass](https://github.com/sass/node-sass)
 7. [sass lang](https://sass-lang.com)
 8. [Github node-gyp](https://github.com/nodejs/node-gyp)
-9. 
+9. [npm 安装github包的方式](https://www.cnblogs.com/mybilibili/p/10482192.html)
 
