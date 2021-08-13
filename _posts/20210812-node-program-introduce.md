@@ -3,27 +3,24 @@ title: Node.js 语言介绍
 date: 2021-08-10 23:15:54
 tags:
 keywords: node.js, javascript
-description: 
+description: JavaScript从1995年出现之后，经历了快速的发展和应用，基本上成为前端编程语言的标准选择。Node.js 做为一个异步事件驱动的 JavaScript 运行时，Node.js 被设计用来构建可扩展的网络应用。
 ---
 
-## Node.js 介绍
-Node.js是可以在服务端运行Javascript的平台，具备单线程、异步式I/O、事件驱动式程序设计模型，这些带来了性能的提升，减少了多线程程序设计的复杂性，进而提高了开发效率。
+## JavaScript历史
 
-Javascript是由ECMAScript、文档对象模型（DOM）、浏览器对象模型（BOM）组成。
-
-## Javascript历史
-
-1995年网景公司的Brendan Eich设计实现了Javascript，最初名称为LiveWire，后来改名为LiveScript，其目标是为非专业的开发人员提供一个方便的工具。与此同时，Sun公司在推广Java applet，但是applet速度慢而且操作不便。趁此机会，网景公司与Sun合作完成了LiveScript的实现，并在Navigator 2.0发布之前，将其改名为JavaScript。
-
-1996年微软的Windows95推出了Internet Explorer3，支持JScript和VBScript。
+1995年网景公司的Brendan Eich设计实现了JavaScript，最初名称为LiveWire，后来改名为LiveScript，其目标是为非专业的开发人员提供一个方便的工具。与此同时，Sun公司在推广Java applet，但是applet速度慢而且操作不便。趁此机会，网景公司与Sun合作完成了LiveScript的实现，并在Navigator 2.0发布之前，将其改名为JavaScript。1996年微软的Windows95推出了Internet Explorer3，支持JScript和VBScript。
 
 由于JavaScript没有一个标准，在不同的浏览器之间存在兼容性问题。1996年，JavaScript标准由诸多厂商共同提交给ECMA（欧洲计算机制造商协会），ECMA通过了标准ECMA-262，也就是ECMAScript。紧接着国际化标准组织也采纳了这个标准ISO-16262。
 
-为了统一JavaScript在浏览器之外的实现，CommonJS诞生了。它的终极目标是制定一个像C++标准库一样的规范，使得基于CommonJS API的应用可以在不同环境下运行。
 
-## 两个规范
-- EcmaScript，Javascript的浏览器端规范
-- CommonJS，Javascript的服务器端规范
+## Node.js 介绍
+Node.js是可以在服务端运行JavaScript的平台，具备单线程、异步式I/O、事件驱动式程序设计模型，这些带来了性能的提升，减少了多线程程序设计的复杂性，进而提高了开发效率。
+
+2011年3月18日，Node v0.4.3版本发布。到2021年8月11日 Node v16.6.2版本发布，十年的时间Node.js得到了快速的发展。从百度指数上可以看到，Node.js从发布以来一直快速增长，到目前的热度基本上与JavaScript持平了。
+
+![image-20210813083633062](20210812-node-program-introduce/image-20210813083633062.png)
+
+写过JavaScript的同学可能清楚，在JavaScript语言中没有包、模块的概念，这有点阻碍JavaScript实现工程化的应用。为了统一JavaScript在浏览器之外的实现，CommonJS项目诞生了。它的终极目标是制定一个像C++标准库一样的规范，提供标准化的JavaScript模块单元，使得基于CommonJS 规范的应用可以在不同环境下运行。
 
 ## 模块加载机制
 Node.js的模块分为两类：
