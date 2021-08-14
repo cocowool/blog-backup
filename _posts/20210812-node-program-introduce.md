@@ -22,8 +22,13 @@ Node.js是可以在服务端运行JavaScript的平台，具备单线程、异步
 
 写过JavaScript的同学可能清楚，在JavaScript语言中没有包、模块的概念，这有点阻碍JavaScript实现工程化的应用。为了统一JavaScript在浏览器之外的实现，CommonJS项目诞生了。它的终极目标是制定一个像C++标准库一样的规范，提供标准化的JavaScript模块单元，使得基于CommonJS 规范的应用可以在不同环境下运行。
 
-## 模块加载机制
-Node.js的模块分为两类：
+Node.js 遵循CommonJS规范，这就使得使用Node.js来开发大型的后端应用成为可能。
+
+## 模块机制
+在Node.js中，每个文件就是一个模块，都有自己的作用域。在一个文件里面定义的变量、函数、类都是私有的，其他文件不可见。每个模块内部可以使用 `require` 来加载某个模块，`module` 表示当前模块，是一个保存了当前模块信息的对象。`exports` 是 `module` 上的一个属性，保存了当前模块要导出的借口或者变量。
+
+分为两类：
+
 * 核心模块：Node.js标准API中提供的模块，如fs、http、net、vm等，编译成了二进制代码，可以直接通过`require`获取
 * 文件模块：存储为单独的文件（或文件夹）的模块，可能是js代码、json代码或编译好的C/C++代码（后缀为`.node`）
 
@@ -69,3 +74,5 @@ Npm是基于Node.js的Javascript包管理工具，全称为 Node Package Manager
 ### 参考资料
 1. [Node.js 开发指南 BYVoid编著]()
 2. [npm中package.json详解](https://www.cnblogs.com/zourong/p/5943224.html)
+3. [CommonJS：不是前端却革命了前端](https://zhuanlan.zhihu.com/p/113009496)
+
