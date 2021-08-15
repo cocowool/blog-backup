@@ -8,7 +8,7 @@ description: JavaScript从1995年出现之后，经历了快速的发展和应�
 
 ## JavaScript历史
 
-1995年网景公司的Brendan Eich设计实现了JavaScript，最初名称为LiveWire，后来改名为LiveScript，其目标是为非专业的开发人员提供一个方便的工具。与此同时，Sun公司在推广Java applet，但是applet速度慢而且操作不便。趁此机会，网景公司与Sun合作完成了LiveScript的实现，并在Navigator 2.0发布之前，将其改名为JavaScript。1996年微软的Windows95推出了Internet Explorer3，支持JScript和VBScript。
+1995年网景公司的Brendan Eich设计实现了JavaScript，最初名称为LiveWire，后来改名为LiveScript，其起因是因为当时网络很昂贵，为了避免将页面发送给服务端后才进行校验而开发了前端校验的编程语言，同时也为非专业的开发人员提供一个方便的工具。与此同时，Sun公司在推广Java applet，但是applet速度慢而且操作不便。趁此机会，网景公司与Sun合作完成了LiveScript的实现，并在Navigator 2.0发布之前，将其改名为JavaScript。1996年微软的Windows95推出了Internet Explorer3，支持JScript和VBScript。
 
 由于JavaScript没有一个标准，在不同的浏览器之间存在兼容性问题。1996年，JavaScript标准由诸多厂商共同提交给ECMA（欧洲计算机制造商协会），ECMA通过了标准ECMA-262，也就是ECMAScript。紧接着国际化标准组织也采纳了这个标准ISO-16262。
 
@@ -22,7 +22,7 @@ Node.js是可以在服务端运行JavaScript的平台，具备单线程、异步
 
 写过JavaScript的同学可能清楚，在JavaScript语言中没有包、模块的概念，这有点阻碍JavaScript实现工程化的应用。为了统一JavaScript在浏览器之外的实现，CommonJS项目诞生了。它的终极目标是制定一个像C++标准库一样的规范，提供标准化的JavaScript模块单元，使得基于CommonJS 规范的应用可以在不同环境下运行。
 
-Node.js 遵循CommonJS规范，这就使得使用Node.js来开发大型的后端应用成为可能。
+Node.js 最初遵循CommonJS规范，这就使得使用Node.js来开发大型的后端应用成为可能，并且也能够很方便的转化为浏览器支持的代码（如Webpack等）。在Node.js v13.2.0版本之后，Node.js 默认打开了ES6 Module的支持。ES6（EcmaScript 6）可以较好的兼容后端与前端的开发需求，目前已经成为主要的标准。
 
 ## 模块机制
 在Node.js中，每个文件就是一个模块，都有自己的作用域。在一个文件里面定义的变量、函数、类都是私有的，其他文件不可见。每个模块内部可以使用 `require` 来加载某个模块，`module` 表示当前模块，是一个保存了当前模块信息的对象。`exports` 是 `module` 上的一个属性，保存了当前模块要导出的借口或者变量。
