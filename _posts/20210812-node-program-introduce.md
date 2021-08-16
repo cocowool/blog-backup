@@ -10,7 +10,7 @@ description: JavaScript从1995年出现之后，经历了快速的发展和应�
 
 1995年网景公司的Brendan Eich设计实现了JavaScript，最初名称为LiveWire，后来改名为LiveScript，其起因是因为当时网络很昂贵，为了避免将页面发送给服务端后才进行校验而开发了前端校验的编程语言，同时也为非专业的开发人员提供一个方便的工具。与此同时，Sun公司在推广Java applet，但是applet速度慢而且操作不便。趁此机会，网景公司与Sun合作完成了LiveScript的实现，并在Navigator 2.0发布之前，将其改名为JavaScript。1996年微软的Windows95推出了Internet Explorer3，支持JScript和VBScript。
 
-由于JavaScript没有一个标准，在不同的浏览器之间存在兼容性问题。1996年，JavaScript标准由诸多厂商共同提交给ECMA（欧洲计算机制造商协会），ECMA通过了标准ECMA-262，也就是ECMAScript。紧接着国际化标准组织也采纳了这个标准ISO-16262。
+由于JavaScript没有一个标准，在不同的浏览器之间存在兼容性问题。1996年，JavaScript标准由诸多厂商共同提交给ECMA（欧洲计算机制造商协会），ECMA通过了标准ECMA-262，也就是ECMAScript。紧接着国际化标准组织也采纳了这个标准ISO-16262。1999年12月，ECMAScript 3.0发布并获得了巨大的成功，在业界得到了广泛的支持，成为通行标准。2015年6月，ECMAScript 6正式发布，并且更名为「ECMAScript 2015」，即是现在的ES6。
 
 
 ## Node.js 介绍
