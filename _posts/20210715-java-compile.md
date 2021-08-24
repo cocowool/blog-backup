@@ -8,12 +8,17 @@ description: 介绍Java编译的方法和参数。
 
 ## 编译
 
-### javac 编译
+javac 命令用于编译Java源文件，语法为：`javac [ options ] [ sourcefiles ]
+
+如下示例：
 ```sh
 $ javac Main.java
 $ javac -cp 1.jar:./lib/2.jar Main.java
 $ javac -Djava.ext.dirs=./lib Main.java
 ```
+其中 options 的主要选项有：
+* `-sourcepath <path>`	指定 Java 源文件的路径
+* 
 
 ### 注意事项
 * 一个`java`文件中可以有多个类，但是只能有一个用`public`修饰的类，并且这个类的名字要和`java`文件的名字相同（区分大小写）。
@@ -51,10 +56,13 @@ $ java -Xbootclasspath/a:lib/metrics-core-2.2.0.jar:lib/slf4j-api-1.7.2.jar -jar
 $ java -Djava.ext.dirs=~/lib:/project/lib -cp /project/lib com.edulinks.Main
 ```
 
-第三种修改MANIFEST，第四种使用自定义的Classloaer。
+第三种修改MANIFEST。
+
+第四种使用自定义的Classloaer。
 
 ## 参考资料
 1. [cmd命令javac运行类（依赖jar包）](https://blog.csdn.net/myfmyfmyfmyf/article/details/53179395)
 2. [一个.java文件中放多个类的问题](https://www.cnblogs.com/taizhang/p/9001539.html)
 3. [JAVA一个文件写多个类 ( 同级类 ) 规则和注意点](https://blog.csdn.net/q5706503/article/details/84349692)
 4. [java -jar命令运行jar包时指定外部依赖jar包](https://blog.csdn.net/w47_csdn/article/details/80254459)
+5. [JDK中的 javac / java / jar 命令](https://www.cnblogs.com/pengxl/archive/2010/12/10/1902082.html)
