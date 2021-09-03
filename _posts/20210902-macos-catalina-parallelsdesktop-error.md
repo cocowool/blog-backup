@@ -2,7 +2,8 @@
 title: 记录一次 Parallels Desktop 故障解决过程
 date: 2021-09-02 21:54:10
 tags:
-keywords, macOS , Catalina , Parallels Desktop
+keywords: macOS , Catalina , Parallels Desktop
+description: 记录一次 Parallels Desktop 虚拟机无法打开故障解决的过程。
 ---
 
 Parallels Desktop 是MacOS上的商用虚拟机管理软件，同类软件还有VMWare旗下的商用软件VMWare Fusion，以及Oracle旗下的开源软件VirtualBox。
