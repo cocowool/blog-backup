@@ -1,5 +1,5 @@
 ---
-title: Linux 统计文件属性的小脚本
+title: 统计文件夹下某类文件大小的小脚本
 date: 2021-09-04 08:00:45
 tags:
 keywords: Linux, 统计文件, stat, 使用率
