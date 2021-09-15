@@ -77,7 +77,11 @@ $ ./bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic test
 
 ## 参考资料
 1. [kafka常用命令](https://blog.csdn.net/zxy987872674/article/details/72493128)
+
 2. [Kafka【第一篇】Kafka集群搭建](https://www.cnblogs.com/luotianshuai/p/5206662.html)
+
 3. [kafka-producer生产者案例](https://blog.csdn.net/qq_31289187/article/details/81809014)
+
 4. [How to list all available Kafka brokers in a cluster?](https://stackoverflow.com/questions/40146921/how-to-list-all-available-kafka-brokers-in-a-cluster)
-5. []()
+
+   
