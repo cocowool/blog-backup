@@ -10,17 +10,25 @@ description: 本文介绍Kafka的参数和调优配置。
 
 ### Consumer 参数
 
-| 名称 | 描述 | 类型 | 默认值 |  | 重要性 |
-| --- | --- | --- | --- | --- | --- |
-| bootstrap.servers | Kafka集群初始化连接的服务器列表。 |  |  |  | 高 |
-| group.id | 表示消费者组的唯一标识。This property is required if the consumer uses either the group management functionality by using subscribe(topic) or the Kafka-based offset management strategy. | 字符串 |  |  | 高 |
-| heartbeat.interval.ms | 期待的到consumer coordinator的心跳时间。心跳确保消费者的会话保持存活，以便在有新的消费者加入或离开时进行rebalance。这个值必须小于`session.timeout.ms`，但一般不应高于其值的三分之一。 | 整型 | 3000 |  | 高 |
-| session.timeout.ms |  | 整型 | 10000 |  | 高 |
-|  |  |  |  |  |  |
+| 名称 | 描述 |
+| --- | --- |
+| bootstrap.servers | Kafka集群初始化连接的服务器列表。 |
+| group.id | 表示消费者组的唯一标识。This property is required if the consumer uses either the group management functionality by using subscribe(topic) or the Kafka-based offset management strategy. |
+| heartbeat.interval.ms | 期待的到consumer coordinator的心跳时间。心跳确保消费者的会话保持存活，以便在有新的消费者加入或离开时进行rebalance。这个值必须小于`session.timeout.ms`，但一般不应高于其值的三分之一。 |
+| session.timeout.ms ||
+| zookeeper.connect |指定zookeeper的连接的字符串，格式是 `hostname:port` ，此处 host 和 port 都是 zookeeper server 的host 和 port，为避免某个 zookeeper 机器宕机之后失联，你可以指定多个 `hostname:port`，使用逗号作为分隔：`hostname1:port1, hostname2:port2, hostname3:port3` 可以在zookeeper连接字符串中加入zookeeper的chroot路径，此路径用于存放他自己的数据，方式：`hostname1:port1, hostname2:port2, hostname3:port3/chroot/path` |
+| socket.timeout.ms |默认为 30*100，网络请求的超时限制。真实的超时限制是  max.fetch.wait + socket.timeout.ms |
+| socket.receive.buffer.bytes |默认为 64*1024，设置 socket 用于接收网络请求的缓存大小 |
+| fetch.message.max.bytes |默认为 1024*1024，每次fetch请求中，针对每次fetch消息的最大字节数。这些字节将会督导用于每个partition的内存中，因此，此设置将会控制consumer所使用的memory大小。这个fetch请求尺寸必须至少和server允许的最大消息尺寸相等，否则，producer可能发送的消息尺寸大于consumer所能消耗的尺寸。 |
+
+
 
 ### Broker
-* auto.create.topics.enable=true 允许消费者自动创建不存在的topic
-* delete.topic.enable=true 删除topic的时候同时进行物理删除
+
+| 名称 | 描述 |
+| --- | --- |
+| auto.create.topics.enable | true 表示允许消费者自动创建不存在的topic |
+| delete.topic.enable | true 删除topic的时候同时进行物理删除 |
 
 ## 调优
 Kafka调优大概分为几个方面：
