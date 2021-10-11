@@ -5,7 +5,70 @@ tags:
 keywords: spark, 流式计算
 ---
 
+## 快速示例
+
+> 本文基于Spark 2.4.1
+
+### python 交互式分析
+Spark支持交互式分析数据，但是仅支持`scala`和`python`语言。
+下面是使用python来分析一段莎士比亚小说文字的示例。
+```python
+$ ./bin/pyspark 
+>>> textFile = spark.read.text("/Users/shiqiang/Desktop/shakespeare.txt")
+>>> textFile.count()
+1995                                                                            
+>>> textFile.first()
+Row(value=u"Scanner's Notes: What this is and isn't. This was taken from")
+>>> lineWithNo = textFile.filter(textFile.value.contains("no"))
+>>> lineWithNo.count()
+331
+```
+
+### Java示例程序
+一个简单的在本地运行的处理本地文件的演示程序。
+```java
+import org.apache.spark.sql.SparkSession;
+import org.apache.spark.api.java.function.FilterFunction;
+import org.apache.spark.sql.Dataset;
+
+public class SimpleApp {
+    public static void main(String[] args){
+        String logFile = "/Users/shiqiang/Desktop/shakespeare.txt";
+
+        SparkSession spark = SparkSession.builder().appName("Simple Application").getOrCreate();
+        Dataset<String> logData = spark.read().textFile(logFile).cache();
+
+        long numNos = logData.filter((FilterFunction<String>) x -> x.contains("no")).count();   
+
+        long numYes = logData.filter((FilterFunction<String>) s->s.contains("yes")).count();
+        System.out.println("Lines with no : " + numNos + ", with yes : " + numYes);
+
+
+        spark.stop();
+    }
+}
+```
+
+具体代码可以参考我的[Github]()
+
+### Maser日志
+Spark启动后，默认会在程序的`logs`目录下产生名为`spark-{username}-org.apache-spark.deploy.master.Master-1-{hostname}.out`的日志。
+
+日志中可以看到spark master的启动命令。
+```sh
+$ java -cp /Users/rousseau/Projects/tools/spark-2.4.1-bin-hadoop2.7/conf/:/Users/rousseau/Projects/tools/spark-2.4.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host bogon --port 7077 --webui-port 8080
+```
+
+### Worker日志
+Spark启动后，默认会在程序的`logs`目录下产生名为`spark-{username}-org.apache-spark.deploy.master.Worker-1-{hostname}.out`的日志。
+
+日志中可以看到spark worker的启动命令。
+```sh
+$ java -cp /Users/rousseau/Projects/tools/spark-2.4.1-bin-hadoop2.7/conf/:/Users/rousseau/Projects/tools/spark-2.4.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://bogon:7077
+```
+
 ## Spark 模型
+
 Spark模型包含了几个重要概念。
 > * **Application**: 是我们编写的程序，用于生成SparkContext。
 > * **Job**: 所谓 job，就是由一个 rdd 的 action算子触发的动作，可以简单的理解为，当你需要执行一个 rdd 的 action 的时候，会生成一个 job。
@@ -56,11 +119,16 @@ RDD有两种操作算子`Transfromation`和`Action`。
 * sc.parallelize(data)
 * sc.textfile
 
-## RDD cache 的几种情况
+### RDD cache 的几种情况
 * using an RDD many times
 * performing multiple actions on the same RDD
 * for long chains of (or very expensive) transformations
 * for debug memory issues
+
+## 广播变量
+> Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks. They can be used, for example, to give every node a copy of a large input dataset in an efficient manner. Spark also attempts to distribute broadcast variables using efficient broadcast algorithms to reduce communication cost.
+
+广播变量是Spark中另一种共享变量，允许程序将一个只读的变量发送到Executor，一个Executor只需要在第一个Task启动时，获得一份Broadcast数据，之后的Task都从本节点的BlockManager中获取相关数据。
 
 ## 参考资料
 1. [Spark之深入理解RDD结构](https://blog.csdn.net/u011094454/article/details/78992293)
