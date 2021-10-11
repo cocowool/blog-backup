@@ -136,4 +136,3 @@ RDD有两种操作算子`Transfromation`和`Action`。
 3. [初识Apache Spark](https://www.jianshu.com/p/59b0601d7ad2)
 4. [Java Spark 简单示例（一）](https://www.jianshu.com/p/71556ae22508)
 5. [Java Spark 简单示例（二）累加器 广播变量](https://www.jianshu.com/p/73b39f423a8b)
-6. [](https://stackoverflow.com/questions/28981359/why-do-we-need-to-call-cache-or-persist-on-a-rdd)
