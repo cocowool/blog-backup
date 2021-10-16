@@ -6,35 +6,53 @@ keywords: spark, 流式计算
 description: 整理的关于Spark流式计算的一些学习资料。
 ---
 
-因为Spark集中使用内存的特性，为Spark程序分配超过100G的堆空间是很常见的事情，这种情况在传统的Java应用中却不常见。
+Spark 应用在进行问题排查或性能优化分析时，往往有固定的套路和方法，本文总结了过去处理Spark性能问题时的常用手段，希望能够帮到大家。
 
-## 查看设备性能
-### CPU
+## 查看操作系统的资源使用情况
+
+### CPU使用情况
 ```sh
 $ top
 ```
+检查CPU使用率最常用的是 `top` 命令，除此之外还有很多其他的方法，具体可以参考 [查看Linux CPU使用率的7种方法](http://www.edulinks.cn/2021/04/09/20210409-linux-cpu-commands/)
+
 ### 内存
+
 ```sh
 $ free -h
 ```
+使用 free 命令可以看到服务器的内容总量以及使用的情况。
+
 ### 磁盘
+
 ```sh
 $ df -lh
 $ iostat -x 1s 10
 ```
 
-使用`vmstat`、`netstat`命令查看。
+磁盘主要包括空间和使用率的情况，使用率可以使用`vmstat`、`netstat`命令查看。
 
-## 查看进程内存
+## 查看应用情况
+
+### 查看进程内存
+
 ```sh
 $ jmap -heap processId
 ```
 
-## 查看GC情况
+> 因为Spark集中使用内存的特性，为Spark程序分配超过100G的堆空间是很常见的事情，这种情况在传统的Java应用中却不常见。
+>
+
+### 查看GC情况
 
 ```sh
 $ jstat -gcutil processId 1s 60
 ```
+
+### 查看HeapDump
+使用`-XX:HeapDumpOnOutOfMemoryError`可以在发生OOM的时候自动生成DUMP文件。
+
+RDD使用的空间越小，Heap使用的空间就越大，更大的Heap空间带来更高的内存使用效率。
 
 ### 打开Executor的GC日志
 ```sh
@@ -51,7 +69,7 @@ $ jstat -gcutil processId 1s 60
 
 当Spark GC频繁发生或者持续很长时间的时候，说明内存没有被有效使用，可以通过强制清理缓存的RDD来提高内存使用效率。
 
-### 优化建议
+## 优化建议
 * 降低`InitiatingHeapOccupancyPercent`的值，默认为45.
 * 增加`ConcGCThreads`的值。
 * 增加`G1HeapRegionSize`的值，避免创建过大的Heap区域。如果确实程序需要很多的大对象，就需要仔细的调整`-XX:G1HeapWastePercent -XX:G1MixedGCLiveThresholdPercent`参数来避免这种情况。
@@ -59,11 +77,6 @@ $ jstat -gcutil processId 1s 60
 * 对于长时间运行的程序，可以使用`AlwaysPreTouch`参数，这样JVM在启动的时候就会向OS申请必须的内存，从而避免动态的调整。
 
 > 参考配置 `-XX:+UseG1GC -XX:+PrintFlagsFinal -XX:+PrintReferenceGC -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintAdaptiveSizePolicy -XX:+UnlockDiagnosticVMOptions -XX:+G1SummarizeConcMark -Xms88g -Xmx88g -XX:InitiatingHeapOccupancyPercent=35 -XX:ConcGCThread=20`
-
-## 查看HeapDump
-使用`-XX:HeapDumpOnOutOfMemoryError`可以在发生OOM的时候自动生成DUMP文件。
-
-RDD使用的空间越小，Heap使用的空间就越大，更大的Heap空间带来更高的内存使用效率。
 
 ## 相关参数
 * spark.core.connection.ack.wait.timeout 避免因网络或GC造成任务丢失
@@ -86,13 +99,13 @@ RDD使用的空间越小，Heap使用的空间就越大，更大的Heap空间带
 
 
 ## 参考资料
- 1. [Spark作业性能优化](https://www.jianshu.com/p/feb9c82ac0a5)
- 2. [Spark 任务执行排查慢的问题排查-2](https://www.jianshu.com/p/1f45bb8a81b3)
- 3. [Spark job 异常排查-1](https://www.jianshu.com/p/7c74b8690322)
- 4. [analyzing java garbage collection logs debugging optimizing apache sparkTuning Java Garbage Collection for Apache Spark Applications](https://anish749.github.io/spark/analyzing-java-garbage-collection-logs-debugging-optimizing-apache-spark/)
- 5. [Tuning Java Garbage Collection for Apache Spark Applications](https://databricks.com/blog/2015/05/28/tuning-java-garbage-collection-for-spark-applications.html)
- 6. [Troubleshooting Long GC Pauses](https://blogs.oracle.com/poonam/troubleshooting-long-gc-pauses)
- 7. [Garbage First Garbage Collector Tuning](https://www.oracle.com/technetwork/articles/java/g1gc-1984535.html)
- 8. 1. [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
-2. [Spark Streaming Logging Configuration](http://shzhangji.com/blog/2015/05/31/spark-streaming-logging-configuration/)
-3. [Analyzing Java Garbage Collection Logs for debugging and optimizing Apache Spark jobs](https://anish749.github.io/spark/analyzing-java-garbage-collection-logs-debugging-optimizing-apache-spark/)
+1. [Spark作业性能优化](https://www.jianshu.com/p/feb9c82ac0a5)
+2. [Spark 任务执行排查慢的问题排查-2](https://www.jianshu.com/p/1f45bb8a81b3)
+3. [Spark job 异常排查-1](https://www.jianshu.com/p/7c74b8690322)
+4. [analyzing java garbage collection logs debugging optimizing apache sparkTuning Java Garbage Collection for Apache Spark Applications](https://anish749.github.io/spark/analyzing-java-garbage-collection-logs-debugging-optimizing-apache-spark/)
+5. [Tuning Java Garbage Collection for Apache Spark Applications](https://databricks.com/blog/2015/05/28/tuning-java-garbage-collection-for-spark-applications.html)
+6. [Troubleshooting Long GC Pauses](https://blogs.oracle.com/poonam/troubleshooting-long-gc-pauses)
+7. [Garbage First Garbage Collector Tuning](https://www.oracle.com/technetwork/articles/java/g1gc-1984535.html)
+8. [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
+9. [Spark Streaming Logging Configuration](http://shzhangji.com/blog/2015/05/31/spark-streaming-logging-configuration/)
+10. [Analyzing Java Garbage Collection Logs for debugging and optimizing Apache Spark jobs](https://anish749.github.io/spark/analyzing-java-garbage-collection-logs-debugging-optimizing-apache-spark/)
