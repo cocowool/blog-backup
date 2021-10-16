@@ -111,20 +111,13 @@ Spark Streaming provides a high-level abstraction called discretized stream or D
 
 ### DStream
 DStream表示一系列连贯的数据流，由连续的RDD序列表示。
-![fabdf95b1b46cf3851c9ef858aecab87.png](evernotecid://ABDCA1EB-5F78-4410-93E7-50133663A78D/appyinxiangcom/28528220/ENResource/p149)
 
 * 可靠的Receiver，例如Kafka、flume
 * 不可靠的Receiver，消费数据后不能向数据源进行确认
 
-### updateStateByKey 变换
-
-### Transform Operation
-
 ### Window Operation
 * window length
 * sliding interval
-
-### Join operation
 
 ### foreachRDD
 Spark为DStreams对象提供了几种输出方式，包括`print()\saveAsTextFiles()\saveAsObjectFiles()\saveAsHadoopFiles()\foreachRDD`。最重要也最常用的就是`foreachRDD`，我们一般使用这个函数将计算的结果集存入数据库或其他什么地方。
@@ -151,7 +144,6 @@ Spark为DStreams对象提供了几种输出方式，包括`print()\saveAsTextFil
 > 
 
 * 降低每个批次的处理时间
-* 
 
 ### 在本地提交任务
 ```sh
