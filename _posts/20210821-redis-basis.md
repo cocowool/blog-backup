@@ -170,4 +170,3 @@ redis的`maxmemory`参数可以控制最大可用内存大小。当使用的内�
 6. [Redis Keys 命令 - 查找所有符合给定模式( pattern)的 key](https://www.redis.net.cn/order/3535.html)
 7. [转：Redis使用认证密码登录](https://www.cnblogs.com/machanghai/p/5497043.html)
 8. [redis最基础的入门教程](https://www.cnblogs.com/xiaohuiduan/p/11394505.html)
-9. []()
