@@ -11,4 +11,5 @@ tags:
 1. [制作activemq镜像](https://blog.csdn.net/kq1983/article/details/102793679)
 2. [如何制作Docker镜像](https://zhuanlan.zhihu.com/p/122380334)
 3. [消息中间件ActiveMQ使用详解](https://www.cnblogs.com/yanfei1819/p/10615605.html)
+4. [Building An ActiveMQ Docker Image on Kubernetes](https://dzone.com/articles/building-active-mq-docker-image-on-k8s)
 
