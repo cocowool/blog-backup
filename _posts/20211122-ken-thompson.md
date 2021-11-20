@@ -9,6 +9,14 @@ description:
 
 ## 肯·汤普森
 
-肯·汤普森（Kenneth Lane Thompson，1943年2月4日－），大名是 **肯尼斯·蓝·汤普森** ，感觉小名更为人熟知一点。
+肯·汤普森（Kenneth Lane Thompson，1943年2月4日－），大名是 **肯尼斯·蓝·汤普森** ，感觉小名更为人熟知一点。汤普森出生于美国新奥尔良，是著名的计算机科学家和软件工程师。他和丹尼斯·里奇因为在操作系统领域的理论贡献和Unix系统的开发工作，在1983年共同获得了图灵奖。2006年在Google任职的他以63岁的高龄共同参与主导了 Go 语言的开发。
 
 ![img](20211122-ken-thompson/thompson09.jpg)
+
+肯·汤普森 1965年在加州大学伯克利分校取得本科学位，1966年取得了电子工程硕士学位。1966年毕业后，他进入贝尔实验室参与 Multics 操作系统的开发工作。
+
+
+
+## 参考资料
+
+1. [Kenneth Lane Thompson](https://www.britannica.com/biography/Kenneth-Lane-Thompson)
