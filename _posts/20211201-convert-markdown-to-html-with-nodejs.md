@@ -2,7 +2,7 @@
 title: 构建一个转换 Markdown 文件的 Node.js 小工具
 date: 2021-11-30 22:51:49
 keywords: Node.js, Markdown, Markdown to html
-description: 
+description: 本文介绍如何使用 markdown-it 来制作一个将 Markdown 文件转换为 Html 文件的命令行小工具。
 
 ---
 
@@ -16,7 +16,7 @@ markdown-it 是一个基于 Node.js 的 Markdown 文件解析器，拥有很好�
 
 ## 源码结构
 
-全部的源代码放在了 [popsite]() 上，感兴趣的同学可以下载。
+全部的源代码放在了 [popsite](https://github.com/cocowool/popsite) 上，感兴趣的同学可以下载。
 
 ```sh
 $ popsite git:(main) tree -I node_modules .
