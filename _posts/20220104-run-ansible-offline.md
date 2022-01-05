@@ -11,3 +11,6 @@ description:
 
 * 安装包 ansible-2.9.7.tar.gz
 
+## 参考资料
+
+1. [Ansible 离线安装](https://www.cnblogs.com/ghl1024/p/14309382.html)
