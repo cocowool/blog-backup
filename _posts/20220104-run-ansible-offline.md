@@ -11,13 +11,20 @@ description:
 
 本机环境是 Python 2.7，操作系统版本是 Red Hat Enterprise Linux Server release 7.6 (Maipo)。 
 
-* 安装包 ansible-2.9.7.tar.gz
 * 系统必须安装了 gcc，找一个内网的 yum 源安装 `yum install gcc` 或使用 rpm 包进行安装
 * 有些依赖包编译需要依赖 python 库，因此必须安装 python-devel ，安装方法同上
 * 安装 cffi 需要依赖 libffi-devel，安装方法同上
 * 安装 cryptography-2.6.1.tar.gz 依赖 openssl-devel
 
+总结下来，必须使用本地 yum 源安装几个必须的依赖。
+
+```sh
+$ yum install -y python-devel openssl-devel gcc libffi-devel
+```
+
 ## 安装过程
+
+ansible 安装需要先将 18 个依赖包安装完成，依赖包的安装过程大同小异，都是解压文件后，通过 `python setup.py install` 命令进行安装。
 
 * 安装 setuptools-41.1.0.zip
 * 安装 pycrypto-2.6.1.tar.gz
@@ -39,7 +46,7 @@ description:
 * 安装 paramiko-2.4.2.tar.gz 
 * 安装 ansible-2.9.7.tar.gz 
 
-完成后，验证安装结果
+完成后，验证安装结果。推荐大家使用 Github 上 [ghl1024](https://github.com/ghl1024/ansible-offline-install/blob/main/ansible/install.sh) 整理的一个安装脚本来自动化这个过程，如果需要特定的版本，自己修改脚本内容就可以。
 
 ```sh
 $ ansible --version
