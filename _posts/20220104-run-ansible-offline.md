@@ -54,10 +54,31 @@ $ ansible --version
 
 ## 配置与使用
 
-* 修改 .ansible.cfg 配置，指定 host 文件的路径
+* 配置主机列表
+* 利用 sshpass 快速登录主机
+* 批量设置主机间的互信
+
+## 题外话
+
+在使用 ansible 向多台主机发送命令的过程中，有些主机有以下的 WARNING 提示。
+
+> [WARNING]: Platform linux on host -.-.-.- is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+看文字的大意是某些机器上的 python 是在 `/usr/bin/python` 下的，未来可能会被替换。
+
+忽略这个错误的办法是在 `/etc/ansible/ansible.cfg` 中添加以下配置。
+
+```cfg
+[defaults]
+interpreter_python = auto_legacy_silent
+```
+
+
 
 ## 参考资料
 
 1. [Ansible 离线安装](https://www.cnblogs.com/ghl1024/p/14309382.html)
 2. [ansible的安装配置和配合sshpass的使用](https://blog.csdn.net/z960339491/article/details/84328904)
 3. [sshpass 绕过ssh 密码交互式验证](https://blog.csdn.net/weixin_30360497/article/details/96901120)
+4. [Ansible 实现批量建立互信](https://blog.csdn.net/bruce_6/article/details/82019519)
+5. [Platform linux on host is using the discovered Python interpreter](https://blog.csdn.net/u014262328/article/details/107668984)
