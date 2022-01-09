@@ -54,6 +54,34 @@ $ ansible --version
 
 ## 配置与使用
 
+使用 ansible 操作目标主机的方式有两种，一种是通过配置主机列表后在命令行中通过主机列表名称选择设备。例如：
+
+```sh
+$ ansible machinelist -m command -a 'cat /etc/redhat-release'
+```
+
+这里的 machinelist 对应 /etc/ansible/hosts 文件中的一组机器列表
+
+```
+[machinelist]
+10.2.1.1
+10.2.1.2
+```
+
+使用这种方式配置的机器列表，需要安装了 ansible 的这台机器与列表中的主机都做了 ssh 互信。
+
+我们可以利用 sshpass 这个应用来实现使用用户密码登录，这种方式要求安装了 ansible 的机器上先要安装 sshpass 。在离线环境下，推荐大家通过 rpm 包进行安装或者编译安装。
+
+安装完成后，修改 hosts 文件配置如下。
+
+```
+[machinelist]
+10.2.1.1 ansible_ssh_user=root ansible_ssh_pass=xxxxxx
+10.2.1.2 ansible_ssh_user=root ansible_ssh_pass=xxxxxx
+```
+
+> 两种方式的配置可以混合使用。
+
 * 配置主机列表
 * 利用 sshpass 快速登录主机
 * 批量设置主机间的互信
