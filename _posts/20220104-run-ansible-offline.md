@@ -1,8 +1,8 @@
 ---
 title: 离线环境安装使用 Ansible
 date: 2022-01-04 19:56:25
-keywords:
-description:
+keywords: ansible, 离线, 离线环境, ansible 安装
+description: 本文介绍了在离线环境中如何通过源码包安装 ansible 所需要的依赖和 ansible，并简单介绍了 ansible 的使用方式。
 ---
 
 之前写了一篇[介绍 Ansible 的文章](http://www.edulinks.cn/2021/07/04/20210706-ansible-startup/) ，今天回顾看来写的有些匆忙，一些具体的操作步骤都没有讲明白，不利于读者复现学习。最近又申请了一个几百台机器的环境，正好借此机会把如何在离线环境中使用 Ansible 详细记录一下。
@@ -81,10 +81,6 @@ $ ansible machinelist -m command -a 'cat /etc/redhat-release'
 ```
 
 > 两种方式的配置可以混合使用。
-
-* 配置主机列表
-* 利用 sshpass 快速登录主机
-* 批量设置主机间的互信
 
 ## 题外话
 
