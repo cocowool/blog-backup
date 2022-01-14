@@ -1,9 +1,40 @@
 ---
 title: Ansible 常用使用场景
 date: 2022-01-12 11:33:50
-keywords:
+keywords: Ansible , Ansible Ad-hoc , Ansible playbook , Ansible command , Ansible Shell , Ansible Copy
 description: 本文整理了 Ansible 常用模块以及常用的使用场景
 ---
+
+给 Ansible 下一个完整的定义很难，官方的宣传是 `Ansible is Simple IT Automation` 看出来还是主打自动化。
+
+> Ansible delivers simple IT automation that ends repetitive tasks and frees up DevOps teams for more strategic work.
+
+也有资料介绍 Ansible 是模型驱动的配置管理器，个人觉得这个描述不是很恰当。从 Ansible 的使用方式来看，默认使用 push 的方式更像自动化。而 Puppet 默认使用 pull 的方式，则更像是配置驱动。
+
+Ansible 的使用有两种模式，一种是直接在命令行调用模块批量执行单个命令，这种称为 AD HOC 模式。
+
+```sh
+$ ansible [host_inventory] -m command -a 'hostname'
+```
+
+也可以通过编写 yaml 文件，来编排一组操作，这种方式称为 playbook 模式。看一个简单的配置。
+
+```yaml
+# test.yaml
+---
+- hosts: 192.168.1.31
+  remote_user: root
+tasks: 
+  - name: run df -h
+    remote_user: test
+    shell: name=df -h
+```
+
+使用方式是这样
+
+```sh
+$ ansible-playbook test.yaml
+```
 
 
 
@@ -52,3 +83,5 @@ $ ansible [host_list] -m copy -a 'content=Hello World! desc/tmp/test.txt owner=r
 1. [Ansible 拷贝文件或目录](https://www.cnblogs.com/pzk7788/p/10213389.html)
 2. [Ansible 常用模块](https://www.cnblogs.com/happy-king/p/9013312.html)
 3. [Ansible 命令模块](https://blog.csdn.net/bruce_6/article/details/80743578)
+3. [How Ansible Works](https://www.ansible.com/overview/how-ansible-works)
+3. [Ansible之Playbook](https://www.cnblogs.com/yanjieli/p/10969299.html)
