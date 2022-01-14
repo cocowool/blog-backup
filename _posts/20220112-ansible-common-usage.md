@@ -1,7 +1,8 @@
 ---
 title: Ansible 常用使用场景
 date: 2022-01-12 11:33:50
-tags:
+keywords:
+description: 本文整理了 Ansible 常用模块以及常用的使用场景
 ---
 
 
