@@ -80,6 +80,8 @@ $ ansible machinelist -m command -a 'cat /etc/redhat-release'
 10.2.1.2 ansible_ssh_user=root ansible_ssh_pass=xxxxxx
 ```
 
+利用这种方式，可以实现同口令主机的批量快速访问。根据安全要求，后续口令要按照规则进行修改。最长久的办法，还是对主机做下互信配置。可以通过 `ssh-copy-id` 结合 ansible 实现主机的批量互信。
+
 > 两种方式的配置可以混合使用。
 
 ## 题外话

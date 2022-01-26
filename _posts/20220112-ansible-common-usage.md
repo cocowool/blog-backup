@@ -30,13 +30,13 @@ tasks:
     shell: name=df -h
 ```
 
-使用方式是这样
+使用方式是这样，AD HOC 模式无法持久化，playbook 方式可以通过 yaml 文件实现持久化和重复执行。
 
 ```sh
 $ ansible-playbook test.yaml
 ```
 
-
+今天我们来熟悉几个最常用的模块：
 
 ## command 模块
 
@@ -69,14 +69,34 @@ $ ansible [host_list] -m command -a 'ps -ef | grep java | wc -l'
 
 ## copy 模块
 
-复制文件，支持从本地复制到服务端，也支持从服务端复制到本地。
+复制文件，支持从本地复制到服务端。
 
 ```sh
-$ ansible [host_list] -m copy -a 'src=/etc/hosts dest=/tmp owner=root mode=0755'
 # 从服务端向被管机拷贝文件
-$ ansible [host_list] -m copy -a 'content=Hello World! desc/tmp/test.txt owner=root force=yes mode=0755'
+$ ansible [host_list] -m copy -a 'src=/etc/hosts dest=/tmp owner=root mode=0755'
+
 # 将内容存为远端文件
+$ ansible [host_list] -m copy -a 'content=Hello World! desc/tmp/test.txt owner=root force=yes mode=0755'
+
+# 从被管机拷贝文件到服务端
+$ ansible [host_list] -m copy -a 
 ```
+
+## fetch 模块
+
+从远端获取文件，如果 `dest` 指定为文件夹时，默认为以每台服务器的IP为名称创建文件夹，相关的文件保存在对应的文件夹下。
+
+```sh
+# 从远端服务器获取文件
+$ ansible [host_list] -m fetch -a 'src=/etc/hosts dest=/home/path owner=root mode=0755'
+```
+
+**参数列表**：
+
+* `dest` ：存储目标的目录。如果获取 `/etc/hosts` 目标存放在 `/home` 下，最终保存路径是 `/home/host.example.com/etc/hosts`，主机名的依据是 `/etc/ansible/hosts` 的配置。
+* `src` ：目前只能是文件。
+
+
 
 ## 参考资料
 
@@ -85,3 +105,4 @@ $ ansible [host_list] -m copy -a 'content=Hello World! desc/tmp/test.txt owner=r
 3. [Ansible 命令模块](https://blog.csdn.net/bruce_6/article/details/80743578)
 3. [How Ansible Works](https://www.ansible.com/overview/how-ansible-works)
 3. [Ansible之Playbook](https://www.cnblogs.com/yanjieli/p/10969299.html)
+3. [Ansible 复制文件到本地](https://www.cnblogs.com/hiyang/p/13748777.html)
