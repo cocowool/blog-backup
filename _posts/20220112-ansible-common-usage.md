@@ -24,10 +24,10 @@ $ ansible [host_inventory] -m command -a 'hostname'
 ---
 - hosts: 192.168.1.31
   remote_user: root
-tasks: 
-  - name: run df -h
-    remote_user: test
-    shell: name=df -h
+  tasks: 
+    - name: run df -h
+      remote_user: test
+      shell: name=df -h
 ```
 
 使用方式是这样，AD HOC 模式无法持久化，playbook 方式可以通过 yaml 文件实现持久化和重复执行。
