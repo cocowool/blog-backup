@@ -98,6 +98,25 @@ $ ansible [host_list] -m fetch -a 'src=/etc/hosts dest=/home/path owner=root mod
 
 
 
+## 普通用户执行 Ansible 遇到的问题
+
+场景如下，管理机的 root 账号被上收了，我只能使用普通用户 `shiqiang` 执行 ansible 命令。此时，如果主机列表配置如下：
+
+```sh
+$ cat /etc/ansible/hosts
+[testhost]
+128.128.128.128
+$ ansible testhost -m ping
+```
+
+会报 `Permission Denied` 的错误。原因是使用 `shiqiang` 这个账号执行 ansible 命令时，默认会使用当前用户尝试免密登录目标主机。因为 testhost 主机与管理机做了 root 账号的互信，，这时需要在配置文件中明确指明使用 root 用户，同时需要把管理机 `shiqiang` 用户的 id_rsa.pub 拷贝到testhost 的 `.ssh/authorized_keys` 文件中。
+
+```sh
+$ cat /etc/ansible/hosts
+[testhost]
+128.128.128.128 ansible_ssh_user=root 
+```
+
 ## 参考资料
 
 1. [Ansible 拷贝文件或目录](https://www.cnblogs.com/pzk7788/p/10213389.html)
@@ -106,3 +125,4 @@ $ ansible [host_list] -m fetch -a 'src=/etc/hosts dest=/home/path owner=root mod
 3. [How Ansible Works](https://www.ansible.com/overview/how-ansible-works)
 3. [Ansible之Playbook](https://www.cnblogs.com/yanjieli/p/10969299.html)
 3. [Ansible 复制文件到本地](https://www.cnblogs.com/hiyang/p/13748777.html)
+3. [Linux 下实现普通用户免密码登录并执行 root 权限](https://www.cnblogs.com/01-single/p/8919254.html)
