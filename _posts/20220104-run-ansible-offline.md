@@ -84,6 +84,26 @@ $ ansible machinelist -m command -a 'cat /etc/redhat-release'
 
 > 两种方式的配置可以混合使用。
 
+在配置了 ssh_pass 的情况下，再介绍下如何批量添加服务器互信。
+
+```sh
+# 编写 pushssh.yaml 文件
+---
+  - hosts: unit_test
+    user: shiqiang # 执行 ansible 的用户
+    tasks:
+      - name: ssh-copy
+        authorized_key: user=root key="{{ lookup('file', '/home/shiqiang/.ssh/id_rsa.pub')}}"
+```
+
+上面这个配置表示 将当前用户 `shiqiang` 的 id_rsa.pub 拷贝到远程主机的 root 用户下。
+
+```sh
+shiqiang@host: ansible-playbook pushssh.yaml
+# 执行完成后，可以尝试免密登录目标主机
+shiqiang@host: ssh root@10.2.1.2
+```
+
 ## 题外话
 
 在使用 ansible 向多台主机发送命令的过程中，有些主机有以下的 WARNING 提示。
