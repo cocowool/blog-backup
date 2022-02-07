@@ -37,17 +37,7 @@ $ yum install puppet -y
 * 流程适配。在小的团队里工作，很多事情通过见面聊一会儿就能解决。在大的团队中，如果没有流程来限定做事的顺序，很多事情就会向意想不到的方向发展。因此，如何把开源软件的功能和本单位的流程实际需要结合起来，这中间需要流程平台的粘合，也需要开源软件具备开放的特性。
 * 安全审计。根据公司的实际情况需要选择不同的网络安全等级保护标准，这就会服务器的部署、访问提出很多具体的控制性要求。开源软件在落地的时候，这些问题必须由本地化的团队来考虑。另外，公司的审计管理也会提出很多审计方面的要求。
 
-```
-cp -rf  /home/ap/fop/uyun/platform/apollo-adminservice/apollo-adminservice-1.5.1.jar.bak202201220005  /home/ap/fop/uyun/platform/apollo-adminservice/apollo-adminservice-1.5.1.jar   &&  cp -rf /home/ap/fop/uyun/platform/apollo-configservice/apollo-configservice-1.5.1.jar.bak202201220002  /home/ap/fop/uyun/platform/apollo-configservice/apollo-configservice-1.5.1.jar  &&  cp -rf /home/ap/fop/uyun/platform/apollo-portal/apollo-portal-1.5.1.jar.bak202201220008  /home/ap/fop/uyun/platform/apollo-portal/apollo-portal-1.5.1.jar
-
-11.85.3.79,11.85.3.80,11.85.3.81
-
-mv /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties  /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties.0121bak   &&  mv /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties  /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties.0121bak
-
-
-mv /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties.back  /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties  &&  mv /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties.back  /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties
-```
-
 ## 参考资料
 
 1. [Puppet 安装部署篇](https://blog.51cto.com/215687833/1962448)
+2. [Puppet 服务安装和部署](https://blog.51cto.com/u_11134648/2161486)
