@@ -6,6 +6,24 @@ tags:
 
 前两天写了一篇文章介绍 [Ansible 的安装与使用](http://www.edulinks.cn/2022/01/04/20220104-run-ansible-offline/) 。最近这两天也想研究下 Puppet 比较下两者的区别，在此记录下使用过程。
 
+服务器规划，操作系统为 Red Hat Enterprise Linux Server release 7.4
+
+* 128.180.34.198 规划为Puppet Master
+* 128.180.34.104 规划为普通的被管服务器
+
+## Server 安装
+
+```sh
+# 安装 Puppet Server 和 Puppet，我这里安装的是3.8.7的版本
+$ yum install puppet-server puppet -y
+```
+
+## Agent 安装
+
+```sh
+$ 
+```
+
 
 
 
@@ -27,3 +45,7 @@ mv /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties
 
 mv /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties.back  /home/ap/fop/uyun/platform/apollo-portal/config/application-github.properties  &&  mv /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties.back  /home/ap/fop/uyun/platform/apollo-adminservice/config/application-github.properties
 ```
+
+## 参考资料
+
+1. [Puppet 安装部署篇](https://blog.51cto.com/215687833/1962448)
