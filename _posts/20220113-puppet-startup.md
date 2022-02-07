@@ -4,7 +4,9 @@ date: 2022-01-13 08:35:04
 tags:
 ---
 
-前两天写了一篇文章介绍 [Ansible 的安装与使用](http://www.edulinks.cn/2022/01/04/20220104-run-ansible-offline/) 。最近这两天也想研究下 Puppet 比较下两者的区别，在此记录下使用过程。
+前两天写了一篇文章介绍 [Ansible 的安装与使用](http://www.edulinks.cn/2022/01/04/20220104-run-ansible-offline/) 。最近这两天也想研究下 Puppet 比较两者的区别，在此记录下使用过程。
+
+> Puppet 是基于 Ruby 开发的服务器配置管理系统，它支持以描述语言的方式管理大批量的系统配置。
 
 服务器规划，操作系统为 Red Hat Enterprise Linux Server release 7.4
 
@@ -21,7 +23,7 @@ $ yum install puppet-server puppet -y
 ## Agent 安装
 
 ```sh
-$ 
+$ yum install puppet -y
 ```
 
 
