@@ -13,14 +13,19 @@ tags:
 * 128.180.34.198 规划为Puppet Master
 * 128.180.34.104 规划为普通的被管服务器
 
-## Server 安装
+## Server 安装配置
 
 ```sh
 # 安装 Puppet Server 和 Puppet，我这里安装的是3.8.7的版本
 $ yum install puppet-server puppet -y
+
+# 修改主机名配置
+
+
+# 启动 Puppet 服务
 ```
 
-## Agent 安装
+## Agent 安装配置
 
 ```sh
 $ yum install puppet -y
