@@ -26,6 +26,8 @@ $ yum install puppet-server puppet -y
 $ yum install puppet -y
 ```
 
+## 使用场景
+
 
 
 
