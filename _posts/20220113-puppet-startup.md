@@ -9,10 +9,11 @@ description:
 
 > Puppet 是基于 Ruby 开发的服务器配置管理系统，它支持以描述语言的方式管理大批量的系统配置。
 
-服务器规划，操作系统为 Red Hat Enterprise Linux Server release 7.4
+服务器规划，操作系统为 Red Hat Enterprise Linux Server release 7.4，安装测试的 Puppet 版本为 3.8.7。
 
-* 128.180.34.198 规划为Puppet Master
-* 128.180.34.104 规划为普通的被管服务器
+* 128.180.34.198 规划为Puppet Master，主机名为 master.puppet.cn
+* 128.180.34.104 主机名为 client1.puppet.cn，规划为普通的被管服务器
+* 128.180.34.105 主机名为 client2.puppet.cn，规划为普通的被管服务器
 
 ## Server 安装配置
 
@@ -20,30 +21,61 @@ description:
 # 安装 Puppet Server 和 Puppet，我这里安装的是3.8.7的版本
 $ yum install puppet-server puppet -y
 
-# 修改主机名配置
-
+# 修改主机名配置，在 hosts 中添加以下内容
+$ vim /etc/hosts
+128.180.34.198 master.puppet.cn
+128.180.34.104 client1.puppet.cn
+128.180.34.105 client2.puppet.cn
 
 # 启动 Puppet 服务
+$ systemctl enable puppetmaster.service
+$ systemctl start puppetmaster.service
 ```
 
 
 
 ## Agent 安装配置
 
+首先安装客户端。
+
 ```sh
 $ yum install puppet -y
+```
+
+修改主机名配置，保持与 master 一致。
+
+```sh
+$ vim /etc/hosts
+128.180.34.198 master.puppet.cn
+128.180.34.104 client1.puppet.cn
+128.180.34.105 client2.puppet.cn
 ```
 
 编辑 puppet 配置文件，默认位于 `/etc/puppet/puppet.conf` 。
 
 ```sh
+[main]
+    server = master.puppet.cn
 ```
+
+主要增加了服务端地址的配置，完成后开始申请证书。
+
+```sh
+$ 
+```
+
+
 
 
 
 ## 使用场景
 
 
+
+## Ansible 是否支持的场景
+
+* 配置系统服务并设置为开机启动
+* 
 
 
 
@@ -58,3 +90,4 @@ $ yum install puppet -y
 
 1. [Puppet 安装部署篇](https://blog.51cto.com/215687833/1962448)
 2. [Puppet 服务安装和部署](https://blog.51cto.com/u_11134648/2161486)
+2. [Puppet 安装及部署](https://www.cnblogs.com/gentlemanhai/p/3529554.html)

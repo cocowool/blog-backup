@@ -77,9 +77,6 @@ $ ansible [host_list] -m copy -a 'src=/etc/hosts dest=/tmp owner=root mode=0755'
 
 # 将内容存为远端文件
 $ ansible [host_list] -m copy -a 'content=Hello World! desc/tmp/test.txt owner=root force=yes mode=0755'
-
-# 从被管机拷贝文件到服务端
-$ ansible [host_list] -m copy -a 
 ```
 
 ## fetch 模块
