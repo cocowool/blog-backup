@@ -32,8 +32,6 @@ $ systemctl enable puppetmaster.service
 $ systemctl start puppetmaster.service
 ```
 
-
-
 ## Agent 安装配置
 
 首先安装客户端。
@@ -58,17 +56,48 @@ $ vim /etc/hosts
     server = master.puppet.cn
 ```
 
-主要增加了服务端地址的配置，完成后开始申请证书。
+主要增加了服务端地址的配置。
+
+## 使用场景
+
+后面的几个步骤需要在客户端和服务端之间切换操作。
+
+首先在客户端开始申请证书。
 
 ```sh
-$ 
+root@client $ puppet agent --server=master.puppet.cn --no-daemonize --verbose
+```
+
+看到执行成功的提示后，切换到服务端进行操作。
+
+```sh
+# 查看收到的客户端证书申请列表
+root@master $ puppet cert list
+# 对所有的客户端申请进行批量授权
+root@master $ puppet cert sign --all
+# 通过目录查看已经注册成功的客户端
+root@master $ ll /var/lib/puppet/ssl/ca/signed
+```
+
+所有这些完成后，可以用一个文件分发的场景来做验证，这个场景的主要目的是将服务端的一个文件分发到所有被管机上。
+
+在 `/etc/puppet/mainfests/` 目录下创建一个 `site.pp` 文件，具体内容如下：
+
+```
+file {"/tmp/puppet.txt":
+	content => "This is file for puppet distribution.",
+}
+```
+
+到被管机上执行下面的命令
+
+```sh
+$ puppet agent --server=master.puppet.cn --no-daemonize --verbose --test
 ```
 
 
 
 
-
-## 使用场景
 
 
 
