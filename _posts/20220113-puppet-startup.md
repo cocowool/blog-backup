@@ -11,7 +11,7 @@ description: Puppet 安装配置的简单步骤和使用场景，用来分析与
 
 服务器规划，操作系统为 Red Hat Enterprise Linux Server release 7.4，安装测试的 Puppet 版本为 3.8.7。
 
-* 128.180.34.198 规划为Puppet Master，主机名为 master.puppet.cn
+* 128.180.34.198 主机名为 master.puppet.cn，规划为Puppet Master
 * 128.180.34.104 主机名为 client1.puppet.cn，规划为普通的被管服务器
 * 128.180.34.105 主机名为 client2.puppet.cn，规划为普通的被管服务器
 
@@ -93,11 +93,9 @@ file {"/tmp/puppet.txt":
 
 ```sh
 $ puppet agent --server=master.puppet.cn --no-daemonize --verbose --test
+$ cat /tmp/puppet.txt
+This is file for puppet distribution.
 ```
-
-## Ansible 是否支持的场景
-
-* 配置系统服务并设置为开机启动
 
 ## 后记
 
@@ -115,3 +113,4 @@ $ puppet agent --server=master.puppet.cn --no-daemonize --verbose --test
 1. [Puppet 安装部署篇](https://blog.51cto.com/215687833/1962448)
 2. [Puppet 服务安装和部署](https://blog.51cto.com/u_11134648/2161486)
 2. [Puppet 安装及部署](https://www.cnblogs.com/gentlemanhai/p/3529554.html)
+2. [Puppet:Server hostname did not match server certificate](https://stackoverflow.com/questions/30637414/puppet-server-hostname-did-not-match-server-certificate)
