@@ -135,6 +135,8 @@ $ netstat na | grep ESTABLISHED | wc -l
 * 1个 Socket 长连接占用内存约为 8kb
 * 
 
+> pdsh 全称是 parallel distributed shell ，与 pssh 类似，具有批量在远程目标主机操作的能力。
+
 ## 参考资料
 
 1. [Linux Netstat 统计连接数](https://www.cnblogs.com/kabi/p/7018434.html)
@@ -143,4 +145,5 @@ $ netstat na | grep ESTABLISHED | wc -l
 1. [Load Testing with Python: Locust](https://steelkiwi.com/blog/load-testing-python-locust-testing-and-bokeh-vis/)
 1. [Achieving 100k connections per second with Elixir](https://stressgrid.com/blog/100k_cps_with_elixir/)
 1. [The elixir programming language](https://elixir-lang.org)
-1. [Python百万级并发测试指南](https://blog.csdn.net/weixin_32172693/article/details/111902760)
+1. [Python百万级并发测试指南](https://zhuanlan.zhihu.com/p/134603634)
+1. [pdsh 使用](https://blog.csdn.net/qq_37865420/article/details/117263959)
