@@ -25,3 +25,9 @@ tag:
 
 * Email: cocowool@qq.com
 * 我的微信：riririver
+
+## 友情链接
+
+* [Python爬虫与数据挖掘](http://pdcfighting.com)
+* [yichen的信安知识库](https://www.yuque.com/hxfqg9)
+* copyfuture: [https://copyfuture.com](https://copyfuture.com)
