@@ -1,7 +1,6 @@
 ---
 title: Mac下体验Hexo与Github Pages搭建
 date: 2016-12-09 10:54:01
-tag: 
 keywords: hexo, mac hexo, github pages, hexo搭建github pages
 description: Hexo支持生成静态博客内容，再结合Github Pages可以实现个人博客站点的快速搭建。
 ---
@@ -36,6 +35,8 @@ themes 主题文件夹，默认的主题为 landscape。
 
 * hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装
 * 
+
+> hexo-renderer-sass 安装过程中遇到了一些问题，记录在 [node-sass安装遇到的错误](http://www.edulinks.cn/2021/07/27/20210727-node-sass-problem/) 中
 
 ### 三、主题更换。
 

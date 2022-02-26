@@ -147,3 +147,4 @@ $ netstat na | grep ESTABLISHED | wc -l
 1. [The elixir programming language](https://elixir-lang.org)
 1. [Python百万级并发测试指南](https://zhuanlan.zhihu.com/p/134603634)
 1. [pdsh 使用](https://blog.csdn.net/qq_37865420/article/details/117263959)
+1. [Python server.StreamServer方法代码示例](https://vimsky.com/examples/detail/python-method-gevent.server.StreamServer.html)
