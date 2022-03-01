@@ -33,6 +33,7 @@ themes 主题文件夹，默认的主题为 landscape。
 
 ### 二、必备插件的安装
 
+* Hexo-deployer-git 如果要以 git 方式部署项目，必须安装这个插件
 * hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装
 * 
 

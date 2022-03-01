@@ -62,7 +62,19 @@ description: 因为工作环境的原因，我的MBP需要安装两块网卡。�
 
 我使用的网卡也在其中，这就有希望了。
 
-下载了 Wireless USB OC Big Sur Adapter-V12 和 Wireless USB Clover Big Sur Adapter-V9 反复安装重启了几次，都没有成功。当时简直有些绝望了，甚至还在 Github 上给作者开了一个 issue。没想到作者还非常活跃，不到两个小时，就给我回复了一条消息。
+先按照文档做准备工作，检查状态。
+```sh
+$ csrutil status
+System Integrity Protection status: enabled.
+```
+
+如果是 `enabled` 状态，需要重启，然后按住 Command + R 进入修复模式，在 Termianl 中输入以下命令。
+
+```sh
+$ csrutil disable
+```
+
+然后我下载了 Wireless USB OC Big Sur Adapter-V12 和 Wireless USB Clover Big Sur Adapter-V9 反复安装重启了几次，都没有成功。当时简直有些绝望了，甚至还在 Github 上给作者开了一个 issue。没想到作者还非常活跃，不到两个小时，就给我回复了一条消息。
 
 后来想是不是老版的驱动还可以使用，尝试下安装 「RTLWlanU_MacOS10.11_MacOS10.15_Driver_1830.32.b17_1827.4.b36_UI_5.0.9.b9」这个软件，最后安装失败了。菜单栏中的 WiFi 图标也不见了。
 
@@ -70,6 +82,7 @@ description: 因为工作环境的原因，我的MBP需要安装两块网卡。�
 
 现在回想，可能安装步骤是这样
 
+* 准备工作一定要做
 * 首先需要安装 RealTK 的驱动程序
 * 然后再安装 OC 配置程序，chris1111 提供的是配置程序，不包含驱动
 
