@@ -148,3 +148,5 @@ $ netstat na | grep ESTABLISHED | wc -l
 1. [Python百万级并发测试指南](https://zhuanlan.zhihu.com/p/134603634)
 1. [pdsh 使用](https://blog.csdn.net/qq_37865420/article/details/117263959)
 1. [Python server.StreamServer方法代码示例](https://vimsky.com/examples/detail/python-method-gevent.server.StreamServer.html)
+2. [python-grpc 流式服务初探](https://zhuanlan.zhihu.com/p/441572357)
+2. [gevent StreamServer.start（）似乎没有达到我的期望](https://www.pythonheidong.com/blog/article/148759/735b9f7c132cc0e8109a/)

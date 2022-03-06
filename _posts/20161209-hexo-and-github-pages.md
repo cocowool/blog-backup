@@ -33,8 +33,8 @@ themes 主题文件夹，默认的主题为 landscape。
 
 ### 二、必备插件的安装
 
-* Hexo-deployer-git 如果要以 git 方式部署项目，必须安装这个插件
-* hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装
+* Hexo-deployer-git 如果要以 git 方式部署项目，必须安装这个插件，在 Blog 目录下执行  `npm install hexo-deployer-git --save` 
+* hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装。对于 node 版本是 16.0 的环境，默认从 npmjs 下载这个插件安装会报错，可以参考 [node-sass安装遇到的错误](http://www.edulinks.cn/2021/07/27/20210727-node-sass-problem/) 解决问题。
 * 
 
 > hexo-renderer-sass 安装过程中遇到了一些问题，记录在 [node-sass安装遇到的错误](http://www.edulinks.cn/2021/07/27/20210727-node-sass-problem/) 中
