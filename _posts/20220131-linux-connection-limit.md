@@ -5,9 +5,116 @@ keywords: 长连接, 10万连接, 瓶颈
 description: 本文目的是测试单台服务器网络连接数超过10万时，网卡的各项性能是否会发生变化。
 ---
 
+> 本文测试环境信息如下：
+>
+> OS: MacOS Monterey 12.2.1
+>
+> Python: 3.9.6
+>
+> Locust: 2.7.3
+
 ## 场景需求
 
 想要测试一台服务器链接数很多的情况下（如超过1万、10万），其他的网络操作（诸如 Ping）是否会发生异常。
+
+使用 Python 来构建服务端和客户端。
+
+服务端代码：tcpserver.py
+
+```python
+#codeing: utf-8
+from __future__ import print_function
+from gevent.server import StreamServer
+import signal
+import gevent
+from gevent.signal import signal
+# import signal
+
+# sleeptime = 60
+
+def handle(socket, address):
+    # print(address)
+    # data = socket.recv(1024)
+    # print(data)
+    socket.sendall( bytes('Welcome to the echo server! Type quit to exit.\r\n', 'utf-8') )
+    fileobj = socket.makefile()
+    while True:
+        # line = fileobj.readline()
+        # if line.strip().lower() == 'quit':
+        #     print ("client quit")
+        #     break
+        # fileobj.write(line)
+        # fileobj.flush()
+        # print ("echoed %r" % line)
+
+        gevent.sleep(sleeptime)
+        try:
+            socket.send( bytes("ok\n",'utf-8') )
+        # except KeyboardInterrupt:
+        #     print("Server Close")
+        # except socket.error:
+        #     print("Server Close")
+        except Exception as e:
+            print(e)
+
+if __name__ == "__main__":
+    import sys
+    port = 80
+    if len(sys.argv) > 2:
+        port = int(sys.argv[1])
+        sleeptime = int(sys.argv[2])
+    else:
+        print("Tow parameters needed!")
+        sys.exit(1)
+    # default backlog is 256
+
+    server = StreamServer(('0.0.0.0', port), handle, backlog=4096)
+    
+    # gevent.signal_handler(signal.SIGTERM, server.close)
+    # gevent.signal(signal.SIGQUIT, server.close)
+
+    server.serve_forever()
+```
+
+客户端代码： tcpclient.py
+
+```python
+#coding: utf-8
+import time
+from gevent import socket
+# from locust import Locust, TaskSet, events, task
+
+# 尝试直接连接服务器
+class manual_connect():
+    print('Manual connect tcp server.')
+    # 目标地址
+    host = "127.0.0.1"
+    # 目标端口
+    port = 8081
+    skt = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    skt.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+    skt.connect( (host, port) )
+    while True:
+        msg = skt.recv(1024)
+        print(msg)
+        # client.send('hello world\r\n'.encode())
+        # print('send data')
+        time.sleep(1)
+```
+
+## 测试情况
+
+服务端启动服务后，第一次尝试直接在一台客户端上启动 10000 个连接。
+
+```sh
+$ for i in {1..10000};do nohup python3 tcpclient.py > out$i.log 2>&1 &; done;
+```
+
+很快终端就报出了内存不足的信息，同时观察网络连接数量，也上升到 130 左右就不再继续上涨。
+
+同时观察到系统负载很高。
+
+![image-20220306204818612](20220131-linux-connection-limit/image-20220306204818612.png)
 
 
 
@@ -150,3 +257,5 @@ $ netstat na | grep ESTABLISHED | wc -l
 1. [Python server.StreamServer方法代码示例](https://vimsky.com/examples/detail/python-method-gevent.server.StreamServer.html)
 2. [python-grpc 流式服务初探](https://zhuanlan.zhihu.com/p/441572357)
 2. [gevent StreamServer.start（）似乎没有达到我的期望](https://www.pythonheidong.com/blog/article/148759/735b9f7c132cc0e8109a/)
+2. [Github portforwarder.py](https://github.com/gevent/gevent/blob/master/examples/portforwarder.py)
+2. [How to create a custom socket client in locust](https://stackoverflow.com/questions/63764339/how-to-create-a-custom-socket-client-in-locust)
