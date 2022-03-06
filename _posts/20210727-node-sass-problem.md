@@ -153,7 +153,13 @@ npm timing build:run:install:node_modules/node-sass Completed in 104719ms
 
 ## 另外一个问题
 
-为了更深入了解 node-sass 写了一个js脚本用来测试node-sass的使用，脚本内容很简单，仅仅引用了node-sass模块，执行的时候报错，提示找不到 `vendor` 目录。
+为了更深入了解 node-sass 写了一个js脚本用来测试node-sass的使用，脚本内容很简单，仅仅引用了node-sass模块。
+
+```javascript
+var sass = require('node-sass');
+```
+
+执行的时候报错，提示找不到 `vendor` 目录。
 
 ```sh
 $ node test.js                        

@@ -35,7 +35,7 @@ themes 主题文件夹，默认的主题为 landscape。
 
 * Hexo-deployer-git 如果要以 git 方式部署项目，必须安装这个插件，在 Blog 目录下执行  `npm install hexo-deployer-git --save` 
 * hexo-renderer-sass 因为我选择的插件需要sass支持，因此必须安装。对于 node 版本是 16.0 的环境，默认从 npmjs 下载这个插件安装会报错，可以参考 [node-sass安装遇到的错误](http://www.edulinks.cn/2021/07/27/20210727-node-sass-problem/) 解决问题。
-* 
+* hexo-image-link 这个是我自己写的一个插件，在使用 Typora 编辑 Markdown 过程中，支持插入相对路径的图片，可以在 Typora 中预览。支持在发布过程中转换为绝对路径，支持正常在页面上显示。具体可以参考 [Hexo博客写作与图片处理的经验](http://www.edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/) ，安装命令 `npm install hexo-image-link --save`
 
 > hexo-renderer-sass 安装过程中遇到了一些问题，记录在 [node-sass安装遇到的错误](http://www.edulinks.cn/2021/07/27/20210727-node-sass-problem/) 中
 
@@ -61,8 +61,3 @@ branch: hexo
 至此，使用 hexo 搭建环境发布内容的工作就完成了，你可以通过[http://yourname.github.io](http://yourname.github.io)访问页面，查看效果。
 为了让这两部分文件都保存下来，我们利用 git 中的分支功能。在本地环境查看有多少分支 git branch -a，一般只有一个 master。创建一个新的分支 git branch hexo
 将分支推送到远程服务器 git push origin hexo，在 hexo 的配置文件中选择将内容发布到 hexo 而本地的源码提交到 master 中。
-
-### 四、插件安装
-
-**hexo-render-sass**
-
