@@ -107,7 +107,7 @@ class manual_connect():
 服务端启动服务后，第一次尝试直接在一台客户端上启动 10000 个连接。
 
 ```sh
-$ for i in {1..10000};do nohup python3 tcpclient.py > out$i.log 2>&1 &; done;
+$ for i in {1..10000};do nohup python3 -u tcpclient.py > out$i.log 2>&1 &; done;
 ```
 
 很快终端就报出了内存不足的信息，同时观察网络连接数量，也上升到 130 左右就不再继续上涨。
@@ -259,3 +259,4 @@ $ netstat na | grep ESTABLISHED | wc -l
 2. [gevent StreamServer.start（）似乎没有达到我的期望](https://www.pythonheidong.com/blog/article/148759/735b9f7c132cc0e8109a/)
 2. [Github portforwarder.py](https://github.com/gevent/gevent/blob/master/examples/portforwarder.py)
 2. [How to create a custom socket client in locust](https://stackoverflow.com/questions/63764339/how-to-create-a-custom-socket-client-in-locust)
+2. [linux 下后台运行python脚本](https://www.cnblogs.com/master-pokemon/p/5790783.html)
