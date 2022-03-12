@@ -240,7 +240,6 @@ $ netstat na | grep ESTABLISHED | wc -l
 ```
 
 * 1个 Socket 长连接占用内存约为 8kb
-* 
 
 > pdsh 全称是 parallel distributed shell ，与 pssh 类似，具有批量在远程目标主机操作的能力。
 
