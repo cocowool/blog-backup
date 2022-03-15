@@ -1,8 +1,8 @@
 ---
 title: Homebrew 国内使用加速
 date: 2022-03-13 21:23:26
-keywords:
-description:
+keywords: Homebrew , Homebrew 加速 , Homebrew macOS
+description: 本文介绍使用国内镜像站点加速 Homebrew 安装速度的方法。
 
 ---
 
