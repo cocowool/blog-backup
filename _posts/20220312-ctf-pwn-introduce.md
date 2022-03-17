@@ -1,5 +1,5 @@
 ---
-title: 20220312-ctf-pwn-introduce
+title: pwn 赛题介绍
 date: 2022-03-12 23:01:58
 keywords: pwn, ctf
 description: 本文收集整理了 CTF 比赛 pwn 题型的介绍资料和常用工具，为后续深入了解 pwn 打下基础。
