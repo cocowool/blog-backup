@@ -2,7 +2,6 @@
 title: Docker 入门介绍
 date: 2018-06-20 11:12:13
 updated: 2021-05-20 20:22:39
-tag: 
 keywords: docker, docker介绍, docker镜像, docker daemon, docker client, docker 仓库
 description: Docker 是一个应用程序开发、部署、运行的平台，使用 go 语言开发。相较于传统的主机虚拟化，Docker 提供了轻量级的应用隔离方案，并且为我们提供了应用程序快速扩容、缩容的能力。
 ---
@@ -117,6 +116,11 @@ $ docker exec -it container-name bash
 # 挂载宿主机文件或目录到容器，下面将sh-valley目录挂载到容器的/home/go目录下
 $ docker run -it -v /Users/shiqiang/Projects/sh-valley:/home/go golang bash
 
+# 删除所有本地镜像文件
+$ docker rmi -f $(docker images -q)
+
+# 停止所有正在运行的容器
+$ docker stop $(docker images -q)
 ```
 
 ## 参考资料：
@@ -128,7 +132,6 @@ $ docker run -it -v /Users/shiqiang/Projects/sh-valley:/home/go golang bash
 5. [Docker入门教程](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 6. [Difference between LXC and libcontainer](https://stackoverflow.com/questions/34152365/difference-between-lxc-and-libcontainer)
 7. [Open Container Initiative](https://www.opencontainers.org)
-
 
 
 
