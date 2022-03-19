@@ -121,6 +121,9 @@ $ docker rmi -f $(docker images -q)
 
 # 停止所有正在运行的容器
 $ docker stop $(docker images -q)
+
+# 运行一个 Apache 镜像服务，挂载本地文件，并在运行后删除
+$ docker run -it --rm --name my-httpd-server -p 80:80 -v "$PWD":/usr/local/apache2/htdocs httpd:2.4
 ```
 
 ## 参考资料：
