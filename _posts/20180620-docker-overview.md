@@ -39,13 +39,24 @@ Docker客户端通过Unix套接字或者网络接口访问 docker daemon，从�
 
 Docker的守护进程监听对于API的请求，并且管理Docker对象，包括容器、镜像、网络、存储等。不同守护进程之间可以互相通信，从而构成集群服务。
 
+Docker 服务端一般在宿主机后台运行，dockerd 作为服务端接受客户端请求，并通过 containerd 具体处理与容器相关的请求。
+
+```sh
+$ ps -ef | grep docker
+root	14677	1	0	16:21	?	00:00:00	/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
 ### Docker Client
 
-Docker 客户端```docker```命令是与Docker交互的主要方式。
+Docker 客户端 ```docker``` 命令是与 Docker 交互的主要方式。如果服务端没有在默认的监听端口，则需要明确指定后端地址和端口。
+
+```sh
+$ docker -H tcp://127.0.0.1:1234 info
+```
 
 ### Docker 仓库
 
-Docker仓库保存Docker镜像，可以通过```docker pull```以及```docker push```来下载、上传镜像文件。
+Docker 仓库保存 Docker 镜像，可以通过 ```docker pull``` 以及 ```docker push``` 来下载、上传镜像文件。
 
 ## Docker 对象
 
@@ -85,6 +96,13 @@ $ docker run -i -t ubuntu /bin/bash
 
 ### **3. 网络**
 Docker的网络子系统是可插拔的，支持bridge、host、overlay、macvlan、none等网络模式。熟悉虚拟机的同学可能对这些有概念，想要了解更多参考[这里](https://docs.docker.com/network/network-tutorial-standalone/)。
+
+```sh
+# 查看 当前可用网络
+$ docker network ls
+```
+
+可以使用 `ip` 命令绑定端口和网桥，docker 随机分配一个本地未占用的私有段中的地址给 docker0 网桥接口，比较典型的是 172.17.0.0/16。
 
 ### **4. 存储**
 默认情况下，容器中的应用生成的所有文件都存放在一个可写的容器层，意味着这些数据的生命周期和容器保持一致，一旦容器重启数据就丢了。另外，这些文件与容器高度关联，想要将这些文件分享给其他的容器或者设备非常困难。
