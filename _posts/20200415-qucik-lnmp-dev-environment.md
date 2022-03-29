@@ -165,7 +165,14 @@ location ~ \.php(.*)$ {
 }
 ```
 
+## 单独运行命令行
 
+如果仅需要在命令行下运行 php 命令，可以使用如下方式
+
+```sh
+# 将当前目录挂载到 /tmp 目录，执行 php 命令，结束后退出
+$ docker run -it --rm -v $PWD:/tmp -w /tmp php:7.4.28-fpm-alpine3.15 php test.php
+```
 
 ## 参考资料
 
