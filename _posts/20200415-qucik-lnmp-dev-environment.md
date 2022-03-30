@@ -182,4 +182,5 @@ $ docker run -it --rm -v $PWD:/tmp -w /tmp php:7.4.28-fpm-alpine3.15 php test.ph
 4. [docker完整配置nginx+php+mysql](https://www.cnblogs.com/saysmy/p/10389902.html)
 5. [Docker php安装扩展步骤详解](https://www.cnblogs.com/yinguohai/p/11329273.html)
 6. [配置nginx支持path_info](https://www.cnblogs.com/yuzhoushenqi/p/11349930.html)
+6. [基于 docker 的 php 命令行](https://xiejindou.com/2018/06/24/%E5%9F%BA%E4%BA%8Edocker%E7%9A%84php%E5%91%BD%E4%BB%A4%E8%A1%8C/)
 
