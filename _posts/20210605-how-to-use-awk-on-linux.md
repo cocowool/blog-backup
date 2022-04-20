@@ -160,21 +160,28 @@ $ ./awk.sh /etc/passwd
 
 1、打印文件的前两列（空格为分隔符）   
 
-   awk ‘{print $1,$2}’ awkfile
-
-   grep "fangdudu" * | cut -d " " -f3-
+```sh
+$ awk ‘{print $1,$2}’ awkfile
+$ grep "fangdudu" * | cut -d " " -f3-
+```
 
 2、逗号为分隔符，打印指定的列
 
-   awk -F , '{print $1,$2,$20,$21,$22}' n_epm_user.sql
+```sh
+$ awk -F , '{print $1,$2,$20,$21,$22}' n_epm_user.sql
+```
 
 3、逗号为分隔符，打印符合条件的记录
 
-   awk -F , '{if ($20==1) print $1,$2,$20,$21,$22}' n_epm_user.sql
+```sh
+$ awk -F , '{if ($20==1) print $1,$2,$20,$21,$22}' n_epm_user.sql
+```
 
 4、取文件的第五列，并且将部分内容替换为空
 
-   awk '{print gensub(/\/data1\/static\.house\.sina\.com\.cn\/cricfs\//,"","g",$5) }' /data1/logs
+```sh
+$ awk '{print gensub(/\/data1\/static\.house\.sina\.com\.cn\/cricfs\//,"","g",$5) }' /data1/logs
+```
 
 ## 参考资料
 
