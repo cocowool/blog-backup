@@ -5,6 +5,8 @@ keyrowds: docker, ActiveMQ
 description: 自己构建一个 ActiveMQ 的镜像并运行服务。
 ---
 
+> 本文基于 ActiveMQ 5.14.3 
+
 ## ActiveMQ 介绍
 
 Apache ActiveMQ是Apache软件基金会所研发的开放源代码消息中间件；由于ActiveMQ是一个纯Java程序，因此只需要操作系统支持Java虚拟机，ActiveMQ便可执行。
@@ -81,6 +83,22 @@ $ docker history webcenter/activemq --format {{.CreatedBy}} --no-trunc
 
 ## 命令行管理
 
+activemq 提供命令行下管理 ActiveMQ 服务的能力：
+
+* browse 显示选中的消息
+* bstat 查看指定 broker 的统计信息
+* consumer 从 broker 接收消息
+* create 创建 broker 实例
+* decrypt 解密文本
+* dstat 展示统计信息
+* encrypt 加密文本
+* export 导出停止的 broker 数据
+* list 展示所有可用的 broker
+* producer 创建消息队列
+* purge 清空队列里的消息，并把消息放到出队里 `bin/activemq purge queuename`
+* start 
+* stop
+
 可以进入到 ActiveMQ 容器中使用相关命令行工具。
 
 ```sh
@@ -138,7 +156,7 @@ JMS_HEADER_FIELD:JMSRedelivered = false
 JMS_HEADER_FIELD:JMSDeliveryMode = persistent
 
 # 删除队列中的所有消息
-$ 
+$ bin/activemq purge queuename
 ```
 
 
@@ -158,4 +176,6 @@ $
 5. [Docker 的(Linux/Mac OS)网络配置问题](https://yuanmomo.net/2019/06/13/docker-network/)
 5. [反推Dockerfile](http://pointborn.com/article/2021/3/31/1327.html)
 5. [CentOS7 安装 ActiveMQ 并利用命令行工具进行管理](https://blog.csdn.net/renxwhi/article/details/100116377)
+5. [Broker not available at: service:jmx:rmi](https://blog.csdn.net/kakalairen/article/details/119606152)
+5. [ActiveMQ 消息清理](https://blog.csdn.net/jimo_lonely/article/details/105374062)
 
