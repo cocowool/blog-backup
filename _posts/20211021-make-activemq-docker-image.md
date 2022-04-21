@@ -57,6 +57,14 @@ $ docker build -t cocowool/activemq:5.16.3 .
 
 最后执行 docker build 命令可以生成镜像。
 
+## 界面操作
+
+启动 ActiveMQ 服务后，在浏览器通过 http://127.0.0.1:8161 打开管理界面。
+
+默认的用户名口令是 admin 。
+
+
+
 ## 在容器中运行ActiveMQ
 
 可以通过下面的命令在当前窗口，以前台的形式运行 activemq。
@@ -72,6 +80,26 @@ $ docker run --name='activemq' -it -p 8162:8161 --rm cocowool/activemq:5.16.3
 ```sh
 $ docker history webcenter/activemq --format {{.CreatedBy}} --no-trunc
 ```
+
+## 命令行管理
+
+可以进入到 ActiveMQ 容器中使用相关命令行工具。
+
+```sh
+# 查询对应容器的 ID
+$ docker ps -a
+# 进入容器环境
+$ docker exec -it 74541aaf314f /bin/bash
+# 
+```
+
+
+
+## Python 生产与消费
+
+
+
+
 
 ## 参考资料
 
