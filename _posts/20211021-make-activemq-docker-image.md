@@ -57,14 +57,6 @@ $ docker build -t cocowool/activemq:5.16.3 .
 
 最后执行 docker build 命令可以生成镜像。
 
-## 界面操作
-
-启动 ActiveMQ 服务后，在浏览器通过 http://127.0.0.1:8161 打开管理界面。
-
-默认的用户名口令是 admin 。
-
-
-
 ## 在容器中运行ActiveMQ
 
 可以通过下面的命令在当前窗口，以前台的形式运行 activemq。
@@ -81,6 +73,12 @@ $ docker run --name='activemq' -it -p 8162:8161 --rm cocowool/activemq:5.16.3
 $ docker history webcenter/activemq --format {{.CreatedBy}} --no-trunc
 ```
 
+## 界面操作
+
+启动 ActiveMQ 服务后，在浏览器通过 http://127.0.0.1:8161 打开管理界面。
+
+默认的用户名口令是 admin 。
+
 ## 命令行管理
 
 可以进入到 ActiveMQ 容器中使用相关命令行工具。
@@ -90,6 +88,55 @@ $ docker history webcenter/activemq --format {{.CreatedBy}} --no-trunc
 $ docker ps -a
 # 进入容器环境
 $ docker exec -it 74541aaf314f /bin/bash
+
+# 向队列中插入数据
+$ bin/activemq producer --message 123123 --messageCount 1 --destination queue://queuename
+INFO: Loading '/opt/activemq//bin/env'
+INFO: Using java '/usr/bin/java'
+Java Runtime: Oracle Corporation 1.8.0_91 /usr/lib/jvm/java-8-openjdk-amd64/jre
+  Heap sizes: current=62976k  free=62320k  max=932352k
+    JVM args: -Xms64M -Xmx1G -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=/opt/activemq/conf.tmp/login.config -Dactivemq.classpath=/opt/activemq/conf.tmp:/opt/activemq//../lib/: -Dactivemq.home=/opt/activemq/ -Dactivemq.base=/opt/activemq/ -Dactivemq.conf=/opt/activemq/conf.tmp -Dactivemq.data=/data/activemq
+Extensions classpath:
+  [/opt/activemq/lib,/opt/activemq/lib/camel,/opt/activemq/lib/optional,/opt/activemq/lib/web,/opt/activemq/lib/extra]
+ACTIVEMQ_HOME: /opt/activemq
+ACTIVEMQ_BASE: /opt/activemq
+ACTIVEMQ_CONF: /opt/activemq/conf.tmp
+ACTIVEMQ_DATA: /data/activemq
+INFO: Unrecognized option: --mesage
+ INFO | Connecting to URL: failover://tcp://localhost:61616 (null:null)
+ INFO | Producing messages to queue://testqueue
+ INFO | Using persistent messages
+ INFO | Sleeping between sends 0 ms
+ INFO | Running 1 parallel threads
+ INFO | Successfully connected to tcp://localhost:61616
+ INFO | producer-1 Started to calculate elapsed time ...
+
+ INFO | producer-1 Produced: 1 messages
+ INFO | producer-1 Elapsed time in second : 0 s
+ INFO | producer-1 Elapsed time in milli second : 15 milli seconds
+
+# 查询队列中的数据
+$ bin/activemq browse --amqurl tcp://localhost:61616 queue:queuename
+INFO: Loading '/opt/activemq//bin/env'
+INFO: Using java '/usr/bin/java'
+Java Runtime: Oracle Corporation 1.8.0_91 /usr/lib/jvm/java-8-openjdk-amd64/jre
+  Heap sizes: current=62976k  free=62320k  max=932352k
+    JVM args: -Xms64M -Xmx1G -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=/opt/activemq/conf.tmp/login.config -Dactivemq.classpath=/opt/activemq/conf.tmp:/opt/activemq//../lib/: -Dactivemq.home=/opt/activemq/ -Dactivemq.base=/opt/activemq/ -Dactivemq.conf=/opt/activemq/conf.tmp -Dactivemq.data=/data/activemq
+Extensions classpath:
+  [/opt/activemq/lib,/opt/activemq/lib/camel,/opt/activemq/lib/optional,/opt/activemq/lib/web,/opt/activemq/lib/extra]
+ACTIVEMQ_HOME: /opt/activemq
+ACTIVEMQ_BASE: /opt/activemq
+ACTIVEMQ_CONF: /opt/activemq/conf.tmp
+ACTIVEMQ_DATA: /data/activemq
+JMS_BODY_FIELD:JMSText = test message: 0
+JMS_HEADER_FIELD:JMSExpiration = 0
+JMS_HEADER_FIELD:JMSMessageID = ID:74541aaf314f-40403-1650513379296-1:1:1:1:1
+JMS_HEADER_FIELD:JMSPriority = 4
+JMS_HEADER_FIELD:JMSDestination = testqueue
+JMS_HEADER_FIELD:JMSTimestamp = 1650513379547
+JMS_HEADER_FIELD:JMSRedelivered = false
+JMS_HEADER_FIELD:JMSDeliveryMode = persistent
+
 # 
 ```
 
@@ -109,4 +156,5 @@ $ docker exec -it 74541aaf314f /bin/bash
 4. [Building An ActiveMQ Docker Image on Kubernetes](https://dzone.com/articles/building-active-mq-docker-image-on-k8s)
 5. [Docker 的(Linux/Mac OS)网络配置问题](https://yuanmomo.net/2019/06/13/docker-network/)
 5. [反推Dockerfile](http://pointborn.com/article/2021/3/31/1327.html)
+5. [CentOS7 安装 ActiveMQ 并利用命令行工具进行管理](https://blog.csdn.net/renxwhi/article/details/100116377)
 
