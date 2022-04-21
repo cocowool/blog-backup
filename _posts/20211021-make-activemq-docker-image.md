@@ -137,7 +137,8 @@ JMS_HEADER_FIELD:JMSTimestamp = 1650513379547
 JMS_HEADER_FIELD:JMSRedelivered = false
 JMS_HEADER_FIELD:JMSDeliveryMode = persistent
 
-# 
+# 删除队列中的所有消息
+$ 
 ```
 
 
