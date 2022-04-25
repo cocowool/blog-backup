@@ -1,7 +1,6 @@
 ---
 title: Pandas删除数据的几种情况
 date: 2018-02-06 13:47
-tags: 
 keywords: python, pandas, pandas数据分析
 description: Pandas数据分析快速入门。
 ---
@@ -122,7 +121,6 @@ Out[12]:
 2、[pandas过滤包含特定字符串的行](https://www.cnblogs.com/xqnq2007/p/7728720.html)
 3、[Pandas dataframe怎么删除名称包含特定字符串的列？](https://cloud.tencent.com/developer/ask/28010)
 4、[Pandas Drop](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.drop.html)
-
 
 
 

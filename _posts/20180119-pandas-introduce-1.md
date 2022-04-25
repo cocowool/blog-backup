@@ -1,7 +1,6 @@
 ---
 title: Pandas快速入门（一）
 date: 2018-01-19 14:02
-tag: 
 keywords: python, pandas, pandas数据分析
 description: Pandas数据分析快速入门。
 ---
@@ -211,7 +210,6 @@ max    5000.000000  3000.000000  200.000000
 1、[pandas](http://pandas.pydata.org)
 2、[十分钟搞定Pandas](https://www.cnblogs.com/chaosimple/p/4153083.html)
 3、[利用Python进行数据分析](利用Python进行数据分析)
-
 
 
 

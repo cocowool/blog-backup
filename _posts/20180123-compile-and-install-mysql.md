@@ -1,7 +1,6 @@
 ---
 title: Mysql 编译安装并使用自定义用户启动
 date: 2018-01-23 10:17:11
-tag: 
 category: 运维
 keywords: mysql, mysql linux, mysql 编译
 description: Linux下Mysql 编译安装并使用自定义用户启动。
@@ -102,7 +101,6 @@ Starting MySQL..                                           [  OK  ]
 4、[Ignoring user change](https://dev.mysql.com/doc/refman/5.5/en/server-options.html#option_mysqld_basedir)
 5、[脚本中实现切换用户并](http://www.jb51.net/article/59255.htm)
 6、[在Linux中，开机自动运行普通用户的脚本程序](http://blog.csdn.net/sinboy/article/details/2466225)
-
 
 
 

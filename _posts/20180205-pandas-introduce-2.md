@@ -1,7 +1,6 @@
 ---
 title: Pandas 快速入门（二）
 date: 2018-02-05 15:39
-tag: 
 keywords: pandas, pandas python, pandas入门, pandas数据分析, python
 description: Pandas是Python提供的数据分析重要工具，本文介绍数据清理和转换、分组统计及画图等功能，助你快速入门 pandas 数据分析。
 ---
@@ -205,7 +204,6 @@ In [90]: cat test.csv
 2、[十分钟搞定pandas](https://www.cnblogs.com/chaosimple/p/4153083.html)
 3、[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.from_dict.html#pandas.DataFrame.from_dict)
 4、[DataFrame Replace](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.replace.html#pandas.DataFrame.replace)
-
 
 
 
