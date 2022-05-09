@@ -5,7 +5,7 @@ keywords: pandas, pandas python, pandas入门, pandas数据分析, python
 description: Pandas是Python提供的数据分析重要工具，本文介绍数据清理和转换、分组统计及画图等功能，助你快速入门 pandas 数据分析。
 ---
 
-本文的例子需要一些特殊设置，具体可以参考[Pandas快速入门（一）](http://www.cnblogs.com/cocowool/p/8316595.html)
+本文的例子需要一些特殊设置，具体可以参考 [Pandas快速入门（一）](http://www.cnblogs.com/cocowool/p/8316595.html)
 
 ### 数据清理和转换
 我们在进行数据处理时，拿到的数据可能不符合我们的要求。有很多种情况，包括部分数据缺失，一些数据的格式不正确，一些数据的标注问题等等。对于这些数据，我们在开始分析之前必须进行必要的整理、清理。
@@ -106,7 +106,7 @@ xiao Wang   Female   25         教师  Mrs
 ### 时间序列
 
 #### 日期和时间数据类型
-处理时间数据，经常用到Python中的 datetime 模块，该模块中的主要数据类型有。
+处理时间数据，经常用到 Python 中的 datetime 模块。
 
 与时间序列相关的还有很多功能，包括时区转换。如果是从文件读入的数据，可以使用```parse_dates```参数来对日期进行解析。
 对于日期型的索引，可以根据日期、月份、年份、日期范围来方便的选择数据。

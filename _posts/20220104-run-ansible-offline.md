@@ -24,7 +24,7 @@ $ yum install -y python-devel openssl-devel gcc libffi-devel
 
 ## 安装过程
 
-ansible 安装需要先将 18 个依赖包安装完成，依赖包的安装过程大同小异，都是解压文件后，通过 `python setup.py install` 命令进行安装。
+ansible 安装需要先将 18 个依赖包安装完成，依赖包的安装过程大同小异，都是解压文件后，通过 `python setup.py install` 命令进行安装。相关的离线包可以到 [https://pypi.org/](https://pypi.org/) 上搜索后下载。
 
 * 安装 setuptools-41.1.0.zip
 * 安装 pycrypto-2.6.1.tar.gz
