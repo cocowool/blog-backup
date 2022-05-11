@@ -23,8 +23,6 @@ description: Python 中 matplotlib 画折线图的方法
 * 多折线图
 * 折线图标注数据点
 * 折线图叠加矩形
-* 折线图组合柱状图
-* 双坐标折线图
 
 ### 单折线图
 
@@ -126,11 +124,42 @@ def line_with_dot():
     plt.show()    
 ```
 
+### 折线图叠加矩形区域
 
+在做异常检测的时候，会标注某个时间段的数据属于异常数据，这时会叠加一个矩形区域来表示。
 
+```python
+# 折线图叠加矩形区域
+def line_with_rect():
+    df = pd.read_csv('data.csv')
+    # 只取一个 cmdb_id 值
+    df = df[ df['cmdb_id'].str.contains('node-1')]
+    # 只取一个 kpi_name 值
+    df = df[ df['kpi_name'].str.contains('system.load.5') ]
+    df.sort_values('timestamp')
+    
+    # df['value'].plot(x=df['timestamp'])
+    # plt.show()
+ 
+    fig, ax = plt.subplots()
+    plt.rcParams["figure.autolayout"] = True
+    plt.rcParams['font.sans-serif'] = ['Songti SC']
+    plt.rcParams['axes.unicode_minus'] = False
 
+    ax.plot(df['timestamp'], df['value'], c = 'blue', label='node-1')
 
-## 参考资料
+    # 故障点
+    ax.plot(1647823965, df['value'].max(), 'o')
+    ax.text(1647823965, df['value'].max() + 0.4, 'node-1,node节点CPU故障' , ha = 'left', va = 'top', fontsize = 8)
 
-1. [PLT 画折线图](https://blog.csdn.net/weixin_40283816/article/details/84320962)
-2. 
+    # 矩形区域
+    ax.add_patch( patches.Rectangle( (1647823965, 0), 1200, df['value'].max() , facecolor = "red", alpha=0.5) )
+    ax.annotate( '故障区域', xy=( 1647823965, df['value'].max()), xytext=(1647823965 + 1200, df['value'].max() - 2) )
+
+    plt.xlabel( 'Timestamp' )
+    plt.ylabel( df['kpi_name'].iloc[1] )
+    plt.legend( loc = 'best' )
+    plt.show()
+```
+
+这几个都是在本次参加 AIOPS 比赛过程中，为了方便查看指标情况积累的作图技巧，后续如果有折线图更多的内容，会继续在这里更新。

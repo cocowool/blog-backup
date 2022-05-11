@@ -2,7 +2,7 @@
 title: Linux 下域名解析的一些小知识
 date: 2022-04-21 20:01:07
 keywords: dns, resolv.conf, linux, 域名解析
-description: 
+description: 本文介绍域名解析
 ---
 
 在我们使用互联网和移动应用过程中，域名是一项最基础的服务，之前写过一篇文章介绍了 [与域名相关的几个工具](http://www.edulinks.cn/2020/10/24/20201017-commands-to-domain/) ，本文来分析下域名解析的过程以及与此相关的几个重要参数。
