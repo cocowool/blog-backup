@@ -140,7 +140,10 @@ NMAP使用`--script`参数可以调用NSE脚本。
 
 搜集的信息主要包括：IP信息（地理位置、开放端口）、WHOIS信息、EMAIL信息、IP反查、DNS信息搜集（A记录、CNAME记录等）、系统信息、后台打印机服务漏洞、系统漏洞扫描、WEB漏洞扫描等。
 
-参考资料：
+
+
+## 参考资料：
+
 1. [NMAP](https://nmap.org)
 2. [NAMP TCP Scanning](http://www.linux.org/threads/nmap-tcp-scanning.8465/)
 3. [NAMP Download](https://nmap.org/download.html#windows)
