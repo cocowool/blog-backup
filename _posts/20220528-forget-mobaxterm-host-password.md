@@ -48,7 +48,7 @@ LookupError: unknown encoding: ansi
 
 > 本文的操作系统版本为 macOS Monterey Version 12.2.1
 
-macOS 在系统便好中设置的代理对 Terminal 无效，查到网上有些办法可以通过环境变量方式来支持 `curl` 、 `wget` 、 `git` 等命令的代理配置，自己测试后对于 `ssh` 命令无效，原来 `ssh` 有专门的参数，实际如果只是 `ssh` 使用代理，只要按照下面的命令执行即可：
+macOS 在系统偏好中设置的代理对 Terminal 无效，查到网上有些办法可以通过环境变量方式来支持 `curl` 、 `wget` 、 `git` 等命令的代理配置，自己测试后对于 `ssh` 命令无效，原来 `ssh` 有专门的参数，实际如果只是 `ssh` 使用代理，只要按照下面的命令执行即可：
 
 ```sh
 $ ssh -o ProxyCommand="nc -X 5 -x 1x.1x.1x.1x:1080 %h %p" root@1x.8.6.1

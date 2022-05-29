@@ -115,7 +115,15 @@ $ tree -L 2
 > 如果使用 Typora 进行博客撰写的朋友遇到图片插入与发布相关的问题，建议阅读我的 [Hexo博客写作与图片处理的经验](http://ww.edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/) 这篇文章，帮你搞定图片本地浏览与服务器端浏览都能够正常显示。
 
 
+
+## 2022补充
+
+2022-05-29 访问我的站点时，发现样式表失效了，检查了下网络访问，原来 bootstrap 提供的 CDN 文件在国内无法访问，因此我将 bootstrap 相关的生产文件放到了主题的 source 文件夹下，这样后续就不必再担心了。
+
+
+
 ## 参考资料
+
 1. [制作第一个hexo主题](https://segmentfault.com/a/1190000013536171)
 2. [Hexo主题开发](https://www.cnblogs.com/yyhh/p/11058985.html)
 3. [开发hexo主题(一)](https://www.jianshu.com/p/c80de4bacdeb)

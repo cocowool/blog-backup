@@ -1,9 +1,8 @@
 ---
 title: 常用 Shell 命令
 date: 2021-04-12 16:56:07
-tags:
-keywords:
-description:
+keywords: linux, shell, shell command, shell 命令, shell 常用命令
+description: 本文总结了运维过程中常用的 shell 命令
 category: Linux
 ---
 
@@ -215,7 +214,15 @@ tar -czf xxx.tar.gz folders
 $ mount 11.155.x.x:/vol/xxx /folder
 ```
 
-参考资料：
+### 23. 将文件夹下 gz 文件解压为同名文件
+
+```sh
+$ for i in `ls .`;do result=$(echo $i | grep "gz"); if [ $result ]; then gunzip -c $i > ${i%.*}  ; fi; done
+```
+文件夹下存在格式为 xxx.log.gz 的文件，遍历文件并解压为 xxx.log。
+
+## 参考资料：
+
 1. [使用Diff比较两个文件夹](http://blog.csdn.net/magicpang/article/details/3030089)
 2. [Linux Shell For循环总结](http://hi.baidu.com/plp_cm/blog/item/d828d1881b05e2faf11f3607.html)
 3. [echo不换行的实现](http://blog.csdn.net/lllxy/article/details/3423580)
@@ -224,3 +231,4 @@ $ mount 11.155.x.x:/vol/xxx /folder
 6. [Howto：Linux Rename Multiple Files at a shell prompt](http://www.cyberciti.biz/tips/renaming-multiple-files-at-a-shell-prompt.html)
 7. [Centos Linux查看系统发行版本](http://lok.me/2011/09/centos-redhat-linux-release/)
 8. [Linux下时间戳的转换方法](http://xok.la/2008/06/linux_date_transfer.html)
+9. [Shell字符串截取（非常详细）](https://blog.csdn.net/weixin_39591031/article/details/114028113)
