@@ -101,7 +101,7 @@ TypeError: Cannot read property '1' of null
     at Hexo.module.exports (/Users/shiqiang/Projects/hexo-blog/blog/node_modules/hexo-simple-image/lib/index.js:2:31)
 ```
 
-## 解决方案
+## 解决方案 hexo-image-link 插件
 
 参考`hexo-asset-image`和`hexo-simple-image`的源码，发现一个思路是在`after_post_render`之后将html中图片链接替换为绝对路径，一个是在`before_post_render`阶段将markdown文件中图片的路径转换为`asset_img`函数。
 
