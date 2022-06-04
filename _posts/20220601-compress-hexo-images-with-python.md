@@ -220,3 +220,4 @@ if __name__ == '__main__':
 2. [使用python对图片进行压缩](https://blog.csdn.net/Rebacca122222/article/details/124918529)
 3. [How to compress images with Python and PIL](https://progskillss.com/compress-images-with-python)
 4. [pillow documents](https://pillow.readthedocs.io/en/latest/)
+4. [pngquant](https://pngquant.org/lib/)
