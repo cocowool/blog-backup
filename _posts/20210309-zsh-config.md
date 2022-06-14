@@ -52,6 +52,29 @@ alias ll='ls -lha'
 alias grep='grep --color=auto'
 ```
 
+## .ssh/config
+
+日常使用中，ssh 连接服务器空闲超过一段时间后，会自动退出服务器，并有如下提示
+
+```sh
+client_loop: send disconnect: Broken pipe
+```
+
+如果是个人使用，可以在 `.ssh/config` 文件中增加如下配置
+
+```sh
+$ cat ~/.ssh/config                                                             
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+  # 每隔5秒自动发送一个空的请求以保持连接
+  ServerAliveInterval 60
+```
+
+
+
 ## oh-my-zsh
 
 **Oh My Zsh** 是一个帮助我们快速配置 zsh 的开源程序，[项目地址](https://github.com/ohmyzsh/ohmyzsh) 可以下载最新的源码。提供了很多有用的插件以及众多的样式，我选择了手工安装的方式，从项目主页上下载代码包，解压后拷贝到 `~/.oh-my-zsh` 目录，然后按照我上面的配置文件，就可以使用 oh-my-zsh 了。
@@ -73,4 +96,5 @@ alias grep='grep --color=auto'
 3. [终极 Shell](http://macshuo.com/?p=676)
 4. [oh-my-zsh 插件](https://hufangyun.com/2017/zsh-plugin/)
 5. [程序员内功系列--iTerm与Zsh篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
+6. [解决ssh连接长时间不操作断开问题](https://zhuanlan.zhihu.com/p/431249844)
 
