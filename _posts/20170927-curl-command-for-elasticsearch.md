@@ -11,7 +11,50 @@ Elasticsearch对于文档操作，提供了以下几种API，本文就说明如�
 
 ### API种类
 
+### 集群操作
+
+查看集群描述和集群版本
+
+```sh
+curl -XGET http://192.18.8.7:9203
+{
+  "name" : "pm_2011_3",
+  "cluster_name" : "perf",
+  "cluster_uuid" : "xxxxxx-26bA",
+  "version" : {
+    "number" : "6.3.1",
+    "build_flavor" : "default",
+    "build_type" : "zip",
+    "build_hash" : "eb782d0",
+    "build_date" : "2018-06-29T21:59:26.107521Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.3.1",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+
+```
+
+
+
+1、检查集群的健康状态
+
+```sh
+curl -XGET http://192.18.8.7:9203/_cat/health?v
+epoch      timestamp cluster      status node.total node.data shards  pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
+1657161542 10:39:02  performance6 green          31        22  13138 6569    0    0        0             0                  -                100.0%
+```
+
+
+
+1、获取集群节点
+
+
+
 #### 单文档操作API
+
 1、* Index API 索引文档 *
 为文档创建索引
 
@@ -217,11 +260,9 @@ TODO 待补充
 
 > 本文所有示例基于ELK 5.6。
 
-
 参考资料：
 1、[Elasticsearch Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html)
 2、[Optimistic Concurrency Control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control)
-
 
 
 
