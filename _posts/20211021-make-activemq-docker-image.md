@@ -22,6 +22,7 @@ MAINTAINER cocowool@qq.com
 
 ADD jdk-8u144-linux-x64.tar.gz /usr/local
 ADD apache-activemq-5.16.3-bin.tar.gz /usr/local
+ADD jetty.xml /usr/local/apache-activemq-5.16.3/conf/jetty.xml
 # ADD start.sh /usr/local
 
 WORKDIR /usr/local
@@ -44,7 +45,7 @@ EXPOSE 61614/tcp
 CMD [ "/usr/local/apache-activemq-5.16.3/bin/activemq", "" ]
 ```
 
-Dockerfile 编写好之后，放到 activemq 文件夹中，同时将 jdk-8u144-linux-x64.tar.gz \ apache-activemq-5.16.3-bin.tar.gz 也放在同一文件夹下。
+Dockerfile 编写好之后，放到 activemq 文件夹中，同时将 jdk-8u144-linux-x64.tar.gz \ apache-activemq-5.16.3-bin.tar.gz \ jetty.xml 也放在同一文件夹下。
 
 ```sh
 $ ll
@@ -74,6 +75,8 @@ $ docker run --name='activemq' -it -p 8162:8161 --rm cocowool/activemq:5.16.3
 ```sh
 $ docker history webcenter/activemq --format {{.CreatedBy}} --no-trunc
 ```
+
+> 2022-07-12 补充，ActiveMQ 的 WebConsole 监听默认使用的本机地址，作为容器运行时，需要修改 Jetty.xml 监听地址为 0.0.0.0 ，否则会出现启动容器后，无法从本机访问的情况。
 
 ## 界面操作
 
