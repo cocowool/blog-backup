@@ -1,7 +1,6 @@
 ---
 title: Maven 快速入门
 date: 2018-05-08 14:05
-tag: 
 category: 运维
 keywords: maven, maven java, maven linux
 description: Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）。
@@ -103,7 +102,6 @@ Maven主要的阶段包含以下几个
 2、[Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 3、[Installing Apache Maven](https://maven.apache.org/install.html)
 4、[Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
-
 
 
 

@@ -1,9 +1,18 @@
 ---
-title: 迁移进程对应的 cgroups 资源组 
+title: 闲聊 namespace 和 cgroups
 date: 2022-07-13 20:53:46
-keywords: cgroups, control group, linux, linux cgroups
+keywords: namespace, cgroups, control group, linux, linux cgroups
 description:
 ---
+
+* namespace 的介绍、示例
+* cgroups 的介绍、示例
+
+## namespace
+
+Linux namespace 是容器技术的底层支撑，是 Linux 内核位了限制系统资源提供的功能特性。
+
+
 
 cgroups 的全称是 control groups，是 Linux 内核（自2.6版本之后）提供的物理资源隔离机制，从而实现对 Linux 进程或者进程组的资源限制、隔离和统计功能。cgroups 引入了 任务 Task、控制组 control group、层级 hierachy、子系统 subsystem 几个概念。引用知乎 lecury 的一张图来快速了解这几个概念之间的关系。
 
