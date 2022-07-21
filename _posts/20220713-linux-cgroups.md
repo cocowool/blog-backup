@@ -12,7 +12,19 @@ description:
 
 Linux namespace 是容器技术的底层支撑，是 Linux 内核为了限制系统资源提供的功能特性。通过 namespace 可以让一部分进程只能看到与自己相关的一些资源，看不到其他进程使用的操作系统资源，避免进程间的相互影响。
 
-Linux 在 2.4 内核中实现了 mount namespace ，并在 2.6 内核中实现了 IPC、Network、PID、UTS 等资源的隔离。
+> Namespaces are a feature of the Linux kernel that partitions kernel resources such that one set of processes sees one set of resources and another set of processes sees a different set of resources. The feature works by having the same namespace for a group of resources and processes, but those namespaces refer to distinct resources.
+
+Linux 在 2.4 内核中实现了 mount namespace ，并在 2.6 内核中实现了 IPC、Network、PID、UTS 等资源的隔离。Linux 主要提供了七种类型的命名空间，具体如下：
+
+* PID namespace，用于隔离进程资源，如 pid
+* net namespace，用于隔离网络相关资源，如IP或端口
+* uts namespace，Unix Timesharing System，简单理解主要用来隔离主机名
+* user namespace，用于隔离用户
+* mnt namespace，用于隔离文件系统，类似于 chroot 命令
+* ipc namespace，进程间通信的相关资源隔离，细节比较复杂
+* Cgroups namespace，用于控制命名空间中系统资源使用限制
+
+![Namespaces inheritance](20220713-linux-cgroups/Namespace_inheritance.png)
 
 使用 `lsns` 命令可以查看操作系统中命名空间的情况。NS 是 inode number，即命名空间指向的链接文件，如果两个命令空间的ID相同，则表示这两种资源在同一个命名空间中。也可以使用 `ls /proc/[pid]/ns` 命令，以进程的视角查看对应的命名空间。
 
@@ -43,7 +55,9 @@ $ lsns
 
 ```
 
-> 看到网上有一些资料介绍 unshare 等操作 namespace 的命令，在 CentOS 7.6 1810 上测试总是报：unshare: unshare failed: Invalid argument 错误。查找到有人在 redhat 的 bugzilla 上问过同样问题，答复这个属于技术预览 Technology Preview ，需要修改参数
+> 看到网上有一些资料介绍 unshare 等操作 namespace 的命令，在 CentOS 7.6 1810 上测试总是报：unshare: unshare failed: Invalid argument 错误。查找到有人在 redhat 的 bugzilla 上问过同样问题，答复这个属于技术预览 Technology Preview ，需要修改参数 ，但是我在 CentOS 7.6 1810 上测试没有通过。
+>
+> 建议网上的示例都在 Ubuntu 环境下学习测试。
 
 ## cgroups
 
@@ -78,8 +92,8 @@ net_prio	5	1	1
 可以使用 cgexec 命令，在程序运行时指定使用的资源组，来限制程序的资源使用。
 
 > 要使用 cgexec 命令，需要在 Cent OS 7 中安装 `libcgroup-tools` 工具，在 Ubuntu 中安装 `cgroup-tools` 工具。
-
-nice、cpulimit、pstree、nsenter
+>
+> 还有一些命令，也涉及操作系统资源的查看和管理，如：nice、cpulimit、pstree、nsenter、chroot 等。
 
 ## 参考资料
 

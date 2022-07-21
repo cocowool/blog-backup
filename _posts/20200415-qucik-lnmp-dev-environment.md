@@ -146,7 +146,7 @@ $ docker-php-ext-install mysql
 
 * `docker-php-ext-source` 在容器中创建一个`/usr/src/php`目录
 * `docker-php-ext-enable`启用PHP扩展，省去我们手工编辑`php.ini`的过程
-* `docker-php-ext-install`安装并启用PHP扩展
+* `docker-php-ext-install` 安装并启用PHP扩展。这种方式还是有一定的局限性，例如支持的范围有限、不能自己添加个性化的模块等
 * `docker-php-ext-configure`经常与`docker-php-ext-install`搭配，在需要自定义扩展的配置时使用
 
 ## 启用 PATH_INFO
