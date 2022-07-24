@@ -228,6 +228,77 @@ $ sass --version
 
 也可以使用 `npm install -g sass` 命令来安装JS版本的sass。
 
+## 22年更新
+
+因为本地环境 Node 版本又发生了一次变化导致 node-sass 无法正常工作。经过资料查阅后发现，可以使用 `hexo-render-dartsass` 插件代替 `hex-renderer-sass` ，修改 package.json 然后执行 npm install 就可以解决上述问题。我的 package.json 供大家参考。
+
+```json
+{                                                                                                                                                                                                               
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },  
+  "hexo": {
+    "version": "5.4.0"
+  },  
+  "dependencies": {
+    "hexo": "^5.0.0",
+    "hexo-deployer-git": "^3.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-image-link": "0.0.3",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-dartsass": "^0.1.2",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0"
+  },  
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "images": "^3.2.4",
+    "node-sass": "^6.0.1"
+  }
+}
+```
+
+本次更新在以下环境验证通过
+
+```sh
+$ node --version
+v18.6.0
+$ sass --version       
+1.53.0 compiled with dart2js 2.17.3
+$ hexo -v      
+INFO  Validating config
+hexo: 5.4.0
+hexo-cli: 4.3.0
+os: darwin 21.3.0 12.2.1
+
+node: 18.6.0
+v8: 10.2.154.13-node.8
+uv: 1.44.2
+zlib: 1.2.11
+brotli: 1.0.9
+ares: 1.18.1
+modules: 108
+nghttp2: 1.48.0
+napi: 8
+llhttp: 6.0.7
+openssl: 1.1.1q
+cldr: 40.0
+icu: 70.1
+tz: 2021a3
+unicode: 14.0
+```
+
+
 
 ## 参考资料
 

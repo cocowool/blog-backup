@@ -97,7 +97,30 @@ Maven主要的阶段包含以下几个
 
 ### 后记
 
-参考资料:
+2022年7月24日，操作系统升级到了 Monterey 12.2.1，执行 `mvn` 命令时提示
+```sh
+$ mvn -v
+The JAVA_HOME environment variable is not defined correctly
+This environment variable is needed to run this program
+```
+
+因为默认的 shell 已经更新为 zsh，修改 `.zshrc` 文件，追加下面的内容。
+```
+#设置 Java_home
+export JAVA_HOME=$(/usr/libexec/java_home)
+```
+
+重新查看就可以解决问题
+```sh
+$ mvn -version
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+Maven home: /usr/local/Cellar/maven/3.8.6/libexec
+Java version: 15.0.2, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home
+Default locale: en_CN, platform encoding: UTF-8
+OS name: "mac os x", version: "10.16", arch: "x86_64", family: "mac"
+```
+
+### 参考资料:
 1、[Maven](https://maven.apache.org)
 2、[Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 3、[Installing Apache Maven](https://maven.apache.org/install.html)
