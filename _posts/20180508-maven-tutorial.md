@@ -28,7 +28,10 @@ OS name: "mac os x", version: "10.11.6", arch: "x86_64", family: "mac"
 ### 配置
 Maven的配置分三个级别：Project级别、全局 Installation 和 用户 User 级别。用户的配置可以在```${user.home}/.m2/settings.xml```文件中具体指定，这个文件不是必须的，如果没有就会使用默认配置。
 
+
+
 #### 配置本地 Repository
+
 默认的 Repository 位置为```${user.home}/.m2/repository/```，可通过配置文件修改。
 ```xml
 <settings>
@@ -120,19 +123,12 @@ Default locale: en_CN, platform encoding: UTF-8
 OS name: "mac os x", version: "10.16", arch: "x86_64", family: "mac"
 ```
 
+macOS 操作系统的 jdk 默认安装在 `ls -lh /Library/Java/JavaVirtualMachines/` 目录下，如果需要多个 jdk 同时存在，可以看看参考资料5对应的文章内容。
+
 ### 参考资料:
-1、[Maven](https://maven.apache.org)
-2、[Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
-3、[Installing Apache Maven](https://maven.apache.org/install.html)
-4、[Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
 
-
-
-
-
-
-
-
-
-
-
+1. [Maven](https://maven.apache.org)
+2. [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+3. [Installing Apache Maven](https://maven.apache.org/install.html)
+4. [Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
+5. [macOS 上安装多个版本 JDK](https://blog.csdn.net/chenzhengfeng/article/details/124965048)
