@@ -26,9 +26,13 @@ OS name: "mac os x", version: "10.11.6", arch: "x86_64", family: "mac"
 将 bin 目录加入到你的环境变量中。
 
 ### 配置
-Maven的配置分三个级别：Project级别、全局 Installation 和 用户 User 级别。用户的配置可以在```${user.home}/.m2/settings.xml```文件中具体指定，这个文件不是必须的，如果没有就会使用默认配置。
+Maven的配置分三个级别：Project级别、全局 Installation 和 用户 User 级别。
 
+macOS 通过 brew 方式安装 maven 默认位于 `/usr/local/Cellar/maven/3.8.6/libexec/`。
 
+用户级配置可以在 ```${user.home}/.m2/settings.xml``` 文件中设置，这个文件不是必须的，如果没有就会使用默认配置。
+
+工程级别的配置可以直接写在工程的 pom.xml 文件中。
 
 #### 配置本地 Repository
 
@@ -132,3 +136,5 @@ macOS 操作系统的 jdk 默认安装在 `ls -lh /Library/Java/JavaVirtualMachi
 3. [Installing Apache Maven](https://maven.apache.org/install.html)
 4. [Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
 5. [macOS 上安装多个版本 JDK](https://blog.csdn.net/chenzhengfeng/article/details/124965048)
+6. [maven编译报错 -source 1.5 中不支持 lambda 表达式](https://www.cnblogs.com/softidea/p/6256543.html)
+7. []()
