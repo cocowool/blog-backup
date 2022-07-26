@@ -56,6 +56,8 @@ $ java -Xbootclasspath/a:lib/metrics-core-2.2.0.jar:lib/slf4j-api-1.7.2.jar -jar
 $ java -Djava.ext.dirs=~/lib:/project/lib -cp /project/lib com.edulinks.Main
 ```
 
+在使用 `-cp` 参数指定目录时，尽量使用绝对目录，作者在使用相对路径时，曾经遇到过 `java.lang.NoClassDefFoundError` 的错误，为这个问题查了好久，换成绝对路径后问题就解决了。
+
 第三种修改MANIFEST。
 
 第四种使用自定义的Classloaer。

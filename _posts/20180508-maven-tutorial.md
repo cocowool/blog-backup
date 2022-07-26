@@ -137,4 +137,5 @@ macOS 操作系统的 jdk 默认安装在 `ls -lh /Library/Java/JavaVirtualMachi
 4. [Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
 5. [macOS 上安装多个版本 JDK](https://blog.csdn.net/chenzhengfeng/article/details/124965048)
 6. [maven编译报错 -source 1.5 中不支持 lambda 表达式](https://www.cnblogs.com/softidea/p/6256543.html)
-7. []()
+7. [mvn 手动下载 jar 包](https://blog.51cto.com/feirenraoyuan/5331640)
+
