@@ -1,7 +1,7 @@
 ---
 title: 注意了！这样用 systemd 可能会有风险
 date: 2022-08-11 16:03:40
-description: 
+description: 在 Linux 6 / CentOS 6 中，使用 service 来进行服务的起停，但是在 Linux 7 / CentOS 7 中，替换为使用 systemctl 命令来控制。将一些常用应用注册成服务后，可以使用 systemctl 命令来方便的操作启动、停止、重启，但是作者最近发现如果配置不当，严重情况下可能影响正常业务运行，请大家务必关注。
 ---
 
 在 Linux 6 / CentOS 6 中，使用 service 来进行服务的起停，但是在 Linux 7 / CentOS 7 中，替换为使用 systemctl 命令来控制。将一些常用应用注册成服务后，可以使用 systemctl 命令来方便的操作启动、停止、重启，但是作者最近发现如果配置不当，严重情况下可能影响正常业务运行，请大家务必关注。
@@ -263,3 +263,4 @@ Type：定义 service 的类型，主要有以下类型：
 1. [unary operator expected解决方法](https://blog.csdn.net/qq_34418380/article/details/122406276)
 2. [Linux 系统注册系统服务流程](https://blog.csdn.net/qq_23312117/article/details/123294598)
 3. [Systemd使用小结](https://juejin.cn/post/6844904029533765645)
+4. [使用systemctl管理服务](https://www.cnblogs.com/outsrkem/p/11766267.html)
