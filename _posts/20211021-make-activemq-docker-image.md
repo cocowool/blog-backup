@@ -65,7 +65,7 @@ $ docker build -t cocowool/activemq:5.16.3 .
 可以通过下面的命令在当前窗口，以前台的形式运行 activemq。
 
 ```
-$ docker run --name='activemq' -it -p 8162:8161 --rm cocowool/activemq:5.16.3
+$ docker run --name='activemq' -it -p 8161:8161 --rm cocowool/activemq:5.16.3
 ```
 
 > 本文构建的 ActiveMQ 在 macOS 系统中无法通过宿主机访问，但是 webcenter/activemq 支持在 macOS 下的宿主机访问，尝试与 webcenter/activemq 的 Dockerfile 和启动参数，还没有找到原因，留到以后解决吧。
