@@ -166,7 +166,67 @@ $ bin/activemq purge queuename
 
 ## Python 生产与消费
 
+Python 提供了基于 [STOMP](https://stomp.github.io/) 协议的库，需要首先安装依赖。
 
+```shell
+$ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple stomp.py
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting stomp.py
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/83/07/d53fe1c223afb394dd35d6e1e90756ce5e1ae888748b111a51115c912dd6/stomp.py-8.0.1-py3-none-any.whl (37 kB)
+Collecting docopt<0.7.0,>=0.6.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: docopt
+  Building wheel for docopt (setup.py) ... done
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13706 sha256=081d78fb542b23e5c30b8784262ea77c58c1ca5ce2de747aef3faead64cfa376
+  Stored in directory: /Users/shiqiang/Library/Caches/pip/wheels/6b/88/e3/8c9b3f2ede2bf8f1c163dc9f03b8f090828552f510e06a3c3f
+Successfully built docopt
+Installing collected packages: docopt, stomp.py
+Successfully installed docopt-0.6.2 stomp.py-8.0.1
+```
+
+使用 STOMP 协议连接ActiveMQ，容器启动时需要把端口映射到本地。
+
+```sh
+$ docker run --name='activemq' -it -p 8161:8161 -p 61613:61613 --rm cocowool/activemq:5.16.3 
+```
+
+编写一个测试脚本，保存为 stomp_test.py
+
+```python
+import time
+import sys
+
+import stomp
+
+class MyListener(stomp.ConnectionListener):
+    def on_error(self, frame):
+        print('received an error "%s"' % frame.body)
+
+    def on_message(self, frame):
+        print('received a message "%s"' % frame.body)
+
+conn = stomp.Connection()
+conn.set_listener('', MyListener())
+conn.connect('admin', 'admin', wait=True)
+conn.subscribe(destination='/queue/test', id=1, ack='auto')
+conn.send(body=' '.join(sys.argv[1:]), destination='/queue/test')
+time.sleep(2)
+conn.disconnect()
+```
+
+执行看一下结果。
+
+```sh
+$ python3 stomp_test.py this is a test xxx xxx
+received a message "this is a test xxx xxx"
+```
+
+可以在 ActiveMQ 的控制台上看到发送的消息数和连接数量。
+
+![image-20220824081820295](20211021-make-activemq-docker-image/image-20220824081820295.png)
+
+![image-20220824081741600](20211021-make-activemq-docker-image/image-20220824081741600.png)
 
 
 
