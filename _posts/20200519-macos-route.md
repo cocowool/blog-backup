@@ -161,6 +161,16 @@ There are no additional IPv4 routes on Wi-Fi.
 
 清空路由表就是不需要添加任何路由信息就可以。
 
+## 查看端口监听
+
+```sh
+$ lsof -i :61613             
+COMMAND     PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+com.docke 22500 shiqiang   74u  IPv6 0xa0a6fc82987d1dcd      0t0  TCP *:61613 (LISTEN)
+```
+
+通过 lsof 命令可以查看端口监听的情况。
+
 ## 参考资料
 
 1. [MacOS上路由表的操作](https://www.baidu.com/link?url=E9XstvqW5Vbeju068bPVl_1O1YUpOLqwPEGn3ISXzyfkoLC4z38FYkr02YJ7717n7RPsOhIQyInCRU1Wgk0uAq&wd=&eqid=eae92997001fc824000000035ec23824)

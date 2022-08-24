@@ -5,7 +5,7 @@ keyrowds: docker, ActiveMQ
 description: 自己构建一个 ActiveMQ 的镜像并运行服务。
 ---
 
-> 本文基于 ActiveMQ 5.14.3 
+> 本文基于 ActiveMQ 5.16.3 ，macOS Monterey 12.2.1 以及 Docker 20.10.8
 
 ## ActiveMQ 介绍
 
@@ -229,6 +229,20 @@ received a message "this is a test xxx xxx"
 ![image-20220824081741600](20211021-make-activemq-docker-image/image-20220824081741600.png)
 
 
+
+> 对于 ActiveMQ 5.8.0 默认没有打开 stomp 协议，需要自己修改 activemq.xml 添加下面两行内容
+>
+> ```xml
+> <transportConnectors>
+> <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
+>     <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireformat.maxFrameSize=104857600"/>
+>     <transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireformat.maxFrameSize=104857600"/>
+>     <transportConnector name="stomp" uri="stomp://0.0.0.0:61612?transport.closeAsync=false"/>
+>     <transportConnector name="stomp+nio" uri="stomp+nio://0.0.0.0:61613?transport.closeAsync=false"/>
+> </transportConnectors>
+> ```
+>
+> 
 
 ## 参考资料
 
