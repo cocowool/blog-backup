@@ -2,7 +2,7 @@
 title: Python 与 ActiveMQ 交互的一些例子
 date: 2022-08-25 19:56:15
 keywords:
-description:
+description: 本文整理了使用 Python 与 ActiveMQ 交互的简单例子。
 ---
 
 > 本文基于 ActiveMQ 5.8.0 以及 Python 3.9.13
