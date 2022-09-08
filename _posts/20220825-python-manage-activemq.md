@@ -134,3 +134,4 @@ while True:
 
 1. [python stomp 收发指定的消息](https://blog.csdn.net/benhuo931115/article/details/77030869)
 1. [ActiveMQ 配置自动清除数据](https://blog.csdn.net/vtopqx/article/details/51788065)
+1. [python接收ActiveMQ消息](https://blog.csdn.net/l0w0z0/article/details/120154581)
