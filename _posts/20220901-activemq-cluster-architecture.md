@@ -116,10 +116,16 @@ activemq-B_1  |  INFO | jolokia-agent: No access restrictor found at classpath:/
 activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lock is locked... waiting 10 seconds for the database to be unlocked. Reason: java.io.IOException: File '/usr/local/apache-activemq-5.8.0/data/kahadb/lock' could not be locked.
 ```
 
-根据启动的顺序不同，A、B 都有可能抢到锁对外提供服务，未抢到锁的实例日志一直会报无法解锁的错误，同时不会对外提供 Web Console 服务。
+根据启动的顺序不同，A、B 都有可能抢到锁对外提供服务，未抢到锁的实例日志一直会报无法解锁的错误，同时不会对外提供 Web Console 服务。使用 Python 的连接例子，发现 stomp.py 有一个问题不能很好的支持 failover。
+
+## Networks of Brokers
+
+两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
 
 ## 参考资料
 
 1. [ActiveMQ集群安装](https://zhuanlan.zhihu.com/p/218094199)
 2. [Persistence vs. Durability in Messaging. Do you know the difference?](https://developers.redhat.com/blog/2016/08/10/persistence-vs-durability-in-messaging)
 3. [Shared File System Master Slave](https://activemq.apache.org/shared-file-system-master-slave)
+4. [Networks of Brokers](https://activemq.apache.org/networks-of-brokers)
+5. [docker-compose 固定IP](https://blog.csdn.net/m0_67401499/article/details/126327120)
