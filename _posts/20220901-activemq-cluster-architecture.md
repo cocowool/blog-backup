@@ -120,7 +120,9 @@ activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lo
 
 ## Networks of Brokers
 
-两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
+这是一种负载均衡的架构，各个 Broker 通过互相连接并共享队列信息，实现集群的负载均衡，即只要消费者连接到 Broker 网络中任意一台，就可以消费所有的消息。两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
+
+
 
 ## 参考资料
 
