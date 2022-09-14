@@ -127,9 +127,70 @@ activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lo
 * TransportConnector，传输连接器参数主要控制服务端和客户端之间的通信方式
 * NetworkConnector，网络连接器参数主要控制服务端和服务端之间的通信
 
-两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
+本文构建了这样一种架构，Broker1 作为与生产者沟通的节点，负责接收消息以及传递消费者反馈给生产者的消息，Broker2、Broker3作为与消费者沟通的节点，支持与大量的消费者建立链接。这种架构适用于消费者数量非常多，通常是超过1万个节点的情况。根据实际生产运行的情况，一台4C16G的虚拟机，一个ActiveMQ实例通常能够承受2000个左右的链接能保持长期稳定运行。
 
+![image-20220914160031714](20220901-activemq-cluster-architecture/image-20220914160031714.png)
 
+具体的 docker 配置如下，相关的文件可以从我的 [Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/activemq-network) 上下载。
+
+```yaml
+version: "2.1"
+services:
+  activemq-broker1:
+    image: cocowool/activemq:5.8.0
+    hostname: activemq-broker1
+    expose:
+      - "8161"
+      - "61611"
+    ports:
+      - "8161:8161"
+      - "61611:61612"
+    volumes:
+      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker1.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+    networks:
+      activemq-network:
+        ipv4_address: 172.28.1.11
+  activemq-broker2:
+    image: cocowool/activemq:5.8.0
+    hostname: activemq-broker2
+    expose:
+      - "8162"
+      - "61612"
+    ports:
+      - "8162:8161"
+      - "61612:61612"
+    volumes:
+      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker2.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+    networks:
+      activemq-network:
+        ipv4_address: 172.28.1.12
+  activemq-broker3:
+    image: cocowool/activemq:5.8.0
+    hostname: activemq-broker3
+    expose:
+      - "8163"
+      - "61613"
+    ports:
+      - "8163:8161"
+      - "61613:61612"
+    volumes:
+      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker3.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+    networks:
+      activemq-network:
+        ipv4_address: 172.28.1.13
+networks:
+  activemq-network:
+    ipam:
+      config:
+      - subnet: 172.28.1.0/24
+
+```
+
+执行 `docker-compose up` 命令可以启动三个 ActiveMQ 实例，然后分别通过 http://localhost:8161\8162\8163 可以查看三个实例的控制台，在 Broker2\Broker3 的 Network 页签下可以看到到 Broker1 的链接。我们在生产实践过程中发现过这个连接出问题的情况，此时 ActiveMQ 实例进程并无异常，这时就会影响连接到这个实例的消费者。
+
+![image-20220914172430278](20220901-activemq-cluster-architecture/image-20220914172430278.png)
+
+要测试这种架构的可用性，可以参考 [Python 与 ActiveMQ 交互的一些例子](http://www.edulinks.cn/2022/08/25/20220825-python-manage-activemq/) 中的代码示例，修改对应的端口地址就能看到效果。
 
 ## 参考资料
 
