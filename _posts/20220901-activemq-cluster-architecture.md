@@ -1,8 +1,8 @@
 ---
 title: ActiveMQ 集中常见集群模式
 date: 2022-09-01 11:28:27
-tags:
-description: 
+description: 本文基于 docker-compose 在本地模拟 ActiveMQ 两种常见的集群模式。
+keywords: ActiveMQ, ActiveMQ集群, ActiveMQ Cluster, ActiveMQ Master Slave
 ---
 
 ## Master Slave 架构模式
@@ -120,7 +120,14 @@ activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lo
 
 ## Networks of Brokers
 
-这是一种负载均衡的架构，各个 Broker 通过互相连接并共享队列信息，实现集群的负载均衡，即只要消费者连接到 Broker 网络中任意一台，就可以消费所有的消息。两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
+这是一种负载均衡的架构，各个 Broker 通过互相连接并共享队列信息，实现集群的负载均衡，即只要消费者连接到 Broker 网络中任意一台，就可以消费所有的消息。
+
+这种方案主要关注 ActiveMQ 配置中的两个参数
+
+* TransportConnector，传输连接器参数主要控制服务端和客户端之间的通信方式
+* NetworkConnector，网络连接器参数主要控制服务端和服务端之间的通信
+
+两种方式，一种是明确网络中 Broker 的清单，另外一种是使用自动发现的技术。
 
 
 
@@ -131,3 +138,5 @@ activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lo
 3. [Shared File System Master Slave](https://activemq.apache.org/shared-file-system-master-slave)
 4. [Networks of Brokers](https://activemq.apache.org/networks-of-brokers)
 5. [docker-compose 固定IP](https://blog.csdn.net/m0_67401499/article/details/126327120)
+6. [ActiveMQ实现负载均衡+高可用部署方案](https://www.jianshu.com/p/0aa5e33fed0c)
+7. [ActiveMQ中的NetworkConnector（网络连接器）详解](https://blog.csdn.net/u011165171/article/details/84349468)
