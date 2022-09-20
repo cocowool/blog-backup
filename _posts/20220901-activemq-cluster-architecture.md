@@ -1,5 +1,5 @@
 ---
-title: ActiveMQ 集中常见集群模式
+title: ActiveMQ 常见集群模式
 date: 2022-09-01 11:28:27
 description: 本文基于 docker-compose 在本地模拟 ActiveMQ 两种常见的集群模式。
 keywords: ActiveMQ, ActiveMQ集群, ActiveMQ Cluster, ActiveMQ Master Slave
@@ -191,6 +191,12 @@ networks:
 ![image-20220914172430278](20220901-activemq-cluster-architecture/image-20220914172430278.png)
 
 要测试这种架构的可用性，可以参考 [Python 与 ActiveMQ 交互的一些例子](http://www.edulinks.cn/2022/08/25/20220825-python-manage-activemq/) 中的代码示例，修改对应的端口地址就能看到效果。
+
+这个架构可以配合 Master Slave 进一步优化，如下图所示：
+
+![image-20220914184058344](20220901-activemq-cluster-architecture/image-20220914184058344.png)
+
+生产者连接的实例采用 Master Slave Failover 方式，消费者连接的实例在配置 NetworkConnector 时也采用 Failover 模式，这样 Broker1 就提供了主从的高可用模式，进一步提高了整个集群应对风险的能力。
 
 ## 参考资料
 
