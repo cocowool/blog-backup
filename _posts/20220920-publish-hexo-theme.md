@@ -2,7 +2,7 @@
 title: 发布自定义的 Hexo 主题
 date: 2022-09-20 19:02:58
 keywords: Hexo, Hexo theme, Hexo 主题
-description:
+description: 本文介绍如何将自己开发的主题发布到 Hexo 官网，希望对大家有用。
 ---
 
 使用关键词 Hexo + 主题 能够搜索到很多如何配置使用 Hexo 主题的文章，也有一些介绍如何制作自己主题的文章，我也曾经写过一篇 [Hexo 主题开发准备工作](http://edulinks.cn/2020/12/23/20201223-develop-hexo-theme/)，但是很少有介绍如何将自己制作的主题发布到 Hexo 官网的中文文章。
