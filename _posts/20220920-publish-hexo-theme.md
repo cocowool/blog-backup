@@ -66,7 +66,11 @@ $ npm install
 
 同时在 `source/themes/screenshots` 目录下将主题的截图保存为与主题同名的 PNG文件。官方文档中要求图片大小必须为 800*500 。
 
-![image-20220923100257951](20220920-publish-hexo-theme/image-20220923100257951.png)
+![image-20220927082034655](20220920-publish-hexo-theme/image-20220927082034655.png)
+
+创建 pull request 后，需要在 check list 中勾选自己做过的检查，同时 Github 会触发一些自动检查，这些检查通过后，就等待官方通过即可。
+
+![image-20220927082142077](20220920-publish-hexo-theme/image-20220927082142077.png)
 
 ## 参考资料
 
