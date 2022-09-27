@@ -72,6 +72,10 @@ $ npm install
 
 ![image-20220927082142077](20220920-publish-hexo-theme/image-20220927082142077.png)
 
+耐心的等待官方审核，通过后就可以在 [Hexo官方主题页面](https://hexo.io/themes/) 看到发布的主题啦。
+
+![image-20220927224930504](20220920-publish-hexo-theme/image-20220927224930504.png)
+
 ## 参考资料
 
 1. [Hexo themes](https://hexo.io/docs/themes)
