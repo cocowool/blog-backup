@@ -25,10 +25,15 @@ description:
 
 2000年，肯·汤普森 从贝尔实验室退休。随后在 Entrisphere Inc 工作了一段时间，2006年以分布式工程师的身份进入 Google，并参与了 Go 语言的开发。
 
+## 一个月写出 Unix
 
+关于汤普森在33天内写出Unix的故事在网上有很多文章，我倾向于相信他只是在大约一个月的时间内完成了 Unix 的核心部分。从2003年汤普森的一封邮件中，可以明确的看到当时他的妻子 bonnie 去探亲，留给了汤普森一段比较完整的时间，而他也正是在这一段时间里体现了他极高的生产能力，完成了最后几个主要模块的代码编写工作。
+
+![img](20211122-ken-thompson/v2-1bd3865c089dd2de2dbc46ba9437f594_1440w.webp)
 
 ## 参考资料
 
 1. [Kenneth Lane Thompson](https://www.britannica.com/biography/Kenneth-Lane-Thompson)
 2. [百度百科 Multics](https://baike.baidu.com/item/multics/10409946?fr=aladdin)
 3. [World Computer Chess Championship](https://www.chessprogramming.org/World_Computer_Chess_Championship)
+4. [Unix起源：“一周，一周，再一周，我们就有了Unix“](https://zhuanlan.zhihu.com/p/369571776)
