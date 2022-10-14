@@ -18,6 +18,10 @@ description:
 
 ![image-20221009211548185](20221009-es-cluster-monitoring/image-20221009211548185.png)
 
+
+
+
+
 ## 参考资料
 
 1. [elastic document](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/watcher-getting-started.html)
