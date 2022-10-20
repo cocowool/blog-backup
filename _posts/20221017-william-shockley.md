@@ -11,15 +11,24 @@ category: 计算机名人录
 
 ![img](20221017-william-shockley/Shockley.jpg)
 
-肖克利在加州理工学院（[California Institute of Technology](https://www.caltech.edu)）获得物理学学士学位，1936年在麻省理工学院（Massachusetts Institute of Technology）获得博士学位。博士毕业后进入贝尔实验室开始半导体的研究。第二次世界大战期间，曾参加美国海军反潜挺研究组的相关工作。
+肖克利在加州理工学院（[California Institute of Technology](https://www.caltech.edu)）获得物理学学士学位，1936年在麻省理工学院（Massachusetts Institute of Technology）获得博士学位，他的博士论文题目为「氯化钠晶体中电子波函数计算」。博士毕业后进入贝尔实验室开始半导体的研究。第二次世界大战期间，曾参加美国海军反潜挺研究组的相关工作，主要任务是研制深水潜艇炸弹。
 
 战争结束后，肖克利返回贝尔实验室继续他的半导体研究，他和另外同事尝试使用半导体做为电子信号的放大器和控制器。他们在1947年发明了点接晶体管，随后在1948年发明了更高效的接面晶体管。这种晶体管迅速成为20世纪50年代至60年代的主导产品，第一台袖珍晶体管收音机也使用了接面晶体管。
 
+半导体是一类掺了杂质的晶体材料，这类掺杂后的晶体材料会有整流作用，即只能让电子或空穴一种电流通过，而不像导体，无论是电子电流还是空穴电流都能通过。
+
+
+
 ![image-20221018083831704](20221017-william-shockley/image-20221018083831704.png)
 
+## 题外话
 
+据传肖克利在大学期间，因为身体高挑、肌肉匀称，被当地一家健身器材公司找到专门拍了一辑广告册。为了保持体形，肖克利一生都没中断过。他还喜欢健身、攀岩、航海等多项运动。
+
+不得不说，运动是最值得投入，也是永远能够忠实的给予我们汇报的项目。最近我也通过坚持跑步和跳绳，不仅获得了体重上的减轻，感觉工作的精力也比以前旺盛多了。
 
 ## 参考资料
 
 1. [百度百科-威廉·肖克利](https://baike.baidu.com/item/威廉·肖克利/10940765?fromtitle=William%20Shockley&fromid=11319354&fr=aladdin)
 1. [Britannica - William B. Shockley](https://www.britannica.com/biography/William-Shockley)
+1. [他的发明让电脑变了个样，半导体教父肖克利的晶体管人生](https://www.sohu.com/a/292603919_505803)
