@@ -19,9 +19,9 @@ category: 计算机名人录
 
 ![image-20221020202510439](20221017-william-shockley/image-20221020202510439.png)
 
+肖克利时代的电脑体积巨大，像之前在[霍华德·艾肯](http://www.edulinks.cn/2021/01/23/20210124-howard-aiken/) 中介绍的世界上第一台大型自动数字计算机马克1号，以及在[约翰·莫奇利](http://www.edulinks.cn/2021/03/21/20210321-john-mauchly/) 中介绍的世界上第一台电子计算机 「ENIAC」都占用了很大的空间并且启动成本昂贵。以ENIAC为例，它重达三十吨，有一万八千只真空管。因为真空管的发光发热问题，导致一些飞蛾或小昆虫进入计算机内部后会造成短路。1949年有杂志这样预言未来的电脑：「未来的电脑可能只需要一千只真空管，半吨重」。
 
-
-
+往往，人们对于长期的预测赶不上实际的发展，并且，颠覆性的创新常常来自外部。晶体管因为产生的热量小、效率高，为计算机的微型化奠定了基础，进一步引发了电信和计算机等各方面的革命。
 
 ## 题外话
 
@@ -34,3 +34,4 @@ category: 计算机名人录
 1. [百度百科-威廉·肖克利](https://baike.baidu.com/item/威廉·肖克利/10940765?fromtitle=William%20Shockley&fromid=11319354&fr=aladdin)
 1. [Britannica - William B. Shockley](https://www.britannica.com/biography/William-Shockley)
 1. [他的发明让电脑变了个样，半导体教父肖克利的晶体管人生](https://www.sohu.com/a/292603919_505803)
+1. [硅谷诞生前夜-肖克利的机器人梦](https://new.qq.com/rain/a/20210819A058KL00)
