@@ -163,7 +163,7 @@ services:
 
 > Compose目前有三个版本分别为Version 1，Version 2，Version 3，Compose区分Version 1和Version 2（Compose 1.6.0+，Docker Engine 1.10.0+）。Version 2支持更多的指令。Version 1将来会被弃用。
 
-## 挂载文件
+### 挂载文件
 
 docker-compose支持两种方式设置持久化的文件
 ```yaml
@@ -186,6 +186,21 @@ volumes:
 使用`docker volume ls`命令可以查看本地挂载的文件。
 使用`docker volume inspect volume-name`命令可以查看具体的真实地址。
 
+### 暴露端口
+
+利用 `ports` 和 `expose` 可以暴露容器的端口，先看下 ports 的用法。
+
+```yaml
+version: "2.1"
+services:
+    httpd-10:
+        image: httpd:2.4.54-alpine3.16
+        ports:
+            - "1380:80"
+```
+
+上面的配置文件表示将容器的 80 端口绑定到主机的 1380 端口上。不管是否指定主机端口，使用 ports 都会将端口暴露给主机。expose 仅会将端口暴露给容器环境中的其他容器，但不会暴露给主机。
+
 ## 应用实例
 
 利用docker-compose，可以快速帮助我们将不同的镜像编排组合成自己需要的服务，感兴趣的可以继续阅读我的其他文章。
@@ -201,4 +216,5 @@ volumes:
 2. [docker-compose-volumes的说明](https://www.cnblogs.com/lori/archive/2018/10/24/9843190.html)
 3. [docker-compose命令及yaml文件](https://www.cnblogs.com/g2thend/p/11746679.html)
 4. [Compose file version 2 reference](https://docs.docker.com/compose/compose-file/compose-file-v2/)
+5. [docker-compose ports 与 expose 的区别](https://blog.csdn.net/u014389734/article/details/105927644)
 
