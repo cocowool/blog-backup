@@ -1,5 +1,5 @@
 ---
-title: 穿透多层代理后Apache的Access日志怎么记录
+title: 穿透多层代理后Access日志怎么记录客户端IP
 date: 2022-10-25 14:06:30
 keywords: apache, nginx, 代理, 反向代理, 用户IP, 代理IP
 description: 本文介绍了访问日志中看到一连串用逗号分隔的IP的情况，并基于Docker模拟演练了出了相关的日志记录，方便用户深入理解访问日志中客户端IP和代理IP，以及 X-FORWARDED-FOR 头信息的真正含义及特殊情况。
