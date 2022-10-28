@@ -108,6 +108,8 @@ drwxr-xr-x  12 shiqiang  staff   384B Jun  5 15:17 ..
 > 发布到 pypi 需要首先有一个 pypi 的账号，还需要在 pypi 网站上生成 API Key。
 >
 > 如果使用 twine 上传，需要按照网站的提示准备 .pypirc 文件。
+>
+> 如果离上一个版本过去的时间比较长，可能存在上传失败的问题，官方提供了一个 [TroubleShooting](https://pypi.org/help/#invalid-auth) 的页面。
 
 ```sh
 $ python3 -m twine upload dist/*
@@ -140,9 +142,10 @@ Successfully installed mp3tag-0.0.1
 1. [How to Build your very first python package](https://www.freecodecamp.org/news/build-your-first-python-package/)
 2. [Pypi](https://pypi.org/)
 3. [Making a Python Package](https://python-packaging-tutorial.readthedocs.io/en/latest/setup_py.html)
-3. [How to Create a Python Package](https://www.pythoncentral.io/how-to-create-a-python-package/)
-3. [Packaging and distributing projects](https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/#working-in-development-mode)
-3. [python tutorial : class](https://docs.python.org/3/tutorial/classes.html)
-3. [Python Modules and Packages – An Introduction](https://realpython.com/python-modules-packages/)
-3. [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
-3. [解决TypeError: 'module' object is not callable问题](https://www.jianshu.com/p/b70068223a4e)
+4. [How to Create a Python Package](https://www.pythoncentral.io/how-to-create-a-python-package/)
+5. [Packaging and distributing projects](https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/#working-in-development-mode)
+6. [python tutorial : class](https://docs.python.org/3/tutorial/classes.html)
+7. [Python Modules and Packages – An Introduction](https://realpython.com/python-modules-packages/)
+8. [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+9. [解决TypeError: 'module' object is not callable问题](https://www.jianshu.com/p/b70068223a4e)
+10. [__pycache__ 是个什么鬼？](https://blog.csdn.net/yangchao1125/article/details/106347462/)
