@@ -6,7 +6,7 @@ keywords: elasticsearch, curl elasticsearch, elasticsearch 远程命令
 description: Elasticsearch对于文档操作，提供了以下几种API，本文就说明如何使用curl方式来调用这些API。
 ---
 
-Elasticsearch对于文档操作，提供了以下几种API，本文就说明如何使用curl方式来调用这些API。
+在 Elasticsearch 日常维护过程中，很多信息、配置和临时的调整都可以通过命令行的方式操作生效，不必通过配置文件修改，这就要求我们运维人员对于常用的 API 比较熟悉。本文整理了 elasticsearch 日常运维过程中常用的 API，详细说明如果通过 curl 命令来调用这些API。
 
 ### API种类
 
