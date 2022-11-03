@@ -43,13 +43,14 @@ epoch      timestamp cluster      status node.total node.data shards  pri relo i
 1657161542 10:39:02  performance6 green          31        22  13138 6569    0    0        0             0                  -                100.0%
 ```
 
+* 获取集群节点
 
+```sh
+$ curl -XGET 
 
-1、获取集群节点
+```
 
-
-
-#### 单文档操作API
+## 文档操作类
 
 1、* Index API 索引文档 *
 为文档创建索引
@@ -256,9 +257,12 @@ TODO 待补充
 
 > 本文所有示例基于ELK 5.6。
 
-参考资料：
-1、[Elasticsearch Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html)
-2、[Optimistic Concurrency Control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control)
+## 参考资料：
+1. [Elasticsearch Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html)
+2. [Optimistic Concurrency Control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control)
+3. [Elasticsearch merge 你懂了吗？](https://cloud.tencent.com/developer/article/1846903)
+
+
 
 
 
