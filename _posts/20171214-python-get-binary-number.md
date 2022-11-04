@@ -1,7 +1,6 @@
 ---
 title: Python获取数字的二进制值
 date: 2017-12-14 14:58:11
-tag: 
 keywords: python, python获取数字二进制, 二进制
 description: 如何通过Python获取一个整形数字的二进制表示。
 ---
@@ -9,6 +8,8 @@ description: 如何通过Python获取一个整形数字的二进制表示。
 
 ## 目标
 想要获取一个整形数字的二进制表示
+
+> 本文在 Python 3.10.6 环境下验证通过，如果使用 Python 2 相关版本环境，需要适当调整。
 
 ## bin 内置函数
 看一下官方的解释
@@ -38,7 +39,7 @@ def bindigits(n, bits):
     s = bin(n & int("1"*bits, 2))[2:]
     return ("{0:0>%s}" % (bits)).format(s)
 
->>> print bindigits(-31337, 24)
+>>> print(bindigits(-31337, 24))
 111111111000010110010111
 ```
 
@@ -89,19 +90,8 @@ b'bce'
 
 
 
-### 参考资料：
+## 参考资料：
 
 1、[Python bin](https://docs.python.org/3/library/functions.html#bin)
 2、[Two's Complement Binary in Python?](https://stackoverflow.com/questions/12946116/twos-complement-binary-in-python)
 3、[integers](http://docs.python.org/reference/lexical_analysis.html#integers)
-
-
-
-
-
-
-
-
-
-
-
