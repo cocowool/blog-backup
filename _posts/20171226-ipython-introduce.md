@@ -1,8 +1,7 @@
 ---
 title: IPython介绍
 date: 2017-12-26 17:27
-tag: 
-keywords: python, ipython
+keywords: python, ipython, jupyter notebook
 description: IPython 是 Fernando 在 2001 开始开发的一个交互式的Python解释执行环境。
 ---
 
@@ -87,6 +86,8 @@ IPython可以与matplotlib密切结合。
 
 %debug
 %pdb
+
+%time
 
 ### 参考资料：
 1、[IPython](http://ipython.org)
