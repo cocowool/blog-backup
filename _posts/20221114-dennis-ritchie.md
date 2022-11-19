@@ -13,8 +13,9 @@ category: 计算机名人录
 
 ## 生平
 
-
+里奇本科和研究生都毕业于哈佛大学，1963年获得物理学学士学位，1968年获得数学博士学位。
 
 ## 参考资料
 
 1. [百度百科-丹尼斯·里奇](https://baike.baidu.com/link?url=sxsYHRIUiraeNV6bnXzmB7ChNberwDxZNivrn9Y8WYeuCmBEWKk7SczSy9o82EtSicooyW-yRQ6wZP3qN_iAmzNx2jQrPTNL1EfF1H-_WMPC4FoyzIyWC0HsM7wJ6pxKvbC_EZ2ycCvLYZa7yA-pmNUwkX1Fv9JZojxYuokfkg79ZWQ6r50ZlMDSfzbX-hR9jV-4_6fnrMM_nTR3iMmbI0bbNI2QeI2YKOCzTaoyBgC)
+1. [Dennis M. Ritchie](https://www.britannica.com/biography/Dennis-M-Ritchie)
