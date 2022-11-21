@@ -29,7 +29,7 @@ Multics 项目最早基于通用公司的大型机 GE-645，目的是连接1000�
 
 1973年纽约，在第二届 ACM Symposium on Operating Systems Principles 学会上，里奇和汤普森分享了一篇简洁、精心编写的论文，详细介绍了 UNIX 操作系统的特点，包括文件系统、库文件等。
 
-> 这篇论文总共 15 页，感兴趣的朋友可以关注我的公众号，并在消息中回复「The UNIX Time-Sharing System」获取。
+> 这篇论文总共 15 页，可通过 [The UNIX Time-Sharing System PDF 下载](https://courses.cs.washington.edu/courses/cse451/21au/readings/ritchie78unix.pdf) 获取。
 
 1983年，里奇被提名为贝尔实验室 Fellow，1988年当选为美国工程院院士。1990年后，他在贝尔实验室带领了 Plan 9 操作系统和 Inferno 操作系统的开发。
 
