@@ -1,7 +1,6 @@
 ---
 title: SHELL技巧：处理文件名中的那些空格
 date: 2013-01-15 21:47
-tag: 
 keywords: 文件名空格, linux 文件名空格, shell技巧, shell 处理文件名空格
 description: Linux下遇到文件名中有空格时，用shell处理就需要一些特殊的技巧，本文帮你整理总结到了一起。
 ---
@@ -54,7 +53,6 @@ original="$(echo $safename | sed s'/_-_/ /g')"
 参考资料：
 1、[Work the shell － Dealing with Spaces in Filenames](http://www.linuxjournal.com/article/10954)
 2、[BASH SHELL：For Loop File Names With Spaces](http://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html)
-
 
 
 
