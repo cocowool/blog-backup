@@ -1,7 +1,6 @@
 ---
 title: Linux中的普通命令如何以管理员身份运行
 date: 2019-03-06 08:36
-tag: 
 keywords: linux, chmod
 description: 在Linux中，也有一种方式实现类似Windows这个菜单的效果，允许普通的命令或程序以管理员的身份运行，本文介绍具体实现的方式。
 ---
@@ -57,7 +56,6 @@ rwSr--r--   1 rousseau  staff   85 Sep 22  2017 test4
 
 1. [chmod g+s\chmod u+s](https://blog.csdn.net/taiyang1987912/article/details/41121131)
 2. [Linux中的普通命令如何以管理员身份运行](https://www.cnblogs.com/zjutzz/p/4229856.html)
-
 
 
 

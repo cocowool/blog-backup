@@ -2,7 +2,6 @@
 title: Linux下文件属性中的三个时间
 category: 运维
 date: 2020-10-14 19:23:50
-tags:
 keywords: stat, access time, modify time, change time
 description: linux下通过stat命令查看文件（目录）时，可以看到文件（目录）有三个时间属性，分别是 access time，modify time，change time。
 ---
