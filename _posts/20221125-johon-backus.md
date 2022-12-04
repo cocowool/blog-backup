@@ -1,7 +1,6 @@
 ---
 title: 约翰·巴克斯
 date: 2022-11-25 20:35:37
-tags:
 keywords: 约翰·巴克斯, 计算机名人录
 category: 计算机名人录
 ---
@@ -32,7 +31,11 @@ category: 计算机名人录
 
 通过这些工作，巴克斯争取到在 IBM 内部组建一个10人左右的团队来研究改进工作。一年之后，他和他的团队就发布了一份报告「Preliminary Report，Specifications for the IBM Mathematical FORmula TRANslating System，FORTRAN」，FORTRAN 主要用于数学计算，这让人们可以用接近自然语言的方式来编程。
 
-巴克斯首次在 ALGOL 58 中提出「巴克斯范式」，巴克斯范式是一种形式化的语法表示方法，用拉描述语法的一种形式体系，是一种典型的元语言，简称 BNF。
+FORTRAN 具备了现代命令式编程语言的大部分基本要素，它有变量、表达式、赋值、用于操作整数和浮点数的控制接口，以及用户定义的函数。它缺少的是块结构，所有变量都是全局的，没有动态存储（比如堆栈），所以递归是不可能的。
+
+巴克斯和他的团队用了2年的时间让 FORTRAN 不断完善，并随着 IBM 704 售出，随机还赠送了编程手册，这一系列动作让 FORTRAN 在未来的几十年中成为了科学计算领域中的首选编程语言。
+
+巴克斯随后参与了高阶语言相关的工作，并在在 ALGOL 58 中提出「巴克斯范式」，巴克斯范式是一种形式化的语法表示方法，用拉描述语法的一种形式体系，是一种典型的元语言，简称 BNF。
 
 BNF 表示语法规则的方式为：
 
@@ -48,3 +51,4 @@ BNF 表示语法规则的方式为：
 1. [Britannica - John Backus](https://www.britannica.com/biography/John-Warner-Backus)
 1. [正则表达式的BNF范式](https://zhuanlan.zhihu.com/p/33038004)
 1. [图灵奖12 —— 约翰·巴克斯，Fortran和BNF的发明人，却有着不幸的童年](https://cloud.tencent.com/developer/article/2057559)
+1. [John Backus](https://amturing.acm.org/award_winners/backus_0703524.cfm)
