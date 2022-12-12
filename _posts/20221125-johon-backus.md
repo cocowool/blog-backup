@@ -9,6 +9,8 @@ category: 计算机名人录
 
 ![img](20221125-johon-backus/article_john-backus_1.jpg)
 
+![img](20221125-johon-backus/article john backus 1.jpg)
+
 ## 生平
 
 约翰·巴克斯于1924年12月3日出生于美国宾夕法尼亚州的费城，他的父亲是一名富有的股票经纪人。经过高中的学习后，1942年他来到弗吉尼亚大学学习化学，但是他对实验室工作不感兴趣，因此被迫退学。
