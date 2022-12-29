@@ -1,7 +1,8 @@
 ---
 title: CTF中的PHP知识点
 date: 2022-12-29 21:46:39
-tags:
+keywords: ctf
+description:  
 ---
 
 ## 文件读取
