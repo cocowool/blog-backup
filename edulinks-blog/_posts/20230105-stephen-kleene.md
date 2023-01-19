@@ -15,6 +15,14 @@ description:
 
 ![img](20230105-stephen-kleene/turing-machine.jpeg)
 
+图灵机模型引入了读写、算法与程序语言的概念，极大的突破了过去的计算机器的设计理念。在图灵机中，一类重要的函数是数论函数，之所以这么称呼是因为它的输入和输出仅限于自然数。克莱尼对图灵的数论函数持怀疑态度，他认为图灵的方法对部分函数不适用，这些函数只对自然数的部分子集成立。
+
+> 「虽然我很向往图灵所构想的机器的非凡能力，但我依然对他用如此简单的方法将此应用到数论函数的计算中表示怀疑。」
+>
+> --- 克莱尼
+
+1941年开春，克莱尼在威斯康星的一个数据基础研讨班上开始寻求一种不同的解决方法，他重新改进的图灵机在1952年出版的经典图书《元数学引论》的第8节中占据了重要的位置。
+
 
 
 算法
@@ -28,3 +36,5 @@ description:
 1. [百度百科](https://baike.baidu.com/item/斯蒂芬·科尔·克莱尼/2094842?fr=aladdin)
 1. [几个关于算法方面问题的思考](https://zhuanlan.zhihu.com/p/587711340)
 1. [图灵机的改进者-克莱尼](https://www.sohu.com/a/214850899_223014)
+1. [Stephen Cole Kleene](https://mathshistory.st-andrews.ac.uk/Biographies/Kleene/)
+1. [lambda创世纪](https://www.cnblogs.com/quitboy/p/5060366.html)
