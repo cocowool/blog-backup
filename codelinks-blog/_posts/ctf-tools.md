@@ -6,6 +6,7 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 ---
 
 * sqlmap
+* dirsearch
 * 冰蝎 [Behinder](https://github.com/rebeyond/Behinder/releases/) ，动态二进制加密网站管理客户端
 * 菜刀，
 * [CobaltStrike](https://www.cobaltstrike.com)，内网渗透神器
