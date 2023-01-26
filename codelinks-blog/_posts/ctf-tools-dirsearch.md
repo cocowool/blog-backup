@@ -9,7 +9,29 @@ description:
 
 ## 安装
 
+> 本文介绍的是在 macOS 12.2.1 环境下的使用方法，需要具备 Python3 环境。
+
+在 Terminal 终端窗口中，cd 到希望保存这个工具的目录，执行下面的命令将代码下载到本地。
+
+```sh
+$ git clone https://github.com/maurosoria/dirsearch.git
+# 安装 dirsearch 运行需要的其他依赖
+$ cd dirsearch
+# 这里使用了清华大学的镜像源来提高安装速度
+$ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+# 运行一下看能否正常执行
+$ python3 dirsearch.py --version
+dirsearch v0.4.3
+```
+
 ## 使用
+
+```sh
+# 简单使用
+$ python3 dirsearch.py -u https://target
+```
+
+
 
 ## 参考资料
 
