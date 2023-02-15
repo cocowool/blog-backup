@@ -110,8 +110,6 @@ Go语言中包含了一个fmt包，包含了大量的打印函数，主要用到
 
 Go语言编译的二进制程序直接支持GDB调试，具体的细节后续会详细介绍。
 
-
-
 ## 参考资料:
 
 1. [打不开的 Golang 官网](https://golang.org)
@@ -119,7 +117,6 @@ Go语言编译的二进制程序直接支持GDB调试，具体的细节后续会
 3. [LiteIDE](http://liteide.org/en/download/)
 4. [Goland](http://www.jetbrains.com/go/)
 5. [GDB调试Go程序](http://blog.studygolang.com/2012/12/gdb%E8%B0%83%E8%AF%95go%E7%A8%8B%E5%BA%8F/)
-
 
 
 
