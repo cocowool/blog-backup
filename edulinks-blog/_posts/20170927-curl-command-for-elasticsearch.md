@@ -10,7 +10,7 @@ description: Elasticsearch对于文档操作，提供了以下几种API，本文
 
 [TOC]
 
-## 集群信息查看类
+## 集群信息
 
 * 查看集群描述和集群版本
 
@@ -46,16 +46,54 @@ epoch      timestamp cluster      status node.total node.data shards  pri relo i
 * 获取集群节点
 
 ```sh
-$ curl -XGET 
-
+$ curl -XGET http://192.18.8.7:9203/_cat/nodes?v
 ```
 
-## 文档操作类
+* 获取集群配置
 
-1、* Index API 索引文档 *
-为文档创建索引
+```sh
+$ curl -XGET http://localhost:9203/_cluster/settings
+```
 
-```bash
+## 索引相关
+
+查看索引信息。
+
+```sh
+$ curl -XGET http://localhost:9201/_cat/indices?v
+```
+
+
+
+
+
+## 文档相关
+
+* 查询索引
+
+```sh
+$ curl -XGET http://localhost:9202/kibana_sample_data_logs/_search?pretty
+```
+
+* 添加一条文档
+
+```sh
+$ curl -XPOST http://localhost:9202/student/_doc/2
+{
+	"name" : "wang"
+}
+```
+
+* 查询索引中的一条具体信息
+
+```sh
+```
+
+
+
+1、Index API 索引文档，为文档创建索引。
+
+```sh
 curl -XPUT "http://localhost:9200/twitter/tweet/1"; -H 'Content-Type: application/json' -d'
 {
     "user" : "kimchy",
@@ -63,6 +101,7 @@ curl -XPUT "http://localhost:9200/twitter/tweet/1"; -H 'Content-Type: applicatio
     "message" : "trying out Elasticsearch"
 }'
 ```
+
 返回结果
 ```javascript
 {
@@ -83,8 +122,9 @@ curl -XPUT "http://localhost:9200/twitter/tweet/1"; -H 'Content-Type: applicatio
 
 > 使用这个API发送两次请求，即便插入的数据一模一样，仍然会在索引中创建两个文档。如果不能接受这个结果，那就需要使用 _update API，并将```detect_noop```参数打开。
 
-2、* GET API 获取文档 *
+2、*GET API 获取文档*
 该API能够基于文档ID获取一份格式化的JSON文档。除了支持通过GET获取文档信息，也支持通过HEAD方法检查文档是否存在。
+
 ```bash
 curl -XGET 'localhost:9200/twitter/tweet/0?pretty'
 curl -XHEAD 'localhost:9200/twitter/tweet/0?pretty'
