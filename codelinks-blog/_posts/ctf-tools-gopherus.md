@@ -1,7 +1,7 @@
 ---
 title: Gopherus 介绍
 date: 2023-01-27 20:23:27
-keywords: sqlmap, ctf tools, ctf 工具
+keywords: sqlmap, ctf tools, ctf 工具, ctf 工具合集, ctf 工具介绍
 description: Gopherus 是一款 Payload 生成工具，可以方便快速的生成基于 gopher 协议的 payload。
 ---
 
