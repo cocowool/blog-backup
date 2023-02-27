@@ -6,6 +6,8 @@ keywords: elasticsearch, curl elasticsearch, elasticsearch 远程命令
 description: Elasticsearch对于文档操作，提供了以下几种API，本文就说明如何使用curl方式来调用这些API。
 ---
 
+> 本文基于 ELK 6.7 版本进行测试验证，如果你的版本不一致，可能需要稍微调整相关语法。
+
 在 Elasticsearch 日常维护过程中，很多信息、配置和临时的调整都可以通过命令行的方式操作生效，不必通过配置文件修改，这就要求我们运维人员对于常用的 API 比较熟悉。本文整理了 elasticsearch 日常运维过程中常用的 API，详细说明如果通过 curl 命令来调用这些API。
 
 [TOC]
@@ -15,19 +17,19 @@ description: Elasticsearch对于文档操作，提供了以下几种API，本文
 * 查看集群描述和集群版本
 
 ```sh
-$ curl -XGET http://192.18.8.7:9203
+$ curl -XGET http://localhost:9203
 {
-  "name" : "pm_2011_3",
-  "cluster_name" : "perf",
-  "cluster_uuid" : "xxxxxx-26bA",
+  "name" : "es-node3",
+  "cluster_name" : "es-cluster",
+  "cluster_uuid" : "vF9I5eNwQo-UrQc-hDLFuQ",
   "version" : {
-    "number" : "6.3.1",
+    "number" : "6.7.0",
     "build_flavor" : "default",
-    "build_type" : "zip",
-    "build_hash" : "eb782d0",
-    "build_date" : "2018-06-29T21:59:26.107521Z",
+    "build_type" : "docker",
+    "build_hash" : "8453f77",
+    "build_date" : "2019-03-21T15:32:29.844721Z",
     "build_snapshot" : false,
-    "lucene_version" : "7.3.1",
+    "lucene_version" : "7.7.0",
     "minimum_wire_compatibility_version" : "5.6.0",
     "minimum_index_compatibility_version" : "5.0.0"
   },
@@ -57,13 +59,19 @@ $ curl -XGET http://localhost:9203/_cluster/settings
 
 ## 索引相关
 
-查看索引信息。
+* 查看索引信息。
 
 ```sh
 $ curl -XGET http://localhost:9201/_cat/indices?v
 ```
 
+* 查看索引配置
 
+```sh
+$ curl -XGET http://localhost:9201/xxx/_settings
+```
+
+* 
 
 
 
@@ -301,6 +309,7 @@ TODO 待补充
 1. [Elasticsearch Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html)
 2. [Optimistic Concurrency Control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control)
 3. [Elasticsearch merge 你懂了吗？](https://cloud.tencent.com/developer/article/1846903)
+4. [ES学习之curl命令操作索引](https://blog.csdn.net/Alice_qixin/article/details/121040843)
 
 
 
