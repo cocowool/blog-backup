@@ -6,7 +6,7 @@ category: 计算机名人录
 description: 詹姆斯·马丁，IBM实时系统方面的专家，参与过多个航空预定系统项目。最为著名的是编写《The Wired Society》，预测了2000年网络时代的到来。
 ---
 
-詹姆斯·马丁（James Martin，19xx - 2013年），在很多英文资料中被誉为IT先驱和未来预言家。
+詹姆斯·马丁（James Martin，1933年10月19日 - 2013年1月24日），在很多英文资料中被誉为IT先驱和未来预言家。
 
 > James Martin has been described as “the man who predicted the future.” 
 
