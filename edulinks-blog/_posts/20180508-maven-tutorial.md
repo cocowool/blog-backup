@@ -3,9 +3,8 @@ title: Maven 快速入门
 date: 2018-05-08 14:05
 category: 运维
 keywords: maven, maven java, maven linux
-description: Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）。
+description: Maven是一个Java依赖包管理工具，可以支持Java项目的开发、打包、测试、部署等一系列流程，本文简要介绍 Maven 的使用基础和快速入门示例。
 ---
-
 
 ### 安装
 Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）
