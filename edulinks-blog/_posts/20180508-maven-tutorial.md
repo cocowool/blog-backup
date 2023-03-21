@@ -6,9 +6,9 @@ keywords: maven, maven java, maven linux
 description: Maven是一个Java依赖包管理工具，可以支持Java项目的开发、打包、测试、部署等一系列流程，本文简要介绍 Maven 的使用基础和快速入门示例。
 ---
 
-### 安装
-Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）
-首先，从官方[下载 Maven](https://maven.apache.org/download.html)，我这里下载的是 3.5 的版本。
+## 安装
+Maven是一个Java工具，因此你的电脑上必须安装有JAVA环境（JDK或者JRE）。首先，从官方[下载 Maven](https://maven.apache.org/download.html)，我这里下载的是 3.5 的版本。
+
 本文是在Mac环境中安装的，首先创建一个文件夹，将 tar 包解压缩。
 
 ```bash
@@ -22,16 +22,24 @@ Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.11.6", arch: "x86_64", family: "mac"
 ```
-将 bin 目录加入到你的环境变量中。
 
-### 配置
-Maven的配置分三个级别：Project级别、全局 Installation 和 用户 User 级别。
+将 bin 目录加入到你的环境变量之后，就可以使用 `mvn --version` 命令查看安装情况了。
 
-macOS 通过 brew 方式安装 maven 默认位于 `/usr/local/Cellar/maven/3.8.6/libexec/`。
+MacOS 系统也可以使用 `brew install mvn` 命令安装后使用。macOS 通过 brew 方式安装 maven 默认位于 `/usr/local/Cellar/maven/3.8.6/libexec/`。
 
-用户级配置可以在 ```${user.home}/.m2/settings.xml``` 文件中设置，这个文件不是必须的，如果没有就会使用默认配置。
+```sh
+# 使用 mvn --version 查看安装情况
+$ mvn --version
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+Maven home: /usr/local/Cellar/maven/3.8.6/libexec
+Java version: 1.8.0_341, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre
+Default locale: en_CN, platform encoding: UTF-8
+OS name: "mac os x", version: "12.2.1", arch: "x86_64", family: "mac"
+```
 
-工程级别的配置可以直接写在工程的 pom.xml 文件中。
+## 配置
+
+Maven的配置分三个级别：Installation 全局级别 、Project 工程级别、User 用户级别。用户级配置可以在 ```${user.home}/.m2/settings.xml``` 文件中设置，这个文件不是必须的，如果没有就会使用默认配置。工程级别的配置可以直接写在工程的 pom.xml 文件中。
 
 #### 配置本地 Repository
 
@@ -47,7 +55,7 @@ macOS 通过 brew 方式安装 maven 默认位于 `/usr/local/Cellar/maven/3.8.6
 #### 配置代理 Proxy
 其它还有并发配置 Parallel Artifact Resolution Configuration、安全及部署配置 Security and Deployment Settings
 
-### 创建工程
+## 创建工程
 > 首次执行的时候需要从Maven中央仓库下载一些依赖包，所以可能会花一些时间。由于网络超时的原因，很可能不会一次成功，需要多试几次。
 
 ```bash
@@ -137,4 +145,5 @@ macOS 操作系统的 jdk 默认安装在 `ls -lh /Library/Java/JavaVirtualMachi
 5. [macOS 上安装多个版本 JDK](https://blog.csdn.net/chenzhengfeng/article/details/124965048)
 6. [maven编译报错 -source 1.5 中不支持 lambda 表达式](https://www.cnblogs.com/softidea/p/6256543.html)
 7. [mvn 手动下载 jar 包](https://blog.51cto.com/feirenraoyuan/5331640)
+8. [SpringBoot教程(二)：Maven](https://blog.csdn.net/u010735988/article/details/125850640)
 
