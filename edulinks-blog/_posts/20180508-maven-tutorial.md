@@ -52,7 +52,27 @@ Maven的配置分三个级别：Installation 全局级别 、Project 工程级�
 </settings>
 ```
 
+#### 配置国内源
+
+为了加速依赖包的下载，可以配置国内阿里云的源，提高构建下载速度。
+
+```sh
+# 修改 ${user.home}/.m2/settings.xml
+<settings>                                                                                                                                                                                                                            
+	<mirrors>
+		<mirror>
+        <id>alimaven</id>
+        <name>aliyun maven</name>
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        <mirrorOf>central</mirrorOf>
+		</mirror>
+	</mirrors>
+</settings>
+```
+
+
 #### 配置代理 Proxy
+
 其它还有并发配置 Parallel Artifact Resolution Configuration、安全及部署配置 Security and Deployment Settings
 
 ## 创建工程
