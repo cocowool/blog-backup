@@ -1,5 +1,5 @@
 ---
-title: [CTF WP][攻防世界]文件包含 
+title: (CTF WP)文件包含 
 date: 2023-03-17 08:13:16
 keywords:
 description: 本文是攻防世界 Web 题目文件包含的 Write Up，欢迎大家交流讨论。
