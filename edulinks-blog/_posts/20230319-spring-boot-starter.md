@@ -239,9 +239,9 @@ $ java -jar target/selfservice-0.0.1-SNAPSHOT.jar
 
 ## 使用 IDEA 创建
 
-> 本文基于 IDEA Community 2022.3.3，因为社区版本没有提供快速创建 springboot 工程的功能，需要借助于一些插件来实现。
+在网上看了一圈文章，大部分都是教我们使用 IDEA 终极版中的 Spring Initializr 来创建 Spring 工程，但是这是个收费版本。
 
-
+我想基于 IDEA Community 2022.3.3 看看有没有能够支持的方式，曾经有几篇文章推荐 Spring Boot Assistant 插件，但我实验后都不能正常使用，如果能够使用的朋友，希望能够教教我。
 
 ## 参考资料
 
