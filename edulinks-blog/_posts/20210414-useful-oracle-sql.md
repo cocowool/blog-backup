@@ -76,20 +76,24 @@ select * from v$option a where a.PARAMETER='Real Application Clusters';
 sqlplus 默认设置下查询数据时，不能够像 mysql-cli 一样将结果格式化成表格样式，因此使用起来非常不方便，为了按照表格样式输出，需要做很多设置。
 
 ```sql
-# 将 username 列格式化为 10 个字符宽，这个设置只能针对字符串类型
+# col 是 column 命令的缩写，作用是将 username 列格式化为 10 个字符宽，这个设置只能针对字符串类型
 sql> col username for a10;
 # 将 userage 列格式化为 2 位长度
 sql> col userage format 99;
 # 也可以不指定列名
 sql> col for a20;
+# 清除列的样式
+sql> col username clear;
 # 表示每一行允许输出300个字符
 sql> set linesize 300;
-sql> 
+# 设置每页显示的行数，默认为 14 行，标题和分隔符也算2行
+sql> set pagesize 20
+# 可以使用 show 命令查看默认配置
+sql> show paesize
 ```
-
-
 
 ### 参考资料：
 
 1. Oracle 10g Administration Study Guide
 2. [oracle查看某个表空间下有多少表](https://blog.csdn.net/ysq5202121/article/details/45096487)
+3. [【Oracle学习】之 在sqlplus设置格式](https://blog.51cto.com/u_11408026/5783313)
