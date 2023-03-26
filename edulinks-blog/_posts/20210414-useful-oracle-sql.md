@@ -71,6 +71,25 @@ SQL>   select instance_number,INSTANCE_NAME from gv$instance;
 select * from v$option a where a.PARAMETER='Real Application Clusters';
 ```
 
+## Sqlplus 相关设置
+
+sqlplus 默认设置下查询数据时，不能够像 mysql-cli 一样将结果格式化成表格样式，因此使用起来非常不方便，为了按照表格样式输出，需要做很多设置。
+
+```sql
+# 将 username 列格式化为 10 个字符宽，这个设置只能针对字符串类型
+sql> col username for a10;
+# 将 userage 列格式化为 2 位长度
+sql> col userage format 99;
+# 也可以不指定列名
+sql> col for a20;
+# 表示每一行允许输出300个字符
+sql> set linesize 300;
+sql> 
+```
+
+
+
 ### 参考资料：
+
 1. Oracle 10g Administration Study Guide
 2. [oracle查看某个表空间下有多少表](https://blog.csdn.net/ysq5202121/article/details/45096487)
