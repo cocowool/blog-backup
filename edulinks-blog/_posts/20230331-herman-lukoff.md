@@ -2,7 +2,8 @@
 title: 赫尔曼·儒科夫
 date: 2023-03-31 21:09:41
 keywords: 赫尔曼·儒科夫, 计算机名人录 
-description: 
+description: 赫尔曼·儒科夫（Herman Lukoff，1923年5月2日 - 1979年9月24日），ENIAC、EDVAC、LARC 计算机的设计者。
+category: 计算机名人录
 ---
 
 赫尔曼·儒科夫（Herman Lukoff，1923年5月2日 - 1979年9月24日），ENIAC、EDVAC、LARC 计算机的设计者。
