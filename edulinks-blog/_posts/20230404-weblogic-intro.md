@@ -20,10 +20,11 @@ Weblogic Server 是 Oracle 公司开发的一款商业中间件，用于集成�
 ```sh
 # 这个镜像的 console 用户口令为 weblogic / welcome1
 $ docker pull ismaleiva90/weblogic12
+# -p 是映射容器端口到本地 7001, --rm 是结束后删除，避免遗留过多的实例
 $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 ```
 
-
+启动后，可以通过 http://localhost:7001/console 访问控制台页面。
 
 ## 参考资料
 
