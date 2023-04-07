@@ -5,7 +5,7 @@ keywords: WebLogic, weblogic server, oracle WebLogic, weblogic 介绍, weblogic 
 description: Weblogic Server 是 Oracle 公司开发的一款商业中间件，用于集成、部署和管理大型 Web 应用、网络应用或数据库应用的 Java 应用服务器。本文第一次发布时，官方看到 2020年3月30日，Weblogic Server 14.1.1 发布，企业中普遍使用较多的版本应该还以 11g、12c为主。
 ---
 
-> 本文首发于 我的博客站点 [大江小浪](http://www.edulinks.cn) -[Weblogic Server 入门介绍]() ，欢迎大家访问原文查看。
+> 本文首发于 我的博客站点 [大江小浪](http://www.edulinks.cn) -[Weblogic Server 入门介绍](http://edulinks.cn/2023/04/04/20230404-weblogic-intro/) ，欢迎大家访问原文查看。
 
 ## 简介
 
