@@ -29,4 +29,4 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 
 1. [Oracle Weblogic Server](https://www.oracle.com/cn/java/weblogic/)
 2. [东方通](https://tongtech.com/dft/pctype/25.html)
-3. []()
+3. [Weblogic使用、注意事项和实战](https://zhuanlan.zhihu.com/p/411959879)
