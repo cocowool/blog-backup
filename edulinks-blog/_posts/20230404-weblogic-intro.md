@@ -6,6 +6,10 @@ description: Weblogic Server 是 Oracle 公司开发的一款商业中间件，�
 ---
 
 > 本文首发于 我的博客站点 [大江小浪](http://www.edulinks.cn) -[Weblogic Server 入门介绍](http://edulinks.cn/2023/04/04/20230404-weblogic-intro/) ，欢迎大家访问原文查看。
+>
+> 本文的操作系统环境为：macOS Monterey Version 12.2.1 
+>
+> 本文的 Docker 版本为：Docker version 20.10.8, build 3967b7d
 
 ## 简介
 
@@ -34,3 +38,4 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 2. [东方通](https://tongtech.com/dft/pctype/25.html)
 3. [Weblogic使用、注意事项和实战](https://zhuanlan.zhihu.com/p/411959879)
 4. [使用Docker搭建Weblogic服务](https://blog.csdn.net/m0_67391907/article/details/126553673)
+5. [Building WebLogic Server Images on Docker](https://docs.oracle.com/middleware/12211/wls/DOCKR/configuration.htm)
