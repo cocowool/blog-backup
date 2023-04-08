@@ -21,7 +21,9 @@ Weblogic Server 是 Oracle 公司开发的一款商业中间件，用于集成�
 
 > Webloigc 最早由 Weblogic 公司开发，后并入 BEA 公司，最终被 Oracle 公司收购。
 
-## 容器化部署
+## 使用容器体验
+
+利用容器和已经构建好的镜像，我们可以快速熟悉 Weblogic 的管理界面和相关操作。如果更加的深入了解，还是建议用传统的方式搭建、部署并调整参数。
 
 ```sh
 # 这个镜像的 console 用户口令为 weblogic / welcome1
@@ -31,6 +33,8 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 ```
 
 启动后，可以通过 http://localhost:7001/console 访问控制台页面。
+
+![image-20230408094441004](20230404-weblogic-intro/image-20230408094441004.png)
 
 ## 参考资料
 
