@@ -10,6 +10,8 @@ GPS数据有一定的格式规范，常见的有 GPRMC、GPGGA等，
 
 
 
+![image-20230412203819928](20230412-draw-gps-path-with-python/image-20230412203819928.png)
+
 ## 参考资料
 
 1. [folium 实用功能进阶](https://blog.csdn.net/qq_15028721/article/details/128408627)
