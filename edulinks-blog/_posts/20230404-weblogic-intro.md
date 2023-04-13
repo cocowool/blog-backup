@@ -36,6 +36,10 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 
 ![image-20230408094441004](20230404-weblogic-intro/image-20230408094441004.png)
 
+## 将 springboot 工程部署到 Weblogic
+
+
+
 ## 参考资料
 
 1. [Oracle Weblogic Server](https://www.oracle.com/cn/java/weblogic/)
