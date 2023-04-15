@@ -44,7 +44,150 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 >
 > Maven 版本为 3.8.6
 
+将 pom.xml 修改为以下内容。
 
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.edulinks.testproject</groupId>
+  <artifactId>testproject</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>testproject</name>
+  <url>http://maven.apache.org</url>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.4.RELEASE</version>
+  </parent>
+  <dependencies>
+    <!-- <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency> -->
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency> 
+      <groupId>org.springframework.boot</groupId> 
+      <artifactId>spring-boot-legacy</artifactId> 
+      <version>2.1.0.RELEASE</version>
+     </dependency>
+
+  </dependencies>
+</project>
+```
+
+在 src/main 目录下创建 webapp/WEB-INF 目录，并添加 web.xml 文件。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>com.edulinks.testproject.App</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.boot.legacy.context.web.SpringBootContextLoaderListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>appServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextAttribute</param-name>
+            <param-value>org.springframework.web.context.WebApplicationContext.ROOT</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>appServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+```
+
+在相同目录下增加 weblogic.xml
+
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.3/weblogic-web-app.xsd">
+
+    <container-descriptor>
+
+        <prefer-application-packages>
+            <package-name>org.slf4j</package-name>
+            <package-name>javax.validation.*</package-name>
+            <package-name>org.hibernate.*</package-name>
+            <package-name>javax.el.*</package-name>
+            <package-name>org.springframework.*</package-name>
+        </prefer-application-packages>
+    </container-descriptor>
+    <context-root>/</context-root>
+</weblogic-web-app>
+```
+
+准备就绪后的目录结构为
+
+```sh
+$ testproject tree .                                                                                                               
+.
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── edulinks
+│   │   │           └── testproject
+│   │   │               ├── App.java
+│   │   │               └── controller
+│   │   │                   └── MyFirstSpringBootController.java
+│   │   └── webapp
+│   │       └── WEB-INF
+│   │           ├── web.xml
+│   │           └── weblogic.xml
+│   └── test
+│       └── java
+│           └── com
+│               └── edulinks
+│                   └── testproject
+│                       └── AppTest.java
+```
+
+代码可以参考开头提到的文章，然后就是编译打包 `mvn clean package` 。
+
+通过页面部署需要先点击「锁定并编辑」，然后点击「部署」，选择「安装」，出现安装界面后，选择上传 war 文件，然后根据提示一直下一步，全部完成后点击激活更改。最后观察到应用已经就绪状态，然后选择应用后点击启动，启动完成后就可以通过浏览器测试了。
+
+![image-20230415094924979](20230404-weblogic-intro/image-20230415094924979.png)
+
+可以通过 http://localhost:7001/demo/hello 访问到输出的信息。
 
 ## 参考资料
 
