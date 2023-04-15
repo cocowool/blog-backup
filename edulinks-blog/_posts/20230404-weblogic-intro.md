@@ -40,6 +40,10 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 
 在 [Springboot 工程创建入门](http://edulinks.cn/2023/03/19/20230319-spring-boot-starter/) 中介绍了创建一个简单的 Springboot 工程的步骤，现在介绍如何将这个工程部署在 Weblogic 上。
 
+> Weblogic 使用上一节介绍的容器镜像，版本为 12.1.3
+>
+> Maven 版本为 3.8.6
+
 
 
 ## 参考资料
@@ -49,3 +53,5 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 3. [Weblogic使用、注意事项和实战](https://zhuanlan.zhihu.com/p/411959879)
 4. [使用Docker搭建Weblogic服务](https://blog.csdn.net/m0_67391907/article/details/126553673)
 5. [Building WebLogic Server Images on Docker](https://docs.oracle.com/middleware/12211/wls/DOCKR/configuration.htm)
+6. [Deploying a WAR to WebLogic](https://docs.spring.io/spring-boot/docs/2.1.x/reference/html/howto-traditional-deployment.html#howto-weblogic)
+7. [Github oukele - SpringBoot-Weblogic-Demo](https://github.com/oukele/SpringBoot-WebLogic-Demo)
