@@ -38,6 +38,8 @@ $ docker run -it -p 7001:7001 --rm ismaleiva90/weblogic12
 
 ## 将 springboot 工程部署到 Weblogic
 
+在 [Springboot 工程创建入门](http://edulinks.cn/2023/03/19/20230319-spring-boot-starter/) 中介绍了创建一个简单的 Springboot 工程的步骤，现在介绍如何将这个工程部署在 Weblogic 上。
+
 
 
 ## 参考资料
