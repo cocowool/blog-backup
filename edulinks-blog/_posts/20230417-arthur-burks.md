@@ -5,7 +5,7 @@ keywords: 阿瑟·伯克斯, 阿瑟·伯克斯 计算机名人, 计算机名人,
 description: 阿瑟·伯克斯（Arthur Walter Burks，1915年10月13日 - 2008年5月14日），ENIAC 的主要设计者，还是中国社会科学院的外籍客座教授。
 ---
 
-阿瑟·伯克斯（Arthur Walter Burks，1915年10月13日 - 2008年5月14日），ENIAC 的主要设计者，还是中国社会科学院的外籍客座教授。
+阿瑟·伯克斯（Arthur Walter Burks，1915年10月13日 - 2008年5月14日），他是排在 冯·诺伊曼、[约翰·埃克特](http://www.edulinks.cn/2021/03/12/20210314-john-eckert/)、[约翰·莫奇利](http://www.edulinks.cn/2021/03/21/20210321-john-mauchly/)、[赫曼·哥尔斯廷](http://www.edulinks.cn/2021/04/11/20210411-herman-goldstine/) 之后的 ENIAC 主要设计者，还是中国社会科学院的外籍客座教授。
 
 1936 年在印第安纳州的迪堡大学（DePauw University）获得数学与物理学学士学位，1941 年在密歇根大学获得逻辑学博士学位。
 
