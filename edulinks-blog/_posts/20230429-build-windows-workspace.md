@@ -21,13 +21,15 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 ## CTF
 * BurpSuite
 * Sqlmap
-* 
+* Vmware Workstation 17 Player，为了安装 Kali 用的，这个版本允许用于非商业用途
+* Kali，我选择从官方下载 ISO 后自己安装
 
 ## 开发
 * WSL
 * Ubuntu，通过微软商店安装的，可以通过 /mnt/ 目录访问 Windows 中的文件
 * Visual Studio Code，版本 
 * Python环境：Anacoda
+* Github，如果需要提交代码，记得生成一个专用的 Token
 
 ## 参考资料
 1. [WSL安装和迁移](https://wap.sciencenet.cn/blog-3474055-1341445.html?mobile=1)

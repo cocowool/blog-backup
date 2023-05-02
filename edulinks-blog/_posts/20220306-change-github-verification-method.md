@@ -18,13 +18,12 @@ fatal: Authentication failed for 'https://github.com/cocowool/wave.git/'
 
 这是因为 Github 从2021年8月13日之后，在相关操作身份验证时，不再接受纯账户加密码的形式（因为不太安全），强制要求开发者使用基于令牌的认证方式。
 
+Github 提供了两种 Token 方式
+
+* Fine-grained tokens，这种方式允许我们生成细粒度的 Token，例如仅能控制一个 Repo 等等
+* Token(classic)，这种是比较经典的方式，这种方式也能够针对不同分类设置权限，但是不能够针对不同的 repo 设置权限
+
 根据 Github 的官方文档 [创建个人访问令牌](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) 我们可以在 Settings -> Developer Settings -> Personal access tokens 中生成特定权限和有效期的令牌，生成后将令牌复制下来以备后面步骤使用。
-
-重新设置 git 的全局认证方式
-
-```sh
-$ git config --global --unset credential.helper
-```
 
 然后再重新 `git push` 的时候，在密码栏位输入从 Github 页面获取的 Token 就可以。
 
@@ -43,6 +42,10 @@ To https://github.com/cocowool/wave.git
    f6664a5..5f663bd  main -> main
 ```
 
+> 如果上面的步骤没法解决你的问题，可以尝试重新设置 git 的全局认证方式
+> ```sh
+> $ git config --global --unset credential.helper
+> ```
 
 
 ## 参考资料
