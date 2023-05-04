@@ -2,8 +2,8 @@
 title: Macbook Pro入手必备的配置
 date: 2020-06-19 19:53:14
 updated: 2020-07-17 16:39:11
-tags:
-categories: 办公
+tags: Mac
+categories: Mac
 keywords: macOs, macOS办公, macOS配置, macOS效率
 description: 最早开始使用Mac电脑是从2011年开始，从Leopard一直到现在的Catalina，macOS系统经历了非常重大的变化，整理了一份自己系统配置的清单，一方面便于自己回顾查看，另一方面也送给有需要的朋友。
 ---
@@ -27,7 +27,7 @@ description: 最早开始使用Mac电脑是从2011年开始，从Leopard一直�
 
 * 打开开发菜单，在`偏好设置`的`高级`标签中，最下方那个复选框钩上就可以了
 
-## Termianl 配置
+## Terminal 配置
 
 对于Linux和Unix系统来说，用户配置文件一般有以下几个：
 
@@ -57,21 +57,38 @@ alias ls='ls -lGFh'
 
 我一般使用Homebrew主题，然后再调整一个等宽字体和字号基本上就可以开工了。
 
-## 必备软件
+## 必备软件-办公
 
 * `Homebrew` 类似于Linux中的apt-get或者yum，提供了macOS下的包管理功能，方便我们安装各类开源软件，具体的安装步骤可以参考 [Homebrew介绍与上手指南](https://www.edulinks.cn/2020/06/23/20200623-homebrew-introduction/)
-* 微信 WeChat，国民级的软件，现在工作很多也要依靠微信不装不行，建议刚开始工作的同学，有条件还是为工作专门申请一个微信。
+
+* 微信 WeChat，国民级的软件，现在工作很多也要依靠微信不装不行，建议刚开始工作的同学，有条件还是为工作专门申请一个微信
+
 * 印象笔记，之前用的是Evernote，因为国内版本支持Markdown切换过来了，还是用Evernote账号登陆
+
 * WPS Office，这次远程办公期间，发现WPS Office已经足够满足日常的办公需要，关键还是免费的
-* Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
+
 * The Unarchiver，在App Store中解压缩的软件非常多，不知道是不是因为这类工具开发容易的原因，但是最好用、最好看的我觉得非The Unarchiver莫属了，关键还免费
+
 * Google Chrome，虽然Safari已经足够好用了，但某些时候还是要看齐下Chrome
-* Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
+
 * Thunder 迅雷，有时候下载一些软件还是有个工具比较好
-* Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章 []()
-* Filezilla，著名的FTP开源软件，注意一点从App Store下载的是Pro版本需要付费。对于日常使用免费版就足够，只是需要手工到 [Filezilla 官方网站](https://www.filezilla.cn/download/client) 下载。
-* XMind，思维导图工具，能够帮助我们快速的制作出非常漂亮的思维导图，更能帮助我们梳理思路，提高工作的效率。
-* Omnigraffle，在Mac下非常好用的流程图绘制软件，可以视为Visio的替代品，在我的《[为自己构建写作的敏捷发布流程](https://www.edulinks.cn/2020/06/04/20200604-build-my-writing-devops/)》也是制作素材的常用工具。
+
+* Typora，自从博客开始使用Markdown作为原始格式后，试过使用Sublime或VS Code，但最好用的还属Typora，它在处理博客中的图片时有非常好用的功能，具体可以参考我的文章
+
+* Filezilla，著名的FTP开源软件，注意一点从App Store下载的是Pro版本需要付费。对于日常使用免费版就足够，只是需要手工到 [Filezilla 官方网站](https://www.filezilla.cn/download/client) 下载
+
+* XMind，思维导图工具，能够帮助我们快速的制作出非常漂亮的思维导图，更能帮助我们梳理思路，提高工作的效率
+
+* Omnigraffle，在Mac下非常好用的流程图绘制软件，可以视为Visio的替代品，在我的《[为自己构建写作的敏捷发布流程](https://www.edulinks.cn/2020/06/04/20200604-build-my-writing-devops/)》也是制作素材的常用工具
+
+* Prallels Desktop，对于平滑使用 Windows 需求比较多的同学来说，最好搞一个正式的许可
+
+  
+
+## 必备软件-开发
+
+* Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
+* Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
 
 ## 关于主机名
 

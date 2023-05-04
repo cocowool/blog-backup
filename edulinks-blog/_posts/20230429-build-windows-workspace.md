@@ -23,6 +23,7 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Sqlmap
 * Vmware Workstation 17 Player，为了安装 Kali 用的，这个版本允许用于非商业用途
 * Kali，我选择从官方下载 ISO 后自己安装
+* Charles，这个软件可以用来给手机APP抓包，可以免费试用30天，就是试用期间总是弹窗
 
 ## 开发
 * WSL
