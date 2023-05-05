@@ -5,15 +5,17 @@ keywords: ctf, ctf tools
 description:  本文整理了CTF过程中可能用到的一些工具，供大家参考。
 ---
 
+本文整理记录 CTF 体验过程中可能用到的各种工具，与大家分享讨论。
+
 ## 工具目录
 
-* [sqlmap](http://codelinks.cn/2023/01/25/ctf-tools-sqlmap/)
+* [sqlmap](http://codelinks.cn/2023/01/25/ctf-tools-sqlmap/)，免费，SQL注入漏洞探测
 
-* [dirsearch](http://codelinks.cn/2023/01/26/ctf-tools-dirsearch/)
+* [dirsearch](http://codelinks.cn/2023/01/26/ctf-tools-dirsearch/)，免费，目录漏洞探测
 
 * [Gopherus](http://codelinks.cn/2023/01/27/ctf-tools-gopherus/)
 
-* [xray]()
+* [xray](http://codelinks.cn/2023/02/24/ctf-tools-xray/)，免费，网站安全评估
 
 * 冰蝎 [Behinder](https://github.com/rebeyond/Behinder/releases/) ，动态二进制加密网站管理客户端
 
@@ -37,13 +39,21 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 
 * [40G集成镜像工具](https://github.com/makoto56/penetration-suite-toolkit)
 
-  
+* Charles，收费，抓包工具
+
+* 010Editor，收费，二进制分析编辑器
 
 
 ## 浏览器插件
 
 * HackBar
 * FoxyProxy
+
+## 编码与算法
+
+* [Rabbit加密/解密](https://www.sojson.com/encrypt_rabbit.html)
+* [Base91解码](http://www.hiencode.com/base91.html)
+* [Ook加密解密](https://www.splitbrain.org/services/ook)
 
 ## 解题思路
 
