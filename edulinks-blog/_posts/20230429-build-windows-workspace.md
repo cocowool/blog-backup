@@ -15,8 +15,9 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 ## 办公
 * 微信，已经是事实上的电脑必备软件
 * Typora，在荔枝中国上购买了软件许可，支持激活三台设备，这次正好用上
-* 印象笔记，使用了很多年，电脑和手机同步非常方便。如果要支持多个电脑，需要购买会员。
-* 百度网盘，很多资料分享都是通过百度网盘，安装一个比较方便。版本：BaiduNetdisk_7.26.0.10。
+* 印象笔记，使用了很多年，电脑和手机同步非常方便。如果要支持多个电脑，需要购买会员
+* 百度网盘，很多资料分享都是通过百度网盘，安装一个比较方便。版本：BaiduNetdisk_7.26.0.10
+* [VLC Player](https://iso.mirrors.ustc.edu.cn/videolan-ftp/vlc/3.0.18/win64/vlc-3.0.18-win64.exe)，视频播放软件
 
 ## CTF
 * BurpSuite
@@ -24,11 +25,13 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Vmware Workstation 17 Player，为了安装 Kali 用的，这个版本允许用于非商业用途
 * Kali，我选择从官方下载 ISO 后自己安装
 * Charles，这个软件可以用来给手机APP抓包，可以免费试用30天，就是试用期间总是弹窗
+* [Stegsolve]( www.caesum.com/handbook/[Stegsolve](https://so.csdn.net/so/search?q=Stegsolve&spm=1001.2101.3001.7020).jar )，图片隐写题目必须的工具
 
 ## 开发
+* JDK，不管是开发还是CTF，JDK是一个必备的条件
 * WSL
 * Ubuntu，通过微软商店安装的，可以通过 /mnt/ 目录访问 Windows 中的文件
-* Visual Studio Code，版本 
+* Visual Studio Code，版本 1.77.3
 * Python环境：Anacoda
 * Github，如果需要提交代码，记得生成一个专用的 Token
 
