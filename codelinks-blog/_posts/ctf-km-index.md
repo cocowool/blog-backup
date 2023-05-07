@@ -8,12 +8,17 @@ description: 总结 CTF 比赛中用到的知识体系。
 ## 编码
 
 * base64 解码
+* HTML编码，`&#x63;`
 
 ## 加解密
 
 * 仿射密码 Affine Cipher，[在线解密工具](http://www.hiencode.com/affine.html)
 * Zip文件格式，判断是否假加密。Zip 文件以 50 4B 区分各区
 
+## 图片类
+
+* 图片中隐写文件或信息
+* 图片lsb隐写，提取不同颜色位获取信息
 
 ## 参考资料
 

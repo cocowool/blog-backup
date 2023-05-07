@@ -26,7 +26,8 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Kali，我选择从官方下载 ISO 后自己安装
 * Charles，这个软件可以用来给手机APP抓包，可以免费试用30天，就是试用期间总是弹窗
 * [Stegsolve]( www.caesum.com/handbook/[Stegsolve](https://so.csdn.net/so/search?q=Stegsolve&spm=1001.2101.3001.7020).jar )，图片隐写题目必须的工具
-* 010Eidtor，
+* [010Eidtor](https://www.sweetscape.com/download/010editor/)，二进制文件编辑器，可以免费试用30天
+* [Wireshark](https://www.wireshark.org/)，免费的流量分析工具
 
 ## 开发
 * JDK，不管是开发还是CTF，JDK是一个必备的条件
