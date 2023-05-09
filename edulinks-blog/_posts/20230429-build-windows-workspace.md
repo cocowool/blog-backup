@@ -18,9 +18,10 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * 印象笔记，使用了很多年，电脑和手机同步非常方便。如果要支持多个电脑，需要购买会员
 * 百度网盘，很多资料分享都是通过百度网盘，安装一个比较方便。版本：BaiduNetdisk_7.26.0.10
 * [VLC Player](https://iso.mirrors.ustc.edu.cn/videolan-ftp/vlc/3.0.18/win64/vlc-3.0.18-win64.exe)，视频播放软件
+* Filezilla，日常有时候会需要用FTP传输一些文件
 
 ## CTF
-* BurpSuite
+* [BurpSuite](https://portswigger.net/burp/communitydownload)，专业的安全探测工具，提供了个人使用的社区版
 * Sqlmap
 * Vmware Workstation 17 Player，为了安装 Kali 用的，这个版本允许用于非商业用途
 * Kali，我选择从官方下载 ISO 后自己安装
