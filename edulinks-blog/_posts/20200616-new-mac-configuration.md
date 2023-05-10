@@ -77,6 +77,13 @@ alias ls='ls -lGFh'
 * Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
 * Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
 
+## 必备软件-CTF
+
+> 从2021年开始，逐步接触了CTF这个领域有了很浓厚的兴趣，因此整理了再Mac上使用的CTF工具。同时还有一篇准备Windows环境的文章。
+
+* Burpsuite
+* Wireshark
+
 ## 关于主机名
 
 macOS 开机完成初始化之后，如果你在登陆界面输入了中文的姓名，则你在终端上看到的主机名大概会是中文名的拼音全拼。例如我的电脑这样。
