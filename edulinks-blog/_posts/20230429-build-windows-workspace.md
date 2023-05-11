@@ -36,7 +36,9 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Visual Studio Code，版本 1.77.3
 * Python环境：Anacoda
 * Github，如果需要提交代码，记得生成一个专用的 Token
+* gdb-peda
 
 ## 参考资料
 1. [WSL安装和迁移](https://wap.sciencenet.cn/blog-3474055-1341445.html?mobile=1)
 2. [Win10下Ubuntu(WSL)中Python环境配置笔记](https://zhuanlan.zhihu.com/p/63897033)
+3. [从零开始配置一台PWN虚拟机](https://blog.csdn.net/qcwwww/article/details/122800488)
