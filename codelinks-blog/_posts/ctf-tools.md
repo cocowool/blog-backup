@@ -31,6 +31,7 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * 图片隐写工具
 * [40G集成镜像工具](https://github.com/makoto56/penetration-suite-toolkit)
 * hexdump，命令行工具，快速查看二进制信息
+* [CTFCrackTools](https://github.com/0Chencc/CTFCrackTools)，[密码类题目工具](https://zhuanlan.zhihu.com/p/139492625)
 
 
 ## 浏览器插件

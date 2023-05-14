@@ -12,9 +12,13 @@ description: 总结 CTF 比赛中用到的知识体系。
 
 ## 加解密
 
+* binwalk，先过滤下文件
+* 010editor 查看下文件格式
+* zip 加密使用 ARCHPR 暴力破解，优先考虑纯数字、纯字母
 * 仿射密码 Affine Cipher，[在线解密工具](http://www.hiencode.com/affine.html)
 * Zip文件格式，判断是否假加密。Zip 文件以 50 4B 区分各区
 * 栅栏密码
+* 莫尔斯电码
 
 ## 图片类
 
