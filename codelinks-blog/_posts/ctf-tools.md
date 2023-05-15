@@ -13,6 +13,7 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * Wireshark，流量分析的第一选择，关键还免费
 * Charles，收费，抓包工具
 * 010Editor，收费，二进制分析编辑器
+* [archpr](http://codelinks.cn/2023/03/04/ctf-tools-archpr/)，密码恢复工具
 
 ## 工具目录
 

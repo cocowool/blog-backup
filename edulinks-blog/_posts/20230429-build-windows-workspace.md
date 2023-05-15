@@ -19,6 +19,7 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * 百度网盘，很多资料分享都是通过百度网盘，安装一个比较方便。版本：BaiduNetdisk_7.26.0.10
 * [VLC Player](https://iso.mirrors.ustc.edu.cn/videolan-ftp/vlc/3.0.18/win64/vlc-3.0.18-win64.exe)，视频播放软件
 * Filezilla，日常有时候会需要用FTP传输一些文件
+* [Everything](https://www.voidtools.com/zh-cn/)，类似于MacOS中的Spotlight，以前都是用TotalCommander，现在我看好多人用这个，也尝试一下
 
 ## CTF
 * [BurpSuite](https://portswigger.net/burp/communitydownload)，专业的安全探测工具，提供了个人使用的社区版
@@ -29,6 +30,7 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Charles，这个软件可以用来给手机APP抓包，可以免费试用30天，就是试用期间总是弹窗
 * [Stegsolve]( www.caesum.com/handbook/[Stegsolve](https://so.csdn.net/so/search?q=Stegsolve&spm=1001.2101.3001.7020).jar )，图片隐写题目必须的工具
 * [010Eidtor](https://www.sweetscape.com/download/010editor/)，二进制文件编辑器，可以免费试用30天
+* [nmap](https://nmap.org/)，网络扫描工具，直接从官网下载安装就好
 
 ## 开发
 * JDK，不管是开发还是CTF，JDK是一个必备的条件
