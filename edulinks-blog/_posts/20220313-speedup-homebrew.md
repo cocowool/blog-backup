@@ -57,9 +57,10 @@ git remote set-url origin https://github.com/Homebrew/homebrew-core.git
 brew update
 ```
 
-
+> 2023-05-04 更新，最近在安装的时候经常遇到清华源有 404 的错误，更换为中科大源之后速度恢复正常
 
 ## 参考资料
 
 1. [mac上安装brew如何加速](https://www.cnblogs.com/syw-home/p/12677586.html)
 2. [Homebrew国内加速](https://blog.csdn.net/msatergz/article/details/93241764)
+3. [镜像助手](https://brew.idayer.com/guide/change-source/)

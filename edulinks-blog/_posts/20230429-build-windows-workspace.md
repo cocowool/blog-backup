@@ -22,13 +22,13 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 
 ## CTF
 * [BurpSuite](https://portswigger.net/burp/communitydownload)，专业的安全探测工具，提供了个人使用的社区版
+* [Wireshark](https://www.wireshark.org/)，免费的流量分析工具
 * Sqlmap
 * Vmware Workstation 17 Player，为了安装 Kali 用的，这个版本允许用于非商业用途
 * Kali，我选择从官方下载 ISO 后自己安装
 * Charles，这个软件可以用来给手机APP抓包，可以免费试用30天，就是试用期间总是弹窗
 * [Stegsolve]( www.caesum.com/handbook/[Stegsolve](https://so.csdn.net/so/search?q=Stegsolve&spm=1001.2101.3001.7020).jar )，图片隐写题目必须的工具
 * [010Eidtor](https://www.sweetscape.com/download/010editor/)，二进制文件编辑器，可以免费试用30天
-* [Wireshark](https://www.wireshark.org/)，免费的流量分析工具
 
 ## 开发
 * JDK，不管是开发还是CTF，JDK是一个必备的条件
@@ -37,7 +37,9 @@ description: 办公电脑对于IT从业者来说非常重要，最近需要准�
 * Visual Studio Code，版本 1.77.3
 * Python环境：Anacoda
 * Github，如果需要提交代码，记得生成一个专用的 Token
+* gdb-peda
 
 ## 参考资料
 1. [WSL安装和迁移](https://wap.sciencenet.cn/blog-3474055-1341445.html?mobile=1)
 2. [Win10下Ubuntu(WSL)中Python环境配置笔记](https://zhuanlan.zhihu.com/p/63897033)
+3. [从零开始配置一台PWN虚拟机](https://blog.csdn.net/qcwwww/article/details/122800488)
