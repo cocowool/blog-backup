@@ -5,6 +5,27 @@ keywords: ctf php, ctf 知识体系
 description: 总结 CTF 比赛中用到的知识体系。 
 ---
 
+## Web类
+
+* URL编码规则，百分号开头，后面跟2位十六进制的ASCII码
+* HTTP 协议基础，主要是四部分请求行、请求头、空行、请求数据
+* 命令执行漏洞
+  * 过滤绕过
+
+* 文件上传漏洞
+  * 一句话木马（小马和大马）
+
+* 文件上传绕过
+  * 前段校验绕过
+  * MIME检查绕过
+  * 文件头校验绕过
+  * 服务端文件扩展名校验绕过
+
+* 文件包含漏洞
+  * 本地文件包含
+  * 远程文件包含
+
+
 ## 编码类
 
 * base64 解码
@@ -38,12 +59,21 @@ description: 总结 CTF 比赛中用到的知识体系。
 
 * SSTV 慢扫描电视 Slow Scan Television
 
-## PWN题目
+## PWN类
 
 * 汇编基础
 * ida 静态分析
 * gdb 动态分析
 * nasm 汇编编译器
+
+## SQL注入
+
+* 联合查询注入 select 1,2 union select name, age from table_name;
+* 关键字过滤绕过 waf
+  * select 过滤绕过，如 seleselectct
+  * 空格过滤绕过，如 /**/ 或 %0a
+  * 等号绕过，使用不加通配符的 like
+  * 
 
 ## 参考资料
 
