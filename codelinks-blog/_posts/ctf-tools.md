@@ -25,9 +25,15 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * 菜刀，
 * [CobaltStrike](https://www.cobaltstrike.com)，内网渗透神器
 * Goby
-* IDA Pro
+* IDA Pro，DataRescue公司出品的反汇编工具
+* 0llydebug，
 * JEB
-* PEiD0.95
+* PEiD0.95，逆向工具
+* DetectItEasy Die，另一款逆向工具
+* MT管理器
+* pyinstxtractor
+* uncompyle6
+* Cheat Engine，一款专注于游戏的修改器
 * theHarvester
 * 图片隐写工具
 * [40G集成镜像工具](https://github.com/makoto56/penetration-suite-toolkit)

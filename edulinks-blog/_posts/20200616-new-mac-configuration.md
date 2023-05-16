@@ -76,6 +76,7 @@ alias ls='ls -lGFh'
 
 * Docker，有了Docker之后虚拟机就不用装了，做一些试验什么的非常方便轻量
 * Visaul Studio Code，最近几年比较流行的轻量级IDE，超过了Sublime
+* [IntelliJ IDEA]()，Java开发IDE工具，相比Eclipse那是先进太多了
 
 ## 必备软件-CTF
 

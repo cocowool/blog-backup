@@ -5,6 +5,8 @@ keywords: ctf php, ctf 知识体系
 description: 总结 CTF 比赛中用到的知识体系。 
 ---
 
+本文整理 CTF 过程中所需要掌握的知识和分析方法，可能以后会整理一个思维导图，目前就使用 Markdown 格式分类展示。
+
 ## Web类
 
 * URL编码规则，百分号开头，后面跟2位十六进制的ASCII码
@@ -24,7 +26,13 @@ description: 总结 CTF 比赛中用到的知识体系。
 * 文件包含漏洞
   * 本地文件包含
   * 远程文件包含
+  * filter 伪协议 / input 伪协议 / data 伪协议 / zip伪协议
 
+## Java类
+
+* jar 包反编译 jd-gui
+* jar 包中 class 更新，`jar -uvf xx.jar xx.class`
+* IDEA 编辑器使用 
 
 ## 编码类
 
@@ -72,8 +80,18 @@ description: 总结 CTF 比赛中用到的知识体系。
 * 关键字过滤绕过 waf
   * select 过滤绕过，如 seleselectct
   * 空格过滤绕过，如 /**/ 或 %0a
-  * 等号绕过，使用不加通配符的 like
-  * 
+  * 等号绕过，使用不加通配符的 like/
+
+## 逆向
+
+* 汇编基础
+* 静态分析
+* 动态分析
+
+## 渗透
+
+* 信息收集，nmap -T4 -v ip
+
 
 ## 参考资料
 
