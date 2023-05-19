@@ -15,7 +15,7 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * 010Editor，收费，二进制分析编辑器
 * [archpr](http://codelinks.cn/2023/03/04/ctf-tools-archpr/)，密码恢复工具
 
-## 工具目录
+## 命令行工具
 
 * [sqlmap](http://codelinks.cn/2023/01/25/ctf-tools-sqlmap/)，免费，SQL注入漏洞探测
 * [dirsearch](http://codelinks.cn/2023/01/26/ctf-tools-dirsearch/)，免费，目录漏洞探测
@@ -39,11 +39,13 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * [40G集成镜像工具](https://github.com/makoto56/penetration-suite-toolkit)
 * hexdump，命令行工具，快速查看二进制信息
 * [CTFCrackTools](https://github.com/0Chencc/CTFCrackTools)，[密码类题目工具](https://zhuanlan.zhihu.com/p/139492625)
+* foremost
+* binwalk
 
 
 ## 浏览器插件
 
-* HackBar
+* [HackBar]([Releases · PhHitachi/HackBar (github.com)](https://github.com/PhHitachi/HackBar/releases/))，浏览器插件（支持Chrome、Edge），感觉某些场景可以替代 BurpSuite
 * FoxyProxy
 
 ## 在线工具
