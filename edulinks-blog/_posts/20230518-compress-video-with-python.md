@@ -1,7 +1,8 @@
 ---
 title: 使用Python压缩mov格式视频
 date: 2023-05-18 20:03:17
-tags: 
+keywords:
+description:  
 ---
 
 今天参加了一天的CTF比赛，每次CTF比赛都会要求选手录屏，下午一不小心没暂停，比赛结束后一看好家伙，视频文件竟然有 29G 这么大。这么大的文件是肯定没办法发给裁判的。
@@ -71,7 +72,7 @@ if __name__ == "__main__":
   print(savevideo.Compress_Video())
 ```
 
-想起来之前还写过一篇压缩图片的文章，[]() 这样以后再处理图片或视频就都不怕了。
+想起来之前还写过一篇压缩图片的文章，[使用 Python 压缩 Hexo 博客中的图片](http://edulinks.cn/2022/06/01/20220601-compress-hexo-images-with-python/) 这样以后再处理图片或视频就都不怕了。
 
 在 macOS 上实际测试了下，一个 2.xG 左右的 mov 压缩后可以到 500MB 左右。
 
