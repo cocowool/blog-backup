@@ -1,8 +1,8 @@
 ---
 title: 攻防世界CTF题目catcat-new Writeup
 date: 2023-01-18 19:30:41
-keywords:
-description:
+keywords: ctf, 攻防世界, catcat
+description: 本文记录CTF题目catcat的解题思路。
 ---
 
 最近攻防世界新放出了一道难度为2的Web题目 catcat-new。本文记录了整个学习摸索的过程，欢迎大家批评指正。
