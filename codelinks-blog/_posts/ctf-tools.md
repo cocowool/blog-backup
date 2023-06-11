@@ -41,6 +41,8 @@ description:  本文整理了CTF过程中可能用到的一些工具，供大家
 * [CTFCrackTools](https://github.com/0Chencc/CTFCrackTools)，[密码类题目工具](https://zhuanlan.zhihu.com/p/139492625)
 * foremost
 * binwalk
+* pngcheck，检查PNG图片CRC等内容
+* zsteg
 
 
 ## 浏览器插件
