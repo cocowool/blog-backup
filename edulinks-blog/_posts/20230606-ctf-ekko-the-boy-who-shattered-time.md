@@ -1,5 +1,5 @@
 ---
-title: 20230606-ctf-ekko-the-boy-who-shattered-time
+title: 时间刺客解题WP
 date: 2023-06-06 23:02:32
 keywords: 时间刺客, 攻防世界 misc , ctf, 攻防世界
 description: 本文记录CTF题目时间刺客的解题思路。
