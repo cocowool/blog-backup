@@ -1,8 +1,8 @@
 ---
 title: 在 Windows 和 MacOS 之间互相访问
 date: 2023-06-16 11:00:37
-keywords:
-description: 
+keywords: 远程桌面, macOs, Windows, macOs和Windows互访
+description: 如果同时有 macOS、Windows 设备，为了方便同时控制两个设备，需要掌握一些使用远程桌面访问的方式。
 ---
 
 日常办公过程中，使用了一台 Windows 处理一些邮件以及使用一些仅能在 Windows 环境安装的公司软件，使用了一台 Mac 用来写写文档、打打CTF、测试一些代码什么的。Windows 连接了机械键盘，Mac 16寸的屏幕用起来也很爽，因此经常会出现在两个电脑间不断切换的场景。
