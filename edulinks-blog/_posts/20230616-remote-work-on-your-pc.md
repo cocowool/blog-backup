@@ -13,6 +13,8 @@ description:
 
 ## Mac 连接 Windows
 
+> 微软的 Microsoft Remote Desktop 无法在中国区的 AppStore 中下载，可以使用参考资料中的第一链接。也可以使用 Parallels Desktop 提供的 Parallels Client 工具，这个可以在中国区的 AppStore 中下载。
+
 ## Windows 连接 Mac
 
 
@@ -20,3 +22,5 @@ description:
 ## 参考资料
 
 1、[Microsoft Remote Desktop Mac 版下载](https://go.microsoft.com/fwlink/?linkid=868963)
+
+2、[Windows在外远程桌面控制macOS](https://blog.csdn.net/lxwssjszsdnr_/article/details/130582932)
