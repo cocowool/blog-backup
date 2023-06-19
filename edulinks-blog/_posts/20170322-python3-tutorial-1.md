@@ -1,7 +1,6 @@
 ---
 title: Python 3.6学习笔记（一）
 date: 2017-03-22 14:42
-tag: 
 keywords: python, python 3.6, python学习笔记, python基础
 description: Python3.6学习笔记，基础的数据类型。
 ---
@@ -12,7 +11,10 @@ description: Python3.6学习笔记，基础的数据类型。
 
 ## 开始之前
 
+
+
 ## 基础示例
+
 Python语法基础，python语法比较简单，采用缩紧方式。
 ```python
 # print absolute value of a integer
@@ -284,17 +286,7 @@ def person(name, age, *args, city, job):
 ### 参数组合
 在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
 ![](2017-03-22-6599855/39469-20180710163655709-89635310.png)
-参考资料：
-1、[廖雪峰的Python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014316399410395f704750ee9440228135925a6ca1dad8000)
 
-
-
-
-
-
-
-
-
-
-
-
+## 参考资料：
+1. [廖雪峰的Python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014316399410395f704750ee9440228135925a6ca1dad8000)
+2. [Python安全攻防:渗透测试实战指南](http://www.edulinks.cn)
