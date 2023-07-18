@@ -8,6 +8,9 @@ description:
 
 哈利·赫斯基
 
+> 转载请注明出处
+
 ## 参考资料
 
+1. [Computer History Museum](https://www.computerhistory.org/)
 1. []()
