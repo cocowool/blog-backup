@@ -13,4 +13,4 @@ description:
 ## 参考资料
 
 1. [Computer History Museum](https://www.computerhistory.org/)
-1. []()
+1. [中国计算机历史记忆](https://www.ccf.org.cn/Computing_history/)
