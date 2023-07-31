@@ -24,9 +24,7 @@ description:
 
 ![img](20230718-harry-hushkey/Harry-Huskey-seated-with-G15-1-683x1024.jpg)
 
-> 转载请注明出处
-
-1954年，哈利·赫斯基设计制造了 G15。
+> 本文由 [大江小浪](http://edulinks.cn) 根据互联网内容整理而成，转载请注明出处
 
 ## 参考资料
 
