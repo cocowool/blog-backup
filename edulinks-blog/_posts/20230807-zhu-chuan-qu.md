@@ -1,12 +1,16 @@
 ---
 title: 朱传榘
 date: 2023-08-07 22:46:41
-keywords:
+keywords: 朱传榘, 计算机名人, 计算机名人录, ENIAC
 description:
 category: 计算机名人录
 ---
 
 朱传榘（Jeffrey Chuan Chu，1919年 - 2011年6月6日），美籍华裔计算机科学家。
+
+1919年出生在天津，1939年赴美留学。他获得了上海大学的学士学位、明尼苏达大学的理学学士学位、宾夕法尼亚大学的硕士学位和福尼尔理工学院的博士学位。
+
+
 
 Jeffrey Chuan Chu自1986年起担任SRI和BTU International的顾问，1991年至2009年2月担任BTU董事，退休后被授予名誉董事的荣誉称号。他获得了上海大学的学士学位、明尼苏达大学的理学学士学位、宾夕法尼亚大学的硕士学位和福尼尔理工学院的博士学位。他是中国交通大学和三东大学的兼职教授，也是中国科学技术委员会主席的顾问。他是1946年设计第一台电子计算机ENIAC的工程团队的核心成员。
 
@@ -17,3 +21,4 @@ Jeffrey Chuan Chu自1986年起担任SRI和BTU International的顾问，1991年�
 ## 参考资料
 
 1. [Jeffrey Chuan Chu](https://www.computer.org/profiles/jeffrey-chu/)
+2. [Jeffrey Chuan Chu](https://www.computinghistory.org.uk/det/66498/Jeffrey-Chuan-Chu/)
