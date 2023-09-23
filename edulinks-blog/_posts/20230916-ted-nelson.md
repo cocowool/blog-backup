@@ -1,11 +1,13 @@
 ---
 title: 20230916-ted-nelson
 date: 2023-09-16 19:12:12
-tags:
+keywords: 计算机名人录
+description: 
 ---
 
-xxx
+泰德·尼尔森（Ted Nelson，1937年6月17日）
 
 ## 参考资料
 
-1. []()
+1. [泰德·尼尔森：《极客们带来的礼物：计算机世界是如何发展到今天的》](https://zhuanlan.zhihu.com/p/102268982)
+2. [Ted Nelson – Biography, History and Inventions](https://history-computer.com/ted-nelson-complete-biography/)
