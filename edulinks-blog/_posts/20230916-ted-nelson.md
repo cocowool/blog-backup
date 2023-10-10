@@ -2,7 +2,7 @@
 title: 20230916-ted-nelson
 date: 2023-09-16 19:12:12
 keywords: 计算机名人录
-description: 
+description: 泰德·尼尔森（Ted Nelson，1937年6月17日），美国计算机科学家、社会学家和哲学家。
 ---
 
 泰德·尼尔森（Ted Nelson，1937年6月17日），美国计算机科学家、社会学家和哲学家。
