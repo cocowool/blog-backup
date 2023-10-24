@@ -13,7 +13,14 @@ description: 泰德·尼尔森（Ted Nelson，1937年6月17日），美国计算
 
 20世纪60年代初，尼尔森写信给海豚研究人员约翰·里利（John Lilly），提出了一些研究海豚语言的想法。里利对此印象深刻，并雇用了纳尔逊。纳尔逊在迈阿密的里利通信研究实验室与海豚共事了一年，分析海豚的行为并制作有关海豚活动的电影，之后才转向他的信息技术职业生涯。
 
+1977年，尼尔森在伊利诺伊州埃文斯顿开了一家零售商店，销售电脑及其相关零部件。他给这个公司命名为 Itty Bitty Machine Company，这也是唯一一家销售史蒂夫·乔布斯第一台 Apple I 电脑的零售商店。
+
+1979年，尼尔森决定尝试实现他一直研究的关于软件新概念架构的一些想法，他称之为 Xanadu，中文为「上都」，表示世外桃源的意思，原本指 塞缪尔·泰勒·柯勒律治（Samuel Taylor Coleridge）的诗歌「Kubla Khan」中的一座乌托邦城市。
+
+
+
 ## 参考资料
 
 1. [泰德·尼尔森：《极客们带来的礼物：计算机世界是如何发展到今天的》](https://zhuanlan.zhihu.com/p/102268982)
 2. [Ted Nelson – Biography, History and Inventions](https://history-computer.com/ted-nelson-complete-biography/)
+3. [百度百科-Apple I电脑](https://baike.baidu.com/item/Apple%20I/11045451?fr=ge_ala)
