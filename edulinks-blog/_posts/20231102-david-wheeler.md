@@ -2,7 +2,7 @@
 title: 大卫·惠勒
 date: 2023-11-02 19:22:07
 keywords: 大卫·惠勒, 计算机名人录, 计算机历史
-description: 
+description:  大卫·惠勒（David Wheeler，1927年2月9日 - 2004年12月13日），英国计算机科学家，子程序跳转共同发明人，实现了首个汇编器。
 category: 计算机名人录
 ---
 
