@@ -127,6 +127,8 @@ public class MyFirstSpringBootController {
 
 ```sh
 $ mvn package 
+# 下面这个打包语句可以跳过测试类命令
+$ mvn package -Dmaven.test.skip=true
 $ java -jar target/testproject-1.0-SNAPSHOT.jar
 ```
 
@@ -242,6 +244,8 @@ $ java -jar target/selfservice-0.0.1-SNAPSHOT.jar
 在网上看了一圈文章，大部分都是教我们使用 IDEA 终极版中的 Spring Initializr 来创建 Spring 工程，但是这是个收费版本。
 
 我想基于 IDEA Community 2022.3.3 看看有没有能够支持的方式，曾经有几篇文章推荐 Spring Boot Assistant 插件，但我实验后都不能正常使用，如果能够使用的朋友，希望能够教教我。
+
+
 
 ## 参考资料
 
