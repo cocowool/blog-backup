@@ -55,10 +55,42 @@ Tomcat 是一个免费开源的 Java Web 应用服务器，实现了 Java Servle
 </project>
 ```
 
-本文选择使用 Docker 运行 Tomcat，使用的 Tomcat 版本为 9.0.31 。
+同时需要修改入口类 App.java 。
+```java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+/**
+ * Hello world!
+ *
+ */
+@SpringBootApplication
+public class App extends SpringBootServletInitializer {
+    public static void main( String[] args )
+    {
+
+        System.out.println( "Hello World!" );
+        SpringApplication.run(App.class,args);
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
+        return builder.sources(App.class);
+    }
+}
 ```
+
+本文选择使用 Docker 运行 Tomcat，使用的 Tomcat 版本为 9.0.31 ，具体的操作过程如下：
+```
+# 使用 mvn 生成 war 包
+$ mvn package
+# 将生成的 war 包考入一个目录，把这个目录映射为容器 tomcat 的 webapps 目录
 $ docker run --rm --name my_tomcat -p 8080:8080 -v /Users/shiqiang/Projects/sh-valley/docker-conf/tomcat/data:/usr/local/tomcat/webapps/ tomcat:9.0.31
 ```
+
+容器启动后通过 http://localhost:8080/war包名称 可以访问 springboot 应用。
 
 ## Docker 方式部署
 
