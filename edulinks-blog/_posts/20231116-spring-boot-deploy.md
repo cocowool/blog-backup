@@ -94,6 +94,10 @@ $ docker run --rm --name my_tomcat -p 8080:8080 -v /Users/shiqiang/Projects/sh-v
 
 ## Docker 方式部署
 
+可以将我们之前编写的简单 springboot 应用程序构建为一个应用镜像，这种部署方式需要有容器环境。采用这种方式将为运维人员提供很好的操作管理能力。
+
+
+
 ## 参考资料
 
 1. [Tomcat](https://tomcat.apache.org/)
