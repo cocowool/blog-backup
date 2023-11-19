@@ -96,7 +96,43 @@ $ docker run --rm --name my_tomcat -p 8080:8080 -v /Users/shiqiang/Projects/sh-v
 
 可以将我们之前编写的简单 springboot 应用程序构建为一个应用镜像，这种部署方式需要有容器环境。采用这种方式将为运维人员提供很好的操作管理能力。
 
+将之前打包生成的 springboot jar 文件拷贝入一个空白的文件夹，并创建一个 Dockerfile，Dockerfile 的具体内容如下：
 
+```Dockerfile
+# 使用Java 8为基础镜像                                                     FROM openjdk:8 
+  
+# 维护者信息  
+MAINTAINER cocowool<cocowool@qq.com>  
+  
+# 指定临时文件目录为/tmp  
+VOLUME /tmp  
+  
+# 将jar包添加到容器中并更名为app.jar  
+ADD patrolselfservice-1.0-SNAPSHOT.jar app.jar  
+  
+# 运行jar包  
+RUN bash -c 'touch /app.jar'  
+  
+# 暴露容器的8080端口  
+EXPOSE 8080  
+  
+# 设置容器启动时的入口点  
+ENTRYPOINT ["java", "-jar", "/app.jar", "-Djava.security.egd=file:/dev/./urandom", "--spring.profiles.active=test", "--server.port=8080", "> /log/app.log"]
+```
+
+确认一下目录结构
+```sh
+$ ls -lh 
+total 34488
+-rw-r--r--  1 shiqiang  staff   561B Nov 19 21:40 Dockerfile
+-rw-r--r--  1 shiqiang  staff    17M Nov 18 16:01 patrolselfservice-1.0-SNAPSHOT.jar
+```
+
+然后执行镜像创建的命令 `docker build -t springbootapp:0.0.1 .`。等命令执行结束后，就可以使用 docker 运行自己的 springboot 应用。
+
+```sh
+$ docker run --rm --name my_springboot -p 8080:8080 springbootapp:0.0.1
+```
 
 ## 参考资料
 
