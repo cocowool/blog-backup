@@ -139,3 +139,4 @@ $ docker run --rm --name my_springboot -p 8080:8080 springbootapp:0.0.1
 1. [Tomcat](https://tomcat.apache.org/)
 2. [从源码理解SpringBootServletInitializer的作用](https://blog.csdn.net/qq_43799161/article/details/125315579)
 3. [使用 Docker 部署 Tomcat](https://blog.csdn.net/jks212454/article/details/130672006)
+4. [](https://blog.csdn.net/prxhlirr/article/details/126398361)
