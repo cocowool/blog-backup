@@ -5,7 +5,7 @@ keywords: springboot, properties, yml, springboot 配置, springboot 工程, spr
 description: 本文介绍 Springboot 工程自定义配置文件的使用方法，记录相关学习心得体会。
 ---
 
-Springboot 支持 properties 或者 yml 两种形式的配置文件。
+Springboot 支持 properties 或者 yml 两种形式的配置文件，工程默认支持 application.properties 和 application.yml 两个配置文件，这个配置文件中的内容会自动加载。如果需要创建自定义的配置文件并实现加载，需要按照下面步骤操作。需要注意，自定义配置文件无法实现自动加载，需要手工加载。
 
 ## 自定义 properties 配置文件
 
@@ -42,6 +42,113 @@ $ tree .
 │                       └── AppTest.java
 ```
 项目的入口类是 App.java，在 resources 文件夹下创建了 patrolserver.properties 配置文件，记录了一些服务器相关的属性，对应的建立了一个配置类 ServerConfig.java，并在 ServerController.java 控制类中使用了相关的配置属性。
+
+patrolserver.properties 配置文件代码如下:
+```
+patrolserver.ip = 127.0.0.1
+patrolserver.hostname = mytestserver
+patrolserver.status = running
+patrolserver.port = 3381
+```
+
+ServerConfig.java 配置类代码如下
+```java
+package cn.edulinks.patrolselfservice.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+@Component
+@PropertySource(value = {"classpath:patrolserver.properties"})
+@ConfigurationProperties(prefix = "patrolserver")
+public class ServerConfig {
+    private String ip;
+    private String hostname;
+    private String status;
+    private String port;
+
+    @Override
+    public String toString(){
+        return "PatrolServer { ip = " + ip + ", hostname = " + hostname + ", status = " + status + ", port = " + port + "}";
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public String getHostname() {
+        return hostname;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public void setHostname(String hostname) {
+        this.hostname = hostname;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+}
+```
+
+ServerController.java 控制类代码如下：
+```java
+package cn.edulinks.patrolselfservice.controller;
+
+import cn.edulinks.patrolselfservice.config.ServerConfig;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+
+@RestController
+@RequestMapping("/server")
+public class ServerController {
+
+		//通过 Value 注解获取单个配置属性
+    @Value("${patrolserver.hostname}")
+    private String hostname;
+
+		//通过配置类批量获取配置数据
+    @Resource
+    private ServerConfig serverConfig;
+
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public String getServer(){
+        System.out.println("server.host = " + serverConfig.getIp());
+
+        return serverConfig.toString();
+    }
+
+}
+```
+
+编译运行后访问 /server/all 可以看到如下输出
+```html
+PatrolServer { ip = 127.0.0.1, hostname = mytestserver, status = running, port = 3381}
+```
+
+## 自定义 yml 配置文件
+
 
 ## 区分测试和生产环境
 
