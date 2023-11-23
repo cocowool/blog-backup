@@ -149,25 +149,151 @@ PatrolServer { ip = 127.0.0.1, hostname = mytestserver, status = running, port =
 
 ## 自定义 yml 配置文件
 
+默认 ProperySource 不支持自定义的 yml 配置文件加载，需要编写一个单独的类，这里搬运了[蚩尤后裔](https://wangmaoxiong.blog.csdn.net/?type=blog) 提供的版本。
 
-## 区分测试和生产环境
+```java
+package jh.yysjzx.patrolselfservice;
+
+import org.springframework.boot.env.YamlPropertySourceLoader;
+import org.springframework.core.env.PropertySource;
+import org.springframework.core.io.support.DefaultPropertySourceFactory;
+import org.springframework.core.io.support.EncodedResource;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * 用于  @PropertySource 加载 yml 配置文件.
+ *
+ * @author wangmaoxiong
+ * @version 1.0
+ * @date 2020/5/25 20:45
+ */
+public class PropertySourceFactory extends DefaultPropertySourceFactory {
+    @Override
+    public PropertySource<?> createPropertySource(String name, EncodedResource resource) throws IOException {
+        if (resource == null) {
+            return super.createPropertySource(name, resource);
+        }
+        List<PropertySource<?>> sources = new YamlPropertySourceLoader().load(resource.getResource().getFilename(), resource.getResource());
+        return sources.get(0);
+    }
+}
+```
+
+参考 ServerConfig.java 配置类，在 config 文件夹下创建 SubsystemConfig.java 类。
+```java
+package jh.yysjzx.patrolselfservice.config;
+
+import jh.yysjzx.patrolselfservice.PropertySourceFactory;
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+//import java.lang.String;
+
+@Component
+@PropertySource(value = {"classpath:subsystem.yml"}, factory = PropertySourceFactory.class)
+@ConfigurationProperties(prefix = "subsystem")
+public class SubsystemConfig {
+
+    private String sysname;
+    private String sysowner;
+    private String sysgroup;
+
+
+    public String getSysname() {
+        return sysname;
+    }
+
+//    @Autowired
+    public void setSysname(String sysname) {
+        this.sysname = sysname;
+    }
+
+    public String getSysowner() {
+        return sysowner;
+    }
+
+//    @Autowired
+    public void setSysowner(String sysowner) {
+        this.sysowner = sysowner;
+    }
+
+    public String getSysgroup() {
+        return sysgroup;
+    }
+
+//    @Autowired
+    public void setSysgroup(String sysgroup) {
+        this.sysgroup = sysgroup;
+    }
+
+    @Override
+    public String toString(){
+        return "Subsystem { sysname = " + sysname + ", sysowner = " + sysowner + ", sysgroup = " + sysgroup + "}";
+    }
+}
+```
+
+在 SystemController.java 类中调用使用的示例。
+```java
+package jh.yysjzx.patrolselfservice.controller;
+
+import jh.yysjzx.patrolselfservice.config.ServerConfig;
+import jh.yysjzx.patrolselfservice.config.SubsystemConfig;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+
+@RestController
+//@PropertySource(value = {"classpath:subsystem.yml"})
+@RequestMapping("/system")
+public class SystemController {
+    private Environment env;
+
+    @Resource
+    private SubsystemConfig subsystemConfig;
+
+    @Value("${patrolserver.hostname}")
+    private String hostname;
+
+    @Value("${server.port}")
+    private String serverPort;
+
+    @Value("${subsystem.sysname}")
+    private String sysname;
+
+    @RequestMapping(value="/info", method = RequestMethod.GET)
+    public String getInfo(){
+//        String hostname = env.getProperty("server.port");
+        System.out.println("Here is system / info. ");
+        System.out.println(hostname);
+        System.out.println(serverPort);
+
+        System.out.println(sysname);
+        System.out.println(subsystemConfig);
+
+        return "ok";
+    }
+}
+```
+
+## 多环境配置
 
 Profile 的管理，配置文件指定，命令行指定
 
-
-##  计划补充的几个系列
-* log4j2 日志配置
-* 数据库连接配置 / 多数据源配置
-* REST 服务 / API文档 swagger
-* 整合 Redis
-* Springboot 应用的监控 / 可观测
-* 认证 OAuth 2.0 和 JWT
-* 整合 Kafka / ActiveMQ
-* 批处理
-* 定时任务 Quartz / xxljob
 
 ## 参考资料
 1. [Springboot 配置文件格式](https://baijiahao.baidu.com/s?id=1766310050451174842&wfr=spider&for=pc)
 2. Springboot 整合开发实战
 3. [springboot基础系列-properties配置](https://www.cnblogs.com/V1haoge/p/7183408.html)
 4. [SpringBoot加载自定义配置文件](https://blog.csdn.net/new_renren/article/details/130940498)
+5. [Springboot Documentation](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#features.external-config)
+6. [Springboot 加载配置文件方式](https://blog.csdn.net/wangmx1993328/article/details/81005170/)
