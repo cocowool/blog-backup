@@ -5,7 +5,9 @@ keywords: springboot, springboot 入门, springboot 示例, springboot 工程
 description: 本文介绍基于终端、IDEA编辑器、Docker环境构建并运行简单 Springboot 工程的方法。
 ---
 
-Springboot 是 Pivotal 公司提供的开发框架，继承了 Spring 框架原有的优秀特性，并通过简化配置提高了 Spring 应用的构建和开发过程。
+Springboot 是 Pivotal 公司提供的开发框架，继承了 Spring 框架原有的优秀特性，并通过简化配置提高了 Spring 应用的构建和开发过程。Spring 则是一个强大的生态，就我所了解的 Java 企业项目开发，感觉 Spring 几乎垄断了所有的场景。Spring 的核心功能是控制反转（Inversion of Control，IoC）和面向切面编程（Aspect Oriented Programming，AOP）。
+
+关于 Spring 的内容不多花费笔墨，本文着重先学学如何上手体验下 Springboot 工程。
 
 ## 使用 mvn 创建
 

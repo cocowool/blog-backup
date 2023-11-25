@@ -1,7 +1,8 @@
 ---
-title: 20231123-springboot-log4j2
+title: Springboot 工程的日志配置
 date: 2023-11-23 19:27:38
-tags:
+keywords: springboot, springboot 日志, springboot log4j2, springboot logback
+description: 
 ---
 
 ##  计划补充的几个系列
