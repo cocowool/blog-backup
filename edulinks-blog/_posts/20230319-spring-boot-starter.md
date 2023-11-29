@@ -9,6 +9,9 @@ Springboot 是 Pivotal 公司提供的开发框架，继承了 Spring 框架原�
 
 关于 Spring 的内容不多花费笔墨，本文着重先学学如何上手体验下 Springboot 工程。
 
+> 本文使用的 mvn 版本 3.8.6
+> JDK 版本为 Oracle_JDK 1.8.0_341
+
 ## 使用 mvn 创建
 
 本文介绍了三种方式创建 springboot 工程，其实最核心的方式就是依赖 mvn 命令，因此实际上只要掌握了 mvn 命令行的创建方式，其他两种方式背后的运行逻辑就很容易弄清楚了。
