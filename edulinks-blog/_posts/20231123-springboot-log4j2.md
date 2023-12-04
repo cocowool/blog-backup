@@ -5,7 +5,14 @@ keywords: springboot, springboot 日志, springboot log4j2, springboot logback
 description: 
 ---
 
+> 本文基于 mvn 3.8.6，Springboot 
+
+```
+$ mvn archetype:generate -DgroupId=cn.edulinks.springbootdemo -DartifactId=springboot-demo-03 -DinteractiveMode=false
+```
+
 ##  计划补充的几个系列
+
 * log4j2 日志配置
 * 数据库连接配置 / 多数据源配置
 * REST 服务 / API文档 swagger
