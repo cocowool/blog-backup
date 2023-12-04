@@ -7,9 +7,20 @@ description:
 
 > 本文基于 mvn 3.8.6，Springboot 
 
+开发应用需要管理应用日志，记录应用程序运行时的各类输出信息，还要避免对于正常的业务逻辑产生影响，此时就需要使用一些成熟的日志框架，如 log4j、logback 等等。Log4j2 是一个 Java 日志框架，是 log4j 的升级版，提供了更快的处理速度和更丰富的日志记录功能，支持异步日志记录，减少了对性能的影响。
+
+值得一提的是，log4j、logback 的作者都是 [Ceki Gülcü](https://github.com/ceki)，后来 Apache 基金会借鉴 logback 优秀的开发理念重新开发推出了  log4j 2.x 。可以说 Java 世界的日志库绕不开  [Ceki Gülcü](https://github.com/ceki) 。
+
+
+
 ```
 $ mvn archetype:generate -DgroupId=cn.edulinks.springbootdemo -DartifactId=springboot-demo-03 -DinteractiveMode=false
 ```
+
+## 参考资料
+1. [深入理解 SpringBoot 日志框架：从入门到高级应用](https://blog.csdn.net/qq_20185737/article/details/131252893)
+2. [log4j 作者的 Github](https://github.com/ceki)
+3. [日志库的历史和体系](https://www.jianshu.com/p/b14fe2e1949e)
 
 ##  计划补充的几个系列
 
