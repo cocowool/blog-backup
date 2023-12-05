@@ -21,6 +21,7 @@ $ mvn archetype:generate -DgroupId=cn.edulinks.springbootdemo -DartifactId=sprin
 1. [深入理解 SpringBoot 日志框架：从入门到高级应用](https://blog.csdn.net/qq_20185737/article/details/131252893)
 2. [log4j 作者的 Github](https://github.com/ceki)
 3. [日志库的历史和体系](https://www.jianshu.com/p/b14fe2e1949e)
+4. [log4j2 documentation](https://logging.apache.org/log4j/2.x/index.html)
 
 ##  计划补充的几个系列
 
