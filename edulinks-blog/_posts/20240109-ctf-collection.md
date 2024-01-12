@@ -1,5 +1,5 @@
 ---
-title: 20240109-ctf-collection
+title: CTF 常用工具集列表
 date: 2024-01-09 08:51:49
 category: CTF
 keywords: ctf, ctf tools, ctf collection, ctf 工具
@@ -22,7 +22,7 @@ description: 本文是 CTF 相关工具收集整合页，部分工具本站收�
 * [sqlmap](http://codelinks.cn/2023/01/25/ctf-tools-sqlmap/)，免费，SQL注入漏洞探测
 * [dirsearch](http://codelinks.cn/2023/01/26/ctf-tools-dirsearch/)，免费，目录漏洞探测
 * [Gopherus](http://codelinks.cn/2023/01/27/ctf-tools-gopherus/)
-* [xray](http://codelinks.cn/2023/02/24/ctf-tools-xray/)，免费，网站安全评估
+* [xray](http://edulinks.cn/2024/01/10/20240110-ctf-tools-xray/)，免费，网站安全评估
 * 冰蝎 [Behinder](https://github.com/rebeyond/Behinder/releases/) ，动态二进制加密网站管理客户端
 * 菜刀，
 * [CobaltStrike](https://www.cobaltstrike.com)，内网渗透神器
