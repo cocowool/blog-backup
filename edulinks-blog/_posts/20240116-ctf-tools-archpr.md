@@ -9,7 +9,7 @@ category: CTF
 
 [ARCHPR](https://us.elcomsoft.com/archpr.html) 是 Elcomsoft 开发的一款压缩包密恢复工具，支持广泛的压缩包类型和加密算法。
 
-![ARCHPR. Guaranteed WinZip Recovery](ctf-tools-archpr/archpr_s3.png)
+![ARCHPR. Guaranteed WinZip Recovery](20240116-ctf-tools-archpr/archpr_s3.png)
 
 ARCHPR 支持四种破解类型：暴力、字典、明文、掩码。
 
