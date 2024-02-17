@@ -3,7 +3,7 @@ title: Linux 系统 ls 命令
 date: 2024-01-16 22:36:18
 category: Linux Command
 keywords: Linux Command, Linux 命令, ls, ls 命令
-description: 
+description: Linux 系统命令系列，今天介绍最常用的 Linux 命令 ls，功能是显示目录中的文件和子目录。
 ---
 
 ## 命令介绍
@@ -26,6 +26,3 @@ $ ls [选项] [文件]
 * `-S` 根据文件大小排序
 * `-R` 递归列出所有子目录
 
-
-## 参考资料
-1. [](https://baijiahao.baidu.com/s?id=1779653015874189399&wfr=spider&for=pc)
