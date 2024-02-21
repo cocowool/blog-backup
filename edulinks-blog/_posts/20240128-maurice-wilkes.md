@@ -10,8 +10,6 @@ category: 计算机名人录
 
 <img src="20240128-maurice-wilkes/Wilkes.png" alt="img" style="zoom: 33%;" />
 
-![](20240128-maurice-wilkes/Wilkes.png)
-
 1913年出生在英格兰的 Worcestershire，出生地距离伯明翰仅20公里。他的父亲是 Dudley 伯爵的管家，后来他们搬到 Stourbridge 居住，他的母亲是一名全职家庭主妇。
 
 <img src="20240128-maurice-wilkes/image-20240128091916946.png" alt="image-20240128091916946" style="zoom: 67%;" />
