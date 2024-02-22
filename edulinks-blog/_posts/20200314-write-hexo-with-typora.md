@@ -1,7 +1,6 @@
 ---
 title: Hexo博客写作与图片处理的经验
 date: 2020-03-14 08:07:13
-tags:
 keywords: hexo, hexo 博客, hexo 图片
 description: Hexo是一款非常优秀的开源博客管理工具，所有的博客文档都通过Markdown格式编写，Markdown编辑器有很多，原来的时候我经常用Evernote编写，但是Evernote写Markdown经常会出现输入法响应缓慢的情况。最近我从Evernote转到了Typora，想到哪里就能够敲字写到哪里，而且输入后马上就能够转换为友好的显示样式，体验非常好。
 ---
@@ -116,6 +115,10 @@ TypeError: Cannot read property '1' of null
 * `hexo server -debug` 预览图片是否能正常显示
 
 > 本文提供的是一个全新安装的操作步骤，如果大家已经安装了 hexo-asset-image ，请先卸载插件，然后再安装 hexo-image-link 插件。
+
+2024年2月21日，我对这个插件的功能做了更新。最近发现在 typora 中调整图片的缩放时，typora 会自动将 `![](img_path/image.png)` 格式的图片插入转化为 `<img src="img_path/image.png" style="zoom:30%" />` 我猜测应该是 Markdown 语法不支持图片的缩放，所以 Typora 采用了一个曲线救国的方法。
+
+但这样会造成 hexo-image-link 插件处理图片时有遗漏，因此在代码逻辑中增加了对 img 标签的检查和处理，现在对于包含有 img 标签的文档，也能够支持既在 typora 中看到图片，也能够确保发布后正常显示了。
 
 ## 参考资料
 
