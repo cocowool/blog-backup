@@ -1,8 +1,8 @@
 ---
 title: 使用Python压缩mov格式视频
 date: 2023-05-18 20:03:17
-keywords:
-description:  
+keywords: 视频压缩, python 压缩, python 压缩视频
+description: 本文尝试了使用 Python 编写代码来压缩视频，虽然比不上一些收费软件的效果，但是免费不香吗。
 ---
 
 今天参加了一天的CTF比赛，每次CTF比赛都会要求选手录屏，下午一不小心没暂停，比赛结束后一看好家伙，视频文件竟然有 29G 这么大。这么大的文件是肯定没办法发给裁判的。
