@@ -1,7 +1,6 @@
 ---
 title: Kafka学习笔记二：常用命令
 date: 2021-09-07 15:07:48
-tags:
 keywords: kafka
 description: 本篇介绍Kafka的常用命令
 ---
