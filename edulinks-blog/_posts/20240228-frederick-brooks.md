@@ -8,6 +8,8 @@ category: 计算机名人录
 
 弗雷德里克·布鲁克斯（Frederick Phillips Brooks，1931年4月19日 - 2022年11月17日），美国计算机科学家，《人月神话》一书的作者，该书是软件工程领域的经典著作，1999年图灵奖得主。弗雷德里克·布鲁克斯致力于计算机体系结构、操作系统和软件工程研究。
 
+![image-20240306090336213](20240228-frederick-brooks/image-20240306090336213.png)
+
 弗雷德里克·布鲁克斯出生于美国北卡罗来纳州达勒姆，在 Greenville 长大。弗雷德里克·布鲁克斯在小学期间，他的老师 Miss Anne Redwine 对他说：「“Frederick, you don’t need to compare yourself to anyone else. Just do the best you can.」，这种教育方式使他受益良多。
 
 弗雷德里克·布鲁克斯对于计算机的兴趣始于他13岁时，在《时代》杂志上读到了哈佛大学 IBM Mark I 型计算机的介绍，[霍华德·艾肯](http://www.edulinks.cn/2021/01/23/20210124-howard-aiken/) 是架构师也是他日后的导师，计算机60英尺、8英寸的巨大造型给了他深刻的印象。
