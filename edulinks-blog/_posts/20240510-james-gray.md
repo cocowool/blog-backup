@@ -1,5 +1,9 @@
 ---
-title: 20240510-james-gray
+title: 詹姆斯·格雷
 date: 2024-05-10 08:41:33
-tags:
+keywords: 詹姆斯·格雷
+description: 
+category:  计算机名人录
 ---
+
+詹姆斯·格雷（James Nicholas Gray，1944年1月12日～2012年1月28日），1998年图灵奖得主，美国国家科学院院士，美国国家工程院院士，美国艺术与科学院院士，美国微软公司杰出研究员。
