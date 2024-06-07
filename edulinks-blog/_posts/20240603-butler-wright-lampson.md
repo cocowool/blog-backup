@@ -5,6 +5,10 @@ keywords: 巴特勒·兰普森, 计算机名人录
 description: 
 ---
 
-巴特勒·兰普森（Butler Wright Lampson）
+巴特勒·兰普森（Butler Wright Lampson，1943年12月23日 - ）
+
+1964年获得哈佛大学文学学士学位。本科毕业后进入加州大学伯克利分校研究生院，改修理工科。1967年获得博士学位，之后留校任教。
 
 ## 参考资料
+
+1. [巴特勒·兰普森与Alto 1992年计算机图灵奖授予当时任DEC公司高级研究员和主任设计师的巴特勒·兰普森(Butler Wright Lamps... - 雪球 (xueqiu.com)](https://xueqiu.com/3993902801/85227557)
