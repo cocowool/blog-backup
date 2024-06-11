@@ -13,9 +13,12 @@ description:
 
 兰普森还在 DEC 公司和 Microsoft 公司担任研究员职位。
 
+1995年，兰普森加入微软公司，从事平板电脑软件、安全性和富应用程序的编程工作。
+
 ## 参考资料
 
 1. [巴特勒·兰普森与Alto 1992年计算机图灵奖授予当时任DEC公司高级研究员和主任设计师的巴特勒·兰普森(Butler Wright Lamps... - 雪球 (xueqiu.com)](https://xueqiu.com/3993902801/85227557)
 1. [【互联网口述历史】访巴特勒·兰普森：载誉无数的计算机界传奇大师 - 简书 (jianshu.com)](https://www.jianshu.com/p/aaaa91764ca3)
 1. [图灵奖----中国科学院软件研究所 (cas.cn)](http://www.is.cas.cn/kxcb2016/kpwz_128238/201609/t20160923_4668200.html)
 1. [Butler W. Lampson | Distinguished Engineer, Turing Award, Operating Systems | Britannica](https://www.britannica.com/biography/Butler-W-Lampson)
+1. [Butler W Lampson - A.M. Turing Award Laureate (acm.org)](https://amturing.acm.org/award_winners/lampson_1142421.cfm)
