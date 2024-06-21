@@ -33,4 +33,4 @@ $ sudo tmutil delete -d /Volumes/MyBackupDisk -t 2023-03-14-100000 -p /Path/To/F
 
 ## 参考资料
 
-1. [How to Delete Time Machine Backups (lifewire.com)](https://www.lifewire.com/delete-time-machine-backups-5219464#:~:text=How Do I Delete All My Time Machine,then tap Command and delete on the keyboard.)
+1. [How to Delete Time Machine Backups](https://www.lifewire.com/delete-time-machine-backups-5219464)
