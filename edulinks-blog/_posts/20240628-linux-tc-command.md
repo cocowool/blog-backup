@@ -1,10 +1,9 @@
 ---
-title: 20240628-linux-tc-command
+title: 使用 tc 模拟网络延迟
 date: 2024-06-28 09:50:06
-keywords:
-description:
+keywords: tc, linux command, 延迟, 模拟网络延迟
+description: 某些开发测试场景下，需要模拟网络延迟的场景。
 ---
-
 
 使用 tc 命令模拟客户端到服务端请求之间网络服务不稳定的场景
 
@@ -25,18 +24,22 @@ tc命令是Linux操作系统中用于配置网络流量控制规则的工具。�
 为网络接口配置qdisc
 首先，我们需要为网络接口（假设为eth0）配置一个qdisc。这里我们使用root_handle为1:的qdisc，并指定使用htb（层次化令牌桶）算法。
 
-bash
-sudo tc qdisc add dev eth0 root handle 1: htb
+```bash
+$ sudo tc qdisc add dev eth0 root handle 1: htb
+```
 创建类并限制带宽
 接下来，我们需要在qdisc下创建一个类，并指定该类的带宽限制。这里我们创建一个名为limited_bw的类，并限制其带宽为1Mbps。
 
-bash
+```bash
 sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 1mbit
+```
 配置过滤器以应用带宽限制
 最后，我们需要配置一个过滤器来将特定的数据流（如从客户端到服务端的请求）匹配到上述类中。这里我们使用IP协议和源/目标IP地址来匹配数据流。
 
-bash
-sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip src CLIENT_IP match ip dst SERVER_IP flowid 1:1
+
+```bash
+$ sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip src CLIENT_IP match ip dst SERVER_IP flowid 1:1
+```
 注意：将CLIENT_IP和SERVER_IP替换为实际的客户端和服务端IP地址。
 
 （二）模拟延迟和丢包
@@ -46,15 +49,17 @@ sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip src CLIEN
 模拟延迟
 要在数据流中添加延迟，我们可以使用netem qdisc（网络模拟器）并指定delay参数。以下示例将延迟设置为100ms：
 
-bash
-sudo tc qdisc add dev eth0 root netem delay 100ms
+```bash
+$ sudo tc qdisc add dev eth0 root netem delay 100ms
+```
 注意：这将会影响通过eth0接口的所有数据流。如果你只想影响特定的数据流，可以像上面那样使用过滤器来匹配数据流。
 
 模拟丢包
 要模拟丢包，我们可以在netem qdisc中指定loss参数。以下示例将丢包率设置为10%：
 
-bash
-sudo tc qdisc add dev eth0 root netem loss 10%
+```bash
+$ sudo tc qdisc add dev eth0 root netem loss 10%
+```
 同样地，你也可以使用过滤器来将丢包规则应用于特定的数据流。
 
 （三）代码示例
