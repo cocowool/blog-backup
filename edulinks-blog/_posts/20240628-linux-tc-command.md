@@ -7,9 +7,11 @@ description: 某些开发测试场景下，需要模拟网络延迟的场景。
 
 ## tc 命令介绍
 
-Linux 操作系统中提供了 tc 命令来进行流量控制 Traffic Control。
+Linux 操作系统中提供了 tc 命令来进行流量控制 Traffic Control，它利用队列规定建立处理数据包的队列，并定义队列中数据包被发送的方式，从而实现对流量的控制。
 
 一般只能限制网卡发送的数据包，不能限制网卡接收的数据包，流量控制主要是在输出接口实现，通过改变发送次序来控制传输速率。如果是控制网络传输中的丢包，则不管是输入还是输出都可以进行控制。
+
+tc 命令由 Alexey N. Kuznetsov 编写，在 Linux 2.2 版本加入。另外，ip 命令也是由他编写的。
 
 ```sh
 # 基本语法格式
@@ -20,6 +22,8 @@ $ tc qdisc del dev DEV root
 $ tc -s qdisc ls dev eth0
 # 查看现有的分类
 $ tc -s class ls dev eth0
+# 查看过滤器的情况
+$ tc -s filter ls dev eth0
 ```
 ## 简单场景
 
@@ -95,6 +99,20 @@ measure_request_times(url)
 
 测试过程记录。
 ```sh
+# 在服务端启动监听
+$ python3 server.py
+Server start running at port :  9999
+# 然后新打开一个终端窗口，模拟延迟
+$ sudo tc qdisc add dev enp0s5 root netem delay 3000ms
+$ sudo tc qdisc ls dev enp0s5
+qdisc netem 8001: root refcnt 2 limit 1000 delay 3.0s
+```
+
+在客户端发送请求，可以看到建立链接不受影响，获取响应的时间则延长了很多。
+```sh
+$ python3 client.py 
+建立连接时间（粗略估计）: 0.0001 秒
+获得响应的总时间: 9.0191 秒
 ```
 
 ## 拓展应用
@@ -106,3 +124,5 @@ measure_request_times(url)
 ## 参考资料
 1. https://cloud.tencent.com/developer/article/1409664
 2. https://linux.die.net/man/8/tc
+3. https://www.fujieace.com/linux/man/tc.html#google_vignette
+4. https://linux.die.net/man/8/tc
