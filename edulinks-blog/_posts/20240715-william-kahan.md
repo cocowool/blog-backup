@@ -16,3 +16,4 @@ description:
 
 ## 参考资料
 1. https://baike.baidu.com/item/%E5%A8%81%E5%BB%89%C2%B7%E5%87%AF%E4%BA%A8/7867962
+2. https://amturing.acm.org/award_winners/kahan_1023746.cfm
