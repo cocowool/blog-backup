@@ -189,7 +189,7 @@ $ testproject tree .
 
 可以通过 http://localhost:7001/demo/hello 访问到输出的信息。
 
-我把本文的代码放在了 [Github](https://github.com/cocowool/sh-valley/tree/master/java/spring-boot-weblogic) 上，大家可以直接下载编译尝试。
+我把本文的代码放在了 [Github](https://github.com/cocowool/code-space/tree/main/java/spring-boot-weblogic) 上，大家可以直接下载编译尝试。
 
 ## 参考资料
 

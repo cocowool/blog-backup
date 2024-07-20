@@ -1,7 +1,6 @@
 ---
-title: Java Metrics工具介绍
+title: Java Metrics 工具介绍
 date: 2019-10-09 20:26:48
-tag: 
 keywords: java, java metrics, java linux
 description: 本文介绍如何通过Metric来帮助我们对应用程序的性能进行度量，这个包能够帮我省去很多统计方面的工作量。
 ---
@@ -56,7 +55,7 @@ metricRegistry.register("meter1", meter1);
  
 Meter meter2 = metricRegistry.meter("meter2");
 ```
-> 更为详细的代码示例可以参考[我的Git](https://github.com/cocowool/sh-valley)
+> 更为详细的代码示例可以参考[我的Git](https://github.com/cocowool/code-space/tree/main/java/java-metric)
 
 ## Gauge
 
@@ -88,7 +87,6 @@ Timer度量类型包含了Meter和Histogram的统计，即比率和统计信息�
 3. [Metrics Getting Started](https://metrics.dropwizard.io/4.1.0/getting-started.html)
 4. [[Metrics扫盲]---(1)如何在java应用中使用Metrics](https://blog.csdn.net/zhaoyaxuan001/article/details/86659604)
 5. [Intro to Dropwizard Metrics](https://www.baeldung.com/dropwizard-metrics)
-
 
 
 
