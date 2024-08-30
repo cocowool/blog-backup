@@ -51,6 +51,18 @@ note: If you believe this is a mistake, please contact your Python installation 
 hint: See PEP 668 for the detailed specification.
 ```
 
-报错
+报错信息不难理解，提示当前的环境是一个受控环境，如果想要安装系统范围的包建议使用 `brew install package-name`。
+
+还提供了一种通过 venv 方式来管理环境的办法，这种方案每次需要先执行激活，稍微有点繁琐。
+```sh
+$ python3 -m venv path/to/venv
+$ source path/to/venv/bin/activate
+$ python3 -m pip install xyz
+```
+
+卒后还提供了一种方案忽略环境的限制，我最后采用的是这种方案。
+```sh
+$ pip3 --break-system-packages install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
+```
 
 ## 参考资料
