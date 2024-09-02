@@ -2,7 +2,7 @@
 title: macOS 下的 python 环境管理
 date: 2024-08-30 18:02:09
 keywords: macOS, python, python3, python3 环境
-description:
+description: 每次通过 brew 更新系统重要依赖，都会引起一些基础软件的升级，这个问题怎么破?
 ---
 
 电脑型号是 Mackbook Pro 2020年款，操作系统是 macOS Monterey。
@@ -60,7 +60,7 @@ $ source path/to/venv/bin/activate
 $ python3 -m pip install xyz
 ```
 
-卒后还提供了一种方案忽略环境的限制，我最后采用的是这种方案。
+最后还提供了一种方案忽略环境的限制，我最后采用的是这种方案。
 ```sh
 $ pip3 --break-system-packages install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
 ```
