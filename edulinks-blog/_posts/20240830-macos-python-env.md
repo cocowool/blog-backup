@@ -65,4 +65,7 @@ $ python3 -m pip install xyz
 $ pip3 --break-system-packages install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
 ```
 
+## 版本管理工具
+
 ## 参考资料
+1. https://www.jianshu.com/p/f6d2d1529531
