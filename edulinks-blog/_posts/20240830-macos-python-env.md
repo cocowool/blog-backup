@@ -67,5 +67,10 @@ $ pip3 --break-system-packages install -i https://pypi.tuna.tsinghua.edu.cn/simp
 
 ## 版本管理工具
 
+从网上搜索的，可以用于 Python 环境管理的工具有：
+* venv 
+* pyenv
+
+
 ## 参考资料
 1. https://www.jianshu.com/p/f6d2d1529531
