@@ -251,7 +251,7 @@ elasticsearch_1  | 2020-09-08 11:28:45,473 main ERROR Unable to locate plugin fo
 
 ## 写在最后
 
-我编写了一套 [`docker-compose`](https://github.com/cocowool/sh-valley/tree/master/docker-conf/elasticstack/es-kibana) 的编排文件，支持一键式的创建一个单独的 `Elasticsearch` 实例和一个单独的 `Kibana` 实例，通过 docker 可以方便的按照文档中的示例进行反复的实验，关于 docker 及 docker-compose 的介绍，大家可以参考我之前的两篇文章：[Docker入门介绍](https://edulinks.cn/2018/06/20/20180620-docker-overview/) 和 [Docker Composer使用介绍](https://edulinks.cn/2020/04/15/20200415-docker-compose/)。
+我编写了一套 [`docker-compose`](https://github.com/cocowool/code-space/tree/main/docker-conf/es-kibana) 的编排文件，支持一键式的创建一个单独的 `Elasticsearch` 实例和一个单独的 `Kibana` 实例，通过 docker 可以方便的按照文档中的示例进行反复的实验，关于 docker 及 docker-compose 的介绍，大家可以参考我之前的两篇文章：[Docker入门介绍](https://edulinks.cn/2018/06/20/20180620-docker-overview/) 和 [Docker Composer使用介绍](https://edulinks.cn/2020/04/15/20200415-docker-compose/)。
 
 ## 参考资料
 
