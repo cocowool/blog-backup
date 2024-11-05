@@ -90,7 +90,7 @@ $ mvn package
 $ docker run --rm --name my_tomcat -p 8080:8080 -v /Users/shiqiang/Projects/sh-valley/docker-conf/tomcat/data:/usr/local/tomcat/webapps/ tomcat:9.0.31
 ```
 
-容器启动后通过 http://localhost:8080/war包名称 可以访问 springboot 应用。
+容器启动后通过 http://localhost:8080/war 包名称 可以访问 springboot 应用。
 
 ## Docker 方式部署
 
@@ -139,4 +139,4 @@ $ docker run --rm --name my_springboot -p 8080:8080 springbootapp:0.0.1
 1. [Tomcat](https://tomcat.apache.org/)
 2. [从源码理解SpringBootServletInitializer的作用](https://blog.csdn.net/qq_43799161/article/details/125315579)
 3. [使用 Docker 部署 Tomcat](https://blog.csdn.net/jks212454/article/details/130672006)
-4. [](https://blog.csdn.net/prxhlirr/article/details/126398361)
+4. [https://blog.csdn.net/prxhlirr/article/details/126398361](https://blog.csdn.net/prxhlirr/article/details/126398361)
