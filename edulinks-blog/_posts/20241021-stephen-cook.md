@@ -14,7 +14,7 @@ description: 斯蒂芬·库克（Stephen Cook，-1939年12月14日 - ），1982�
 
 1939年12月14日，斯蒂芬·库克出生于美国纽约州布法罗，他的父亲是联合碳化物公司「Union Carbide」的一名化学家，他的母亲是一名家庭主妇。1949年全家搬到了纽约州克拉伦斯，那里是指入式起搏器的发明者威尔逊·大巴奇「Wilson Greatbatch」的家。十几岁时，斯蒂芬·库克对电子产生了兴趣，并为 Greatbatch 工作，当时该公司正在试验基于晶体管的电路。
 
-1957年中学毕业后，斯蒂芬·库克进入密歇根大学科学工程专业就读。他在 Bernard Galler 教授的新生课程中接触到计算机编程，他和一名同学共同编写了一个程序来测试哥德巴赫猜想，即每个大于2的偶数都是两个素数之和。后来斯蒂芬将专业改为数学。1961年，斯蒂芬·库克获得美国密歇根大学理学学士学位，1962年获得哈佛大学理学硕士学位，1966年获得哈佛大学博士学位，博士研究课题是计算复杂性，他的博士论文题目为「On the Minimum Computation time of Functions」《论函数的最小计算时间》，探讨了乘法的固有计算复杂性。该论文的一个贡献是改进了 Andrei Toom 的乘法算法，该算法现在称为 Toom-Cook乘法。
+1957年中学毕业后，斯蒂芬·库克进入密歇根大学科学工程专业就读。他在 Bernard Galler 教授的新生课程中接触到计算机编程，他和一名同学共同编写了一个程序来测试哥德巴赫猜想，即每个大于2的偶数都是两个素数之和。后来斯蒂芬将专业改为数学。1961年，斯蒂芬·库克获得美国密歇根大学理学学士学位，1962年获得哈佛大学理学硕士学位，1966年获得哈佛大学数学博士学位，博士研究课题是计算复杂性，他的博士论文题目为「On the Minimum Computation time of Functions」《论函数的最小计算时间》，探讨了乘法的固有计算复杂性。该论文的一个贡献是改进了 Andrei Toom 的乘法算法，该算法现在称为 Toom-Cook乘法。
 
 1966年至1970年间，进入加州大学伯克利分校数学系担任助理教授。
 
@@ -30,3 +30,4 @@ description: 斯蒂芬·库克（Stephen Cook，-1939年12月14日 - ），1982�
 3. https://www.britannica.com/biography/Stephen-Arthur-Cook
 4. https://amturing.acm.org/award_winners/cook_n991950.cfm
 5. https://gsas.harvard.edu/news/stephen-cook-2020-centennial-medal-citation
+6. [Cook 先生的主页](https://gsas.harvard.edu/news/stephen-cook-2020-centennial-medal-citation)
