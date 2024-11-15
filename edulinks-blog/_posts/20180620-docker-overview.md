@@ -132,7 +132,7 @@ $ docker inspect image-id
 $ docker exec -it container-name bash
 
 # 挂载宿主机文件或目录到容器，下面将sh-valley目录挂载到容器的/home/go目录下
-$ docker run -it -v /Users/shiqiang/Projects/sh-valley:/home/go golang bash
+$ docker run -it -v /Users/local_path:/home/go golang bash
 
 # 删除所有本地镜像文件
 $ docker rmi -f $(docker images -q)
