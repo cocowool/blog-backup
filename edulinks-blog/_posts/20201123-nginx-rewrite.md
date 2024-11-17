@@ -80,7 +80,7 @@ rewrite ^/(.*) http://www.baidu.com/ permanent;
 
 ### 实战案例
 
-本文提供了一个基于 docker 的演示案例，将上文的场景一一演示出来。通过访问 [我的Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/lnmp) 可以获得全部的 docker 编排文件及代码。
+本文提供了一个基于 docker 的演示案例，将上文的场景一一演示出来。通过访问 [我的Github](https://github.com/cocowool/code-space) 可以获得全部的 docker 编排文件及代码。
 
 > 不太熟悉 Docker 的同学可以参考 [使用 Docker 快速搭建LNMP开发环境](http://www.edulinks.cn/2020/04/17/20200415-qucik-lnmp-dev-environment/)，让你在安装了 Docker 的情况下，使用一条命令就快速搭建LNMP开发环境。还要了解更多 Docker 的内容，可以查看 [Docker 系列文章](http://www.edulinks.cn/2020/10/16/20201016-kubernetes-articles/#Docker-系列文章)
 
