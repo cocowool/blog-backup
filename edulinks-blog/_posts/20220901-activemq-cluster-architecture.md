@@ -26,8 +26,8 @@ services:
       - "8161:8161"
       - "61613:61613"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/activemq/activemq-5.8.0-A.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
-      - ~/Projects/sh-valley/docker-conf/activemq/kahadb:/usr/local/apache-activemq-5.8.0/data/kahadb
+      - ~/Projects/code-space/docker-conf/activemq/activemq-5.8.0-A.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+      - ~/Projects/code-space/docker-conf/activemq/kahadb:/usr/local/apache-activemq-5.8.0/data/kahadb
     networks:
       - default
   activemq-B:
@@ -40,8 +40,8 @@ services:
       - "8162:8161"
       - "61614:61613"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/activemq/activemq-5.8.0-B.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
-      - ~/Projects/sh-valley/docker-conf/activemq/kahadb:/usr/local/apache-activemq-5.8.0/data/kahadb
+      - ~/Projects/code-space/docker-conf/activemq/activemq-5.8.0-B.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+      - ~/Projects/code-space/docker-conf/activemq/kahadb:/usr/local/apache-activemq-5.8.0/data/kahadb
     networks:
       - default
 ```
@@ -131,7 +131,7 @@ activemq-A_1  |  INFO | Database /usr/local/apache-activemq-5.8.0/data/kahadb/lo
 
 ![image-20220914160031714](20220901-activemq-cluster-architecture/image-20220914160031714.png)
 
-具体的 docker 配置如下，相关的文件可以从我的 [Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/activemq-network) 上下载。
+具体的 docker 配置如下，相关的文件可以从我的 [Github](https://github.com/cocowool/code-space) 上下载。
 
 ```yaml
 version: "2.1"
@@ -146,7 +146,7 @@ services:
       - "8161:8161"
       - "61611:61612"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker1.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+      - ~/Projects/code-space/docker-conf/activemq-network/activemq-5.8.0-broker1.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
     networks:
       activemq-network:
         ipv4_address: 172.28.1.11
@@ -160,7 +160,7 @@ services:
       - "8162:8161"
       - "61612:61612"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker2.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+      - ~/Projects/code-space/docker-conf/activemq-network/activemq-5.8.0-broker2.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
     networks:
       activemq-network:
         ipv4_address: 172.28.1.12
@@ -174,7 +174,7 @@ services:
       - "8163:8161"
       - "61613:61612"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/activemq-network/activemq-5.8.0-broker3.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
+      - ~/Projects/code-space/docker-conf/activemq-network/activemq-5.8.0-broker3.xml:/usr/local/apache-activemq-5.8.0/conf/activemq.xml
     networks:
       activemq-network:
         ipv4_address: 172.28.1.13
