@@ -6,7 +6,7 @@ keywords: 斯蒂芬·库克, 计算机名人录
 description: 斯蒂芬·库克（Stephen Cook，-1939年12月14日 - ），1982年图灵奖得主，ACM fellow，计算复杂性理论的重要研究者。
 ---
 
-斯蒂芬·库克（Stephen Cook，-1939年12月14日 - ），1982年图灵奖得主，ACM fellow，计算复杂性理论的重要研究者。
+斯蒂芬·库克（Stephen Cook，1939年12月14日 - ），1982年图灵奖得主，ACM fellow，计算复杂性理论的重要研究者。
 
 ![img](20241021-stephen-cook/Stephen-Arthur-Cook-2008.jpg)
 
