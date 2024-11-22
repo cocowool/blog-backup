@@ -1,9 +1,8 @@
 ---
 title: 基于Docker快速搭建Redis集群
 date: 2021-02-27 11:52:28
-tags:
 keywords: docker, redis, linux, redis集群
-description: 
+description:  Redis 是一个 Key / Value 数据库，本文介绍了容器化部署主备集群的方法。 
 ---
 
 ## Redis 介绍
@@ -79,7 +78,7 @@ drwxr-xr-x  2 shiqiang  staff    64B  3  3 13:15 data-slave
 -rw-r--r--  1 shiqiang  staff   118B  3  3 14:31 redis_slave.conf
 ```
 
-配置文件的具体内容可以参考我的 [Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/redis-cluster/master-slave)。
+配置文件的具体内容可以参考我的 [Github](https://github.com/cocowool/code-space)。
 
 ```conf
 # Redis-master

@@ -84,16 +84,16 @@ services:
         ports:
             - "80:80"
         volumes: 
-            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/www:/usr/share/nginx/html
-            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/conf.d:/etc/nginx/conf.d
-            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/logs:/var/log/nginx
+            - ~/Projects/code-space/docker-conf/lnmp/nginx/www:/usr/share/nginx/html
+            - ~/Projects/code-space/docker-conf/lnmp/nginx/conf.d:/etc/nginx/conf.d
+            - ~/Projects/code-space/docker-conf/lnmp/nginx/logs:/var/log/nginx
         networks:
             lnmp-network:
                 ipv4_address: 172.23.0.5
     php:
         image: php:5.6-fpm-alpine3.8
         volumes:
-            - ~/Projects/sh-valley/docker-conf/lnmp/nginx/www:/www
+            - ~/Projects/code-space/docker-conf/lnmp/nginx/www:/www
         networks:
             - lnmp-network
     mysql:
