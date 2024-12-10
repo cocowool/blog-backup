@@ -16,7 +16,7 @@ hexo 生成的静态文件主要有两类，一类是 markdown 转换后的 html
 
 ## 统计脚本
 
-经过几个小时的编写，终于完成了这个统计脚本 [`count_file.sh`](https://github.com/cocowool/sh-valley/blob/master/shell/count_file.sh) 。支持统计某个文件夹下（包含子文件夹）某一类文件的大小，或者除某一类文件外其他文件的大小。
+经过几个小时的编写，终于完成了这个统计脚本 [`count_file.sh`](https://github.com/cocowool/code-space/blob/master/shell/count_file.sh) 。支持统计某个文件夹下（包含子文件夹）某一类文件的大小，或者除某一类文件外其他文件的大小。
 
 ```sh
 #!/bin/bash
