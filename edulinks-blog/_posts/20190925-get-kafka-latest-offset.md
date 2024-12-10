@@ -1,7 +1,6 @@
 ---
 title: 获取Kafka每个分区最新Offset的几种方法
 date: 2019-09-25 20:19:25
-tag: 
 keywords: kafaka, kafka offset, kafka linux
 description: 本文介绍如何获取Kafka每个分区Offset的方法。
 ---
@@ -24,7 +23,8 @@ test:2:1258
 和Java程序比起来，运行得有点慢。
 
 ## Java 程序
-更详细的代码工程，可以参考我的GitHub[消费者获取分区列表，并获取分区最新的OFFSET](https://github.com/cocowool/sh-valley/tree/master/java/java-kafka)
+更详细的代码工程，可以参考我的GitHub [消费者获取分区列表，并获取分区最新的OFFSET](https://github.com/cocowool/code-space) 的 java-kafka 目录中的代码，也可以加我的公众号进一步交流。
+
 ```java
 import java.util.ArrayList;
 import java.util.Collection;
