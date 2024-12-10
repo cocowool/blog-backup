@@ -87,7 +87,7 @@ public class App extends SpringBootServletInitializer {
 # 使用 mvn 生成 war 包
 $ mvn package
 # 将生成的 war 包考入一个目录，把这个目录映射为容器 tomcat 的 webapps 目录
-$ docker run --rm --name my_tomcat -p 8080:8080 -v /Users/shiqiang/Projects/sh-valley/docker-conf/tomcat/data:/usr/local/tomcat/webapps/ tomcat:9.0.31
+$ docker run --rm --name my_tomcat -p 8080:8080 -v /docker-conf/tomcat/data:/usr/local/tomcat/webapps/ tomcat:9.0.31
 ```
 
 容器启动后通过 http://localhost:8080/war 包名称 可以访问 springboot 应用。

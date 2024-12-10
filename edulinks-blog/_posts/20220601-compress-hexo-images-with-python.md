@@ -31,7 +31,7 @@ Pillow 的 Image 对于 jpg 格式图片，Image 压缩的效果较好。Quality
 
 使用方法如下：
 ```sh
-$ python3 /Users/shiqiang/Projects/sh-valley/python/image_tools.py -m compress -f ~/Desktop/test-original/ -o ~/Desktop/test-compress/
+$ python3 ~/python/image_tools.py -m compress -f ~/Desktop/test-original/ -o ~/Desktop/test-compress/
 /Users/shiqiang/Desktop/test-original/211035560621176.jpg
 {'original_size': 273884, 'img_x': 595, 'img_y': 339, 'compress_size': 36349}
 /Users/shiqiang/Desktop/test-original/image-20201014191941447.png
