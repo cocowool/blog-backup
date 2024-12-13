@@ -15,7 +15,7 @@ The service command supports only basic LSB actions (start, stop, restart, try-r
 
 如果我们有一些负责自动化的应用，例如 puppet / mco、ansible，这里简称为宿主服务。宿主服务注册为系统服务并且随系统开机自启动。宿主服务支持接收服务端指令并拉起一些常驻进程，拉起的进程我们简称为子进程。当宿主服务被 kill 或意外终止时，会引起子进程一起被 kill。
 
-为了复现这个问题，我写了两个脚本。parent_pro.sh 作为宿主脚本，注册为系统 loop.service 并且随系统启动。该脚本的作用是每隔10秒钟检查 config.txt 的配置，如果配置文件中的数字变成 1 则拉起一个无限循环的子进程。具体的代码可以在我的 [Github](https://github.com/cocowool/sh-valley/tree/master/shell) 上看到。
+为了复现这个问题，我写了两个脚本。parent_pro.sh 作为宿主脚本，注册为系统 loop.service 并且随系统启动。该脚本的作用是每隔10秒钟检查 config.txt 的配置，如果配置文件中的数字变成 1 则拉起一个无限循环的子进程。
 
 我的 service 定义信息：
 

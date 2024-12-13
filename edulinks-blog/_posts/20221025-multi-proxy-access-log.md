@@ -13,7 +13,7 @@ description: 本文介绍了访问日志中看到一连串用逗号分隔的IP�
 LogFormat "%{X-FORWARDED-FOR}i %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
 ```
 
-如下图所示，这一段 access 日志中第一段标红的地址串表示访问所经过的代理的列表，标红的第二段表示最近一次发起请求的客户端地址，为了说明这种日志产生的原因，本文基于 Docker 构建了一个有多层代理的架构，具体的编排代码可以在 [sh-valley](https://github.com/cocowool/code-space/tree/master/docker-conf/multi-layer-proxy) 中找到。
+如下图所示，这一段 access 日志中第一段标红的地址串表示访问所经过的代理的列表，标红的第二段表示最近一次发起请求的客户端地址，为了说明这种日志产生的原因，本文基于 Docker 构建了一个有多层代理的架构，具体的编排代码可以在 [我的Github](https://github.com/cocowool/code-space/tree/master/docker-conf/multi-layer-proxy) 中找到。
 
 ![image-20221027165503092](20221025-multi-proxy-access-log/image-20221027165503092.png)
 

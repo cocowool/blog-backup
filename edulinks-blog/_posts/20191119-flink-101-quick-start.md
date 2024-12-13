@@ -41,7 +41,7 @@ services:
 ```
 
 ## 示例代码
-本代码完成的功能是从SOCKET端口中读取文本信息，分词后在统计周期内计算每个单词出现的次数。这里只是列出关键代码，全部工程代码可以参考我的[Github](https://github.com/cocowool/sh-valley/tree/master/java/flink-1-wordcount)
+本代码完成的功能是从SOCKET端口中读取文本信息，分词后在统计周期内计算每个单词出现的次数。这里只是列出关键代码，全部工程代码可以参考我的 [Github](https://github.com/cocowool/code-space/tree/master/java/flink-1-wordcount)
 ```java
 public class SocketWindowWordCount {
     public static void main(String[] args) throws Exception {
@@ -118,7 +118,6 @@ $ nc -l 9008
 
 1. [Flink-基于Docker的开发环境搭建](https://www.iamle.com/archives/2572.html)
 2. [Docker composer 快速入门](https://www.cnblogs.com/phpk/p/11205467.html%20)
-
 
 
 

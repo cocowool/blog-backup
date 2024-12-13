@@ -17,7 +17,7 @@ description: 本文介绍了如何通过Docker快速构建Elasticsearch+Kibana�
 * [参考资料](#参考资料)
 
 
-> 全部编排文件和配置文件可以访问我的[Github](https://github.com/cocowool/sh-valley/tree/master/docker-conf/elasticstack/cluster)，大家只要修改配置文件中的路径即可快速搭建一个3实例的ES集群和一个Kibana实例。
+> 全部编排文件和配置文件可以访问我的[Github](https://github.com/cocowool/code-space/tree/master/docker-conf/elasticstack/cluster)，大家只要修改配置文件中的路径即可快速搭建一个3实例的ES集群和一个Kibana实例。
 
 
 ## 规划
@@ -52,7 +52,7 @@ services:
       - "9200:9200"
       - "9300:9300"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/elasticstack/cluster/node1/es1.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ~/Projects/docker-conf/elasticstack/cluster/node1/es1.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true
@@ -73,7 +73,7 @@ services:
       - "9201:9201"
       - "9301:9301"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/elasticstack/cluster/node2/es2.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ~/Projects/docker-conf/elasticstack/cluster/node2/es2.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true
@@ -94,7 +94,7 @@ services:
       - "9202:9202"
       - "9302:9302"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/elasticstack/cluster/node3/es3.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ~/Projects/docker-conf/elasticstack/cluster/node3/es3.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true
@@ -111,7 +111,7 @@ services:
     ports:
       - "5601:5601"
     volumes:
-      - ~/Projects/sh-valley/docker-conf/elasticstack/cluster/kibana.yml:/usr/share/kibana/config/kibana.yml
+      - ~/Projects/docker-conf/elasticstack/cluster/kibana.yml:/usr/share/kibana/config/kibana.yml
     environment:
       - ELASTICSEARCH_URL=http://es-node1:9200
     networks:
@@ -166,7 +166,6 @@ $ curl http://localhost:9200/_cat/nodes
 1. [elasticsearch document](https://www.elastic.co/guide/en/elasticsearch/reference/current/indexing-buffer.html)
 2. [docker-compose自定义网络，固定容器ip地址](https://blog.csdn.net/hechaojie_com/article/details/83625265)
 3. [docker-compose ports和expose的区别](https://blog.csdn.net/stinky_kiss/article/details/82563480)
-
 
 
 
