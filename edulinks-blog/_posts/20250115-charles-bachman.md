@@ -8,6 +8,8 @@ description: 查尔斯·巴赫曼（Charles William Bachman，1924年12月11日 
 
 查尔斯·巴赫曼（Charles William Bachman，1924年12月11日 -  2017年7月13日），美国计算机科学家，因对数据库技术的杰出贡献荣获1973年图灵奖。巴赫曼还经营了一家化工厂，创建了成本资本会计系统，并创立了一家上市公司。
 
+![Charles W Bachman Photo Essay - A.M. Turing Award Winner](20250115-charles-bachman/bachman-3-20250118121454040.jpeg)
+
 巴赫曼出生于美国堪萨斯州曼哈顿，他的父亲是曼哈顿堪萨斯农业学院的橄榄球主教练，随着父亲到密歇根州立大学担任主教练，巴赫曼也搬迁至密歇根州。1943年，巴赫曼进入密歇根州立大学。完成第一年的课程后，巴赫曼加入美国陆军，二战期间在太平洋战区服役。
 
 1946年退伍后，巴赫曼回到密歇根州立大学，1948年获得机械工程学学士学位。1950年，巴赫曼获得宾夕法尼亚大学机械工程硕士学位，他还就读于沃顿商学院。毕业后，巴赫曼在密歇根州陶氏化学公司「Dow Chemical Company」担任运筹学问题工程师，由于对管理和成本会计方法的兴趣，他接触到了穿孔卡机，并在1957年被选为新数据处理部门的第一任负责人。在此期间，巴赫曼建议公司从 IBM 购买了一台数字计算机「IBM 709」并聘请了一支由计算机成员和数据分析师组成的团队。这使陶氏有资格成为 Share Inc. 的成员，Share Inc. 是一个由志愿者运营的IBM大型计算机用户组，他通过 IBM 的 SHARE 用户组与其他计算机中心领导者的接触，改变了他的职业生涯。
@@ -22,6 +24,8 @@ IDS 使程序员的工作效率大大提高，从今天的观点来看，这种�
 
 1970年，霍尼韦尔「Honeywell Inc.」收购了通用电气的计算机业务，巴赫曼前往波士顿为霍尼韦尔的高级研究小组工作。
 
+![6096530-fig-1-source-large](20250115-charles-bachman/6096530-fig-1-source-large.gif)
+
 1973年，巴赫曼成为第八位图灵奖获得者，他是第一位没有博士学位的图灵奖获得者，第一位接受过工程而不是科学培训的人，第一位因计算机应用于工商管理而获奖的人，第一位因特定软件而获奖的人，也是第一位将整个职业生涯都花在工业界的人。
 
 1981年，巴赫曼转到 Cullinane Database Systems Inc 从事数据库设计工作。1983年，巴赫曼离职创办了自己的咨询公司 Bachman Information Systems Inc. ，他的公司后续经历了几次并购。
@@ -30,8 +34,11 @@ IDS 使程序员的工作效率大大提高，从今天的观点来看，这种�
 
 巴赫曼因「在数据库管理、事务处理和软件工程方案的基础发明」而获得2012年美国国家技术与创新奖章（NMTI）。该奖项由总统颁发给为新技术和重要技术的发展做出重大贡献的美国发明家/创新者。该奖项于2014年由巴拉克·奥巴马总统颁发给巴赫曼。
 
+![Mr. Bachman was awarded the National Medal of Technology and Innovation by Barack Obama in 2012. His creation allowed computer programs to access a vast database and make changes within fractions of a second.](20250115-charles-bachman/KKUPOPDP4EI6PJFWXDS2QNFIZM.jpeg)
+
 ## 参考资料
 1. https://baike.baidu.com/item/%E6%9F%A5%E7%90%86%E5%A3%AB%C2%B7%E5%B7%B4%E8%B5%AB%E6%9B%BC/4004186
 2. https://www.britannica.com/biography/Charles-William-Bachman
 3. https://amturing.acm.org/award_winners/bachman_9385610.cfm
 4. https://cacm.acm.org/news/in-memoriam-charles-w-bachman-1924-2017/
+5. https://ieeexplore.ieee.org/document/6096530
