@@ -2,9 +2,10 @@
 title: 如何用 Java 实现 HTTP 请求的解析
 date: 2025-01-22 17:20:02
 keywords: Java, HTTP 解析, Java Proxy, Java HTTP 代理, HTTP Proxy
+description: 最近在用 Java 实现一个简单的HTTP代理服务器，过程中发现Java世界提供的标准HTTP解析库真是太少了，国外同行也有一个吐槽的，将其文章编辑整合发布与大家探讨。
 ---
 
-最近想学一学Java网络编程，就想着自己实现一个 HTTP 代理服务器，查阅资料和编写过程中，发现 Java 对比 Python，不太容易找到成熟的 HTTP 请求处理包。不要说 Netty、Jetty 这些，只是想单纯的能够处理原始的 HTTP 请求，解析出里面的 Host、Request URI、Header、Cookie 等信息。正好看到有位外国朋友也做了类似的探索，将他的文章翻译转载到此处，原文可以看 [Http Message Parsing in Java Web Servers](https://stevenyue.com/blogs/http-message-parsing-in-java-web-servers/)。
+最近想自己实现一个 HTTP 代理服务器，查阅资料和编写过程中，发现 Java 对比 Python，不太容易找到成熟的 HTTP 请求处理包。不要说 Netty、Jetty 这些，只是想单纯的能够处理原始的 HTTP 请求，解析出里面的 Host、Request URI、Header、Cookie 等信息。正好看到有位外国朋友也做了类似的探索，将他的文章翻译转载到此处，原文可以看 [Http Message Parsing in Java Web Servers](https://stevenyue.com/blogs/http-message-parsing-in-java-web-servers/)。
 
 解析来自客户端的请求消息是构建 Web 服务器的开始。 典型请求可能如下所示：GET
 ```http
@@ -78,9 +79,155 @@ Set<Cookie> cookies = ServerCookieDecoder.LAX.decode(req.headers().get("Cookie")
 
 这一唯一一个无法通过阅读源码来了解其工作原理的库。
 
-## 总结
+## 我的实现
 
 总结下来，发现 Java 世界中确实没有一个比较轻量的 HTTP 解析器。作者的这篇文章发表于 2021年，而且是他对国外技术栈考察的结果。
+
+在这段时间，结合使用搜索工具与豆包等AI工具，我整理了一段代码，可以实现监听8080端口，并将HTTP GET请求转发到后端服务器，获取服务器响应后发送给客户端。
+
+实现了基本的HTTP头解析逻辑，支持提取Host、URI、Port信息，欢迎大家阅提意见。
+
+```java
+import java.io.*;
+import java.net.*;
+import java.util.concurrent.*;
+
+/**
+ * 
+ * 2024-11-14 对于telnet发起的简单http请求能够正常返回，不支持 postman 请求
+ * 2024-11-22 已支持 Postman 发 http 请求，不能正常响应重复请求
+ * 
+ * @TODO 后续考虑使用 HttpClient 库 / 或者使用 Netty 
+ * 
+ * 问题：
+ * 1. 不能持续响应一个客户端的连续请求
+ * 
+ */
+public class HttpProxyServer {
+    private static final int THREAD_POOL_SIZE = 10;
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+
+    public static void main(String[] args) {
+        int port = 8080; // HTTP代理端口
+
+        // @TODO 解析用户自定义的端口参数
+        try ( ServerSocket serverSocket = new ServerSocket(port) ) {
+            //设置服务端与客户端连接未活动超时时间
+            serverSocket.setSoTimeout(1000 * 60);
+            System.out.println("Http Proxy Server listen at: " + port);
+
+            final byte[] Request = new byte[1024];
+            byte[] Reply = new byte[4096];
+
+            while (true) {
+                Socket proxySocket = null;
+                Socket socket_client = null;
+
+                try {
+                    socket_client = serverSocket.accept();
+
+                    final InputStream InputStreamClient = socket_client.getInputStream();
+                    final OutputStream OutputStreamClient = socket_client.getOutputStream();
+
+                    String requestHost = null;
+                    int requestPort = 80;
+                    try {
+                        //@ 在这里要判断用户发送的请求地址和端口，建立 Socket 链接
+                        BufferedReader client_reader = new BufferedReader(new InputStreamReader(InputStreamClient));
+                        String remoteRequest = "";
+                        String requestLine = client_reader.readLine();
+                        // remoteRequest = "";
+                        if( requestLine != null){
+                            String[] parts = requestLine.split(" ");
+                            if (parts.length >= 3) {
+                                String requestMethod = parts[0];
+                                String requestPath = parts[1];
+                                String requestProtocol = parts[2];
+
+                                if (requestPath.startsWith("http://")){
+                                    requestPath = requestPath.substring(7);
+                                }else if( requestPath.startsWith("https://")){
+                                    requestPath = requestPath.substring(8);
+                                }
+                                int pathIndex = requestPath.indexOf('/');
+                                if(pathIndex != -1){
+                                    requestPath = requestPath.substring(pathIndex);
+                                }
+                                System.out.println("Request path : " + requestPath);
+                                remoteRequest = requestMethod + " " + requestPath + " " + requestProtocol + "\r\n";
+
+                                String line;
+                                while((line = client_reader.readLine()) != null && !line.isEmpty()){
+                                    if(line.startsWith("Host: ")){
+                                        String[] hostParts = line.substring(6).split(":");
+                                        requestHost = hostParts[0];
+                                        if(hostParts.length > 1){
+                                            requestPort = Integer.parseInt(hostParts[1]);
+                                        }
+                                    }
+                                    remoteRequest += line + "\r\n";
+                                }
+
+                                // 输出提取的信息
+                                System.out.println("Method: " + requestMethod);
+                                System.out.println("Path: " + requestPath);
+                                System.out.println("Protocol: " + requestProtocol);
+                                System.out.println("Host: " + requestHost);
+                                System.out.println("Port: " + requestPort);
+                            }
+                        }
+
+                        remoteRequest += "\r\n";
+                        System.out.println("Send Request to Remote Server:");
+                        System.out.println(remoteRequest);
+
+                        // 先手工写死请求的远端地址，实际需要从用户请求中解析出来
+                        if( requestHost == null){
+                            requestHost = "www.edulinks.cn";
+                            requestPort = 80;    
+                        }
+
+                        proxySocket = new Socket(requestHost, requestPort);
+                        final InputStream prxoyInputStream = proxySocket.getInputStream();
+                        final OutputStream proxyOutputStream = proxySocket.getOutputStream();
+
+                        proxyOutputStream.write(remoteRequest.getBytes());
+                        proxyOutputStream.flush();
+
+                        // proxySocket.shutdownOutput();
+
+                        int Bytes_Read;
+                        try {    
+                            while ( (Bytes_Read = prxoyInputStream.read(Reply))!= -1){
+                                System.out.println(Reply);
+                                OutputStreamClient.write(Reply, 0, Bytes_Read);
+                                OutputStreamClient.flush();
+                            }
+    
+                        }catch(IOException e){
+                            System.out.println("Get response Error !");
+                            System.out.println(e);
+                            e.printStackTrace();
+                        }
+                    }catch(IOException e){
+                        System.out.println("Send request Error !");
+                        System.out.println(e);
+                    }
+
+                    OutputStreamClient.close();
+                } catch (IOException e) {
+                    System.out.println("Proxy can not get response. ");
+                    e.printStackTrace();
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } 
+    }
+}
+
+
+```
 
 ## 参考资料
 1. [Http Message Parsing in Java Web Servers](https://stevenyue.com/blogs/http-message-parsing-in-java-web-servers/)
