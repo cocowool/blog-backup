@@ -15,10 +15,16 @@ The purpose of computation is insight, not numbers.
 
 第二次世界大战之后，汉明加入贝尔实验室，曾与[香农]()一同工作。
 
+汉明还是ACM的创立人之一，曾任该组织的主席。
+
+1968年获得ACM图灵奖。1980年获得美国国家工程学院院士。
+
+1998年1月7日逝世，享年83岁。
+
 ## 汉明距离
 
-1968年获得ACM图灵奖。1980年获得美国国家工程院院士。
 
 ## 参考资料
 1. https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E5%8D%AB%E6%96%AF%E9%87%8C%C2%B7%E6%B1%89%E6%98%8E/9114683
 2. https://www.britannica.com/biography/Richard-Wesley-Hamming
+3. https://zhuanlan.zhihu.com/p/46991749
