@@ -3,6 +3,7 @@ title: 理查德·卫斯里·汉明
 date: 2025-03-10 11:19:45
 kewords: 理查德·卫斯里·汉明, 计算机名人, 计算机名人录
 description: 理查德·卫斯里·汉明（Richard Wesley Hamming，1915年2月11日 - 1998年1月7日），美国数学家，因其在数值方法、自动编码系统以及错误检测和纠错代码方面的工作而闻名。
+category: 计算机名人录
 ---
 
 理查德·卫斯里·汉明（Richard Wesley Hamming，1915年2月11日 - 1998年1月7日），美国数学家，因其在数值方法、自动编码系统以及错误检测和纠错代码方面的工作而闻名。
@@ -27,9 +28,26 @@ description: 理查德·卫斯里·汉明（Richard Wesley Hamming，1915年2月
 
 1997年，汉明从海军研究生院的教职退休，并被授予杰出名誉教授称号。1998年1月7日逝世，享年83岁。
 
+## 真知灼见
+
+1986年3月7日，汉明在贝尔通信研究中心给200多名科学家做了一次演讲，这里提到的一些观点放在现在也非常适用：
+
+* 要有做大事的想法
+* 年轻的时候就要有勇气追求答案
+* 忍受不确定的状态
+* 比别人多努力 10%
+* 全力投入重要的问题
+* 敞开办公室的大门
+* 做可以成为他人基石的工作
+* 重视推销和表达自己
+* 阅读方法比数量更重要
+* 重视写书
+* 远见超出你的能力时，才去做管理
+
 ## 参考资料
 1. https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E5%8D%AB%E6%96%AF%E9%87%8C%C2%B7%E6%B1%89%E6%98%8E/9114683
 2. https://www.britannica.com/biography/Richard-Wesley-Hamming
 3. https://zhuanlan.zhihu.com/p/46991749
 4. https://amturing.acm.org/award_winners/hamming_1000652.cfm
 5. https://history.computer.org/pioneers/hamming.html
+6. https://www.madewill.com/master/richard-hamming.html
