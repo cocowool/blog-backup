@@ -1,5 +1,12 @@
 ---
-title: 20250410-edgar-codd
+title: 埃德加·科德
 date: 2025-04-10 19:25:10
-tags:
+keywords: 埃德加·科德, 计算机名人, 计算机名人录, 图灵奖
+description: 
 ---
+
+埃德加·科德（Edgar Frank Codd，1923年8月19日 - 2003年4月18日），1981年图灵奖得主，致力于数据库研究，
+
+## 参考资料
+1. [百度百科-埃德加·科德](https://baike.baidu.com/item/%E5%9F%83%E5%BE%B7%E5%8A%A0%C2%B7%E5%BC%97%E5%85%B0%E5%85%8B%C2%B7%E7%A7%91%E5%BE%B7/9810967)
+2. []()
