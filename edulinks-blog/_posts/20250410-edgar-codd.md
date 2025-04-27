@@ -15,4 +15,4 @@ description:
 
 ## 参考资料
 1. [百度百科-埃德加·科德](https://baike.baidu.com/item/%E5%9F%83%E5%BE%B7%E5%8A%A0%C2%B7%E5%BC%97%E5%85%B0%E5%85%8B%C2%B7%E7%A7%91%E5%BE%B7/9810967)
-2. []()
+2. [ACM Turing Award-Edgar Codd](https://amturing.acm.org/award_winners/codd_1000892.cfm)
