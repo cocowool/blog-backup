@@ -3,7 +3,7 @@ title: 犹大·伯尔
 date: 2025-05-13 19:24:02
 keywords: 犹大·伯尔, 图灵奖
 description: 
-category:
+category: 计算机名人录
 ---
 
 犹大·伯尔（Judea Pearl，1936年9月4日 - ），2011年图灵奖得主。
