@@ -12,7 +12,10 @@ category: 计算机名人录
 
 1960年，毕业于以色列理工学院，获电气工程学士学位。1961年，在纽瓦克工程学院（现在是新泽西理工学院）获得电气工程硕士学位。1965年，在新泽西州罗格斯大学获得物理学硕士学位。童年，在纽约布鲁克林理工学院（现纽约大学理工学院）获得电气工程博士学位。
 
+1969年，犹大·伯尔加入加州大学洛杉矶分校，最初在工程系。1970年，他在新成立的计算机科学系获得终身教职。1976年，他晋升为正教授。1978年，他创立了认知系统实验室。
+
 ## 参考资料
 1. https://zhuanlan.zhihu.com/p/760487406
 1. https://baike.baidu.com/item/%E7%8A%B9%E5%A4%A7%C2%B7%E4%BC%AF%E5%B0%94/63349482
 2. https://wiki.swarma.org/index.php?title=Judea_Pearl
+3. https://amturing.acm.org/award_winners/pearl_2658896.cfm
