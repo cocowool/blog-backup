@@ -17,7 +17,41 @@ error: externally-managed-environment
     install.
 ```
 
-你的 MacOS 系统上的 Python 环境受系统保护（PEP 668），直接使用 pip 安装包到系统 Python 会破坏依赖管理（如 Homebrew 管理的包）。以下是解决方案：
+## 使用虚拟环境（推荐）
+
+虚拟环境「Virtual Environment」是 Python 开发的标准实践，可为每个项目创建隔离的依赖环境。
+
+1. 创建虚拟环境，在项目所在目录中执行
+```bash
+$ python3 -m venv myenv	#创建一个命名为 myenv 的虚拟环境
+```
+
+2. 激活虚拟环境
+```bash
+$ source myenv/bin/activate
+(myenv) ➜   
+```
+
+激活后，终端提示符会显示环境名称。
+
+3. 安装依赖包
+```bash
+$ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pytest
+```
+
+4. 退出虚拟环境
+```bash
+$ dactivate
+```
+
+这个方案的优点：
+* 安全隔离项目依赖
+* 无需管理员权限
+* 不会污染系统环境
+
+缺点当然也很明显，每个工程都要对依赖的包重新安装一遍，是不是要考虑工程运行环境的初始化脚本？
+
+## 使用 pipx
 
 ## 参考资料
 1. DeepSeek
