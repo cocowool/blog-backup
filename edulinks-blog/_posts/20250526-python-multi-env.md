@@ -71,9 +71,25 @@ $ pipx install pytest
 $ pipx list
 ```
 
+这个方案适用于安装需要全局使用的命令行工具，可以避免与项目本地依赖冲突。
+
 ## 用户级安装
 
+这个方案将包安装到当前用户目录，避免写入系统路径。
+```bash
+$ pip3 install --user -i https://pypi.tuna.tsinghua.edu.cn/simple pytest
+```
+
+这种方案的包会安装在 `~/Library/Python/3.x/lib/python/site-packages` 下，并且可能存在项目间的依赖冲突。
+
 ## 强制绕过保护（不推荐）
+
+通过 `--break-system-packages` 强制安装到系统环境，不推荐使用。
+
+```bash
+$ pip3 install --break-system-packages -i https://pypi.tuna.tsinghua.edu.cn/simple pytest
+```
+
 
 ## 参考资料
 1. DeepSeek
