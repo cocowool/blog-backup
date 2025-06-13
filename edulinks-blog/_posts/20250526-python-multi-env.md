@@ -51,7 +51,29 @@ $ dactivate
 
 缺点当然也很明显，每个工程都要对依赖的包重新安装一遍，是不是要考虑工程运行环境的初始化脚本？
 
-## 使用 pipx
+## 使用 pipx（适合全局工具）
+
+`pipx` 专门用于安装可执行的 Python 工具（如 black, pytest 等），自动管理独立虚拟环境。
+
+1. 安装 pipx
+```bash
+$ brew install pipx
+$ pipx ensurepath
+```
+
+2. 通过 pipx 安装Python工具
+```bash
+$ pipx install pytest
+```
+
+3. 查看已安装工具
+```bash
+$ pipx list
+```
+
+## 用户级安装
+
+## 强制绕过保护（不推荐）
 
 ## 参考资料
 1. DeepSeek
