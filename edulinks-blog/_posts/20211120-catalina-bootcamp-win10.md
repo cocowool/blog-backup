@@ -1,8 +1,8 @@
 ---
 title: MacBook Air 通过 Boot camp 安装 Win 10 
 date: 2021-11-19 18:50:42
-keywords:
-description: 
+keywords: MacOS, 苹果笔记本, 双系统, 苹果笔记本安装双系统
+description: 本文记录了 MacBook Air 安装双系统的过程，macOS 操作系统为 Catalina，双系统为 Win 10.
 ---
 
 手里有一台 MacBook Air 2013，一直安装的原装的操作系统，一路升级到 Catalina。
