@@ -22,6 +22,8 @@ description:
 
 自动机理论始于1943年 Walter Pitts 和 Warren McCulloch 对人工神经网络的研究。迈克尔·拉宾和Dana Scott 放弃了神经网络，转而使用称为有限状态机的计算模型。
 
+第二年夏天，迈克尔·拉宾再次被邀请参加 IBM 研讨会，这次他遇到了另一位未来的图灵奖获得者[约翰·麦卡锡](http://edulinks.cn/2024/04/07/20240407-john-mccarthy/)「John McCarthy」。麦卡锡向他解释了一个关于间谍和警卫的谜题：间谍拥有密码，可以从敌方领土传递到自己的领土。不能相信间谍会对密码保密，因此必须找到一些方法来验证即使敌人知道了密码，间谍也可以安全返回。
+
 ## 参考资料
 1. https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E6%8B%89%E5%AE%BE/15945279
 2. https://amturing.acm.org/award_winners/rabin_9681074.cfm
