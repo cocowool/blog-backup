@@ -8,6 +8,8 @@ description: 迈克尔·拉宾（Michael Rabin，1931年9月1日 - ），1976年
 
 迈克尔·拉宾（Michael Rabin，1931年9月1日 - ），1976年图灵奖得主，致力于有限自动机的研究。
 
+![Michael  Rabin](20250613-michael-rabin/bVcTa4l.jpeg)
+
 迈克尔·拉宾于1931年出生于德国布雷斯劳，即现在的波兰佛罗茨瓦夫。他的父亲是一名拉比，拉比是犹太人中的一个特别阶层，是老师也是智者的象征，指接受过正规犹太教育，系统学习过《塔纳赫》、《塔木德》等犹太教经典，担任犹太人社团或犹太教教会精神领袖，主要为有学问的学者。在父亲的熏陶教育下，拉宾早早接触到了宗教、哲学和各种经典著作，培养了他严谨的思维方式和对问题深入探究的习惯。
 
 迈克尔全家于1935年搬到巴勒斯坦，他接受了非常好的小学教育，就读于海法最好的高中。
@@ -39,3 +41,4 @@ description: 迈克尔·拉宾（Michael Rabin，1931年9月1日 - ），1976年
 1. https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E6%8B%89%E5%AE%BE/15945279
 2. https://amturing.acm.org/award_winners/rabin_9681074.cfm
 3. https://zhuanlan.zhihu.com/p/20359385583
+4. https://segmentfault.com/a/1190000040280925
