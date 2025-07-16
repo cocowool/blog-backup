@@ -6,7 +6,11 @@ category: 计算机名人录
 description: 
 ---
 
-罗伯特·佛洛伊德（Robert W. Floyd，1936年6月8日 - ）
+罗伯特·佛洛伊德（Robert W. Floyd，1936年6月8日 - 2001年9月25日），图灵奖得主。
+
+佛洛依德于1936年出生在纽约，是一个非常聪明的孩子，14岁完成高中学业，并被芝加哥大学（University of Chicago）的一个天才儿童特殊课程录取。1953年获得学士学位，此时他只有17岁。
+
+
 
 ## 参考资料
 1. https://baike.baidu.com/item/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7/4903135?structureClickId=4903135&structureId=ced913fd22dfe016c93805da&structureItemId=7aed6f67c1581d137a033b76&lemmaFrom=starMapContent_star&fromModule=starMap_content&lemmaIdFrom=324645
