@@ -10,6 +10,8 @@ description: 肯尼斯·艾佛森（Kenneth Iverson，1920年12月17日 - 2004�
 
 肯尼斯于1920年12月17日出生在加拿大艾伯塔省卡姆罗斯附近的一个农场，该农场位于省会埃德蒙顿东南约100公里处。他的父母是挪威血统，从北达科他州来到艾伯塔省。肯尼斯在农村学校接受教育，9年级结束后开始留在农场工作。
 
+![Kenneth in Harvard University](20250804-kenneth-iverson/APLSC_Ken_Iverson-728x1024.jpg)
+
 1942年，肯尼斯应征入伍，次年转入加拿大皇家空军，担任专门从事侦察的飞行工程师。在服兵役期间，肯尼斯参加了加拿大军队提供的八门函授课程，几乎足以完成高中学业。1946年退伍后，在辅导员和战友的鼓励下，肯尼斯在安大略省金斯顿的女王大学开始了正规的大学教育。
 
 肯尼斯于1950年获得女王大学数学和物理学学士学位，并于1951年获得哈佛大学数学硕士学位。由于学习了计算机先驱[霍华德·艾肯](http://edulinks.cn/2021/01/23/20210124-howard-aiken/)教授的课程，他转入工程与应用物理系。他的博士论文由艾肯教授和诺贝尔经济学奖获得者瓦西里·莱昂蒂夫指导。肯尼斯扩展了莱昂蒂夫的投入产出模型来处理资本货物。在进行研究时，他意识到需要使用计算机试验矩阵方法，并为哈佛 Mark I 编写了一个矩阵例程软件包。
@@ -17,6 +19,8 @@ description: 肯尼斯·艾佛森（Kenneth Iverson，1920年12月17日 - 2004�
 完成博士学位后，肯尼斯加入哈佛大学，在新的自动数据处理项目中任教，做了一年讲师五年助理教授。肯尼斯对传统数学符号在表达算法方面的不足感到沮丧，开始基于张量代数高维数组的扩展和之前英国物理学家奥利弗·赫维赛德「Oliver Heaviside，1850-1925」提出的算子概念发明自己的符号。
 
 1960年，肯尼斯在弗雷德里克·布鲁克斯「Frederick Brooks」的建议下加入了位于纽约约克镇高地的 IBM 研究中心，弗雷德里克·布鲁克斯曾是肯尼斯在哈佛大学的老师，现在也在 IBM 工作，两人合作继续开发新符号。1962年，肯尼斯出版了经典著作《编程语言 A Programming Language》。1963年，肯尼斯和弗雷德里克根据他们为艾肯在哈弗准备的讲义出版了《Automatic Data Processing》。
+
+![img](20250804-kenneth-iverson/APLSC_Tables1.jpg)
 
 APL最初是描述算法的符号，后来才成为一种编程语言。APL的第一个实现是1965年用 Fortran 为IBM 7090计算机编写，并以批处理模式使用。
 
@@ -31,3 +35,4 @@ APL最初是描述算法的符号，后来才成为一种编程语言。APL的�
 1. https://baike.baidu.com/item/%E8%82%AF%E5%B0%BC%E6%96%AF%C2%B7%E8%89%BE%E4%BD%9B%E6%A3%AE/9812020
 2. https://amturing.acm.org/award_winners/iverson_9147499.cfm
 3. https://amturing.acm.org/bib/iverson_9147499.cfm#link_1
+4. https://computerhistory.org/blog/the-apl-programming-language-source-code/?key=the-apl-programming-language-source-code
