@@ -22,7 +22,11 @@ description: 肯尼斯·艾佛森（Kenneth Iverson，1920年12月17日 - 2004�
 
 ![img](20250804-kenneth-iverson/APLSC_Tables1.jpg)
 
-APL最初是描述算法的符号，后来才成为一种编程语言。APL的第一个实现是1965年用 Fortran 为IBM 7090计算机编写，并以批处理模式使用。
+APL最初是描述算法的符号，APL 表示法的第一个计算机实现是1965年，由纽约州约克镇高地IBM研究中心的Larry Breed和当时在斯坦福大学读研究生的 Philip Abrams 用 Fortran 为IBM 7090计算机编写的面相批处理的语言解释器。不久之后，Larry Breed和Roger Moore为7093编写了第一个交互式版本。
+
+![早期APL开发人员](20250804-kenneth-iverson/APLSC_iverson_team-1.jpg)
+
+> 开发APL的最初动机是提供一种写作和教学工具。尽管APL主要用于商业编程，但我仍然认为它最重要的用途仍有待利用：作为一种简单、精确、可执行的符号，用于广泛学科的教学。
 
 肯尼斯于1970年成为IBM研究院，并一直在IBM工作到1980年。之后，肯尼斯回到加拿大继续从事APL相关的工作。
 
@@ -36,3 +40,4 @@ APL最初是描述算法的符号，后来才成为一种编程语言。APL的�
 2. https://amturing.acm.org/award_winners/iverson_9147499.cfm
 3. https://amturing.acm.org/bib/iverson_9147499.cfm#link_1
 4. https://computerhistory.org/blog/the-apl-programming-language-source-code/?key=the-apl-programming-language-source-code
+5. https://worktile.com/kb/p/2161395
