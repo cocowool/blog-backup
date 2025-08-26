@@ -8,10 +8,15 @@ description:
 
 尼古拉斯·沃斯（Niklaus Wirth，1934年2月15日-2024年1月1日），计算机科学家，以创建两种计算机语言 Euler 和 Pascal 在计算机科学领域崭露头角。Pascal 在教学上具有重要意义，并为未来的计算机语言、系统和架构研究奠定了基础。
 
-尼古拉斯·沃斯在瑞士出生长大，职业生涯的大部分时间都是在苏黎世的瑞士联邦理工学院（ETH）度过。1959年获得电气工程学学士学位，之后他前往北美攻读研究生。
+尼古拉斯·沃斯在瑞士出生长大，职业生涯的大部分时间都是在苏黎世的瑞士联邦理工学院（ETH）度过。1959年获得电气工程学学士学位，之后他前往北美攻读研究生。1963年，沃斯获得加州大学伯克利分校的博士学位，随后在斯坦福大学任教。
+
+从1957年开始，众多的科学家通过 ALGOL 项目一起合作，沃斯也是 ALGOL 项目中的小组成员，他与包括 [Tony Hoare](http://edulinks.cn/2025/08/12/20250812-antony-hoare/)、[Edsger Dijkstra](http://edulinks.cn/2023/01/28/20230128-edsger-wybe-dijkstra/)、[Peter Naur](http://edulinks.cn) 等未来的图灵奖获得者一起合作。
+
+1968年，沃斯回到联邦理工学院，1981年创建该校的计算机科学系，并在随后的大部分时间里担任系主任。
 
 尼古拉斯·沃斯的学生菲利普·卡恩是 Borland 公司的联合创始人，Borland公司后来发展成为全球最大的开发工作厂商之一。
 
 ## 参考资料
 1. https://baike.baidu.com/item/%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF%C2%B7%E6%B2%83%E6%96%AF/1095875?structureClickId=1095875&structureId=ced913fd22dfe016c93805da&structureItemId=a642e1fb48f65b392c6f819d&lemmaFrom=starMapContent_star&fromModule=starMap_content&lemmaIdFrom=324645
 2. https://amturing.acm.org/award_winners/wirth_1025774.cfm
+3. https://cloud.tencent.com/developer/news/2044037
