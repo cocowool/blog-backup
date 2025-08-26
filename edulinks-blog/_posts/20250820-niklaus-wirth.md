@@ -3,10 +3,12 @@ title: 尼古拉斯·沃斯
 date: 2025-08-20 15:18:10
 category: 计算机名人录
 keywords: 尼古拉斯·沃斯, Niklaus Wirth
-description:
+description: 尼古拉斯·沃斯（Niklaus Wirth，1934年2月15日-2024年1月1日），计算机科学家，以创建两种计算机语言 Euler 和 Pascal 在计算机科学领域崭露头角。Pascal 在教学上具有重要意义，并为未来的计算机语言、系统和架构研究奠定了基础。
 ---
 
 尼古拉斯·沃斯（Niklaus Wirth，1934年2月15日-2024年1月1日），计算机科学家，以创建两种计算机语言 Euler 和 Pascal 在计算机科学领域崭露头角。Pascal 在教学上具有重要意义，并为未来的计算机语言、系统和架构研究奠定了基础。
+
+![Founders' stories – Department of Computer Science | ETH Zurich](20250820-niklaus-wirth/OIP-C.wbdxxdrbl3Lv4-93lUQ7IgHaDt)
 
 尼古拉斯·沃斯在瑞士出生长大，职业生涯的大部分时间都是在苏黎世的瑞士联邦理工学院（ETH）度过。1959年获得电气工程学学士学位，之后他前往北美攻读研究生。1963年，沃斯获得加州大学伯克利分校的博士学位，随后在斯坦福大学任教。
 
