@@ -24,7 +24,7 @@ tag:
 ## 联系方式
 
 * Email: cocowool@qq.com
-* 我的微信：riririver
+* 我的微信：FullStackDreamer
 
 ## 友情链接
 
