@@ -57,6 +57,9 @@ Display Filter 是工具栏下面的搜索框，左边是一个收藏夹图标�
 ip.dst == 192.168.2.197 and tcp.connection.synack // 这表示查找目标地址为 192.168.2.197 链接状态为 synack 的报文
 
 ip.dst == 192.168.2.197 and http // 这表示查找固定目标地址的 http 报文
+
+// 过滤HTTP协议，URI中包含 login，消息中不包含 errMsg，状态码不等于404的报文
+http && !http.request.uri contains 'login' && !tcp contains 'errMsg' && http.response.code !=404
 ```
 
 ### 1.3 搜索功能
