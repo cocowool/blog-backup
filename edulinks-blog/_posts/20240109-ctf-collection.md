@@ -19,6 +19,7 @@ description: 本文是 CTF 相关工具收集整合页，目标为大家提供 C
 * [archpr](http://codelinks.cn/2023/03/04/ctf-tools-archpr/)，密码恢复工具
 * ziprello，密码恢复工具
 * IDA Pro，DataRescue公司出品的反汇编工具
+* [Volatility](https://github.com/volatilityfoundation)，内存分析工具
 
 ## 命令行工具
 

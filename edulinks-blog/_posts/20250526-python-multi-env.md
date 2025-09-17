@@ -17,6 +17,10 @@ error: externally-managed-environment
     install.
 ```
 
+在 Linux 环境中，也存在全局版本安装的提示，如 kali 中的提示
+
+![image-20250917084403724](20250526-python-multi-env/image-20250917084403724.png)
+
 ## 使用虚拟环境（推荐）
 
 虚拟环境「Virtual Environment」是 Python 开发的标准实践，可为每个项目创建隔离的依赖环境。
