@@ -28,3 +28,4 @@ description: 罗伯特·塔扬（Robert Tarjan，1948年4月30日 - ），美国
 1. https://amturing.acm.org/award_winners/tarjan_1092048.cfm
 2. https://muse.jhu.edu/pub/267/edited_volume/chapter/1203369/pdf
 3. https://www.britannica.com/biography/Robert-Endre-Tarjan
+4. https://zhuanlan.zhihu.com/p/348703439
