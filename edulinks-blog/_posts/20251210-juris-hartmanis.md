@@ -1,7 +1,7 @@
 ---
 title: 尤里斯·哈特马尼斯
 date: 2025-12-10 13:31:57
-catgory: 计算机名人录
+category: 计算机名人录
 keywords: 尤里斯·哈特马尼斯, 图灵奖, 计算机名人, 计算机名人录
 description: 尤里斯·哈特马尼斯（Jris Hartmanis，1928年7月5日 - 2022年7月29日），致力于计算理论及计算复杂性理论的研究，与理查德·E·斯特恩斯共同获得1993年图灵奖。
 ---
@@ -30,7 +30,7 @@ description: 尤里斯·哈特马尼斯（Jris Hartmanis，1928年7月5日 - 202
 
 1970年代，哈特马尼斯和伯曼对NP完全问题的详细结构进行研究，这帮助开启了「结构复杂性理论」这一领域的开端（CCC会议最初的主题）。
 
-
+2022年7月29日在美国纽约州伊萨卡，哈特马尼斯去世，享年94岁。
 
 ## 参考资料
 1. https://baike.baidu.com/item/%E5%B0%A4%E9%87%8C%E6%96%AF%C2%B7%E5%93%88%E7%89%B9%E9%A9%AC%E5%B0%BC%E6%96%AF/12586960?structureClickId=12586960&structureId=ced913fd22dfe016c93805da&structureItemId=0973544b28325026d67cdc35&lemmaFrom=starMapContent_star&fromModule=starMap_content&lemmaIdFrom=324645
@@ -40,3 +40,4 @@ description: 尤里斯·哈特马尼斯（Jris Hartmanis，1928年7月5日 - 202
 5. https://magazine.caltech.edu/post/juris-hartmanis-obituary
 6. https://scottaaronson.blog/?p=6622
 7. https://cacm.acm.org/news/an-interview-with-juris-hartmanis/
+8. https://zhuanlan.zhihu.com/p/548201537
