@@ -16,6 +16,8 @@ description:
 
 1965年，费根鲍姆搬到斯坦福大学，创立了知识系统实验室，开始开发专家系统，即展示人类专家在某一专业领域知识的计算机程序。
 
+费根鲍姆的第一个重大成功项目「DENDRAL」历时十余年才开发完成，「DENDRAL」由斯坦福遗传学家 Joshua Lederberg 和化学家、首个商业口服避孕药发明者 Carl Djerassi 合作设计，旨在帮助化学家确定有机分子的结构。通过复杂的「如果-那么」规则阵列，
+
 ## 参考资料
 1. https://baike.baidu.com/item/%E7%88%B1%E5%BE%B7%E5%8D%8E%C2%B7%E8%B4%B9%E6%A0%B9%E9%B2%8D%E5%A7%86/7868210
 2. https://www.britannica.com/biography/Edward-Albert-Feigenbaum
