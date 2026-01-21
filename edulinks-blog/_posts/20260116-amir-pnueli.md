@@ -26,6 +26,10 @@ description: 阿米尔·伯努利（，1941年4月22日 - 2009年11月2日），
 
 1980年，阿米尔和几位同事回到了魏茨曼研究所，共同将计算机科学系建设为世界领先的系所之一「Weizmann Institute of Science」。
 
+1999年到2009年，阿米尔在纽约大学科朗学院计算机科学系担任教授。
+
+2009年11月2日，阿米尔在纽约去世，享年68岁。
+
 ## 参考资料
 1. https://amturing.acm.org/award_winners/pnueli_4725172.cfm
 2. https://www.britannica.com/biography/Amir-Pnueli
