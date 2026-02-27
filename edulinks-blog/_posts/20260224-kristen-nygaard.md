@@ -8,7 +8,17 @@ description: 克利斯登·奈加特（Kristen Nygaard，1926年8月27日 - 2002
 
 克利斯登·奈加特（Kristen Nygaard，1926年8月27日 - 2002年8月10日），挪威数学家和计算机科学家，他与同事奥利·约翰·达尔共同发明了面向对象编程和编程语言 SIMULA。
 
+![Kristen Nygaard](20260224-kristen-nygaard/kristen04w.jpg)
+
 1926年奈加特出生在奥斯陆，高中就读于奥斯陆 Fagerborg 高中，由于经历了第二次世界大战，他的学习经历了很多困难。最终于1945年高中毕业，随后进入奥斯陆大学学习科学，最初对天文学感兴趣，后来专项应用数学。
+
+奈加特最初的研究领域是运筹学，在职业生涯早期他就意识到计算机仿真将是一个有用的工具。他和达尔紧密合作，催生了第一个 Simula I 语言，这个语言最初被视为一种系统描述与仿真语言，而非通用编程语言。达尔和奈加特很快意识到其仿真概念可以应用于编程。基于这一见解，他们设计了 Simula 67，他是一种通用编程语言。
+
+SIMULA 包含了目前面向对象编程语言中的主要概念，包括：类、对象、子类、活动对象、进程、调度、框架、自动内存管理、垃圾回收等等。
+
+随后的时间，奈加特与其他学者合作共同开发过 DELTA项目、BETA编程语言。
+
+六十年代末，挪威铁金属公司工会联系了奈加特寻求新计算机技术的帮助，奈加特和其他人开发了相关课程和书籍，专门为工人提供信息技术的介绍和培训。
 
 1970年代，奈加特的研究兴趣逐渐转向技术对劳工运动的影响，并参与了其他政治、社会和环境议题。他是挪威自然保护协会环境保护委员会的首任主席，曾是经济合作与发展组织信息技术活动的挪威代表。
 
@@ -21,3 +31,4 @@ description: 克利斯登·奈加特（Kristen Nygaard，1926年8月27日 - 2002
 2. https://www.britannica.com/technology/object-oriented-programming
 3. https://amturing.acm.org/award_winners/nygaard_5916220.cfm
 4. https://mathshistory.st-andrews.ac.uk/Biographies/Nygaard/
+5. http://kristennygaard.no/in_memoriam_kristen/
