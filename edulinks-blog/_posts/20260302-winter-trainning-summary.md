@@ -1,8 +1,8 @@
 ---
 title: 冬训100阶段总结
 date: 2026-03-04 09:03:28
-keywords:
-category:
+keywords: 马拉松, 冬训, 长距离
+category: 马拉松
 description:
 ---
 
