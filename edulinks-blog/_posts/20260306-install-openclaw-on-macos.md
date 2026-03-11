@@ -31,6 +31,14 @@ $ openclaw -v
 
 ![Openclaw网页对话界面](20260306-install-openclaw-on-macos/image-20260309110203859.png)
 
+## 有用的配置
+
+
+
+## 思考
+
+真正有用的 Tools 或者 Siklls，还是需要企业内部根据自己的实际需要去开发。
+
 ## 参考资料
 
 1. https://www.cnblogs.com/xiaobaiysf/p/19595515
