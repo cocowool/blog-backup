@@ -1,5 +1,5 @@
 ---
-title: 在macOS本地安装并体验OpenClaw
+title: 从上门安装到官方卸载，试论OpenClaw的全民热潮
 date: 2026-03-06 08:38:30
 keywords:
 description: 记录一次OpenClaw学习使用的过程，实现一个简单的案例，实现与在线大模型和在线通知工具的集成。
