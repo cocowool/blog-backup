@@ -18,6 +18,7 @@ Tools 是和 Agent 绑定的，默认的 Agent 提供了几类 Tools，包括：
 * Runtime 命令执行类：可以操作 OpenClaw 所在机器的命令行，执行相关命令；
 * Web 网站搜索和网页获取；
 * Memory 是 OpenClaw 提供的对话记录工具。我们通过 Web 界面使用大模型，在不同会话之间的记录不能共享，有了这个系统可讲我们与大模型交互的对话历史保留下来。
+* Session 是 OpenClaw 的记忆容器，有三种类型：会话Session、执行Session、子代理Session。
 
 
 ## 环境与安装
