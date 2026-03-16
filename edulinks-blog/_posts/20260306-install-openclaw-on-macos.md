@@ -1,7 +1,7 @@
 ---
 title: 从上门安装到官方卸载，试论OpenClaw的全民热潮
 date: 2026-03-06 08:38:30
-keywords:
+keywords: OpenClaw, OpenClaw macOS
 description: 记录一次OpenClaw学习使用的过程，实现一个简单的案例，实现与在线大模型和在线通知工具的集成。
 ---
 
@@ -17,8 +17,14 @@ Tools 是和 Agent 绑定的，默认的 Agent 提供了几类 Tools，包括：
 * Files 文件类：可以操作 OpenClaw 所在机器的本地文件；
 * Runtime 命令执行类：可以操作 OpenClaw 所在机器的命令行，执行相关命令；
 * Web 网站搜索和网页获取；
-* Memory 是 OpenClaw 提供的对话记录工具。我们通过 Web 界面使用大模型，在不同会话之间的记录不能共享，有了这个系统可讲我们与大模型交互的对话历史保留下来。
-* Session 是 OpenClaw 的记忆容器，有三种类型：会话Session、执行Session、子代理Session。
+* Memory 子系统为 OpenClaw 提供了「代码+文档+会话」的长期/短期记忆检索能力，这部分我的理解还不是很透彻；
+* 的记录不能共享，有了这个系统可讲我们与大模型交互的对话历史保留下来；
+* Session 是 OpenClaw 的记忆容器，有三种类型：会话Session、执行Session、子代理Session；
+* UI 系统我理解是可以用图形界面的方式做一些 Web操作；
+* Messaging 系统是 OpenClaw 的亮点，能快速的支持用户通过主流的 IM 软件接入 OpenClaw，这样就可以实现以远程聊天的方式驱动 OpenClaw，真正达到随时服务用户；
+* Automation 是一个定时任务相关的子系统；
+* Media 是多媒体支持的子系统，默认支持图片、文本到语音；
+* Nodes、Agents 这两个还不是很熟悉；
 
 
 ## 环境与安装
