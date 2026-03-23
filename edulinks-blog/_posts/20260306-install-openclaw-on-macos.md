@@ -18,7 +18,6 @@ Tools 是和 Agent 绑定的，默认的 Agent 提供了几类 Tools，包括：
 * Runtime 命令执行类：可以操作 OpenClaw 所在机器的命令行，执行相关命令；
 * Web 网站搜索和网页获取；
 * Memory 子系统为 OpenClaw 提供了「代码+文档+会话」的长期/短期记忆检索能力，这部分我的理解还不是很透彻；
-* 的记录不能共享，有了这个系统可讲我们与大模型交互的对话历史保留下来；
 * Session 是 OpenClaw 的记忆容器，有三种类型：会话Session、执行Session、子代理Session；
 * UI 系统我理解是可以用图形界面的方式做一些 Web操作；
 * Messaging 系统是 OpenClaw 的亮点，能快速的支持用户通过主流的 IM 软件接入 OpenClaw，这样就可以实现以远程聊天的方式驱动 OpenClaw，真正达到随时服务用户；
