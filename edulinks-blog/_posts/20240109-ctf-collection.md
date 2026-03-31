@@ -50,6 +50,12 @@ description: 本文是 CTF 相关工具收集整合页，目标为大家提供 C
 * fcrackzip，zip密码破解工具
 
 
+## 本地工具
+
+很多时候，CTF比赛不提供互联网环境，需要在本机配置一些基础的工具。
+
+* CperChef
+
 ## 浏览器插件
 
 * [HackBar]([Releases · PhHitachi/HackBar (github.com)](https://github.com/PhHitachi/HackBar/releases/))，浏览器插件（支持Chrome、Edge），感觉某些场景可以替代 BurpSuite
