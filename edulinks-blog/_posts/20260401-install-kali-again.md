@@ -26,3 +26,28 @@ Pralallels Tools 安装了之后，可以和宿主机共享粘贴板，能够方
 > 个人感觉，学习一门编程，用在倒腾环境和工具的时间，估计能占学习过程的 20～30%。但是对于 CTF 来说，倒腾环境和工具的时间占比在 60～70%。
 > 
 
+## Parallels Tools 安装的坑
+
+![image-20260402081858958](20260401-install-kali-again/image-20260402081858958.png)
+
+通过在线已经不太好装相关包了，一方面国内源没保留这么久的历史文件，官方源可能也没有了。
+
+http://old.kali.org/kali/pool/main/l/linux/
+
+```sh
+$ sudo dpkg -i linux-kbuild-5.18_5.18.5-1kali6_amd64.deb
+$ sudo dpkg -i linux-headers-5.18.0-kali5-common_5.18.5-1kali6_all.deb
+$ sudo dpkg -i linux-headers-5.18.0-kali5-arm64_5.18.5-1kali6_amd64.deb
+# 这个包安装提示没有 linux-compiler-gcc-11-x86
+```
+
+> 如果是 M 芯片的笔记本，需要选择 arm64 的包。我的笔记本是2019年最后一代 Intel 的 MBP 16
+
+![image-20260402085936533](20260401-install-kali-again/image-20260402085936533.png)
+
+![image-20260402095106081](20260401-install-kali-again/image-20260402095106081.png)
+
+## 参考资料
+
+1. https://blog.csdn.net/weixin_47610939/article/details/127647055
+2. https://forum.parallels.com/threads/patch-support-for-kernel-5-18-parallel-tools-17-1-4-51567.357611/
