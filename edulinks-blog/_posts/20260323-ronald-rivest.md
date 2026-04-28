@@ -1,6 +1,7 @@
 ---
 title: 罗纳德·李维斯特
 date: 2026-03-23 08:57:03
+slug: acm-ronald-rivest
 keywords: 罗纳德·李维斯特, Ronald L. Rivest, 图灵奖, 2002年图灵奖得主
 category: 计算机名人录
 description: 罗纳德·李维斯特（Ronald L. Rivest，1947年5月6日 - ），美国计算机科学家、密码学家，麻省理工学院（MIT）教授，与美国计算机科学家 Leonard M. Adleman 和以色列计算机科学家 Adi Shamir 共同获得2002年图灵奖。
