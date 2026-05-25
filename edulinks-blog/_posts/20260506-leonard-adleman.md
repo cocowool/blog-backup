@@ -6,7 +6,7 @@ keywords: 伦纳德·阿德曼, 计算机名人录, 图灵奖, 图灵奖得主
 description: 伦纳德·阿德曼介绍。
 ---
 
-伦纳德·阿德曼（Leonard Adleman，1945年12月31日 - ），2002年图灵奖获得者。
+伦纳德·阿德曼（Leonard Adleman，1945年12月31日 - ），美国计算机科学家，2002年图灵奖获得者，RSA加密算法的共同发明者。
 
 1945年，阿德曼出生于加利福尼亚州旧金山。他的父亲是一名银行出纳员，目前是家用电器销售。
 
@@ -24,5 +24,8 @@ description: 伦纳德·阿德曼介绍。
 
 伦纳德创造了首个分子尺度的计算装着，凭借这项工作，伦纳德被誉为「DNA计算之父」。
 
+1996年，伦纳德当选为美国国家工程院院士。
+
 ## 参考资料
 1. https://amturing.acm.org/award_winners/adleman_7308544.cfm
+2. https://www.britannica.com/biography/Leonard-M-Adleman
