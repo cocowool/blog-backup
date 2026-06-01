@@ -3,10 +3,10 @@ title: 罗伯特·卡恩
 date: 2026-05-26 13:53:56
 category: 计算机名人录
 keywords: 罗伯特·卡恩, 计算机名人录, 图灵奖, 图灵奖得主
-description: 
+description: 罗伯特·卡恩（Robert E. Kahn，1938年2月23日 -  ），一位美国电气工程师，因其和瑟夫共同领导了传输控制协议和互联网协议（TCP/IP）的设计与实现，这是现在互联网的基石。2004年获得图灵奖，以表彰他们在互联网通信领域的开创性工作，以及在网络领域的激励性领导力。
 ---
 
-罗伯特·卡恩（Robert E. Kahn，1938年2月23日 -  ），因其和瑟夫共同领导了传输控制协议和互联网协议（TCP/IP）的设计与实现，这是现在互联网的基石。
+罗伯特·卡恩（Robert E. Kahn，1938年2月23日 -  ），一位美国电气工程师，因其和瑟夫共同领导了传输控制协议和互联网协议（TCP/IP）的设计与实现，这是现在互联网的基石。2004年获得图灵奖，以表彰他们在互联网通信领域的开创性工作，以及在网络领域的激励性领导力。
 
 罗伯特·卡恩于1938年12月23日出生在纽约布鲁克林。1960年，在纽约市立学院获得电气工程学士学位，1962年在普林斯顿大学获得电气工程硕士学位，1964年获得博士学位。
 
@@ -48,3 +48,4 @@ ARPANET的骨干网由一组通过分组交换机连接的长途电话线组成�
 1. https://baike.baidu.com/item/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E6%81%A9/8012461?structureClickId=8012461&structureId=ced913fd22dfe016c93805da&structureItemId=a1817d0fd6ee0b671e8835e0&lemmaFrom=starMapContent_star&fromModule=starMap_content&lemmaIdFrom=324645
 2. https://amturing.acm.org/award_winners/kahn_4598637.cfm
 3. https://www.rtx.com/who-we-are/we-are-rtx/transformative-technologies/bbn
+4. https://www.britannica.com/biography/Robert-Elliot-Kahn
